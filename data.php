@@ -2,27 +2,7 @@
 
 function auth() {
     return [
-        "id" => 1, 
-        "first_name" => "smart", 
-        "last_name" => "codlop", 
-        "gender" => "Male", 
-        "city" => "", 
-        "country" => "SA", 
-        "preferred_language" => null, 
-        "date_of_birth" => null, 
-        "email" => "demo@twsaa.com", 
-        "points" => "0", 
-        "status" => 1, 
-        "customer_group_id" => null, 
-        "thawani_id" => "cus_NUFcfYZyH9vwtRQA", 
-        "subscribed_to_news_letter" => 0, 
-        "created_at" => "2022-06-30T09:57:02.000000Z", 
-        "updated_at" => "2024-11-10T08:20:01.000000Z", 
-        "is_verified" => 1, 
-        "token" => "3bf2b48b67a6caa7517f4d6657d2429d", 
-        "notes" => null, 
-        "phone" => "+966 57 291 8538", 
-        "affiliate_id" => null 
+
     ]; 
 }
 
