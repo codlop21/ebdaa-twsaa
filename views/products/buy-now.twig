@@ -1,6 +1,6 @@
 {% if authUser %}
     {% if authUser['is_verified'] == 1 %}
-        <button type="button" class="btn btn-lg btn-primary" id="fastCheckOutButton" data-id="{{ product['id'] }}" {{ product.saleable ? '' : 'disabled' }}>
+        <button type="button" class="btn btn-lg btn-primary" id="fastCheckOutButton" data-id="{{ product['id'] }}" >
             {{ ('shop::app.products.buy-now'|trans) }}
         </button>
     {% else %}

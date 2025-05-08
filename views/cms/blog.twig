@@ -22,6 +22,7 @@
     </style>
 {% endblock %}
 {% block main_content %}
+<div class="container-fluid">
 <div class="content page-container">
     <div class="container">
     <div class="page-main-container page-single blog-single">
@@ -33,12 +34,12 @@
                             {{ blog.name }}
                         </h1>
                         <div class="post__meta blog-single__meta text-muted">
-                            <span class="inline-flex">
+                            <div class="inline-flex">
                                 {{ ('admin::app.admin.blog.author'|trans) }}:
                                 <a href="/blogs/author/{{ blog.author_id }}" class="post-author">
                                     {{ blog.getUser.name }}
                                 </a>
-                            </span>
+                            </div>
                             <span class="post-date">{{ blog.created_at }}</span>
                         </div>
                         <div class="blog-single__thumb mt-30 mb-30">
@@ -126,7 +127,7 @@
     </section>
     </div>
 </div>
-
+</div>
 
 <script type="text/javascript">
     var a2a_config = a2a_config || {};

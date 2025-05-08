@@ -3,7 +3,9 @@
 
 {% block title %} main {% endblock %}
 {% block main_content %}
-<div class="container content-container">
+<div class="container-fluid">
+
+<div class=" content-container">
     <div class="page-main-container blog-archive with-side-menu">
         <div class="section-header section-header--clear mb-4 d-flex">
             <h2 class="section--title"><span>{{ blogs[0]['getUser']['name'] }}</span></h2>
@@ -57,5 +59,6 @@
             </div>
         </section>
     </div>
+</div>
 </div>
 {% endblock %}

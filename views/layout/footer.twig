@@ -34,9 +34,9 @@
                     {% if channel.getCmsPages|length > 0 or channel.getBlogs|length > 0 %}
                     <h2 class="footer-title"><span> {{ ('admin::app.admin.store_data.other_links'|trans) }}</span></h2>
                     <ul class="footer-links">
-                        {# {% if channel.getBlogs|length > 0 %}
+                        {% if channel.getBlogs|length > 0 %}
                         <li><a href="/blogs/{{company.company_id }}">{{ ('admin::app.admin.blog.blogs'|trans) }}</a></li>
-                        {% endif %} #}
+                        {% endif %}
                         {% for page in channel.getCmsPages %}
                             {% if page.status == 1 %}
                             <li><a href="/page/{{ (page.url_key ?? page.translate('ar').url_key) }}">
