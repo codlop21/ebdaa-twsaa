@@ -8,15 +8,19 @@
     {% set asset_url = getFunction('assets') %}
     {% set storage_url = 'https://cdn.twsaa.com/' %}
     {% set lang = getFunction('locale') %}
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
     {% if lang == 'ar' %}
         <link rel="stylesheet" type="text/css" href="{{ asset_url ~ 'css/bootstrap-ar.min.css' }}">
     {% else %}
         <link rel="stylesheet" type="text/css" href="{{ asset_url ~ 'css/bootstrap-en.min.css' }}">
     {% endif %}
 
-    
-    <link rel="stylesheet" type="text/css" href="{{ asset_url ~ 'css/search.min.css' }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    {# <link rel="stylesheet" type="text/css" href="{{ asset_url ~ 'css/search.min.css' }}"> #}
     <link rel="stylesheet" type="text/css" href="{{ asset_url ~ 'css/fonts.css' }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset_url ~ 'css/front-fonts.css' }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset_url ~ 'css/ui.css' }}">
@@ -38,8 +42,8 @@
 
     <style>
         :root {
-            --brand: #5e8cff;
-            --brand-light: #d7d7d7;
+            --brand: #6639ca;
+            --brand-light: #8c5ff0;
         }
 
         .cat-sub {
@@ -122,10 +126,39 @@
         .owl-carousel .owl-item {
             position: initial;
         }
+          #preload {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff !important; /* أو أي لون خلفية */
+    z-index: 999999999999999999999999999999999999999999999999999999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #preload .logo {
+    width: 120px;
+    animation: pulse 1.5s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
     </style>
 
     {% block head %}{% endblock %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
     <script type="text/javascript" src="{{ asset_url ~'js/core/libraries/jquery.min.js' }}"></script>
+    
     <script>
         Number.prototype.toLocaleFixed = function(currency = '') {
             return currency.concat(' ').concat(
@@ -136,9 +169,41 @@
         String.prototype.cleanPhone = function() {
             return this.replace(/[^0-9\+]+/g, '');
         };
+        
     </script>
 </head>
 <body class="{{ lang == 'ar' ? 'rtl' : 'ltr' }}">
+<div id="preload" class="preload">
+  {% set channel = getFunction('getCurrentChannel') %}
+
+					<div class="store-logo top-links-2">
+						<a href="/">
+							{% if channel %}
+								<img src="{{ storage_url ~ channel.logo }}" class="logo">
+							{% else %}
+								<h1>{{ channel.name }}</h1>
+							{% endif %}
+						</a>
+					</div>
+</div>
+
+
+<script>
+
+  window.addEventListener('load', function () {
+    const preload = document.getElementById('preload');
+    preload.style.transition = 'opacity 0.5s ease';
+    preload.style.opacity = '0';
+
+    setTimeout(function () {
+      preload.style.display = 'none';
+    }, 500); // مدة الانتقال
+  });
+</script>
+
+<div class="back-to-top" id="tops">
+<i class="bi bi-arrow-up"></i>
+</div>
     <div class="app" id="app">
 
         {% set ad = getFunction('getad') %}
@@ -176,11 +241,12 @@
         <div class="header">
             {{ include("layout/header.twig") }}
         </div>
-        
+        <div class="m-b">
         <div class="main main-container-wrapper">
             <div class="content-container">
                 {% block main_content %}{% endblock %}
             </div>
+        </div>
         </div>
         <div class="footer">
                 {{ include("layout/footer.twig") }}
@@ -368,6 +434,27 @@
             });
         });
     </script>
+    <script>
+  const backToTop = document.getElementById('tops');
+
+  // إظهار الزر عند التمرير للأسفل
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 300) {
+      backToTop.classList.add('show');
+    } else {
+      backToTop.classList.remove('show');
+    }
+  });
+
+  // عند الضغط، يرجع لأعلى الصفحة
+  backToTop.addEventListener('click', function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+</script>
+
     
 </body>
 </html>

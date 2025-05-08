@@ -20,7 +20,7 @@
 </style>
 {% endblock %}
 {% block main_content %}
-<section class="cart">
+<section class="cart container-fluid">
     {% if cart %}
         <div class="cart-content">
 
@@ -47,6 +47,11 @@
                             [item]) %}
 
                             <div class="item">
+                              <span class="remove">
+                                            <a href="{{ route('shop.checkout.cart.remove', { 'id': item.id, 'option': optionKey }) }}" onclick="removeLink(event)">
+                                                <span class="icon-close-mini"><i class="fa fa-times"></i></span>
+                                            </a>
+                                        </span>
                                 <div class="item-image">
                                     <a href="{{ route('shop.productOrCategory.index',  url_key) }}">
                                         <img src="{{ item.product.base_image_url }}" />
@@ -54,6 +59,8 @@
                                 </div>
                                 
                                 <div class="item-details">
+                               
+                                    
                                 
                                     <div class="item-title">
                                         <a href="{{ route('shop.productOrCategory.index', url_key) }}">
@@ -78,8 +85,6 @@
                                 
                                     <div class="misc">
                                         <div class="quantity control-group" class="" >
-                                            <label class="required">{{ ('shop::app.products.quantity'|trans) }}</label>
-
                                             <button type="button" class="decrease">-</button>    
                                             {% if item.show_quantity_box == true and item.type != 'customizable' and not item.child%}
                                                 <input
@@ -115,12 +120,7 @@
                                             <span class="control-error"></span>        
                                         </div>
                                     
-                                        <span class="remove">
-                                            <a href="{{ route('shop.checkout.cart.remove', { 'id': item.id, 'option': optionKey }) }}" onclick="removeLink(event)">
-                                                <span class="icon-close-mini"><i class="fa fa-times"></i></span>
-                                            </a>
-                                        </span>
-                                    
+                                       
                                         {% if authUser %}
                                             <span class="towishlist">
                                                 {% if item.parent_id | length == 0 %}
@@ -145,7 +145,7 @@
                                 
             
                                     {% if item.type == 'customizable' %}
-                                        <div class="hydrated mt-20">
+                                        <div class="hydrated mt-20 more-details">
                                             {% for itemOption in item.product.customizable %}
                                                 <div class="s-product-options-option-container" data-option-id="{{ itemOption.id }}">
                                                     <div class="s-product-options-option" data-option-type="{{ itemOption.type }}" data-option-required="true">
@@ -304,8 +304,10 @@
                     </div>
                 </form>
             {% endif %}
-
-            {% if cart %}
+            <div class="secnd-cart">
+            <div class="secnd">
+            
+              {% if cart %}
                 <div class="coupon-container">
                     <!-- Coupon Form -->
                     <div class="discount-control">
@@ -350,7 +352,7 @@
                 {% if getFunction('canPlaceOrders') %}
                     {% if (authUser.is_verified ?? -1) == 1 %}
                         {% if not cart.error %}
-                            <a href="{{ route('shop.checkout.onepage.index') }}" class="btn btn-lg btn-primary">
+                            <a href="{{ route('shop.checkout.onepage.index') }}" class="btn btn-lg btn-primary adde_cart">
                                 {{ 'shop::app.checkout.cart.proceed-to-checkout' | trans }}
                             </a>
                         {% endif %}
@@ -403,8 +405,12 @@
                     {% include 'checkout/cart/loyalty/point.twig' %}
                 </div>
             {% endif %}
+             </div>
+             </div>
 
-        </div>
+          
+
+            </div>
     
         {# {% include 'products.view.cross-sells' %} #}
             

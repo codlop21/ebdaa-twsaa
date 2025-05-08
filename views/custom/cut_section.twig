@@ -1,0 +1,14 @@
+<section class="m-t container-fluid">
+    <div class="main-cut">
+        	{% for cuat in content['settings']['cut'] %}
+				<a href="cuat['linke']">
+						<img class="cut-img" src="{{cuat['image'] }}" loading="lazy" alt="img">
+                        <div class="content-cut">
+                            <h2>{{ cuat['tite'] }}</h2>
+                            <p>{{ cuat['desciption'] }}</p>
+                        </div>
+						
+				</a>
+			{% endfor %}
+    </div>
+</section>

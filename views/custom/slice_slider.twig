@@ -1,0 +1,24 @@
+<section class="m-t  container-fluid">
+	<div class="flex-slider">
+		<div class="ListSr">
+			<div class="main-slider swiper-wrapper">
+				{% for slider in content['settings']['items1'] %}
+					<a class="slider-item swiper-slide">
+						<div class="slider-card">
+							<div class="slider-bg">
+								<img src="{{slider['photo']}}" loading="lazy" alt="img">
+							</div>
+						</div>
+					</a>
+				{% endfor %}
+			</div>
+		</div>
+		<div class="banners-slider">
+			{% for slid in content['settings']['items2'] %}
+				<a>
+					<img class="content-section-img" src="{{slid['img']}}" loading="lazy" alt="image"/>
+				</a>
+			{% endfor %}
+		</div>
+	</div>
+</section>

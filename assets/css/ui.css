@@ -699,10 +699,7 @@ textarea.control:focus-within:not([disabled]),
     padding: 12px 24px;
     font-size: 20px;
 }
-.btn.btn-black {
-    background: #000000;
-    color: #ffffff;
-}
+
 .btn.btn-dark {
     background: var(--brand);
     color: #ffffff;
@@ -751,8 +748,8 @@ textarea.control:focus-within:not([disabled]),
     position: relative;
 }
 .dropdown-list {
-    min-width: 200px;
-    box-shadow: 0 0 0 1px var(--brand-light);
+    width: max-content;
+    box-shadow: 0 0 0 1px #000000a9;
     border-radius: 0.5rem !important;
     background-color: #ffffff;
     position: absolute;
@@ -760,6 +757,7 @@ textarea.control:focus-within:not([disabled]),
     z-index: 101;
     top: 38px;
     overflow: hidden;
+    direction: rtl;
 }
 .dropdown-list .search-box {
     padding: 20px;
@@ -856,10 +854,10 @@ textarea.control:focus-within:not([disabled]),
     width: 100%;
 }
 .table table thead th {
-    font-weight: 700;
-    padding: 12px 10px;
-    background: var(--brand-light);
-    color: var(--brand);
+    font-weight: 600;
+    padding: 10px;
+    background: #e6e6e6;
+    color: #000000;
 }
 .table table tbody td {
     padding: 10px;
@@ -970,12 +968,27 @@ textarea.control:focus-within:not([disabled]),
     opacity: 0.5;
     cursor: not-allowed;
 }
+.offcanvas-body{
+    max-height: calc( 100vh - 50px );
+}
 .control-group {
     display: block;
     font-size: 15px;
     color: #333333;
     max-width: 100%;
     position: relative;
+    padding-bottom: 15px;
+}
+.account-action a{
+    background: var(--brand) !important;
+    border-radius: 8px;
+    border: 1px solid #cdcdcd !important;
+    box-shadow: unset !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    text-align: center;
+    color: #fff !important;
+    padding: 7px 40px;
 }
 .control-group label {
     display: block;
@@ -993,17 +1006,20 @@ textarea.control:focus-within:not([disabled]),
 }
 .control-group .control {
     background: #ffffff;
-    border: 1px solid var(--brand-light);
+    box-shadow: unset !important;
+    border: 1px solid #0000007e !important;
     border-radius: 8px;
     width: 100%;
-    height: 36px;
-    display: inline-block;
+    height: unset;
+    min-height: 40px;
+    display: unset;
     vertical-align: middle;
     transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 0 10px;
-    font-size: 15px;
-    margin-top: 10px;
-    margin-bottom: 5px;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 0;
+
 }
 .control-group .control:focus {
     border-color: var(--brand);

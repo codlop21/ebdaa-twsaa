@@ -1,0 +1,70 @@
+<section class="m-t container-fluid">
+	<div id="block{{ content['settings']['block_id'] }}" class="photo_proede">
+		<div class="parent-prodduct">
+			<img class="products_image" src="{{content['settings']['products_image'] }}" loading="lazy" alt="img">
+			<div class="content-prodduct">
+				<h2 class="section-title">{{content['settings']['products_title']}}</h2>
+				<a class="btn-link" href="{{content['settings']['link']}}">{{content['settings']['btn']}}</a>
+			</div>
+		</div>
+		<div id="slider{{ content['settings']['block_id'] }}" class="photo-prodduct">
+			{% for product in content['settings']['products'] %}
+				<div class="product-box">
+					<div class="product-card">
+						{% if product['new'] %}
+							<div class="sticker new">
+								{{ ('shop::app.products.new'|trans) }}
+							</div>
+						{% endif %}
+
+						<a href="/{{ product['url_key'] }}" title="{{ product['name'] }}" class="product-a">
+							<div class="product-image">
+								<img src="{{ product.product.base_image_url }}"/>
+								{% if product['promotion_title'] %}
+									<div class="card-promo">{{ product['promotion_title'] }}</div>
+								{% endif %}
+							</div>
+						</a>
+						<div class="bton-added">
+							<span class="cart-wish-wrap">
+								<form id="addToCart-{{ product.product_id }}">
+									<input type="hidden" name="_token" value="{{ csrf_token() }}">
+									<input type="hidden" name="product_id" value="{{ product.product_id }}">
+									<input type="hidden" name="quantity" value="1">
+									{% set outOfStock = getConfig('config.products.out-of-stock') == '1' %}
+
+									{% if(outOfStock and not product.saleable) %}
+										<span class="not-available">{{ ('shop::app.products.out_of_stock'|trans) }}</span>
+									{% else %}
+										<button type="button" class="btn addToCart icon-cart border-0" {{ product.saleable ? '' : 'disabled' }} data-id="{{ product.product_id }}">
+											اضافة للسلة
+										</button>
+									{% endif %}
+								</form>
+							</span>
+						</div>
+						<div class="product-information">
+							<div class="product-name">
+								<h2>{{ product['name'] }}</h2>
+							</div>
+							<div class="product-description">
+								<p>{{ product['description'] }}</p>
+							</div>
+							<div class="product-bottom-row">
+								{{ product.html_price | raw }}
+							</div>
+
+						</div>
+
+						<div class="wish-listts">
+							{% include 'products/wishlist.twig' %}
+						</div>
+
+
+					</div>
+				</div>
+
+			{% endfor %}
+		</div>
+	</div>
+</section>

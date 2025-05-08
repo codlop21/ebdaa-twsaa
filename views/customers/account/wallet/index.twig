@@ -2,7 +2,7 @@
 
 {% block title %} main {% endblock %}
 {% block main_content %}
-
+<div class="container-fluid">
 <div class="account-content">
     {% include 'customers/account/partials/sidemenu.twig' %}
     <div class="account-layout">
@@ -14,12 +14,14 @@
                 {{ ('shop::app.layouts.wallet'|trans) }}
             </span>
 
-            <div class="address-card">
+            <div class="address-card poket">
                 <div class="details">
                     <div class="account-body">
                         <div class="p-5">
                             <i class="icon-bag-dollar"></i> {{ ('shop::app.customer.account.wallet.total_money'|trans) }}:
+                            <div class="adminCustomer">
                             {{ adminCustomer.core_currency }} {{ adminCustomer.wallet }}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -79,5 +81,5 @@
         </div>
     </div>
 </div>
-
+</div>
 {% endblock %}

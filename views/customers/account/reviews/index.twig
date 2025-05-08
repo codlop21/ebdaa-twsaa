@@ -2,6 +2,8 @@
 
 {% block title %} main {% endblock %}
 {% block main_content %}
+<div class="container-fluid">
+
     <div class="account-content">
         {% include 'customers/account/partials/sidemenu.twig' %}
 
@@ -13,7 +15,7 @@
                 <span class="account-heading">{{ ('shop::app.customer.account.review.index.title'|trans) }}</span>
 
                 {% if reviews|length > 1 %}
-                    <div class="account-action">
+                    <div class="account-action deleted">
                         <a href="/customer/account/reviews/all-delete">
                             {{ 'shop::app.customer.account.wishlist.deleteall'|trans }}
                         </a>
@@ -57,7 +59,7 @@
                                     </div>
                                     
         
-                                    <div class="mt-10">
+                                    <div class="mt-10 comment-review">
                                         {{ review.comment }}
                                     </div>
                                 </div>
@@ -81,5 +83,6 @@
                 {% endif %}
             </div>
         </div>
+    </div>
     </div>
 {% endblock %}

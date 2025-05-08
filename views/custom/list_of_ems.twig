@@ -1,0 +1,23 @@
+<section class="m-t container-fluid">
+	<div class="swiper myListSr ">
+		<div class="s-slider">
+			<div class="s-slider-next s">
+				<span aria-label="Next">‹</span>
+			</div>
+			<div class="s-slider-prev s">
+				<span aria-label="Previous">›</span>
+			</div>
+		</div>
+		<div class="swiper-wrapper">
+			{% for item in content['settings']['items'] %}
+				<div class="swiper-slide">
+					<a href="/" class="banner-try ">
+						<img src="{{ item['images'] }}" data-bg="{{ item['images'] }}" loading="lazy">
+					</a>
+				</div>
+			{% endfor %}
+		</div>
+
+		<div class="swiper-pagination"></div>
+	</div>
+</section>

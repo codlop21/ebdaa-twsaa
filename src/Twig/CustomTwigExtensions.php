@@ -420,7 +420,7 @@ class CustomTwigExtensions extends AbstractExtension
                     "content" => null, 
                     "meta_description" => "ok", 
                     "meta_title" => null, 
-                    "page_title" => "Return Policy", 
+                    "page_title" => "", 
                     "meta_keywords" => "return, policy", 
                     "html_content" => '<div class="static-container">                                   <div class="mb-5">Return policy page content</div>                                   </div>', 
                     "url_key" => "return-policy", 
@@ -463,7 +463,7 @@ class CustomTwigExtensions extends AbstractExtension
                     "content" => null, 
                     "meta_description" => "", 
                     "meta_title" => "Refund policy", 
-                    "page_title" => "Refund Policy", 
+                    "page_title" => "سياسة الخصوصية  ", 
                     "meta_keywords" => "refund, policy", 
                     "html_content" => '<div class="static-container">
                                 <div class="mb-5">Refund policy page content</div>
@@ -510,7 +510,7 @@ class CustomTwigExtensions extends AbstractExtension
                     "content" => null, 
                     "meta_description" => "", 
                     "meta_title" => "Terms & Conditions", 
-                    "page_title" => "Terms & Conditions", 
+                    "page_title" => " الشروط والاحكام", 
                     "meta_keywords" => "term, conditions", 
                     "html_content" => '<div class="static-container">
                     <div class="mb-5">Terms & conditions page content</div>
@@ -557,7 +557,7 @@ class CustomTwigExtensions extends AbstractExtension
                     "content" => null, 
                     "meta_description" => "", 
                     "meta_title" => "Terms of use", 
-                    "page_title" => "Terms of use", 
+                    "page_title" => " شروط الاستخدام ", 
                     "meta_keywords" => "term, use", 
                     "html_content" => '<div class="static-container">
                     <div class="mb-5">Terms of use page content</div>
@@ -922,7 +922,7 @@ class CustomTwigExtensions extends AbstractExtension
                     "content" => null, 
                     "meta_description" => "asdf", 
                     "meta_title" => "asdf", 
-                    "page_title" => "asdf", 
+                    "page_title" => "خدمة العملاء", 
                     "meta_keywords" => null, 
                     "html_content" => "<p>asdf</p>", 
                     "url_key" => "asdf", 

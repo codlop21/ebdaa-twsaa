@@ -1,0 +1,20 @@
+<section class="m-t container-fluid">
+	<h2 class="section-title">{{content['settings']['title']}}</h2>
+	<div class="common-questions">
+		<div id="accordion-box" class="accordion-box">
+			{% for item in content['settings']['items'] %}
+				<div class="item-box"onclick="this.classList.toggle('active')">
+					<div class="header-accordion">
+						<span>{{item['number']}}</span>
+						<h2 class="">{{item['question']}}</h2>
+						<i class="bi bi-chevron-down"></i>
+					</div>
+					<div class="body-accordion" >{{item['answer']}}</div>
+				</div>
+			{% endfor %}
+		</div>
+		<div class="img-box">
+			<img src="{{content['settings']['image']}}" loading="lazy" alt="img">
+		</div>
+	</div>
+</section>

@@ -1,0 +1,57 @@
+
+
+<section class="sec-1" style="">
+	<div id="block{{ content['settings']['block_id'] }}">
+		{% if content['settings']['products_title'] %}
+			<div class="product-group">
+				<h2 class=" section-title sec-title">{{ content['settings']['products_title'] }}</h2>
+			</div>
+			
+		{% endif %}
+
+
+		<div id="slider{{ content['settings']['block_id'] }}" class="carousel producted">
+			{% for product in content['settings']['products'] %}
+				<div class="product-box ">
+					<div class="product-card">
+						{% if product['new'] %}
+							<div class="sticker new">
+								{{ ('shop::app.products.new'|trans) }}
+							</div>
+						{% endif %}
+						<div class="content-slides">
+							<a href="/{{ product['url_key'] }}" title="{{ product['name'] }}" class="product-a">
+								<div class="product-image">
+									<img src="{{ product.product.base_image_url }}"/>
+									{% if product['promotion_title'] %}
+										<div class="card-promo">{{ product['promotion_title'] }}</div>
+									{% endif %}
+								</div>
+
+							</a>
+							<div class="product-information">
+								<a href="/{{ product['url_key'] }}" class="product-name">
+									<h2>{{ product['name'] }}</h2>
+								</a>
+								<div class="product-description">
+									<p>{{ product['description'] }}</p>
+								</div>
+								<div class="product-bottom-row">
+									{{ product.html_price | raw }}
+								</div>
+								<span class="cart-wish-wrap">
+									<a href="/{{ product['url_key'] }}" data-id="{{ product.product_id }}">
+										  مشاهدة تفاصيل المنتج  
+									</a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			{% endfor %}
+			
+		</div>
+
+	</div>
+</section>

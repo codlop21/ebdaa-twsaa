@@ -3,8 +3,8 @@
 function auth() {
     return [
         "id" => 1, 
-        "first_name" => "Demo", 
-        "last_name" => "User", 
+        "first_name" => "smart", 
+        "last_name" => "codlop", 
         "gender" => "Male", 
         "city" => "", 
         "country" => "SA", 
@@ -123,39 +123,217 @@ function homePage() {
     $context['authUser'] = auth();
     $context['homeContent'] = [
         [
-              "slug" => "fixed_products", 
-              "sort" => null, 
-              "block_id" => 155712, 
-              "settings" => [
-                 "list_type" => "chosen_products", 
-                 "category_id" => "2120", 
-                 "sku_text" => "N2-4-5-3,sku-ABC,", 
-                 "limit" => "28", 
-                 "type" => "slider", 
-                 "products_title" => "المنتجات", 
-                 "link" => "/تخفيضات", 
-                 "products" => [
+            "slug" => "sliders", 
+            "sort" => null, 
+            "block_id" => 558899, 
+            "settings" => [
+               "list_type" => "sliders", 
+               "category_id" => "2020", 
+               "sku_text" => "N2-4-5-3", 
+               "limit" => "8", 
+               "type" => "slider", 
+               "products_title" => "  المنتجات الاكثر مبيعا ", 
+               "products_photo" => "  https://codlop.sa/salla_media/4.png ", 
+               "link" => "/تخفيضات", 
+               "products" => [
+                [
+                    "id" => 48111, 
+                    "product_id" => 24300, 
+                    "parent_id" => null, 
+                    "sku" => "L2-2-4-4-M5AZN", 
+                    "name" => "موبايل ابل ايفون 14 برو ماكس (256 جيجابايت) - ارجواني داكن - شريحتين اتصال", 
+                    "url_key" => "2g663yz", 
+                    "description" => " شاشة سوبر ريتينا XDR مقاس 6.1 بوصة ",
+                    "saleable" => 1, 
+                    "html_price" => "<span class='price'> 500 ر.س </span>", 
+                    "product" => [
+                        "base_image_url" => "https://cdn.salla.sa/KjyBep/JuK7yjFKsBDNkeKmQ43uKGKyn50nHsV01zKqZxKF.png" 
+                    ] 
+                ], 
+                [
+                    "id" => 48163, 
+                    "product_id" => 24326, 
+                    "parent_id" => null, 
+                    "sku" => "K3-9-4-6", 
+                    "name" => "سامسونج جوال جالكسي اس 24 الترا، هاتف ذكي بنظام اندرويد بالذكاء الاصطناعي، ذاكرة تخزين 256GB، ذاكرة RAM 12GB، كاميرا 200MP، قلم S، عمر بطارية طويل - اسود تيتانيوم",
+                    "description" => "ضمان لمدة سنة", 
+                    "url_key" => "2g663yz", 
+                    "saleable" => 1, 
+                    "html_price" => "<span class='price'> 200 ر.س </span>", 
+                    "product" => [
+                        "base_image_url" => "https://cdn.salla.sa/KjyBep/wUOqu5fP4CZgVQbwIpY5E2wYNFfBhYRA61QGvKbC.png" 
+                    ] 
+                ], 
+                [
+                    "id" => 48149, 
+                    "product_id" => 24319, 
+                    "parent_id" => null, 
+                    "sku" => "K3-9-5-4", 
+                    "name" => "كمبيوتر تاور أوبتيبليكس بمعالج كور i5 وذاكرة رام سعة 4 جيجابايت ومحرك أقراص صلبة سعة 1 تيرابايت وبطاقة رسومات مدمجة أسود/فضي",
+                    "description" => "كمبيوتر تاور أوبتيبليكس بمعالج كور i5 وذاكرة رام سعة 4 جيجابايت ومحرك أقراص صلبة سعة 1 تيرابايت وبطاقة رسومات مدمجة أسود/فضي", 
+                    "url_key" => "2g663yz", 
+                    "saleable" => 1, 
+                    "html_price" => "<span class='price'> 8700 ر.س </span>", 
+                    "product" => [
+                        "base_image_url" => "https://cdn.salla.sa/KjyBep/2J2gsOdqiTu9AWw5kfuXEeAVhadqK71XfoP6mEZD.png" 
+                    ] 
+                ], 
+                [
+                    "id" => 48123, 
+                    "product_id" => 24306, 
+                    "parent_id" => null, 
+                    "sku" => "L2-2-3-2-M5AZN", 
+                    "url_key" => "2g663yz", 
+                    "name" => "مصباح فلاش TTL لاسلكي محمول مزود برأس فلاش قابل لإعادة الشحن",
+                    "description" => " ضمان لمدة سنة ", 
+                    "saleable" => 1, 
+                    "html_price" => "<span class='price'> 1500 ر.س </span>", 
+                    "product" => [
+                        "base_image_url" => "https://cdn.salla.sa/KjyBep/rylNPkLkZf2XB205WISYyFbhIn1sgsKFuNi9nyJ3.png" 
+                    ] 
+                ]
+                ] 
+            ] 
+        ], 
+        [
+            "slug" => "ticker",
+            "sort" => null,
+            "block_id" => 303030,
+            "limit" => "10",
+            "settings" => [
+            "items" => [
+            [
+            "image" => "https://media.zid.store/07d02681-b3c7-4603-b219-599dc6c7a256/f82b7dd0-4d4e-4f72-ad60-4e4476ba02a7.png",
+            "topic" => "امكانية الدفع عبر منصة مدي",
+            ],
+            [
+            "image" => "https://media.zid.store/07d02681-b3c7-4603-b219-599dc6c7a256/7d59eef8-aec1-4331-8dd7-772305bf413b.png",
+            "topic" => " خصومات تصل الي 50% ",
+            ],
+            [
+                "image" => "https://media.zid.store/07d02681-b3c7-4603-b219-599dc6c7a256/7d59eef8-aec1-4331-8dd7-772305bf413b.png",
+                "topic" => " خصم 30% على المنتجات لفترة محدودة ",
+            ]
+            ]
+            ]
+        ],
+        [
+            "slug" => "list_of_ems", 
+            "sort" => null, 
+            "block_id" => 252525, 
+            "block_title" => "اسليدر البنرات", 
+            "settings" => [
+                "items" => [
                     [
-                       "id" => 106891, 
-                       "product_id" => 55668, 
-                       "sku" => "2G663YZ", 
-                       "name" => "configurable", 
-                       "url_key" => "2g663yz", 
-                       "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
-                       "product" => [
-                          "base_image_url" => "https://cdn.twsaa.com/product/55668/a16626c7-40a0-42f9-954f-5e1b25159fc1.png" 
-                       ] 
+                        "images" => "https://cdn.salla.sa/form-builder/H79udDx5LSf6T2OfrmqSutFPsPCrwhFXnHWrvPGb.jpg", 
+                        "link_type" => "category", 
+                        "category_id" => "2122", 
+                        "link" => "/المكياج" 
+                    ], 
+                    [
+                        "images" => "https://cdn.salla.sa/form-builder/wY7bgJaWQJ1ezB7Qzt6YozYjjWf6glKSBIWugChq.jpg", 
+                        "link_type" => "category", 
+                        "category_id" => "2122", 
+                        "link" => "/المكياج" 
+                    ], 
+                    [
+                        "images" => "https://cdn.salla.sa/form-builder/Q3EWmOmu0FiJq8pbsF5E8ZxpK1znur1EJoV10NRe.jpg", 
+                        "link_type" => "category", 
+                        "category_id" => "2122", 
+                        "link" => "/المكياج" 
+                    ], 
+                ], 
+                "title" => " اسليدر البنرات ", 
+                "type" => "slider" 
+            ] 
+        ],
+        [
+            "slug" => "gallry",
+            "sort" => null,
+            "block_id" => 205205,
+            "block_title" => " تسوق عبر الأقسام المميزة ",
+            "limit" => "10",
+            "settings" => [
+            "items" => [
+            [
+            "glary" => "https://cdn.salla.sa/form-builder/gdV4cyi9Ey9jhl65WFpbaqJqJKXINGjKiUnA3UBX.jpg",
+            "title" => "اجهزة لابتوب",
+            "explain" => " خصم لفترة محدودة"
+            ],
+            [
+            "glary" => "https://cdn.salla.sa/form-builder/QUMJAHkmjUzi7Va5ioC5yQaJAjcYjtzyj6Py5QkU.jpg",
+            "title" => " السماعات ",
+            "explain" => " خصم لفترة محدودة"
+            ],
+            [
+            "glary" => "https://cdn.salla.sa/form-builder/fgtDyU32jia6AIYmVFhfC8lMHVNYYa4JKxOXXkif.jpg",
+            "title" => " شاشات الكمبيوتر ",
+            "explain" => " خصم لفترة محدودة"
+            ],
+            [
+            "glary" => "https://cdn.salla.sa/form-builder/eSKSx9LFHdlrqYJd6FmvRWTAjh9s3sNn2IvbZJoq.jpg",
+             "title" => " الجوالات ",
+             "explain" => " خصم لفترة محدودة"
+            ],
+            [
+            "glary" => "https://cdn.salla.sa/form-builder/ACrnuPwhEWOfomYPVvnEWEvknAmxYGPnIxJIOaGN.jpg",
+             "title" => " الساعات الذكية ",
+             "explain" => " خصم لفترة محدودة"
+            ],
+            [
+            "glary" => "https://cdn.salla.sa/form-builder/K05U8ozQPis4hnTARhLMk1I3LXmVPLu52Fpp6uBZ.jpg",
+             "title" => " اجهزة العاب الفيديو ",
+             "explain" => " خصم لفترة محدودة"
+            ]
+            ]
+            ]
+        ],
+        
+        [
+            "slug" => "wide_banner", 
+            "sort" => null, 
+            "block_id" => 295765, 
+            "settings" => [
+                "image" => "https://cdn.salla.sa/form-builder/L0K3wPSk5aVyP0lwtyIuByGkJX9Tflkjt5J7Bg0P.gif", 
+            ] 
+        ],
+        [
+            "slug" => "offer_product", 
+            "sort" => null, 
+            "block_id" => 506070, 
+            "settings" => [
+                "list_type" => "offers", 
+                "category_id" => "2120", 
+                "sku_text" => "N2-4-5-3,sku-ABC,", 
+                "limit" => "28", 
+                "type" => "slider", 
+                "block_title" => " ⚡ عروض سريعة قاربت علي الانتهاء ", 
+                "products_title" => "المنتجات", 
+                "link" => "/تخفيضات", 
+                "products" => [
+                    [
+                    "id" => 106891, 
+                    "product_id" => 55668, 
+                    "sku" => "2G663YZ", 
+                    "name" => "ايفون 13 برو",
+                    "description" => "شاشة سوبر ريتينا XDR مقاس 6.1 بوصة", 
+                    "url_key" => "2g663yz", 
+                    "html_price" => "<span class='price'>‏1500 ر.س ‏</span>", 
+                    "product" => [
+                        "base_image_url" => "https://cdn.salla.sa/KjyBep/1591533d-83d4-4ff8-a5fa-5cc656ccf43d-422.65193370166x500-jnVcZGrF9CDVllf0bPmTP9JZmWPcHoBCbAXs3DA2.png" 
+                    ] 
                     ], 
                     [
                         "id" => 106919, 
                         "product_id" => 55682, 
                         "parent_id" => null, 
                         "sku" => "customizable", 
-                        "name" => "customizable", 
-                        "url_key" => "customizable", 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
+                        "name" => "ساعه ذكيه X8+ Plus Ultra الاصدار الثامن شاشه 2.08 بوصه IPS - بلوتوث - NFC شاحن لاسلكى -ذهبى", 
+                        "description" => "سوار رياضي اسود مطاط - عادي",
+                        "url_key" => "2g663yz",  
+                        "html_price" => "<span class='price'>‏1800 ر.س ‏</span>", 
                         "product" => [
-                        "base_image_url" => "https://cdn.twsaa.com/product/55682/aa97d069-649f-41d3-bf95-a66addfc903c.jpg" 
+                        "base_image_url" => "https://cdn.salla.sa/KjyBep/wnOYsdNOJtiNjBe6CiJ9qVgUnXYkCHN8c2AAWFxL.png" 
                         ] 
                     ], 
                     [
@@ -163,164 +341,64 @@ function homePage() {
                         "product_id" => 56116, 
                         "parent_id" => null, 
                         "sku" => "N2-4-5-3", 
-                        "name" => "simple", 
-                        "url_key" => "n2-4-5-3", 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
+                        "name" => "شاحن محول التيار المتردد للكمبيوتر المحمول ديل لاتيتود E6500/E6410/E6510 أسود", 
+                        "description" => "ضمان لمدة سنة",
+                        "url_key" => "2g663yz", 
+                        "html_price" => "<span class='price'>‏450 ر.س ‏</span>",
                         "product" => [
-                            "base_image_url" => "https://cdn.twsaa.com/product/56116/0592b342-84cb-44f6-8d29-1328e332c9fd.png" 
+                            "base_image_url" => "https://cdn.salla.sa/KjyBep/P8lHSk6qkoTYbdw2nnlLIHiSGsiTieobKwU0sZUG.png" 
                         ] 
-                    ], 
+                    ],
+                    [
+                        "id" => 106919, 
+                        "product_id" => 55682, 
+                        "parent_id" => null, 
+                        "sku" => "customizable", 
+                        "name" => "تلفزيون 4K الترا HD مقاس 55 بوصة من سلسلة UQ7500 بشاشة سينما وتقنية 4K اكتيف وتقنية HDR وويب او اس والذكاء الاصطناعي ثينكيو من ال جي، 55uq75006l، بلوتوث، واي فاي، ايثرنت، HDMI، أسود", 
+                        "description" => "ضمان لمدة سنة",
+                        "url_key" => "2g663yz", 
+                        "html_price" => "<span class='price'>‏500 ر.س ‏</span>",
+                        "product" => [
+                        "base_image_url" => "https://cdn.salla.sa/KjyBep/a05cc604-dc55-43e3-b96e-fc2970f8f8f9-500x318.75-R7E0GFAX13J3ZxXgXcWEnUBeHLYQfJHwEjuJPLOx.png" 
+                        ] 
+                    ],  
                     [
                         "id" => 107667, 
                         "product_id" => 56118, 
                         "parent_id" => null, 
                         "sku" => "OUU1RO7", 
-                        "name" => "downloadable", 
-                        "url_key" => "ouu1ro7", 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
+                        "name" => "سماعة Q30 فوق الأذن ساوند كور من انكر لايف Q30 هايبرد اكتيف بخاصية الغاء الضوضاء واوضاع متعددة وصوت عالي الدقة ووقت تشغيل يدوم لمدة 40 ساعة وخاصية الشحن السريع، اذن بلوتوث ملائمة للسفر، اسود", 
+                        "description" => " سماعة ذات صوت عالي الدقة ",
+                        "url_key" => "2g663yz", 
+                        "html_price" => "<span class='price'>‏300 ر.س ‏</span>", 
                         "product" => [
-                        "base_image_url" => "https://cdn.twsaa.com/product/56118/medium-68fc0441-483a-4167-a993-22d76d82b494.jpg" 
+                        "base_image_url" => "https://cdn.salla.sa/KjyBep/bP4jjekEMZv8TQQA1iqCpDFQWC35S7z2wOKUgo2M.png" 
                         ] 
-                    ], 
+                    ],
+                    [
+                        "id" => 106919, 
+                        "product_id" => 55682, 
+                        "parent_id" => null, 
+                        "sku" => "customizable", 
+                        "name" => "لاب توب ألعاب اتش بي بافيليون 15-dk جيل 11 انتل كور i7-11370H/ذاكرة رام 16GB/هارد 1TB HDD+ هارد 456GB SSD/انفيديا جي فورس RTX 3050 4GB GDDR6 رسومات 15.6 بوصة FHD IPS 144 Hz و300 nits، ويندوز 10، أسود", 
+                        "description" => " لاب توب للألعاب اتش بي بافيليون ",
+                        "url_key" => "2g663yz", 
+                        "html_price" => "<span class='price'>‏1300 ر.س ‏</span>",
+                        "product" => [
+                        "base_image_url" => "https://cdn.salla.sa/KjyBep/vP5SiNJU5CzsY6wFPQEtXsAorVTpaPbbGd4kbvOb.png" 
+                        ] 
+                    ],  
                     [
                         "id" => 107859, 
                         "product_id" => 56219, 
                         "parent_id" => null, 
                         "sku" => "K6P8ATO", 
-                        "name" => "digital", 
-                        "url_key" => "k6p8ato", 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
+                        "name" => "ساعة ذكية اكس 8 الترا بشاشة عرض اكبر وسطوع، مقاومة للماء بعمق مع مساعد تحكم بالفيديو وشحن لاسلكي سريع، شاشة اكبر", 
+                        "description" => "سوار رياضي اسود مطاط - عادي",
+                        "url_key" => "2g663yz",  
+                        "html_price" => "<span class='price'>‏1300 ر.س ‏</span>",
                         "product" => [
-                            "base_image_url" => "https://cdn.twsaa.com/product/56219/large-b5a93051-3cc1-4d62-8b7f-2cd7897b9581.jpg" 
-                        ] 
-                    ] 
-                 ] 
-              ] 
-           ], 
-        [
-            "slug" => "wide_banner", 
-            "sort" => null, 
-            "block_id" => 295765, 
-            "settings" => [
-                "image" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png", 
-            ] 
-        ], 
-        [
-            "slug" => "fixed_products", 
-            "sort" => null, 
-            "block_id" => 634494, 
-            "settings" => [
-                "list_type" => "category", 
-                "category_id" => "2122", 
-                "limit" => "8", 
-                "type" => "list", 
-                "products_title" => "Makeup", 
-                "link" => "/المكياج", 
-                "products" => 
-                [
-                    [
-                        "id" => 48111, 
-                        "product_id" => 24300, 
-                        "parent_id" => null, 
-                        "sku" => "L2-2-4-4-M5AZN", 
-                        "name" => "يولاند بيوتي - احمر خدود 24", 
-                        "url_key" => "l2-2-4-4-m5azn", 
-
-                        "saleable" => 1, 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
-                        "product" => [
-                            "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
-                        ] 
-                    ], 
-                    [
-                        "id" => 48163, 
-                        "product_id" => 24326, 
-                        "parent_id" => null, 
-                        "sku" => "K3-9-4-6", 
-                        "name" => "تكنيك - باليت ظلال عيون بانوفي 7 الوان", 
-                        "url_key" => "k3-9-4-6", 
-                        "saleable" => 1, 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
-                        "product" => [
-                            "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
-                        ] 
-                    ], 
-                    [
-                        "id" => 48149, 
-                        "product_id" => 24319, 
-                        "parent_id" => null, 
-                        "sku" => "K3-9-5-4", 
-                        "name" => "تكنيك - باليت ظلال عيون بوجي 15 لون  30 جم", 
-                        "url_key" => "k3-9-5-4", 
-                        "saleable" => 1, 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
-                        "product" => [
-                            "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
-                        ] 
-                    ], 
-                    [
-                        "id" => 48123, 
-                        "product_id" => 24306, 
-                        "parent_id" => null, 
-                        "sku" => "L2-2-3-2-M5AZN", 
-                        "url_key" => "L2-2-3-2-M5AZN", 
-                        "name" => "يولاند بيوتي - قلم كحل كريمي اسود 030 - YB-35", 
-                        "saleable" => 1, 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
-                        "product" => [
-                            "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
-                        ] 
-                    ], 
-                    [
-                        "id" => 48049, 
-                        "product_id" => 24269, 
-                        "parent_id" => null, 
-                        "sku" => "A2 5-3-7", 
-                        "name" => "رفليوشن - باليت ظلال العيون فيلفت روز", 
-                        "url_key" => "a2-5-3-7", 
-                        "saleable" => 1, 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
-                        "product" => [
-                            "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
-                        ] 
-                    ], 
-                    [
-                        "id" => 48155, 
-                        "product_id" => 24322, 
-                        "parent_id" => null, 
-                        "sku" => "K3-9-5-1", 
-                        "name" => "تكنيك - باليت ظلال عيون بلوبيري بي 7 الوان", 
-                        "url_key" => "k3-9-5-1", 
-                        "saleable" => 1, 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
-                        "product" => [
-                            "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
-                        ] 
-                    ], 
-                    [
-                        "id" => 48133, 
-                        "product_id" => 24311, 
-                        "parent_id" => null, 
-                        "sku" => "L2-2-1-3-M5AZN", 
-                        "name" => "تكنيك - باليت ظلال عيون اكسبوسد 16 لون 29.6 جم", 
-                        "url_key" => "l2-2-1-3-m5azn", 
-                        "saleable" => 1, 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
-                        "product" => [
-                            "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
-                        ] 
-                    ], 
-                    [
-                        "id" => 48131, 
-                        "product_id" => 24310, 
-                        "parent_id" => null, 
-                        "sku" => "L2-2-1-4-M5AZN", 
-                        "name" => "تكنيك - باليت ظلال عيون لندن 35 لون 42 جم", 
-                        "url_key" => "l2-2-1-4-m5azn",                                                                                 
-                        "saleable" => 1, 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
-                        "product" => [
-                            "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
+                            "base_image_url" => "https://cdn.salla.sa/KjyBep/d92hnm1zU7OZz2PkEfgO3NpR1L25YqnV4GsoJvaB.png" 
                         ] 
                     ] 
                 ] 
@@ -333,38 +411,179 @@ function homePage() {
             "settings" => [
                 "items" => [
                     [
-                        "image" => "https://cdn.twsaa.com/home/23/27a0a324-e308-440e-a05f-64690299b948.png", 
-                        "name" => "أحمر الشفاه", 
+                        "image" => "https://cdn.salla.sa/form-builder/fr6PgdEOjTxVCbK3VFJDlDqcDLVCz4lL2iNPa6Wr.png", 
+                        "name" => "كيبوردات وماوسات", 
                         "link_type" => "category", 
                         "category_id" => "2122", 
                         "link" => "/المكياج" 
                     ], 
                     [
-                        "image" => "https://cdn.twsaa.com/home/23/6f09f49f-e2f6-4b86-86aa-68ca55595d1b.png", 
-                        "name" => "أقلام الكحل", 
+                        "image" => "https://cdn.salla.sa/form-builder/oSBOumacGq8IESXmmyAh8Ka1BTTPmNWiLCCeq9OO.png", 
+                        "name" => " أجهزة الشبكات ", 
                         "link_type" => "category", 
                         "category_id" => "2122", 
                         "link" => "/المكياج" 
                     ], 
                     [
-                        "image" => "https://cdn.twsaa.com/home/23/2c1c0a95-c1cc-4918-b56f-f8ddf479032d.png", 
-                        "name" => "كونسيلر", 
+                        "image" => "https://cdn.salla.sa/form-builder/NpM60Rffw8RSX3DU6icvwp1SaV4tSMpWGxgYCVC4.png", 
+                        "name" => " العاب الفديو ", 
+                        "link_type" => "category", 
+                        "category_id" => "2122", 
+                        "link" => "/تخفيضات" 
+                    ], 
+                    [
+                        "image" => "https://cdn.salla.sa/form-builder/c0szGF0HtVYXiarNU3cj3yJX5rwaaS7LqIytaMGn.png", 
+                        "name" => "الجوالات", 
                         "link_type" => "category", 
                         "category_id" => "2122", 
                         "link" => "/المكياج" 
                     ], 
                     [
-                        "image" => "https://cdn.twsaa.com/home/23/d86d7b8a-2d4b-4e0f-95a6-5b2dc607ca70.png", 
-                        "name" => "ظلال عيون", 
+                        "image" => "https://cdn.salla.sa/form-builder/kZ3jSOplJUdOdCQSL1BmtRwz0y2M2Y7VHWGV2VID.png", 
+                        "name" => " الكاميرات ", 
                         "link_type" => "category", 
                         "category_id" => "2122", 
                         "link" => "/المكياج" 
-                    ] 
+                    ], 
+                    [
+                        "image" => "https://cdn.salla.sa/form-builder/WWBZNOiPQSRYgJ9xkV3105pC5EdxdowDMfHvCdR1.png", 
+                        "name" => " الشاشات", 
+                        "link_type" => "category", 
+                        "category_id" => "2122", 
+                        "link" => "/المكياج" 
+                    ],
+                    [
+                        "image" => "https://cdn.salla.sa/form-builder/5XGfk8dm0viIQupJ57PohDQfLV1eRcKlD4Kpz9uh.png", 
+                        "name" => " السماعات ", 
+                        "link_type" => "category", 
+                        "category_id" => "2122", 
+                        "link" => "/المكياج" 
+                    ],
+                    [
+                        "image" => "https://cdn.salla.sa/form-builder/vAZW0TctNTsXkqbCgXd1sH6iZdPywvhJRqMPZrMD.png", 
+                        "name" => " الساعات ", 
+                        "link_type" => "category", 
+                        "category_id" => "2122", 
+                        "link" => "/المكياج" 
+                    ],
+                    [
+                        "image" => "https://cdn.salla.sa/form-builder/enzfWltMmqPTYpbzA7EXjQsiqclCBNrJZR5gZkd2.png", 
+                        "name" => " اللابتوبات  ", 
+                        "link_type" => "category", 
+                        "category_id" => "2122", 
+                        "link" => "/المكياج" 
+                    ]
                 ], 
-                "title" => "", 
+                "title" => "  تسوق حسب الفئات ", 
                 "type" => "slider" 
             ] 
-        ], 
+        ],      
+        [
+            "slug" => "fixed_products", 
+            "sort" => null, 
+            "block_id" => 155712, 
+            "settings" => [
+                "list_type" => "chosen_products", 
+                "category_id" => "2120", 
+                "sku_text" => "N2-4-5-3,sku-ABC,", 
+                "limit" => "28", 
+                "type" => "slider", 
+                "products_title" => "⭐ المنتجات المميزة", 
+                "link" => "/تخفيضات", 
+                "products" => [
+                    [
+                    "id" => 106891, 
+                    "product_id" => 55668, 
+                    "sku" => "2G663YZ", 
+                    "name" => "ايفون 13 برو",
+                    "description" => "شاشة سوبر ريتينا XDR مقاس 6.1 بوصة", 
+                    "url_key" => "2g663yz", 
+                    "html_price" => "<span class='price'>‏1500 ر.س ‏</span>", 
+                    "product" => [
+                        "base_image_url" => "https://cdn.salla.sa/KjyBep/1591533d-83d4-4ff8-a5fa-5cc656ccf43d-422.65193370166x500-jnVcZGrF9CDVllf0bPmTP9JZmWPcHoBCbAXs3DA2.png" 
+                    ] 
+                    ], 
+                    [
+                        "id" => 106919, 
+                        "product_id" => 55682, 
+                        "parent_id" => null, 
+                        "sku" => "customizable", 
+                        "name" => "ساعه ذكيه X8+ Plus Ultra الاصدار الثامن شاشه 2.08 بوصه IPS - بلوتوث - NFC شاحن لاسلكى -ذهبى", 
+                        "description" => "سوار رياضي اسود مطاط - عادي",
+                        "url_key" => "2g663yz", 
+                        "html_price" => "<span class='price'>‏1800 ر.س ‏</span>", 
+                        "product" => [
+                        "base_image_url" => "https://cdn.salla.sa/KjyBep/wnOYsdNOJtiNjBe6CiJ9qVgUnXYkCHN8c2AAWFxL.png" 
+                        ] 
+                    ], 
+                    [
+                        "id" => 107663, 
+                        "product_id" => 56116, 
+                        "parent_id" => null, 
+                        "sku" => "N2-4-5-3", 
+                        "name" => "شاحن محول التيار المتردد للكمبيوتر المحمول ديل لاتيتود E6500/E6410/E6510 أسود", 
+                        "description" => "ضمان لمدة سنة",
+                        "url_key" => "2g663yz",
+                        "html_price" => "<span class='price'>‏450 ر.س ‏</span>",
+                        "product" => [
+                            "base_image_url" => "https://cdn.salla.sa/KjyBep/P8lHSk6qkoTYbdw2nnlLIHiSGsiTieobKwU0sZUG.png" 
+                        ] 
+                    ],
+                    [
+                        "id" => 106919, 
+                        "product_id" => 55682, 
+                        "parent_id" => null, 
+                        "sku" => "customizable", 
+                        "name" => "تلفزيون 4K الترا HD مقاس 55 بوصة من سلسلة UQ7500 بشاشة سينما وتقنية 4K اكتيف وتقنية HDR وويب او اس والذكاء الاصطناعي ثينكيو من ال جي، 55uq75006l، بلوتوث، واي فاي، ايثرنت، HDMI، أسود", 
+                        "description" => "ضمان لمدة سنة",
+                        "url_key" => "2g663yz", 
+                        "html_price" => "<span class='price'>‏500 ر.س ‏</span>",
+                        "product" => [
+                        "base_image_url" => "https://cdn.salla.sa/KjyBep/a05cc604-dc55-43e3-b96e-fc2970f8f8f9-500x318.75-R7E0GFAX13J3ZxXgXcWEnUBeHLYQfJHwEjuJPLOx.png" 
+                        ] 
+                    ],  
+                    [
+                        "id" => 107667, 
+                        "product_id" => 56118, 
+                        "parent_id" => null, 
+                        "sku" => "OUU1RO7", 
+                        "name" => "سماعة Q30 فوق الأذن ساوند كور من انكر لايف Q30 هايبرد اكتيف بخاصية الغاء الضوضاء واوضاع متعددة وصوت عالي الدقة ووقت تشغيل يدوم لمدة 40 ساعة وخاصية الشحن السريع، اذن بلوتوث ملائمة للسفر، اسود", 
+                        "description" => " سماعة ذات صوت عالي الدقة ",
+                        "url_key" => "2g663yz",
+                        "html_price" => "<span class='price'>‏300 ر.س ‏</span>", 
+                        "product" => [
+                        "base_image_url" => "https://cdn.salla.sa/KjyBep/bP4jjekEMZv8TQQA1iqCpDFQWC35S7z2wOKUgo2M.png" 
+                        ] 
+                    ],
+                    [
+                        "id" => 106919, 
+                        "product_id" => 55682, 
+                        "parent_id" => null, 
+                        "sku" => "customizable", 
+                        "name" => "لاب توب ألعاب اتش بي بافيليون 15-dk جيل 11 انتل كور i7-11370H/ذاكرة رام 16GB/هارد 1TB HDD+ هارد 456GB SSD/انفيديا جي فورس RTX 3050 4GB GDDR6 رسومات 15.6 بوصة FHD IPS 144 Hz و300 nits، ويندوز 10، أسود", 
+                        "description" => " لاب توب للألعاب اتش بي بافيليون ",
+                        "url_key" => "2g663yz", 
+                        "html_price" => "<span class='price'>‏1300 ر.س ‏</span>",
+                        "product" => [
+                        "base_image_url" => "https://cdn.salla.sa/KjyBep/vP5SiNJU5CzsY6wFPQEtXsAorVTpaPbbGd4kbvOb.png" 
+                        ] 
+                    ],  
+                    [
+                        "id" => 107859, 
+                        "product_id" => 56219, 
+                        "parent_id" => null, 
+                        "sku" => "K6P8ATO", 
+                        "name" => "ساعة ذكية اكس 8 الترا بشاشة عرض اكبر وسطوع، مقاومة للماء بعمق مع مساعد تحكم بالفيديو وشحن لاسلكي سريع، شاشة اكبر", 
+                        "description" => "سوار رياضي اسود مطاط - عادي",
+                        "url_key" => "2g663yz", 
+                        "html_price" => "<span class='price'>‏1300 ر.س ‏</span>",
+                        "product" => [
+                            "base_image_url" => "https://cdn.salla.sa/KjyBep/d92hnm1zU7OZz2PkEfgO3NpR1L25YqnV4GsoJvaB.png" 
+                        ] 
+                    ] 
+                ] 
+            ] 
+        ],
         [
             "slug" => "list_of_items", 
             "sort" => null, 
@@ -372,14 +591,14 @@ function homePage() {
             "settings" => [
             "items" => [
                 [
-                    "image" => "https://cdn.twsaa.com/home/23/b8c2b86d-f1df-4ffa-9acc-46257a9ec848.png", 
+                    "image" => "https://cdn.salla.sa/form-builder/h96ZHyaTTNOFpaVswvSAfGf2uT18Bos2lhMfexFP.jpg", 
                     "name" => "", 
                     "link_type" => "category", 
                     "category_id" => "2121", 
                     "link" => "/العناية" 
                 ], 
                 [
-                    "image" => "https://cdn.twsaa.com/home/23/7718c30c-e8e6-4afc-baa6-4e3d32374ec2.png", 
+                    "image" => "https://cdn.salla.sa/form-builder/RdqW0R4MKs4cgtWD0WW2HHBYBOvL47yMgMY1ZOHC.jpg", 
                     "name" => "", 
                     "link_type" => "category", 
                     "category_id" => "2175", 
@@ -388,390 +607,458 @@ function homePage() {
             ], 
             "title" => "" 
             ] 
-        ], 
+        ],  
         [
-            "slug" => "fixed_products", 
+            "slug" => "photo_ptoduct", 
             "sort" => null, 
-            "block_id" => 518164, 
+            "block_id" => 155712, 
             "settings" => [
-                "list_type" => "category", 
-                "category_id" => "2175", 
-                "limit" => "12", 
-                "type" => "list", 
-                "link" => "/منتجات-يوسرين", 
+                "list_type" => "chosen", 
+                "category_id" => "2120", 
+                "sku_text" => "N2-4-5-3,sku-ABC,", 
+                "limit" => "28", 
+                "type" => "slider", 
+                "products_title" => "⭐ الجولات  ", 
+                "products_image" => "https://cdn.salla.sa/form-builder/89tREB2rm4hB4Evkqcce0UuKOguQJb1XneRF2E9G.jpg", 
+                "btn" => "تسوق الان", 
+                "link" => "/تخفيضات", 
                 "products" => [
                     [
-                        "id" => 48755, 
-                        "product_id" => 24624, 
+                    "id" => 106891, 
+                    "product_id" => 55668, 
+                    "sku" => "2G663YZ", 
+                    "name" => "ايفون 13 برو",
+                    "description" => "شاشة سوبر ريتينا XDR مقاس 6.1 بوصة", 
+                    "url_key" => "2g663yz", 
+                    "html_price" => "<span class='price'>‏1500 ر.س ‏</span>", 
+                    "product" => [
+                        "base_image_url" => "https://cdn.salla.sa/KjyBep/1591533d-83d4-4ff8-a5fa-5cc656ccf43d-422.65193370166x500-jnVcZGrF9CDVllf0bPmTP9JZmWPcHoBCbAXs3DA2.png" 
+                    ] 
+                    ], 
+                    [
+                        "id" => 106919, 
+                        "product_id" => 55682, 
                         "parent_id" => null, 
-                        "sku" => "G2 5-1-3", 
-                        "name" => "يوسيرين - كريم ليلي مضاد للتجاعيد غني بالريتينول ومساعد 48جرام", 
-                        "url_key" => "g2-5-1-3", 
-                        "saleable" => 1, 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
+                        "sku" => "customizable", 
+                        "name" => "ساعه ذكيه X8+ Plus Ultra الاصدار الثامن شاشه 2.08 بوصه IPS - بلوتوث - NFC شاحن لاسلكى -ذهبى", 
+                        "description" => "سوار رياضي اسود مطاط - عادي",
+                        "url_key" => "2g663yz",
+                        "html_price" => "<span class='price'>‏1800 ر.س ‏</span>", 
                         "product" => [
-                        "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
+                        "base_image_url" => "https://cdn.salla.sa/KjyBep/wnOYsdNOJtiNjBe6CiJ9qVgUnXYkCHN8c2AAWFxL.png" 
                         ] 
                     ], 
                     [
-                        "id" => 48691, 
-                        "product_id" => 24592, 
+                        "id" => 107663, 
+                        "product_id" => 56116, 
                         "parent_id" => null, 
-                        "sku" => "EUC9853", 
-                        "name" => "يوسيرين بيبي كريم للاطفال مع برو فيتامين ب5 وزبدة الشيا الطبيعية، 141 جم", 
-                        "url_key" => "euc9853", 
-                        "saleable" => 1, 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
+                        "sku" => "N2-4-5-3", 
+                        "name" => "شاحن محول التيار المتردد للكمبيوتر المحمول ديل لاتيتود E6500/E6410/E6510 أسود", 
+                        "description" => "ضمان لمدة سنة",
+                        "url_key" => "2g663yz",
+                        "html_price" => "<span class='price'>‏450 ر.س ‏</span>",
                         "product" => [
-                            "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
+                            "base_image_url" => "https://cdn.salla.sa/KjyBep/P8lHSk6qkoTYbdw2nnlLIHiSGsiTieobKwU0sZUG.png" 
                         ] 
-                    ], 
+                    ],
                     [
-                        "id" => 48753, 
-                        "product_id" => 24623, 
+                        "id" => 106919, 
+                        "product_id" => 55682, 
                         "parent_id" => null, 
-                        "sku" => "G2-8-3-9", 
-                        "name" => "يوسرين - لوشن للبشرة الجافة والخشنة -500مل", 
-                        "url_key" => "g2-8-3-9", 
-                        "saleable" => 1, 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
+                        "sku" => "customizable", 
+                        "name" => "تلفزيون 4K الترا HD مقاس 55 بوصة من سلسلة UQ7500 بشاشة سينما وتقنية 4K اكتيف وتقنية HDR وويب او اس والذكاء الاصطناعي ثينكيو من ال جي، 55uq75006l، بلوتوث، واي فاي، ايثرنت، HDMI، أسود", 
+                        "description" => "ضمان لمدة سنة",
+                        "url_key" => "2g663yz",
+                        "html_price" => "<span class='price'>‏500 ر.س ‏</span>",
                         "product" => [
-                        "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
+                        "base_image_url" => "https://cdn.salla.sa/KjyBep/a05cc604-dc55-43e3-b96e-fc2970f8f8f9-500x318.75-R7E0GFAX13J3ZxXgXcWEnUBeHLYQfJHwEjuJPLOx.png" 
                         ] 
-                    ], 
+                    ],  
                     [
-                        "id" => 48261, 
-                        "product_id" => 24375, 
+                        "id" => 107667, 
+                        "product_id" => 56118, 
                         "parent_id" => null, 
-                        "sku" => "I3-4-2-1", 
-                        "name" => "جليتز - اظافر صناعية لصق ذاتي لون فضي لماع - 10", 
-                        "url_key" => "i3-4-2-1", 
-                        "saleable" => 1, 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
+                        "sku" => "OUU1RO7", 
+                        "name" => "سماعة Q30 فوق الأذن ساوند كور من انكر لايف Q30 هايبرد اكتيف بخاصية الغاء الضوضاء واوضاع متعددة وصوت عالي الدقة ووقت تشغيل يدوم لمدة 40 ساعة وخاصية الشحن السريع، اذن بلوتوث ملائمة للسفر، اسود", 
+                        "description" => " سماعة ذات صوت عالي الدقة ",
+                        "url_key" => "2g663yz",
+                        "html_price" => "<span class='price'>‏300 ر.س ‏</span>", 
                         "product" => [
-                            "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
+                        "base_image_url" => "https://cdn.salla.sa/KjyBep/bP4jjekEMZv8TQQA1iqCpDFQWC35S7z2wOKUgo2M.png" 
                         ] 
-                    ], 
+                    ],
                     [
-                        "id" => 48693, 
-                        "product_id" => 24593, 
+                        "id" => 106919, 
+                        "product_id" => 55682, 
                         "parent_id" => null, 
-                        "sku" => "EUC3148", 
-                        "name" => "يوسيرين - ماء ميسيلار مرطب 3 في 1، مركب من حمض الهيالورونيك، 200مل", 
-                        "url_key" => "euc3148", 
-
-                        "saleable" => 1, 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
+                        "sku" => "customizable", 
+                        "name" => "لاب توب ألعاب اتش بي بافيليون 15-dk جيل 11 انتل كور i7-11370H/ذاكرة رام 16GB/هارد 1TB HDD+ هارد 456GB SSD/انفيديا جي فورس RTX 3050 4GB GDDR6 رسومات 15.6 بوصة FHD IPS 144 Hz و300 nits، ويندوز 10، أسود", 
+                        "description" => " لاب توب للألعاب اتش بي بافيليون ",
+                        "url_key" => "2g663yz",
+                        "html_price" => "<span class='price'>‏1300 ر.س ‏</span>",
                         "product" => [
-                        "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
+                        "base_image_url" => "https://cdn.salla.sa/KjyBep/vP5SiNJU5CzsY6wFPQEtXsAorVTpaPbbGd4kbvOb.png" 
                         ] 
-                    ], 
+                    ],  
                     [
-                        "id" => 48793, 
-                        "product_id" => 24643, 
+                        "id" => 107859, 
+                        "product_id" => 56219, 
                         "parent_id" => null, 
-                        "sku" => "C3-5-2-4", 
-                        "name" => "ميلي - قناع تقوية الشعر بأكليل الجبل والنعناع 340 جم", 
-                        "url_key" => "c3-5-2-4", 
-                        "saleable" => 1, 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
+                        "sku" => "K6P8ATO", 
+                        "name" => "ساعة ذكية اكس 8 الترا بشاشة عرض اكبر وسطوع، مقاومة للماء بعمق مع مساعد تحكم بالفيديو وشحن لاسلكي سريع، شاشة اكبر", 
+                        "description" => "سوار رياضي اسود مطاط - عادي",
+                        "url_key" => "2g663yz",   
+                        "html_price" => "<span class='price'>‏1300 ر.س ‏</span>",
                         "product" => [
-                            "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
-                        ] 
-                    ], 
-                    [
-                        "id" => 48729, 
-                        "product_id" => 24611, 
-                        "parent_id" => null, 
-                        "sku" => "P3-8-4-6", 
-                        "name" => "يوسيرين - لوشن الترطيب اليومي خال من العطور - 500مل", 
-                        "url_key" => "p3-8-4-6", 
-                        "saleable" => 1, 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
-                        "product" => [
-                        "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
-                        ] 
-                    ], 
-                    [
-                        "id" => 48761, 
-                        "product_id" => 24627, 
-                        "parent_id" => null, 
-                        "sku" => "C2 4-4-4", 
-                        "name" => "يوسرين -  زيت الاستحمام أتوبي كونترول أوميغا - 400مل", 
-                        "url_key" => "c2-4-4-4", 
-
-                        "saleable" => 1, 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
-                        "product" => [
-                            "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
-                        ] 
-                    ], 
-                    [
-                        "id" => 48765, 
-                        "product_id" => 24629, 
-                        "parent_id" => null, 
-                        "sku" => "J1 3-2-2", 
-                        "name" => "يوسرين - إيفن بيغمنت بير فكتور كريم النهار للبشرة - 50 مل", 
-                        "url_key" => "j1-3-2-2", 
-                        "new" => null, 
-                        "saleable" => 1, 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
-                        "product" => [
-                        "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
-                        ] 
-                    ], 
-                    [
-                        "id" => 48737, 
-                        "product_id" => 24615, 
-                        "parent_id" => null, 
-                        "sku" => "P3-8-5-2", 
-                        "name" => "يوسيرن - كريم ترطيب باليوريا 5٪ للأيدي", 
-                        "url_key" => "p3-8-5-2", 
-
-                        "saleable" => 1, 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
-                        "product" => [
-                            "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
-                        ] 
-                    ], 
-                    [
-                        "id" => 48687, 
-                        "product_id" => 24590, 
-                        "parent_id" => null, 
-                        "sku" => "EUC0148", 
-                        "name" => "يوسيرين - جل تنظيف الوجه المرطب٢٠٠مل", 
-                        "url_key" => "euc0148", 
-                        "saleable" => 1, 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
-                        "product" => [
-                        "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
-                        ] 
-                    ], 
-                    [
-                        "id" => 48789, 
-                        "product_id" => 24641, 
-                        "parent_id" => null, 
-                        "sku" => "C3-5-5-7", 
-                        "name" => "ميلي - بلسم مقوي للشعر باكليل الجبل والنعناع 355 مل", 
-                        "url_key" => "c3-5-5-7", 
-                        "saleable" => 1, 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
-                        "product" => [
-                            "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
+                            "base_image_url" => "https://cdn.salla.sa/KjyBep/d92hnm1zU7OZz2PkEfgO3NpR1L25YqnV4GsoJvaB.png" 
                         ] 
                     ] 
                 ] 
             ] 
-        ], 
+        ],
         [
             "slug" => "wide_banner", 
             "sort" => null, 
             "block_id" => 298292, 
             "settings" => [
-                "image" => "https://cdn.twsaa.com/home/23/d081acbf-e5ab-4bce-b1c8-0bd9f906c081.png", 
+                "image" => "https://cdn.salla.sa/form-builder/wlCmdcKasTRa7BID0poc9Ym1NHE1B5zBMnbZpDfI.jpg", 
             ] 
-        ], 
+        ],
         [
-            "slug" => "fixed_products", 
+            "slug" => "photo_ptoduct", 
             "sort" => null, 
-            "block_id" => 271789, 
+            "block_id" => 155712, 
             "settings" => [
-                "list_type" => "category", 
-                "category_id" => "2125", 
-                "limit" => "20", 
-                "type" => "list", 
-                "products_title" => "العدسات", 
-                "link" => "/العدسات", 
+                "list_type" => "chosen", 
+                "category_id" => "2120", 
+                "sku_text" => "N2-4-5-3,sku-ABC,", 
+                "limit" => "28", 
+                "type" => "slider", 
+                "products_title" => "⭐ الساعات  ", 
+                "products_image" => "https://cdn.salla.sa/form-builder/EDsSZaGjSBv6fmN6SoVm8EGl5wanuFMzwMH1TSl4.jpg", 
+                "btn" => "تسوق الان", 
+                "link" => "/تخفيضات", 
                 "products" => [
                     [
-                        "id" => 48207, 
-                        "product_id" => 24348, 
+                    "id" => 106891, 
+                    "product_id" => 55668, 
+                    "sku" => "2G663YZ", 
+                    "name" => "ايفون 13 برو",
+                    "description" => "شاشة سوبر ريتينا XDR مقاس 6.1 بوصة", 
+                    "url_key" => "2g663yz", 
+                    "html_price" => "<span class='price'>‏1500 ر.س ‏</span>", 
+                    "product" => [
+                        "base_image_url" => "https://cdn.salla.sa/KjyBep/1591533d-83d4-4ff8-a5fa-5cc656ccf43d-422.65193370166x500-jnVcZGrF9CDVllf0bPmTP9JZmWPcHoBCbAXs3DA2.png" 
+                    ] 
+                    ], 
+                    [
+                        "id" => 106919, 
+                        "product_id" => 55682, 
                         "parent_id" => null, 
-                        "sku" => "L3-9-5-1", 
-                        "name" => "دايا - عدسات لاصقة يومية آش 10 حبات", 
-                        "url_key" => "l3-9-5-1", 
-                        "saleable" => 1, 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
+                        "sku" => "customizable", 
+                        "name" => "ساعه ذكيه X8+ Plus Ultra الاصدار الثامن شاشه 2.08 بوصه IPS - بلوتوث - NFC شاحن لاسلكى -ذهبى", 
+                        "description" => "سوار رياضي اسود مطاط - عادي",
+                        "url_key" => "2g663yz",
+                        "html_price" => "<span class='price'>‏1800 ر.س ‏</span>", 
                         "product" => [
-                            "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
+                        "base_image_url" => "https://cdn.salla.sa/KjyBep/wnOYsdNOJtiNjBe6CiJ9qVgUnXYkCHN8c2AAWFxL.png" 
                         ] 
                     ], 
                     [
-                        "id" => 48215, 
-                        "product_id" => 24352, 
+                        "id" => 107663, 
+                        "product_id" => 56116, 
                         "parent_id" => null, 
-                        "sku" => "L3-9-4-2", 
-                        "name" => "دايا - عدسات لاصقة يومية مينت 10 حبات", 
-                        "url_key" => "l3-9-4-2",                         
-                        "saleable" => 1, 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
+                        "sku" => "N2-4-5-3", 
+                        "name" => "شاحن محول التيار المتردد للكمبيوتر المحمول ديل لاتيتود E6500/E6410/E6510 أسود", 
+                        "description" => "ضمان لمدة سنة",
+                        "url_key" => "2g663yz",
+                        "html_price" => "<span class='price'>‏450 ر.س ‏</span>",
                         "product" => [
-                            "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
+                            "base_image_url" => "https://cdn.salla.sa/KjyBep/P8lHSk6qkoTYbdw2nnlLIHiSGsiTieobKwU0sZUG.png" 
                         ] 
-                    ], 
+                    ],
                     [
-                        "id" => 48191, 
-                        "product_id" => 24340, 
+                        "id" => 106919, 
+                        "product_id" => 55682, 
                         "parent_id" => null, 
-                        "sku" => "J3-9-4-7", 
-                        "name" => "دفرنت كلر - محلول عدسات متعدد الاغراض الكل في واحد 130مل", 
-                        "url_key" => "j3-9-4-7", 
-                        "saleable" => 1, 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
+                        "sku" => "customizable", 
+                        "name" => "تلفزيون 4K الترا HD مقاس 55 بوصة من سلسلة UQ7500 بشاشة سينما وتقنية 4K اكتيف وتقنية HDR وويب او اس والذكاء الاصطناعي ثينكيو من ال جي، 55uq75006l، بلوتوث، واي فاي، ايثرنت، HDMI، أسود", 
+                        "description" => "ضمان لمدة سنة",
+                        "url_key" => "2g663yz", 
+                        "html_price" => "<span class='price'>‏500 ر.س ‏</span>",
                         "product" => [
-                            "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
+                        "base_image_url" => "https://cdn.salla.sa/KjyBep/a05cc604-dc55-43e3-b96e-fc2970f8f8f9-500x318.75-R7E0GFAX13J3ZxXgXcWEnUBeHLYQfJHwEjuJPLOx.png" 
                         ] 
-                    ], 
+                    ],  
                     [
-                        "id" => 48205, 
-                        "product_id" => 24347, 
+                        "id" => 107667, 
+                        "product_id" => 56118, 
                         "parent_id" => null, 
-                        "sku" => "L3-9-5-2", 
-                        "name" => "دايا - عدسات لاصقة يومية انديقو 10 حبات",                                                                                                                                                                                                                                                                           "url_key" => "l3-9-5-2", 
-                        "new" => null, 
-                        "saleable" => 1, 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
+                        "sku" => "OUU1RO7", 
+                        "name" => "سماعة Q30 فوق الأذن ساوند كور من انكر لايف Q30 هايبرد اكتيف بخاصية الغاء الضوضاء واوضاع متعددة وصوت عالي الدقة ووقت تشغيل يدوم لمدة 40 ساعة وخاصية الشحن السريع، اذن بلوتوث ملائمة للسفر، اسود", 
+                        "description" => " سماعة ذات صوت عالي الدقة ",
+                        "url_key" => "2g663yz", 
+                        "html_price" => "<span class='price'>‏300 ر.س ‏</span>", 
                         "product" => [
-                            "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
+                        "base_image_url" => "https://cdn.salla.sa/KjyBep/bP4jjekEMZv8TQQA1iqCpDFQWC35S7z2wOKUgo2M.png" 
                         ] 
-                    ], 
+                    ],
                     [
-                        "id" => 48221, 
-                        "product_id" => 24355, 
+                        "id" => 106919, 
+                        "product_id" => 55682, 
                         "parent_id" => null, 
-                        "sku" => "L3-3-2-2", 
-                        "name" => "عدسات لنس مي كنتور - contour", 
-                        "url_key" => "l3-3-2-2", 
-                        "saleable" => 1, 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
+                        "sku" => "customizable", 
+                        "name" => "لاب توب ألعاب اتش بي بافيليون 15-dk جيل 11 انتل كور i7-11370H/ذاكرة رام 16GB/هارد 1TB HDD+ هارد 456GB SSD/انفيديا جي فورس RTX 3050 4GB GDDR6 رسومات 15.6 بوصة FHD IPS 144 Hz و300 nits، ويندوز 10، أسود", 
+                        "description" => " لاب توب للألعاب اتش بي بافيليون ",
+                        "url_key" => "2g663yz", 
+                        "html_price" => "<span class='price'>‏1300 ر.س ‏</span>",
                         "product" => [
-                            "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
+                        "base_image_url" => "https://cdn.salla.sa/KjyBep/vP5SiNJU5CzsY6wFPQEtXsAorVTpaPbbGd4kbvOb.png" 
                         ] 
-                    ], 
+                    ],  
                     [
-                        "id" => 48197, 
-                        "product_id" => 24343, 
+                        "id" => 107859, 
+                        "product_id" => 56219, 
                         "parent_id" => null, 
-                        "sku" => "L3-9-4-9", 
-                        "name" => "عدسات ديفا - كريم Cream", 
-                        "url_key" => "l3-9-4-9", 
-                        "saleable" => 1, 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
+                        "sku" => "K6P8ATO", 
+                        "name" => "ساعة ذكية اكس 8 الترا بشاشة عرض اكبر وسطوع، مقاومة للماء بعمق مع مساعد تحكم بالفيديو وشحن لاسلكي سريع، شاشة اكبر", 
+                        "description" => "سوار رياضي اسود مطاط - عادي",
+                        "url_key" => "2g663yz",
+                        "html_price" => "<span class='price'>‏1300 ر.س ‏</span>",
                         "product" => [
-                            "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
-                        ] 
-                    ], 
-                    [
-                        "id" => 48227, 
-                        "product_id" => 24358, 
-                        "parent_id" => null, 
-                        "sku" => "L3-3-2-1", 
-                        "name" => "عدسات لنس مي تي - TEA", 
-                        "url_key" => "l3-3-2-1", 
-                        "saleable" => 1, 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
-                        "product" => [
-                            "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
-                        ] 
-                    ], 
-                    [
-                        "id" => 48209, 
-                        "product_id" => 24349, 
-                        "parent_id" => null, 
-                        "sku" => "L3-9-4-5", 
-                        "name" => "دايا - عدسات لاصقة يومية جايد 10 حبات", 
-                        "url_key" => "l3-9-4-5", 
-                        "saleable" => 1, 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
-                        "product" => [
-                            "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
-                        ] 
-                    ], 
-                    [
-                        "id" => 48219, 
-                        "product_id" => 24354, 
-                        "parent_id" => null, 
-                        "sku" => "L3-2-5-1", 
-                        "name" => "ديفا - محلول عدسات  طبي متعدد الأغراض 100 مل", 
-                        "url_key" => "l3-2-5-1", 
-                        "saleable" => 1, 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
-                        "product" => [
-                            "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
-                        ] 
-                    ], 
-                    [
-                        "id" => 48193, 
-                        "product_id" => 24341, 
-                        "parent_id" => null, 
-                        "sku" => "B3-5-4-4", 
-                        "name" => "عدسات لنس مي ارابيا آي - Arabia Eye", 
-                        "url_key" => "b3-5-4-4", 
-                        "saleable" => 1, 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
-                        "product" => [
-                            "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
-                        ] 
-                    ], 
-                    [
-                        "id" => 48195, 
-                        "product_id" => 24342, 
-                        "parent_id" => null, 
-                        "sku" => "B3-5-4-3", 
-                        "name" => "عدسات لنس مي دراما - Drama", 
-                        "url_key" => "b3-5-4-3", 
-                        "saleable" => 1, 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
-                        "product" => [
-                            "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
-                        ] 
-                    ], 
-                    [
-                        "id" => 48211, 
-                        "product_id" => 24350, 
-                        "parent_id" => null, 
-                        "sku" => "L3-9-4-4", 
-                        "name" => "دايا - عدسات لاصقة يومية بيكان 10 حبات", 
-                        "url_key" => "l3-9-4-4", 
-                        "saleable" => 1, 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
-                        "product" => [
-                            "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
-                        ] 
-                    ], 
-                    [
-                        "id" => 48203, 
-                        "product_id" => 24346, 
-                        "parent_id" => null, 
-                        "sku" => "L3-9-4-6", 
-                        "name" => "عدسات ديفا - لامير Lamir", 
-                        "url_key" => "l3-9-4-6", 
-                        "saleable" => 1, 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
-                        "product" => [
-                            "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
-                        ] 
-                    ], 
-                    [
-                        "id" => 48189, 
-                        "product_id" => 24339, 
-                        "parent_id" => null, 
-                        "sku" => "C3-5-2-9", 
-                        "name" => "عدسات لنس مي تان - TAN", 
-                        "url_key" => "c3-5-2-9", 
-                        "saleable" => 1, 
-                        "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
-                        "product" => [
-                            "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
+                            "base_image_url" => "https://cdn.salla.sa/KjyBep/d92hnm1zU7OZz2PkEfgO3NpR1L25YqnV4GsoJvaB.png" 
                         ] 
                     ] 
                 ] 
             ] 
-        ], 
+        ],
+        [
+            "slug" => "list_of_items", 
+            "sort" => null, 
+            "block_id" => 478402, 
+            "settings" => [
+            "items" => [
+                [
+                    "image" => "https://cdn.salla.sa/form-builder/S7HdSsl7BIJj4qw9fKrVf9Gv8miFmXRXu0wXdDNn.jpg", 
+                    "name" => "", 
+                    "link_type" => "category", 
+                    "category_id" => "2121", 
+                    "link" => "/العناية" 
+                ], 
+                [
+                    "image" => "https://cdn.salla.sa/form-builder/O5IhCwJ8RSmfliPnNcPpXen4VbuJj96NcZ1IFj7H.jpg", 
+                    "name" => "", 
+                    "link_type" => "category", 
+                    "category_id" => "2175", 
+                    "link" => "/منتجات-يوسرين" 
+                ], 
+                [
+                    "image" => "https://cdn.salla.sa/form-builder/CGXLus7ZJd6IiEVbC3OsAiFWnWthXMMScS6rSFUA.jpg", 
+                    "name" => "", 
+                    "link_type" => "category", 
+                    "category_id" => "2175", 
+                    "link" => "/منتجات-يوسرين" 
+                ] 
+            ], 
+            "title" => "" 
+            ] 
+        ],
+        [
+            "slug" => "fixed_products", 
+            "sort" => null, 
+            "block_id" => 634494, 
+            "settings" => [
+                "list_type" => "category", 
+                "category_id" => "2122", 
+                "limit" => "8", 
+                "type" => "list", 
+                "products_title" => "المنتجات الثابته", 
+                "link" => "/المكياج", 
+                "products" => 
+                [
+                    [
+                        "id" => 48111, 
+                        "product_id" => 24300, 
+                        "parent_id" => null, 
+                        "sku" => "L2-2-4-4-M5AZN", 
+                        "name" => "موبايل ابل ايفون 14 برو ماكس (256 جيجابايت) - ارجواني داكن - شريحتين اتصال", 
+                       "url_key" => "2g663yz", 
+                        "description" => " شاشة سوبر ريتينا XDR مقاس 6.1 بوصة ",
+                        "saleable" => 1, 
+                        "html_price" => "<span class='price'> 500 ر.س </span>", 
+                        "product" => [
+                            "base_image_url" => "https://cdn.salla.sa/KjyBep/JuK7yjFKsBDNkeKmQ43uKGKyn50nHsV01zKqZxKF.png" 
+                        ] 
+                    ], 
+                    [
+                        "id" => 48163, 
+                        "product_id" => 24326, 
+                        "parent_id" => null, 
+                        "sku" => "K3-9-4-6", 
+                        "name" => "سامسونج جوال جالكسي اس 24 الترا، هاتف ذكي بنظام اندرويد بالذكاء الاصطناعي، ذاكرة تخزين 256GB، ذاكرة RAM 12GB، كاميرا 200MP، قلم S، عمر بطارية طويل - اسود تيتانيوم",
+                        "description" => "ضمان لمدة سنة", 
+                       "url_key" => "2g663yz",
+                        "saleable" => 1, 
+                        "html_price" => "<span class='price'> 200 ر.س </span>", 
+                        "product" => [
+                            "base_image_url" => "https://cdn.salla.sa/KjyBep/wUOqu5fP4CZgVQbwIpY5E2wYNFfBhYRA61QGvKbC.png" 
+                        ] 
+                    ], 
+                    [
+                        "id" => 48149, 
+                        "product_id" => 24319, 
+                        "parent_id" => null, 
+                        "sku" => "K3-9-5-4", 
+                        "name" => "كمبيوتر تاور أوبتيبليكس بمعالج كور i5 وذاكرة رام سعة 4 جيجابايت ومحرك أقراص صلبة سعة 1 تيرابايت وبطاقة رسومات مدمجة أسود/فضي",
+                        "description" => "كمبيوتر تاور أوبتيبليكس بمعالج كور i5 وذاكرة رام سعة 4 جيجابايت ومحرك أقراص صلبة سعة 1 تيرابايت وبطاقة رسومات مدمجة أسود/فضي", 
+                        "url_key" => "2g663yz", 
+                        "saleable" => 1, 
+                        "html_price" => "<span class='price'> 8700 ر.س </span>", 
+                        "product" => [
+                            "base_image_url" => "https://cdn.salla.sa/KjyBep/2J2gsOdqiTu9AWw5kfuXEeAVhadqK71XfoP6mEZD.png" 
+                        ] 
+                    ], 
+                    [
+                        "id" => 48123, 
+                        "product_id" => 24306, 
+                        "parent_id" => null, 
+                        "sku" => "L2-2-3-2-M5AZN", 
+                       "url_key" => "2g663yz", 
+                        "name" => "مصباح فلاش TTL لاسلكي محمول مزود برأس فلاش قابل لإعادة الشحن",
+                        "description" => " ضمان لمدة سنة ", 
+                        "saleable" => 1, 
+                        "html_price" => "<span class='price'> 1500 ر.س </span>", 
+                        "product" => [
+                            "base_image_url" => "https://cdn.salla.sa/KjyBep/rylNPkLkZf2XB205WISYyFbhIn1sgsKFuNi9nyJ3.png" 
+                        ] 
+                    ], 
+                    [
+                        "id" => 48049, 
+                        "product_id" => 24269, 
+                        "parent_id" => null, 
+                        "sku" => "A2 5-3-7", 
+                        "name" => "مضخم صوت يلوتوث و راديو و فلاشه 4 بوصة من اكس",
+                        "description" => " ضمان لمدة سنة ", 
+                        "url_key" => "2g663yz", 
+                        "saleable" => 1, 
+                        "html_price" => "<span class='price'> 900 ر.س </span>", 
+                        "product" => [
+                            "base_image_url" => "https://cdn.salla.sa/KjyBep/YBlnS4PXKeAKDsK5Jsf7IKldS3CgRb9mVufp8oH3.png" 
+                        ] 
+                    ], 
+                    [
+                        "id" => 48155, 
+                        "product_id" => 24322, 
+                        "parent_id" => null, 
+                        "sku" => "K3-9-5-1", 
+                        "name" => " Cougar-EGY حقيبة ظهر لاب توب كاجوال للمدرسة والسفر – S50 ", 
+                        "description" => "ضمان لمدة سنة",
+                        "url_key" => "2g663yz",
+                        "saleable" => 1, 
+                        "html_price" => "<span class='price'> 800 ر.س </span>", 
+                        "product" => [
+                            "base_image_url" => "https://cdn.salla.sa/KjyBep/yBgs1k0YuTPgo7qfXzsXYPJzJgHjCbChXGl755ll.png" 
+                        ] 
+                    ], 
+                    [
+                        "id" => 48133, 
+                        "product_id" => 24311, 
+                        "parent_id" => null, 
+                        "sku" => "L2-2-1-3-M5AZN", 
+                        "name" => " Apple Watch Series 9 LTE 41mm Stainless Steel Milanese Loop ",
+                        "description" => "سوار رياضي اسود مطاط - عادي", 
+                        "url_key" => "2g663yz",
+                        "saleable" => 1, 
+                        "html_price" => "<span class='price'> 2000 ر.س </span>", 
+                        "product" => [
+                            "base_image_url" => "https://cdn.salla.sa/KjyBep/oW2swU9x2ZpEN1IhhQkmHOKZkKlRCvUUMcTTRZJa.png" 
+                        ] 
+                    ], 
+                    [
+                        "id" => 48131, 
+                        "product_id" => 24310, 
+                        "parent_id" => null, 
+                        "sku" => "L2-2-1-4-M5AZN", 
+                        "name" => " كمبيوتر تاور أوبتيبليكس بمعالج كور i5 وذاكرة رام سعة 4 جيجابايت ومحرك أقراص صلبة سعة 1 تيرابايت وبطاقة رسومات مدمجة أسود/فضي   ", 
+                        "description" => " ضمان لمدة سنه ",
+                        "url_key" => "2g663yz",                                                                                
+                        "saleable" => 1, 
+                        "html_price" => "<span class='price'> 2500 ر.س </span>", 
+                        "product" => [
+                            "base_image_url" => "https://cdn.salla.sa/KjyBep/GjhmFCvqpsCOhLEkmwPfubiiqj7yZEVCSJRSdAKv.png" 
+                        ] 
+                    ] 
+                ] 
+            ] 
+        ],
+        [
+            "slug" => "wide_banner", 
+            "sort" => null, 
+            "block_id" => 298292, 
+            "settings" => [
+                "image" => "https://cdn.salla.sa/form-builder/cshRYWLqlOxUEFVFXufGsqPjsWGCFa5n5aYtuUPu.jpg", 
+            ] 
+        ],
+        [
+            "slug" => "content", 
+            "sort" => null, 
+            "block_id" => 478402, 
+            "settings" => [
+            "image" => "https://cdn.salla.sa/form-builder/FkLIzDXJPpcdg7vgD6xrChNODwlELYkpCRMjn2HK.png", 
+            "name" => "اكتشف أحدث التقنيات ", 
+            "title" => "أجهزة إلكترونية بأفضل الأسعار", 
+            "explain" => "استمتع بتجربة تسوق فريدة مع أحدث الأجهزة الإلكترونية من أشهر العلامات التجارية. سواء كنت تبحث عن هاتف ذكي قوي، أو حاسوب محمول للأعمال أو الترفيه، أو إكسسوارات تضيف لمسة من التكنولوجيا لحياتك اليومية، لدينا كل ما تحتاجه بأسعار تنافسية وعروض مميزة.", 
+            "botton" => "تسوق الان",
+            "link" => "/منتجات-يوسرين" 
+            ]
+        ],    
+        [
+            "slug" => "slice_image",
+            "sort" => null,
+            "block_id" => 369369,
+            "block_title" => " شرائح الصور",
+            "settings" => [
+            "items1" => [
+            [
+            "photo" => "https://media.zid.store/07d02681-b3c7-4603-b219-599dc6c7a256/79cc60af-6857-44d9-854f-24af335d5bf9.png",
+            ],
+            [
+            "photo" => "https://media.zid.store/07d02681-b3c7-4603-b219-599dc6c7a256/2dc11d53-987a-4dba-a147-eae3af0c1e4e.png",
+            ]
+            ],
+            "items2" => [
+            [
+            "img" => "https://media.zid.store/cdn-cgi/image/w=300,q=85,f=auto/https://media.zid.store/07d02681-b3c7-4603-b219-599dc6c7a256/ce7a11ca-c65c-43d1-b2d3-d14c01e80ced.jpg",
+            ],
+            [
+            "img" => "https://media.zid.store/cdn-cgi/image/w=300,q=85,f=auto/https://media.zid.store/07d02681-b3c7-4603-b219-599dc6c7a256/d5d877a9-0894-4c53-a4f0-4e25796eb09f.jpg",
+            ],
+            [
+            "img" => "https://cdn.salla.sa/form-builder/sbCqnXsCsNEQdMXuwtWLC8mbJ1SKCxxSJ1Rus9RW.jpg",
+            ],
+            [
+            "img" => "https://media.zid.store/cdn-cgi/image/w=300,q=85,f=auto/https://media.zid.store/07d02681-b3c7-4603-b219-599dc6c7a256/64501461-a331-4985-a609-c96780b9f3ca.jpg",
+            ]
+            ]
+            ]
+        ],
+        [
+            "slug" => "national", 
+            "sort" => null, 
+            "block_id" => 478402, 
+            "settings" => [
+                "image" => "https://cdn.salla.sa/form-builder/9fz72nhuBFkQyDSBS1G3oi6w30dmE7O2UnnkbnYn.jpg", 
+                "topic" => "  تخفيضات 70% بمناسبة اليوم الوطني ", 
+                "desciption" => "تخفيضات كبيرة على جميع المنتجات في متجرنا، بمناسبة مرور 94 عام على توحيد المملكة", 
+                "bton" => "تسوق الان",
+                "linked" => "/منتجات-يوسرين"  
+            ] 
+        ],
         [
             "slug" => "brands", 
             "sort" => null, 
             "block_id" => 662754, 
+            "block-title" => "تسوق حسب الماركة", 
             "settings" => [
                 "brand_ids" => [
                     "18", 
@@ -779,18 +1066,40 @@ function homePage() {
                     "21", 
                     "131" 
                 ], 
-                "brands_title" => "الماركات", 
+                "brands_title" => "تسوق علي حسب الماركات التجارية ", 
                 "link" => "/brands/prada/brand-18", 
                 "brands" => [
+                    [
+                        "id" => 21, 
+                        "name" => "Guerlan Guerlan Guerlan", 
+                        "description" => "Guerlan", 
+                        "logo" => "brand/21/logo/c4f4aab0-1e0b-401e-88d0-8abb7008ca0a.png", 
+                        "banner" => "brand/21/banner/ecbfd4a1-ba19-49d1-9e9c-3cf6bb6d34ca.png", 
+                        "meta_title" => "Guerlan", 
+                        "meta_url" => "Guerlan", 
+                        "meta_description" => "Guerlan", 
+                        "is_active" => 1, 
+                    ], 
                     [
                         "id" => 18, 
                         "name" => "prada", 
                         "description" => "                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ", 
                         "logo" => "brand/18/logo/5082c95f-123b-4028-bd30-2e4688e2c089.png", 
                         "banner" => "brand/18/banner/252c5314-9ca3-4661-8fbe-53cfa1c53599.png", 
-                        "meta_title" => "prada", 
+                        "meta_title" => "prada ", 
                         "meta_url" => "prada", 
                         "meta_description" => "prada", 
+                    ], 
+                    [
+                        "id" => 21, 
+                        "name" => "Guerlan", 
+                        "description" => "Guerlan", 
+                        "logo" => "brand/21/logo/c4f4aab0-1e0b-401e-88d0-8abb7008ca0a.png", 
+                        "banner" => "brand/21/banner/ecbfd4a1-ba19-49d1-9e9c-3cf6bb6d34ca.png", 
+                        "meta_title" => "Guerlan", 
+                        "meta_url" => "Guerlan", 
+                        "meta_description" => "Guerlan", 
+                        "is_active" => 1, 
                     ], 
                     [
                         "id" => 20, 
@@ -803,6 +1112,17 @@ function homePage() {
                         "meta_description" => "عطر ديور", 
                         "is_active" => 1, 
                     ], 
+                    [
+                        "id" => 131, 
+                        "name" => "Givenchy", 
+                        "description" => "", 
+                        "logo" => "brand/131/logo/1d93f00a-e4c1-418d-8908-653a881d6c63.png", 
+                        "banner" => "brand/131/banner/2617d5c3-aec8-42f6-80ed-c8f502662c14.txt", 
+                        "meta_title" => "Givenchy", 
+                        "meta_url" => "Givenchy", 
+                        "meta_description" => "", 
+                        "is_active" => 1, 
+                    ],
                     [
                         "id" => 21, 
                         "name" => "Guerlan", 
@@ -827,135 +1147,331 @@ function homePage() {
                     ] 
                 ] 
             ] 
-        ], 
-        [
-            "slug" => "customer_options", 
-            "sort" => null, 
-            "block_id" => 303733, 
-            "settings" => [
-                "display_all" => "true", 
-                "hide_user" => "", 
-                "limit" => "5", 
-                "customer_options_list_type" => "randomly", 
-                "reviews" => [
-                    [
-                        "id" => 228, 
-                        "reply" => "", 
-                        "rating" => 5, 
-                        "comment" => "asdf", 
-                        "status" => "1", 
-                        "type" => "store", 
-                        "product_id" => null, 
-                        "order_id" => 1693, 
-                        "customer_id" => 1, 
-                        "name" => "Demo User" 
-                    ] 
-                ] 
-            ] 
-        ], 
+        ],
         [
             "slug" => "store_features", 
             "sort" => null, 
             "block_id" => 692849, 
+            "limit" => "3",
             "settings" => [
                 "items" => [
-                    [
-                        "icon" => "icon-store", 
-                        "main_title" => "a", 
-                        "sub_title" => "a1111" 
+                    [   
+                        "icon" => "https://cdn.salla.sa/form-builder/JJKLabEcRpaSvRWsh7KcUOF4LKKDsxH2mOqVOoWO.png",
+                        "main_title" => "مدفوعات آمنة", 
                     ], 
                     [
-                        "icon" => "icon-cart", 
-                        "main_title" => "b", 
-                        "sub_title" => "b22222" 
+                        "icon" => "https://cdn.salla.sa/form-builder/KmP0Q8XMnH1MlOYXCsC68UACfm7zpHqmU9uVhbwB.png", 
+                        "main_title" => "منتجات مضمونة", 
                     ], 
                     [
-                        "icon" => "icon-watch", 
-                        "main_title" => "c", 
-                        "sub_title" => "c33333" 
+                        "icon" => "https://cdn.salla.sa/form-builder/92M6huTXDToLWfjdulYXq13KZ1w024dWtguuomQ8.png", 
+                        "main_title" => "توصيل مجاني", 
                     ] 
-                ] 
+                ],
+                "image" => "https://media.zid.store/07d02681-b3c7-4603-b219-599dc6c7a256/34d30260-4eb6-4346-8885-99f3582633e9.png",
             ] 
-        ], 
-        [
-            "slug" => "store_features", 
-            "sort" => null, 
-            "block_id" => 21375, 
-            "settings" => [
-                "items" => [
-                [
-                    "icon" => "icon-store", 
-                    "main_title" => "1", 
-                    "sub_title" => "4" 
-                ], 
-                [
-                    "icon" => "icon-store", 
-                    "main_title" => "2", 
-                    "sub_title" => "5" 
-                ], 
-                [
-                    "icon" => "icon-store", 
-                    "main_title" => "3", 
-                    "sub_title" => "6" 
-                ] 
-                ] 
-            ] 
-        ], 
+        ],
         [
             "slug" => "fixed_products", 
             "sort" => null, 
             "block_id" => 798954, 
             "settings" => [
-               "list_type" => "chosen_products", 
-               "category_id" => "2120", 
-               "sku_text" => "N2-4-5-3,GFAF0U23,GFAF0U2", 
-               "limit" => "-1", 
-               "type" => "slider", 
-               "products_title" => "", 
-               "link" => "/تخفيضات", 
-               "products" => [
+            "list_type" => "chosen_products", 
+            "category_id" => "2120", 
+            "sku_text" => "N2-4-5-3,GFAF0U23,GFAF0U2", 
+            "limit" => "8", 
+            "type" => "slider", 
+            "products_title" => " منتجات مميزة", 
+            "link" => "/تخفيضات", 
+            "products" => 
+            [
                 [
-                    "id" => 106921, 
-                    "product_id" => 55683, 
+                    "id" => 48111, 
+                    "product_id" => 24300, 
                     "parent_id" => null, 
-                    "sku" => "GFAF0U2", 
-                    "name" => "vir", 
-                    "url_key" => "gfaf0u2", 
+                    "sku" => "L2-2-4-4-M5AZN", 
+                    "name" => "موبايل ابل ايفون 14 برو ماكس (256 جيجابايت) - ارجواني داكن - شريحتين اتصال", 
+                    "url_key" => "2g663yz", 
+                    "description" => " شاشة سوبر ريتينا XDR مقاس 6.1 بوصة ",
                     "saleable" => 1, 
-                    "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
+                    "html_price" => "<span class='price'> 500 ر.س </span>", 
                     "product" => [
-                        "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
+                        "base_image_url" => "https://cdn.salla.sa/KjyBep/JuK7yjFKsBDNkeKmQ43uKGKyn50nHsV01zKqZxKF.png" 
                     ] 
                 ], 
                 [
-                    "id" => 107017, 
-                    "product_id" => 55731, 
+                    "id" => 48163, 
+                    "product_id" => 24326, 
                     "parent_id" => null, 
-                    "sku" => "GFAF0U23", 
-                    "name" => "Testing API Mobile", 
-                    "url_key" => "ssdfasdss", 
+                    "sku" => "K3-9-4-6", 
+                    "name" => "سامسونج جوال جالكسي اس 24 الترا، هاتف ذكي بنظام اندرويد بالذكاء الاصطناعي، ذاكرة تخزين 256GB، ذاكرة RAM 12GB، كاميرا 200MP، قلم S، عمر بطارية طويل - اسود تيتانيوم",
+                    "description" => "ضمان لمدة سنة", 
+                    "url_key" => "2g663yz", 
                     "saleable" => 1, 
-                    "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
+                    "html_price" => "<span class='price'> 200 ر.س </span>", 
                     "product" => [
-                        "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
+                        "base_image_url" => "https://cdn.salla.sa/KjyBep/wUOqu5fP4CZgVQbwIpY5E2wYNFfBhYRA61QGvKbC.png" 
                     ] 
                 ], 
                 [
-                    "id" => 107663, 
-                    "product_id" => 56116, 
+                    "id" => 48149, 
+                    "product_id" => 24319, 
                     "parent_id" => null, 
-                    "sku" => "N2-4-5-3", 
-                    "name" => "ثلاجة الجمال سباركلنق لافندر 4 لتر", 
-                    "url_key" => "n2-4-5-3", 
+                    "sku" => "K3-9-5-4", 
+                    "name" => "كمبيوتر تاور أوبتيبليكس بمعالج كور i5 وذاكرة رام سعة 4 جيجابايت ومحرك أقراص صلبة سعة 1 تيرابايت وبطاقة رسومات مدمجة أسود/فضي",
+                    "description" => "كمبيوتر تاور أوبتيبليكس بمعالج كور i5 وذاكرة رام سعة 4 جيجابايت ومحرك أقراص صلبة سعة 1 تيرابايت وبطاقة رسومات مدمجة أسود/فضي", 
+                    "url_key" => "2g663yz", 
                     "saleable" => 1, 
-                    "html_price" => "<span class='price'>‏٣٦٧٫٣٥ ر.س.‏</span>", 
+                    "html_price" => "<span class='price'> 8700 ر.س </span>", 
                     "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png" 
+                        "base_image_url" => "https://cdn.salla.sa/KjyBep/2J2gsOdqiTu9AWw5kfuXEeAVhadqK71XfoP6mEZD.png" 
                     ] 
-                ] 
+                ], 
+                [
+                    "id" => 48123, 
+                    "product_id" => 24306, 
+                    "parent_id" => null, 
+                    "sku" => "L2-2-3-2-M5AZN", 
+                    "url_key" => "2g663yz", 
+                    "name" => "مصباح فلاش TTL لاسلكي محمول مزود برأس فلاش قابل لإعادة الشحن",
+                    "description" => " ضمان لمدة سنة ", 
+                    "saleable" => 1, 
+                    "html_price" => "<span class='price'> 1500 ر.س </span>", 
+                    "product" => [
+                        "base_image_url" => "https://cdn.salla.sa/KjyBep/rylNPkLkZf2XB205WISYyFbhIn1sgsKFuNi9nyJ3.png" 
+                    ] 
+                ], 
+                [
+                    "id" => 48049, 
+                    "product_id" => 24269, 
+                    "parent_id" => null, 
+                    "sku" => "A2 5-3-7", 
+                    "name" => "مضخم صوت يلوتوث و راديو و فلاشه 4 بوصة من اكس",
+                    "description" => " ضمان لمدة سنة ", 
+                    "url_key" => "a2-5-3-7", 
+                    "saleable" => 1, 
+                    "html_price" => "<span class='price'> 900 ر.س </span>", 
+                    "product" => [
+                        "base_image_url" => "https://cdn.salla.sa/KjyBep/YBlnS4PXKeAKDsK5Jsf7IKldS3CgRb9mVufp8oH3.png" 
+                    ] 
+                ], 
+                [
+                    "id" => 48155, 
+                    "product_id" => 24322, 
+                    "parent_id" => null, 
+                    "sku" => "K3-9-5-1", 
+                    "name" => " Cougar-EGY حقيبة ظهر لاب توب كاجوال للمدرسة والسفر – S50 ", 
+                    "description" => "ضمان لمدة سنة",
+                    "url_key" => "k3-9-5-1", 
+                    "saleable" => 1, 
+                    "html_price" => "<span class='price'> 800 ر.س </span>", 
+                    "product" => [
+                        "base_image_url" => "https://cdn.salla.sa/KjyBep/yBgs1k0YuTPgo7qfXzsXYPJzJgHjCbChXGl755ll.png" 
+                    ] 
+                ], 
+                [
+                    "id" => 48133, 
+                    "product_id" => 24311, 
+                    "parent_id" => null, 
+                    "sku" => "L2-2-1-3-M5AZN", 
+                    "name" => " Apple Watch Series 9 LTE 41mm Stainless Steel Milanese Loop ",
+                    "description" => "سوار رياضي اسود مطاط - عادي", 
+                    "url_key" => "l2-2-1-3-m5azn", 
+                    "saleable" => 1, 
+                    "html_price" => "<span class='price'> 2000 ر.س </span>", 
+                    "product" => [
+                        "base_image_url" => "https://cdn.salla.sa/KjyBep/oW2swU9x2ZpEN1IhhQkmHOKZkKlRCvUUMcTTRZJa.png" 
+                    ] 
+                ], 
+                [
+                    "id" => 48131, 
+                    "product_id" => 24310, 
+                    "parent_id" => null, 
+                    "sku" => "L2-2-1-4-M5AZN", 
+                    "name" => " كمبيوتر تاور أوبتيبليكس بمعالج كور i5 وذاكرة رام سعة 4 جيجابايت ومحرك أقراص صلبة سعة 1 تيرابايت وبطاقة رسومات مدمجة أسود/فضي   ", 
+                    "description" => " ضمان لمدة سنه ",
+                    "url_key" => "2g663yz",                                                                                 
+                    "saleable" => 1, 
+                    "html_price" => "<span class='price'> 2500 ر.س </span>", 
+                    "product" => [
+                        "base_image_url" => "https://cdn.salla.sa/KjyBep/GjhmFCvqpsCOhLEkmwPfubiiqj7yZEVCSJRSdAKv.png" 
+                    ] 
                 ] 
             ] 
-        ] 
+            ] 
+        ],
+        [
+            "slug" => "wide_banner", 
+            "sort" => null, 
+            "block_id" => 298292, 
+            "settings" => [
+                "image" => "https://media.zid.store/07d02681-b3c7-4603-b219-599dc6c7a256/1cb728b7-5ea5-499d-93b3-c3b1a5a601a3.jpg", 
+            ] 
+        ],
+        [
+            "slug" => "cut", 
+            "sort" => null, 
+            "block_id" => 222555, 
+            "settings" => [
+                "cut" =>
+                [
+                    [
+                        "image" => "https://cdn.salla.sa/form-builder/nf7fZ3UEOxZdtUdZdgIw2W6otp2n7jEDCRujqxSf.png", 
+                        "tite" => " الجوالات ", 
+                        "desciption" =>" خصم حتي 20% ", 
+                        "linke" => "/منتجات-يوسرين"  
+                    ],
+                    [
+                        "image" => "https://cdn.salla.sa/form-builder/1DAjiJkCO1Wn61lKDGzbvkF0vYjWAz7cidq80Eon.png", 
+                        "tite" => " الساعات الذكية ", 
+                        "desciption" =>" خصم حتي 25% ", 
+                        "linke" => "/منتجات-يوسرين"  
+                    ],
+                    [
+                        "image" => "https://cdn.salla.sa/form-builder/JY55FjBDKH56f9T6SqFTTpvOmbG6fEtFq1bFUxju.png", 
+                        "tite" => " اللابتوبات ", 
+                        "desciption" =>" خصم حتي 50% ", 
+                        "linke" => "/منتجات-يوسرين"  
+                    ] 
+                ] 
+            ] 
+        ],
+        [
+            "slug" => "customer_options", 
+            "sort" => null, 
+            "block_id" => 303733, 
+            "block_topic" => "أراء العملاء ", 
+            "settings" => [
+                "display_all" => "true", 
+                "hide_user" => "", 
+                "limit" => "8", 
+                "customer_options_list_type" => "randomly", 
+                "reviews" => [
+                    [
+                        "id" => 228, 
+                        "reply" => "شكرا جدا اليك", 
+                        "rating" => 3, 
+                        "comment" => "جميع المنتجات جميلة  ", 
+                        "status" => "2", 
+                        "type" => "store", 
+                        "product_id" => null, 
+                        "order_id" => 1693, 
+                        "customer_id" => 1, 
+                        "name" => "محمد بن سليمان" 
+                    ],
+                    [
+                        "id" => 2020, 
+                        "reply" => "شكرا جدا اليك", 
+                        "rating" => 4, 
+                        "comment" => "جميع المنتجات جميلة جدا", 
+                        "status" => "4", 
+                        "type" => "store", 
+                        "product_id" => null, 
+                        "order_id" => 2020, 
+                        "customer_id" => 2, 
+                        "name" => "محمد بن الحويط" 
+                    ],
+                    [
+                        "id" => 228, 
+                        "reply" => "شكرا جدا اليك", 
+                        "rating" => 5, 
+                        "comment" => "جميع المنتجات جميلة جدا", 
+                        "status" => "2", 
+                        "type" => "store", 
+                        "product_id" => null, 
+                        "order_id" => 1693, 
+                        "customer_id" => 1, 
+                        "name" => "محمد بن سليمان" 
+                    ], 
+                    [
+                        "id" => 666, 
+                        "reply" => "شكرا جدا اليك", 
+                        "rating" => 4, 
+                        "comment" => "جميع المنتجات جميلة جدا", 
+                        "status" => "2", 
+                        "type" => "store", 
+                        "product_id" => null, 
+                        "order_id" => 666, 
+                        "customer_id" => 3, 
+                        "name" => "محمد بن فزاع" 
+                    ],
+                    [
+                        "id" => 228, 
+                        "reply" => "شكرا جدا اليك", 
+                        "rating" => 3, 
+                        "comment" => "جميع المنتجات جميلة جدا", 
+                        "status" => "2", 
+                        "type" => "store", 
+                        "product_id" => null, 
+                        "order_id" => 1693, 
+                        "customer_id" => 1, 
+                        "name" => "محمد بن سليمان" 
+                    ], 
+                    [
+                        "id" => 555, 
+                        "reply" => "شكرا جدا اليك", 
+                        "rating" => 2, 
+                        "comment" => "جميع المنتجات جميلة جدا", 
+                        "status" => "2", 
+                        "type" => "store", 
+                        "product_id" => null, 
+                        "order_id" => 5555, 
+                        "customer_id" => 4, 
+                        "name" => "محمد بن سويف" 
+                    ], 
+                    [
+                        "id" => 444, 
+                        "reply" => "شكرا جدا اليك", 
+                        "rating" => 1, 
+                        "comment" => "جميع المنتجات جميلة جدا", 
+                        "status" => "5", 
+                        "type" => "store", 
+                        "product_id" => null, 
+                        "order_id" => 7777, 
+                        "customer_id" => 1, 
+                        "name" => "محمد بن رشدان" 
+                    ] 
+                ] 
+            ] 
+        ],
+        [
+            "slug" => "question", 
+            "sort" => null, 
+            "block_id" => 300025, 
+            "settings" => [
+                "limit" => "5",
+                "title"=>"الاسئلة الشائعه",
+                "image"=>"https://media.zid.store/07d02681-b3c7-4603-b219-599dc6c7a256/dab15dfb-3df4-4cd5-831e-3d99e9fd9f8e.png",
+                "items" => [
+                    [
+                        "number" => "1",                         
+                        "question" => " كيف يمكنني تتبع طلبي؟ ",
+                        "answer" => "  يمكنك تتبع طلبك عن طريق الدخول إلى حسابك على الموقع والانتقال إلى صفحة &quot;تتبع الطلبيات&quot;، حيث ستجد معلومات حول حالة طلبك ورقم التتبع لشحنتك.يمكنك تتبع طلبك عن طريق الدخول إلى حسابك على الموقع والانتقال إلى صفحة &quot;تتبع الطلبيات&quot;، حيث ستجد معلومات حول حالة طلبك ورقم التتبع لشحنتك.يمكنك تتبع طلبك عن طريق الدخول إلى حسابك على الموقع والانتقال إلى صفحة &quot;تتبع الطلبيات&quot;، حيث ستجد معلومات حول حالة طلبك ورقم التتبع لشحنت,.  ", 
+                    ],
+                    [
+                        "number" => "2",                         
+                        "question" => " هل يمكنني تغيير عنوان الشحن بعد تأكيد الطلب؟ ",
+                        "answer" => "نعم، يمكنك تعديل طلبك قبل ان يتم معالجته وإرساله، عن طريق الاتصال بفريق خدمة العملاء وطلب التعديل المطلوب.", 
+                    ],
+                    [
+                        "number" => "3",                         
+                        "question" => " هل هناك ضمان على المنتجات الموجودة في المتجر؟ ",
+                        "answer" => "  نعم، نحن نقد ضمانًا على جميع المنتجات الموجودة في متجرنا. يرجى الرجوع إلى صفحة &quot;سياسة الضمان&quot; لمزيد من التفاصيل.  ", 
+                    ],
+                    [
+                        "number" => "4",                         
+                        "question" => " هل يمكنني تغيير عنوان الشحن بعد تأكيد الطلب؟",
+                        "answer" => " نعم، ضمانًا على جميع المنتجات الموجودة في متجرنا. يرجى الرجوع إلى صفحة &quot;سياسة الضمان&quot; لمزيد من التفاصيل. ", 
+                    ],
+                    [
+                        "number" => "5",                         
+                        "question" => " هل يمكنني تعديل طلبي بعد تقديمه؟ ",
+                        "answer" => " نعم، يمكنك تغيير عنوان الشحن الخطوات الموجودة في صفحة &quot;تعديل الطلب&quot; في حسابك قبل أن يتم شحن الطلب. ", 
+                    ]
+                ] 
+            ] 
+        ]
+    
     ]; 
     return $context;
 }
@@ -1313,161 +1829,161 @@ function addresses() {
     $context['addresses'] =  
     [
         [
-            "id" => 3152, 
+            "id" => 6528, 
             "address_type" => "customer", 
             "customer_id" => 1, 
-            "carrier_id" => null, 
-            "cart_id" => null, 
-            "order_id" => null, 
-            "first_name" => "Demo", 
-            "last_name" => "User", 
-            "gender" => null, 
-            "company_name" => null, 
-            "address1" => "dafc", 
-            "address2" => "sfcb", 
-            "postcode" => "12345", 
-            "area" => "210", 
-            "city" => "Mahda", 
-            "state" => "580", 
+            "carrier_id" => 2020, 
+            "cart_id" => 1256, 
+            "order_id" => 15, 
+            "first_name" => "salah", 
+            "last_name" => "jumaa", 
+            "gender" => "male", 
+            "company_name" => "codlop", 
+            "address1" => "Buraydah, Qassim", 
+            "address2" => "Jeddah", 
+            "postcode" => "28503", 
+            "area" => 372850, 
+            "city" => "Jeddah", 
+            "state" => "Jeddah", 
             "country" => "SA", 
-            "email" => null, 
+            "email" => "codlop@info.com", 
             "phone" => "+966 57 291 8538", 
-            "vat_id" => null, 
+            "vat_id" => "20%", 
             "default_address" => 0, 
             "additional" => null, 
-            "created_at" => "2023-11-05T15:12:20.000000Z", 
-            "updated_at" => "2024-11-03T11:58:23.000000Z" 
-        ], 
-        [
-            "id" => 4491, 
-            "address_type" => "customer", 
-            "customer_id" => 1, 
-            "carrier_id" => null, 
-            "cart_id" => null, 
-            "order_id" => null, 
-            "first_name" => "Demo", 
-            "last_name" => "User", 
-            "gender" => null, 
-            "company_name" => null, 
-            "address1" => "asdf", 
-            "address2" => null, 
-            "postcode" => "", 
-            "area" => null, 
-            "city" => "3", 
-            "state" => "580", 
-            "country" => "SA", 
-            "email" => null, 
-            "phone" => "+966 57 291 8538", 
-            "vat_id" => null, 
-            "default_address" => 0, 
-            "additional" => null, 
-            "created_at" => "2024-02-01T09:26:09.000000Z", 
-            "updated_at" => "2024-02-01T09:26:09.000000Z" 
-        ], 
+            "created_at" => "2024-04-15T13:50:40.000000Z", 
+            "updated_at" => "2024-04-15T13:50:40.000000Z" 
+        ],  
         [
             "id" => 6528, 
             "address_type" => "customer", 
             "customer_id" => 1, 
-            "carrier_id" => null, 
-            "cart_id" => null, 
-            "order_id" => null, 
-            "first_name" => "Demo", 
-            "last_name" => "User", 
-            "gender" => null, 
-            "company_name" => null, 
-            "address1" => "yaseen", 
-            "address2" => null, 
-            "postcode" => "asdf", 
-            "area" => null, 
-            "city" => "18", 
-            "state" => "581", 
+            "carrier_id" => 2020, 
+            "cart_id" => 1256, 
+            "order_id" => 15, 
+            "first_name" => "salah", 
+            "last_name" => "jumaa", 
+            "gender" => "male", 
+            "company_name" => "codlop", 
+            "address1" => "Buraydah, Qassim", 
+            "address2" => "Jeddah", 
+            "postcode" => "28503", 
+            "area" => 372850, 
+            "city" => "Jeddah", 
+            "state" => "Jeddah", 
             "country" => "SA", 
-            "email" => null, 
+            "email" => "codlop@info.com", 
             "phone" => "+966 57 291 8538", 
-            "vat_id" => null, 
+            "vat_id" => "20%", 
             "default_address" => 0, 
             "additional" => null, 
             "created_at" => "2024-04-15T13:50:40.000000Z", 
             "updated_at" => "2024-04-15T13:50:40.000000Z" 
         ], 
         [
-            "id" => 8275, 
+            "id" => 6528, 
             "address_type" => "customer", 
             "customer_id" => 1, 
-            "carrier_id" => null, 
-            "cart_id" => null, 
-            "order_id" => null, 
-            "first_name" => "Demo", 
-            "last_name" => "User", 
-            "gender" => null, 
-            "company_name" => null, 
-            "address1" => "yaseen", 
-            "address2" => null, 
-            "postcode" => "asdf", 
-            "area" => null, 
-            "city" => "5505", 
-            "state" => "615", 
-            "country" => "AE", 
-            "email" => null, 
-            "phone" => "+971 57 291 8538", 
-            "vat_id" => null, 
-            "default_address" => 0, 
-            "additional" => null, 
-            "created_at" => "2024-07-11T13:19:19.000000Z", 
-            "updated_at" => "2024-07-11T13:19:19.000000Z" 
-        ], 
-        [
-            "id" => 8356, 
-            "address_type" => "customer", 
-            "customer_id" => 1, 
-            "carrier_id" => null, 
-            "cart_id" => null, 
-            "order_id" => null, 
-            "first_name" => "Demo", 
-            "last_name" => "User", 
-            "gender" => null, 
-            "company_name" => null, 
-            "address1" => "yaseen", 
-            "address2" => null, 
-            "postcode" => "asdf", 
-            "area" => null, 
-            "city" => "5003", 
-            "state" => "612", 
-            "country" => "AE", 
-            "email" => null, 
-            "phone" => "+971 57 291 8538", 
-            "vat_id" => null, 
-            "default_address" => 0, 
-            "additional" => null, 
-            "created_at" => "2024-07-11T14:32:21.000000Z", 
-            "updated_at" => "2024-07-11T14:32:21.000000Z" 
-        ], 
-        [
-            "id" => 8657, 
-            "address_type" => "customer", 
-            "customer_id" => 1, 
-            "carrier_id" => null, 
-            "cart_id" => null, 
-            "order_id" => null, 
-            "first_name" => "Demo", 
-            "last_name" => "User", 
-            "gender" => null, 
-            "company_name" => null, 
-            "address1" => "asdfasdf", 
-            "address2" => null, 
-            "postcode" => "asdf", 
-            "area" => "325", 
-            "city" => "4583", 
-            "state" => "573", 
-            "country" => "OM", 
-            "email" => null, 
+            "carrier_id" => 2020, 
+            "cart_id" => 1256, 
+            "order_id" => 15, 
+            "first_name" => "salah", 
+            "last_name" => "jumaa", 
+            "gender" => "male", 
+            "company_name" => "codlop", 
+            "address1" => "Buraydah, Qassim", 
+            "address2" => "Jeddah", 
+            "postcode" => "28503", 
+            "area" => 372850, 
+            "city" => "Jeddah", 
+            "state" => "Jeddah", 
+            "country" => "SA", 
+            "email" => "codlop@info.com", 
             "phone" => "+966 57 291 8538", 
-            "vat_id" => null, 
+            "vat_id" => "20%", 
             "default_address" => 0, 
             "additional" => null, 
-            "created_at" => "2024-10-08T15:24:34.000000Z", 
-            "updated_at" => "2024-10-08T15:24:34.000000Z" 
-        ] 
+            "created_at" => "2024-04-15T13:50:40.000000Z", 
+            "updated_at" => "2024-04-15T13:50:40.000000Z" 
+        ], 
+        [
+            "id" => 6528, 
+            "address_type" => "customer", 
+            "customer_id" => 1, 
+            "carrier_id" => 2020, 
+            "cart_id" => 1256, 
+            "order_id" => 15, 
+            "first_name" => "salah", 
+            "last_name" => "jumaa", 
+            "gender" => "male", 
+            "company_name" => "codlop", 
+            "address1" => "Buraydah, Qassim", 
+            "address2" => "Jeddah", 
+            "postcode" => "28503", 
+            "area" => 372850, 
+            "city" => "Jeddah", 
+            "state" => "Jeddah", 
+            "country" => "SA", 
+            "email" => "codlop@info.com", 
+            "phone" => "+966 57 291 8538", 
+            "vat_id" => "20%", 
+            "default_address" => 0, 
+            "additional" => null, 
+            "created_at" => "2024-04-15T13:50:40.000000Z", 
+            "updated_at" => "2024-04-15T13:50:40.000000Z" 
+        ], 
+        [
+            "id" => 6528, 
+            "address_type" => "customer", 
+            "customer_id" => 1, 
+            "carrier_id" => 2020, 
+            "cart_id" => 1256, 
+            "order_id" => 15, 
+            "first_name" => "salah", 
+            "last_name" => "jumaa", 
+            "gender" => "male", 
+            "company_name" => "codlop", 
+            "address1" => "Buraydah, Qassim", 
+            "address2" => "Jeddah", 
+            "postcode" => "28503", 
+            "area" => 372850, 
+            "city" => "Jeddah", 
+            "state" => "Jeddah", 
+            "country" => "SA", 
+            "email" => "codlop@info.com", 
+            "phone" => "+966 57 291 8538", 
+            "vat_id" => "20%", 
+            "default_address" => 0, 
+            "additional" => null, 
+            "created_at" => "2024-04-15T13:50:40.000000Z", 
+            "updated_at" => "2024-04-15T13:50:40.000000Z" 
+        ], 
+        [
+            "id" => 6528, 
+            "address_type" => "customer", 
+            "customer_id" => 1, 
+            "carrier_id" => 2020, 
+            "cart_id" => 1256, 
+            "order_id" => 15, 
+            "first_name" => "salah", 
+            "last_name" => "jumaa", 
+            "gender" => "male", 
+            "company_name" => "codlop", 
+            "address1" => "Buraydah, Qassim", 
+            "address2" => "Jeddah", 
+            "postcode" => "28503", 
+            "area" => "372850", 
+            "city" => "Jeddah", 
+            "state" => "Jeddah", 
+            "country" => "SA", 
+            "email" => "codlop@info.com", 
+            "phone" => "+966 57 291 8538", 
+            "vat_id" => "20%", 
+            "default_address" => 0, 
+            "additional" => null, 
+            "created_at" => "2024-04-15T13:50:40.000000Z", 
+            "updated_at" => "2024-04-15T13:50:40.000000Z" 
+        ]
     ]; 
 
     return $context;
@@ -1561,20 +2077,20 @@ function cart() {
         "items" => [
               [
                  "id" => 8198, 
-                 "quantity" => 1, 
+                 "quantity" => 10, 
                  "sku" => "K6P8ATO", 
                  "type" => "virtual", 
-                 "name" => "digital", 
+                 "name" => "حامل لاب توب وتابلت محمول وقابل للطي بـ 6 زوايا من الألومنيوم، مناسب لماك بوك، آيباد، اتش بي، ديل، لينوفو 10-15.6 بوصة - رمادي", 
                  "coupon_code" => null, 
                  "prize" => null, 
-                 "weight" => "0.0000", 
-                 "total_weight" => "0.0000", 
+                 "weight" => "10", 
+                 "total_weight" => "10", 
                  "base_total_weight" => "0.0000", 
-                 "price" => "5.0000", 
-                 "base_price" => "5.0000", 
-                 "formated_price" => "5 SAR", 
-                 "total" => "5.0000", 
-                 "base_total" => "5.0000", 
+                 "price" => "300", 
+                 "base_price" => "300", 
+                 "formated_price" => "300 SAR", 
+                 "total" => "300", 
+                 "base_total" => "300", 
                  "tax_percent" => "15.0000", 
                  "tax_amount" => "0.7500", 
                  "base_tax_amount" => "0.7500", 
@@ -1597,7 +2113,7 @@ function cart() {
                  "show_quantity_box" => true,
                  "item_have_qty" => true,
                  "children" => [
-                    ], 
+                ], 
                  "product" => [
                         "id" => 56219, 
                         "parent_id" => null, 
@@ -1611,13 +2127,13 @@ function cart() {
                         "status" => 1, 
                         "short_description" => null, 
                         "description" => null, 
-                        "name" => "digital", 
-                        "url_key" => "k6p8ato", 
+                        "name" => "سماعة Q30 فوق الأذن ساوند كور من انكر لايف Q30 هايبرد اكتيف بخاصية الغاء الضوضاء واوضاع متعددة وصوت عالي الدقة ووقت تشغيل يدوم لمدة 40 ساعة وخاصية الشحن السريع، اذن بلوتوث ملائمة للسفر، اسود", 
+                        "url_key" => "2g663yz",
                         "tax_category_id" => null, 
                         "new" => 0, 
                         "featured" => 0, 
                         "visible_individually" => 1, 
-                        "color" => null, 
+                        "color" => "black", 
                         "text" => null, 
                         "image" => null, 
                         "size" => null, 
@@ -1635,7 +2151,7 @@ function cart() {
                         "meta_title" => null, 
                         "meta_keywords" => null, 
                         "meta_description" => null, 
-                        "price" => "5.0000", 
+                        "price" => "300", 
                         "cost" => null, 
                         "special_price" => null, 
                         "special_price_from" => null, 
@@ -1651,7 +2167,7 @@ function cart() {
                             "status" => 0, 
                             "is_user_defined" => 1 
                         ],
-                        "base_image_url" => "https://cdn.twsaa.com/product/56219/large-b5a93051-3cc1-4d62-8b7f-2cd7897b9581.jpg"
+                        "base_image_url" => "https://media.zid.store/thumbs/07d02681-b3c7-4603-b219-599dc6c7a256/fd5b77fd-cbf0-4ed9-8598-611a0498b2c7-thumbnail-1000x1000-70.webp"
                     ] 
               ], 
               [
@@ -1659,7 +2175,7 @@ function cart() {
                                 "quantity" => 1, 
                                 "sku" => "OUU1RO7", 
                                 "type" => "downloadable", 
-                                "name" => "ebook", 
+                                "name" => "سماعة على الاذن بلوتوث لاسلكية P9 مع مايكروفون - ازرق", 
                                 "coupon_code" => null,
                                 "type" => "downloadable",
                                 "prize" => null, 
@@ -1709,7 +2225,7 @@ function cart() {
                                 "show_quantity_box" => true,
                                 "item_have_qty" => true,
                                 "children" => [
-                                               ], 
+                                    ], 
                                 "product" => [
                                                      "id" => 56118, 
                                                      "parent_id" => null, 
@@ -1723,7 +2239,7 @@ function cart() {
                                                      "status" => 1, 
                                                      "short_description" => null, 
                                                      "description" => null, 
-                                                     "name" => "ebook", 
+                                                     "name" => "ebook ebook", 
                                                      "url_key" => "ouu1ro7", 
                                                      "tax_category_id" => null, 
                                                      "new" => 0, 
@@ -1763,7 +2279,7 @@ function cart() {
                                                         "status" => 0, 
                                                         "is_user_defined" => 1 
                                                      ],
-                                                     "base_image_url" => "https://cdn.twsaa.com/product/56118/medium-68fc0441-483a-4167-a993-22d76d82b494.jpg"
+                                                     "base_image_url" => "https://media.zid.store/thumbs/07d02681-b3c7-4603-b219-599dc6c7a256/7cae4ffa-e6b1-43da-a996-216867e3ea35-thumbnail-1000x1000-70.webp"
 
                                                   ] 
                              ], 
@@ -1780,7 +2296,7 @@ function cart() {
                                                            "base_total_weight" => "0.0000", 
                                                            "price" => "222.0000", 
                                                            "base_price" => "222.0000", 
-                                                           "formated_price" => "222 SAR", 
+                                                           "formated_price" => "555 SAR", 
                                                            "total" => "222.0000", 
                                                            "base_total" => "222.0000", 
                                                            "tax_percent" => "15.0000", 
@@ -1795,16 +2311,16 @@ function cart() {
                                                               "quantity" => "1", 
                                                               "options" => [
                                                                  [
-                                                                    "", 
-                                                                    "", 
-                                                                    "", 
-                                                                    [
+                                                                    "30", 
+                                                                    "40", 
+                                                                    "50", 
+                                                                 [
                                                                     ], 
                                                                     [
                                                                        ], 
-                                                                    "", 
-                                                                    "", 
-                                                                    "" 
+                                                                    "60", 
+                                                                    "70", 
+                                                                    "80" 
                                                                  ] 
                                                               ], 
                                                               "option_labels" => [
@@ -1822,21 +2338,21 @@ function cart() {
                                                               "option_label_values" => [
                                                                                    [
                                                                                       [
-                                                                                         "d1 (‏١ ر.س.‏ )", 
-                                                                                         "d2 (‏٢ ر.س.‏ )" 
+                                                                                         "d1 (888 ر.س )", 
+                                                                                         "d2 (777 ر.س)" 
                                                                                       ], 
                                                                                       [
-                                                                                            "e1 (‏١ ر.س.‏ )", 
-                                                                                            "e2 (‏٢ ر.س.‏ )" 
+                                                                                            "e1 (666ر.س )", 
+                                                                                            "e2 (222 ر.س)" 
                                                                                          ] 
                                                                                    ] 
                                                                                 ], 
                                                               "quantities" => [
-                                                                                               "1" 
+                                                                                               "10" 
                                                                                             ], 
                                                               "additiona_price" => [
                                                                                                ], 
-                                                              "total_additional_price" => 0 
+                                                              "total_additional_price" => "100" 
                                                            ], 
                                                            "parent_id" => null, 
                                                            "product_id" => 55682, 
@@ -2295,7 +2811,7 @@ function cart() {
                                                                                                                                                   "quantity" => 1, 
                                                                                                                                                   "sku" => "N2-4-5-3", 
                                                                                                                                                   "type" => "simple", 
-                                                                                                                                                  "name" => "ثلاجة الجمال سباركلنق لافندر 4 لتر", 
+                                                                                                                                                  "name" => " سماعة Q30 فوق الأذن ساوند كور من انكر لايف Q30 هايبرد اكتيف بخاصية الغاء الضوضاء واوضاع متعددة وصوت عالي الدقة ووقت تشغيل يدوم لمدة 40 ساعة وخاصية الشحن السريع، اذن بلوتوث ملائمة للسفر، اسود ", 
                                                                                                                                                   "coupon_code" => null, 
                                                                                                                                                   "prize" => null, 
                                                                                                                                                   "weight" => "0.0000", 
@@ -2366,31 +2882,7 @@ function cart() {
                                                                                                                                                            "promotion_title" => null, 
                                                                                                                                                            "meta_title" => "ثلاجة الجمال سباركلنق لافندر 4 لتر", 
                                                                                                                                                            "meta_keywords" => null, 
-                                                                                                                                                           "meta_description" => "<p>حافظي على منتجاتك المفضلة للعناية بجمال بشرتك مع ثلاجة الجمال الحجم الكلاسيكي الأنيق لوضعه أينما رغبت في غرفتك&nbsp;</p>
-     
-     <p>- أبعاد الثلاجة: العرض: 24 سم، الطول: 31.8سم، القطر: 32.2 سم
-     - رف واحد يفصل بين حجرتين تخزين رئيسية
-     - متوفرة بخاصية التبريد حتى 5 درجات مئوية&nbsp;
-     - متوفرة بخاصية التدفئة &nbsp;حتى 50 درجة مئوية&nbsp;
-     - درج خاص في باب الثلاجة
-     - محول DC5V 2A &nbsp;
-     - محول 100-240 فولت&nbsp;
-     - اللون: سباركلينج لافندر</p>
-     
-     <p>- ضعي قابس الكهرباء في في تيار 110 فولت أو 220 فولت ودعيها تعمل بشكل مستمر.
-     - بإمكانك تشغيل الثلاجة عبر أي محول USB بقوة 2 مل أمبير مما يجعلها تعمل داخل السيارة أو على بطاريات الطاقة (ننصح ببطارية طاقة تفوق 1000مل أمبير)</p>
-     
-     <p>التحذيرات والاحتياطات:
-     - قومي بتنظيف الثلاجة وتهويتها بمنشفة بشكل مستمر لمنع تشكل قطرات الماء داخلها.
-     - دعي مسافة فراغ 20سم بين الثلاجة والحائط.</p>
-     
-     <p>&nbsp;</p>
-     
-     <p>- محول كهربائي 220-110 فولت&nbsp;
-     - محول DC5V 2A &nbsp;
-     - قوة 5 فولت *2 مل أمبير
-     - سلك كهربائي USB
-     -ستيكرات زينة</p>", 
+                                                                                                                                                           "meta_description" => "<p>حافظي على منتجاتك المفضلة للعناية بجمال بشرتك مع ثلاجة الجمال الحجم الكلاسيكي الأنيق لوضعه أينما رغبت في غرفتك", 
                                                                                                                                                            "price" => "367.3500", 
                                                                                                                                                            "cost" => "216.0900", 
                                                                                                                                                            "special_price" => null, 
@@ -2407,9 +2899,7 @@ function cart() {
                                                                                                                                                               "status" => 0, 
                                                                                                                                                               "is_user_defined" => 1 
                                                                                                                                                            ],
-                                                                                                                                                           "base_image_url" => "https://cdn.twsaa.com/product/56219/large-b5a93051-3cc1-4d62-8b7f-2cd7897b9581.jpg"
-
-                                                                                                                                                        ] 
+                                                                                                                                                           "base_image_url" => "https://cdn.salla.sa/KjyBep/bP4jjekEMZv8TQQA1iqCpDFQWC35S7z2wOKUgo2M.png"                                                                                                                                                     ] 
                                                                                                                                                ] 
            ] 
     ];
@@ -2492,8 +2982,8 @@ function reviews() {
         [
             "id" => 229, 
             "reply" => "", 
-            "rating" => 5, 
-            "comment" => "asdf", 
+            "rating" => 3, 
+            "comment" => "ثلاجة الجمال سباركلنق لافندر 4 لتر", 
             "status" => "1", 
             "type" => "product", 
             "created_at" => "2024-11-04T08:05:09.000000Z", 
@@ -3033,1730 +3523,7 @@ function brands() {
     return $context;
 }
 
-function brandView() {
 
-    $context['authUser'] = auth();
-    $context['brand'] = [
-        "id" => 12, 
-        "name" => "اجمل للعطور", 
-        "description" => "                                                                                                                                                                                                                                                                                                                                                                ", 
-        "logo" => "brand/12/logo/a5cfbaa2-26b1-48d2-b7cf-ba491b541195.png", 
-        "banner" => "brand/12/banner/c1086ae2-4501-4b5c-a108-872490ee6705.jpg", 
-        "meta_title" => "اجمل", 
-        "meta_url" => "bushra", 
-        "meta_description" => "اجمل تحتوي على ازكى روائح العطور من البهارات العالمية ذات الجودة العالية ", 
-        "is_active" => 1, 
-        "translations" => [
-            [
-                "id" => 23, 
-                "locale" => "ar", 
-                "name" => "اجمل للعطور", 
-                "brand_id" => 12, 
-            ], 
-            [
-                "id" => 24, 
-                "locale" => "en", 
-                "name" => "اجمل للعطور", 
-                "brand_id" => 12, 
-            ] 
-        ] 
-    ];
-    $context['products'] = [
-        [
-            'product' => [
-                "id" => 107667, 
-                "product_id" => 56118, 
-                "parent_id" => null, 
-                "sku" => "OUU1RO7", 
-                "name" => "ebook", 
-                "description" => null, 
-                "url_key" => "ouu1ro7", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "1.00", 
-                "cost" => null, 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "1.00", 
-                "max_price" => "1.00", 
-                "is_vat" => 1, 
-                "short_description" => null, 
-                "meta_title" => null, 
-                "meta_keywords" => null, 
-                "meta_description" => null, 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-09-12 14:10:05", 
-                "updated_at" => "2024-10-15 17:33:53", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 107663, 
-                "product_id" => 56116, 
-                "parent_id" => null, 
-                "sku" => "N2-4-5-3", 
-                "name" => "ثلاجة الجمال سباركلنق لافندر 4 لتر", 
-                "description" => " ", 
-                "url_key" => "n2-4-5-3", 
-                "new" => null, 
-                "featured" => 1, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "367.35", 
-                "cost" => "216.09", 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "367.35", 
-                "max_price" => "367.35", 
-                "is_vat" => 0, 
-                "short_description" => " ", 
-                "meta_title" => "ثلاجة الجمال سباركلنق لافندر 4 لتر", 
-                "meta_keywords" => null, 
-                "meta_description" => "<p>حافظي على منتجاتك المفضلة للعناية بجمال بشرتك مع ثلاجة الجمال الحجم الكلاسيكي الأنيق لوضعه أينما رغبت في غرفتك&nbsp;</p>
-    
-                <p>- أبعاد الثلاجة: العرض: 24 سم، الطول: 31.8سم، القطر: 32.2 سم
-                - رف واحد يفصل بين حجرتين تخزين رئيسية
-                - متوفرة بخاصية التبريد حتى 5 درجات مئوية&nbsp;
-                - متوفرة بخاصية التدفئة &nbsp;حتى 50 درجة مئوية&nbsp;
-                - درج خاص في باب الثلاجة
-                - محول DC5V 2A &nbsp;
-                - محول 100-240 فولت&nbsp;
-                - اللون: سباركلينج لافندر</p>
-                
-                <p>- ضعي قابس الكهرباء في في تيار 110 فولت أو 220 فولت ودعيها تعمل بشكل مستمر.
-                - بإمكانك تشغيل الثلاجة عبر أي محول USB بقوة 2 مل أمبير مما يجعلها تعمل داخل السيارة أو على بطاريات الطاقة (ننصح ببطارية طاقة تفوق 1000مل أمبير)</p>
-                
-                <p>التحذيرات والاحتياطات:
-                - قومي بتنظيف الثلاجة وتهويتها بمنشفة بشكل مستمر لمنع تشكل قطرات الماء داخلها.
-                - دعي مسافة فراغ 20سم بين الثلاجة والحائط.</p>
-                
-                <p>&nbsp;</p>
-                
-                <p>- محول كهربائي 220-110 فولت&nbsp;
-                - محول DC5V 2A &nbsp;
-                - قوة 5 فولت *2 مل أمبير
-                - سلك كهربائي USB
-                -ستيكرات زينة</p>", 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-08-21 16:41:44", 
-                "updated_at" => "2024-10-15 17:33:59", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 107661, 
-                "product_id" => 56115, 
-                "parent_id" => null, 
-                "sku" => "sku-ABC", 
-                "name" => null, 
-                "description" => null, 
-                "url_key" => "sku-abc", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => null, 
-                "cost" => null, 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => null, 
-                "max_price" => null, 
-                "is_vat" => 0, 
-                "short_description" => null, 
-                "meta_title" => null, 
-                "meta_keywords" => null, 
-                "meta_description" => null, 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-08-06 11:30:32", 
-                "updated_at" => "2024-10-15 17:34:04", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 106921, 
-                "product_id" => 55683, 
-                "parent_id" => null, 
-                "sku" => "GFAF0U2", 
-                "name" => "vir", 
-                "description" => null, 
-                "url_key" => "gfaf0u2", 
-                "new" => null, 
-                "featured" => 1, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "1.00", 
-                "cost" => null, 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "1.00", 
-                "max_price" => "1.00", 
-                "is_vat" => 1, 
-                "short_description" => null, 
-                "meta_title" => null, 
-                "meta_keywords" => null, 
-                "meta_description" => null, 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-06-04 10:45:29", 
-                "updated_at" => "2024-10-15 17:34:16", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 106919, 
-                "product_id" => 55682, 
-                "parent_id" => null, 
-                "sku" => "customizable", 
-                "name" => "customizable product", 
-                "description" => "This is testing Mobile", 
-                "url_key" => "customizable", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "222.00", 
-                "cost" => null, 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "222.00", 
-                "max_price" => "222.00", 
-                "is_vat" => 1, 
-                "short_description" => null, 
-                "meta_title" => null, 
-                "meta_keywords" => null, 
-                "meta_description" => null, 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-06-03 15:33:15", 
-                "updated_at" => "2024-10-15 17:34:22", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 106891, 
-                "product_id" => 55668, 
-                "parent_id" => null, 
-                "sku" => "2G663YZ", 
-                "name" => "asdf asdf2", 
-                "description" => "<p>محافظ نسائية على الموضة ، محفظة طويلة ثلاثية الطي ذات جودة عالية من جلد البولي يوريثان ، حامل بطاقات كلاتش للنساء ، حامل بطاقات</p><p><br></p>", 
-                "url_key" => "2g663yz", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "0.00", 
-                "cost" => null, 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "1.00", 
-                "max_price" => "8.00", 
-                "is_vat" => 1, 
-                "short_description" => null, 
-                "meta_title" => null, 
-                "meta_keywords" => null, 
-                "meta_description" => null, 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-05-08 15:58:59", 
-                "updated_at" => "2024-10-15 17:34:30", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 103671, 
-                "product_id" => 54040, 
-                "parent_id" => null, 
-                "sku" => "W1MDRT4", 
-                "name" => "tryme", 
-                "description" => "", 
-                "url_key" => "w1mdrt4", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "1.00", 
-                "cost" => null, 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "1.00", 
-                "max_price" => "1.00", 
-                "is_vat" => 1, 
-                "short_description" => null, 
-                "meta_title" => "", 
-                "meta_keywords" => null, 
-                "meta_description" => "", 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-04-22 15:35:12", 
-                "updated_at" => "2024-07-25 12:32:10", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 103667, 
-                "product_id" => 54038, 
-                "parent_id" => null, 
-                "sku" => "059347", 
-                "name" => "موزع روائح الزيوت العطرية", 
-                "description" => "<p>موزع روائح الزيوت العطرية</p>
-
-                <p>اضاءة داخلية مع اللهب - 4 الوان</p>
-                
-                <p>مرطب بالموجات فوق الصوتية</p>
-                
-                <p>&nbsp;</p>
-                
-                <p>ضمان سنتين&nbsp;</p>", 
-                "url_key" => "059347", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "142.80", 
-                "cost" => "84.00", 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "142.80", 
-                "max_price" => "142.80", 
-                "is_vat" => 1, 
-                "short_description" => "<p>موزع روائح الزيوت العطرية</p>
-
-                <p>اضاءة داخلية مع اللهب - 4 الوان</p>
-                
-                <p>مرطب بالموجات فوق الصوتية</p>
-                
-                <p>&nbsp;</p>
-                
-                <p>ضمان سنتين&nbsp;</p>", 
-                "meta_title" => "موزع روائح الزيوت العطرية", 
-                "meta_keywords" => null, 
-                "meta_description" => "<p>موزع روائح الزيوت العطرية</p>
-
-                <p>اضاءة داخلية مع اللهب - 4 الوان</p>
-                
-                <p>مرطب بالموجات فوق الصوتية</p>
-                
-                <p>&nbsp;</p>
-                
-                <p>ضمان سنتين&nbsp;</p>", 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0.1, 
-                "unlimited_quantity" => "0", 
-                "barcode" => "059347", 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-04-22 14:53:31", 
-                "updated_at" => "2024-10-15 17:35:00", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 103665, 
-                "product_id" => 54037, 
-                "parent_id" => null, 
-                "sku" => "300130", 
-                "name" => "ساعه انمر مان الرجالية 300130", 
-                "description" => '<p dir="RTL">ساعه رجاليه فخمه من ماركة انمر مان&nbsp;</p>
-
-                <p dir="RTL">صنقل ستيل كامل</p>
-                
-                <p dir="RTL">قفل ستيل</p>
-                
-                <p dir="RTL">تصميم رائع وجذاب</p>
-                
-                <p dir="RTL">مكينه ياباني</p>
-                
-                <p dir="RTL">لمعه ثابته</p>
-                
-                <p dir="RTL">علبه بنفس اسم الماركه</p>
-                
-                <p dir="RTL">ضمان ثلاث سنوات</p>", 
-                "url_key" => "300130", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "160.65", 
-                "cost" => "94.50", 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "160.65", 
-                "max_price" => "160.65", 
-                "is_vat" => 1, 
-                "short_description" => "<p dir="RTL">ساعه رجاليه فخمه من ماركة انمر مان&nbsp;</p>
-
-                <p dir="RTL">صنقل ستيل كامل</p>
-                
-                <p dir="RTL">قفل ستيل</p>
-                
-                <p dir="RTL">تصميم رائع وجذاب</p>
-                
-                <p dir="RTL">مكينه ياباني</p>
-                
-                <p dir="RTL">لمعه ثابته</p>
-                
-                <p dir="RTL">علبه بنفس اسم الماركه</p>
-                
-                <p dir="RTL">ضمان ثلاث سنوات</p>", 
-                "meta_title" => "ساعه انمر مان الرجالية 300130", 
-                "meta_keywords" => null, 
-                "meta_description" => "<p dir="RTL">ساعه رجاليه فخمه من ماركة انمر مان&nbsp;</p>
-
-                <p dir="RTL">صنقل ستيل كامل</p>
-                
-                <p dir="RTL">قفل ستيل</p>
-                
-                <p dir="RTL">تصميم رائع وجذاب</p>
-                
-                <p dir="RTL">مكينه ياباني</p>
-                
-                <p dir="RTL">لمعه ثابته</p>
-                
-                <p dir="RTL">علبه بنفس اسم الماركه</p>
-                                        
-                <p dir="RTL">ضمان ثلاث سنوات</p>', 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0.6, 
-                "unlimited_quantity" => "0", 
-                "barcode" => "7788997788", 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-04-22 14:53:27", 
-                "updated_at" => "2024-10-15 17:35:07", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 1,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 102523, 
-                "product_id" => 53483, 
-                "parent_id" => null, 
-                "sku" => "MSKUAE1005006629609421", 
-                "name" => "مجموعة مسحوق مجفف مجمد مضاد للتجاعيد ، خميرة للإصلاح ، مصل مغذي ، كرياتين لتعزيز إنتاج الكولاجين", 
-                "description" => '<div class="detailmodule_html"><div class="detail-desc-decorate-richtext"><p><img src="https://ae01.alicdn.com/kf/Sbca62263df6e44d9916a0a3ad441d085h.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S635c7aebc8fe4393a93593d41362b68e7.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S0210767bca5e48189f751176a99ffb1dS.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S6d44ece12bcf407bba64bf3f31b3b7daP.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S1ac24a381f3740eb88b3a18e36a6f4a4g.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S537206bb81f14efbbc423901aad8923de.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Se52ebe59427648bf8e84305c39564c83v.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S88ca6f916b1840bda759fdd7556f26cdw.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Saf2e2587072841bc92da588588dff5feK.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Sb9407490af5647a6b1daf61c361576e50.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S7556e22c080145459d4de2a31e379fbaN.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S3d106311a0e4431f938d6a6bdc87ce12l.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S54005c6d105649b582a00fd961fdce65K.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S20ecd5f1d6454e16af3caee0efc72b71I.jpg" slate-data-type="image" /></p></div></div>', 
-                "url_key" => "mskuae1005006629609421", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => null, 
-                "cost" => null, 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "424.51", 
-                "max_price" => "1061.28", 
-                "is_vat" => 1, 
-                "short_description" => '<div class="detailmodule_html"><div class="detail-desc-decorate-richtext"><p><img src="https://ae01.alicdn.com/kf/Sbca62263df6e44d9916a0a3ad441d085h.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S635c7aebc8fe4393a93593d41362b68e7.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S0210767bca5e48189f751176a99ffb1dS.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S6d44ece12bcf407bba64bf3f31b3b7daP.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S1ac24a381f3740eb88b3a18e36a6f4a4g.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S537206bb81f14efbbc423901aad8923de.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Se52ebe59427648bf8e84305c39564c83v.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S88ca6f916b1840bda759fdd7556f26cdw.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Saf2e2587072841bc92da588588dff5feK.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Sb9407490af5647a6b1daf61c361576e50.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S7556e22c080145459d4de2a31e379fbaN.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S3d106311a0e4431f938d6a6bdc87ce12l.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S54005c6d105649b582a00fd961fdce65K.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S20ecd5f1d6454e16af3caee0efc72b71I.jpg" slate-data-type="image" /></p></div></div>', 
-                "meta_title" => "مجموعة مسحوق مجفف مجمد مضاد للتجاعيد ، خميرة للإصلاح ، مصل مغذي ، كرياتين لتعزيز إنتاج الكولاجين", 
-                "meta_keywords" => null, 
-                "meta_description" => '<div class="detailmodule_html"><div class="detail-desc-decorate-richtext"><p><img src="https://ae01.alicdn.com/kf/Sbca62263df6e44d9916a0a3ad441d085h.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S635c7aebc8fe4393a93593d41362b68e7.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S0210767bca5e48189f751176a99ffb1dS.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S6d44ece12bcf407bba64bf3f31b3b7daP.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S1ac24a381f3740eb88b3a18e36a6f4a4g.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S537206bb81f14efbbc423901aad8923de.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Se52ebe59427648bf8e84305c39564c83v.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S88ca6f916b1840bda759fdd7556f26cdw.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Saf2e2587072841bc92da588588dff5feK.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Sb9407490af5647a6b1daf61c361576e50.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S7556e22c080145459d4de2a31e379fbaN.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S3d106311a0e4431f938d6a6bdc87ce12l.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S54005c6d105649b582a00fd961fdce65K.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S20ecd5f1d6454e16af3caee0efc72b71I.jpg" slate-data-type="image" /></p></div></div>', 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-04-16 18:25:06", 
-                "updated_at" => "2024-10-15 17:35:16", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 102497, 
-                "product_id" => 53470, 
-                "parent_id" => null, 
-                "sku" => "MSKUAE1005006608665729", 
-                "name" => "سوار زوجين من الصلب الكلاسيكي الفاخر من التيتانيوم ، سوار عالي الجودة للرجال والنساء ، هدايا الحفلات", 
-                "description" => '<div class="detailmodule_html"><div class="detail-desc-decorate-richtext"><p>
-                        <kse:widget data-widget-type="customText" id="1005000011207205" type="relation"></kse:widget></p>
-                    <p><span style="font-size:16px" id="tl_1">لمزيد من المعلومات والصور ، يرجى الاتصال بخدمة العملاء.</span></p>
-                    <p><br /></p>
-                    <p style="font-family:&quot;Open Sans&quot;, Roboto, Arial, Helvetica, sans-serif, SimSun;font-size:14px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(34, 34, 34);margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box" align="start"><span style="font-size:16px" id="tl_2">لمزيد من المعلومات والصور ، يرجى الاتصال بخدمة العملاء.</span></p>
-                    <p><br /></p>
-                    <p style="font-family:&quot;Open Sans&quot;, Roboto, Arial, Helvetica, sans-serif, SimSun;font-size:14px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(34, 34, 34);margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box" align="start"><span style="font-size:16px" id="tl_3">لمزيد من المعلومات والصور ، يرجى الاتصال بخدمة العملاء.</span></p>
-                    <p><br /></p>
-                    <div>
-                        <span style="font-size:24px" id="tl_4">نصائح:</span>
-                    </div>
-                    <div>
-                        <span style="font-size:18px" id="tl_5">يرجى استخدام شريط قياس ناعم لتأكيد محيط اليد الفعلي قبل الشراء ، وإضافة سنتيمتر واحد لتحديد الحجم المناسب للارتداء</span>
-                    </div>
-                    <div>
-                        &nbsp;
-                    </div>
-                    <p style="font-family:&quot;Open Sans&quot;, Roboto, Arial, Helvetica, sans-serif, SimSun;font-size:14px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(34, 34, 34);margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box" align="start"><img src="https://ae01.alicdn.com/kf/Sdc7eb0d7addd4f3faf38db4e0b0eef45x.jpg" slate-data-type="image" /></p></div></div>
-                    ', 
-                "url_key" => "mskuae1005006608665729", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => null, 
-                "cost" => null, 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "330.58", 
-                "max_price" => "330.58", 
-                "is_vat" => 1, 
-                "short_description" => '<div class="detailmodule_html"><div class="detail-desc-decorate-richtext"><p>
-                    <kse:widget data-widget-type="customText" id="1005000011207205" type="relation"></kse:widget></p>
-                <p><span style="font-size:16px" id="tl_1">لمزيد من المعلومات والصور ، يرجى الاتصال بخدمة العملاء.</span></p>
-                <p><br /></p>
-                <p style="font-family:&quot;Open Sans&quot;, Roboto, Arial, Helvetica, sans-serif, SimSun;font-size:14px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(34, 34, 34);margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box" align="start"><span style="font-size:16px" id="tl_2">لمزيد من المعلومات والصور ، يرجى الاتصال بخدمة العملاء.</span></p>
-                <p><br /></p>
-                <p style="font-family:&quot;Open Sans&quot;, Roboto, Arial, Helvetica, sans-serif, SimSun;font-size:14px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(34, 34, 34);margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box" align="start"><span style="font-size:16px" id="tl_3">لمزيد من المعلومات والصور ، يرجى الاتصال بخدمة العملاء.</span></p>
-                <p><br /></p>
-                <div>
-                    <span style="font-size:24px" id="tl_4">نصائح:</span>
-                </div>
-                <div>
-                    <span style="font-size:18px" id="tl_5">يرجى استخدام شريط قياس ناعم لتأكيد محيط اليد الفعلي قبل الشراء ، وإضافة سنتيمتر واحد لتحديد الحجم المناسب للارتداء</span>
-                </div>
-                <div>
-                    &nbsp;
-                </div>
-                <p style="font-family:&quot;Open Sans&quot;, Roboto, Arial, Helvetica, sans-serif, SimSun;font-size:14px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(34, 34, 34);margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box" align="start"><img src="https://ae01.alicdn.com/kf/Sdc7eb0d7addd4f3faf38db4e0b0eef45x.jpg" slate-data-type="image" /></p></div></div>
-                ', 
-                "meta_title" => "سوار زوجين من الصلب الكلاسيكي الفاخر من التيتانيوم ، سوار عالي الجودة للرجال والنساء ، هدايا الحفلات", 
-                "meta_keywords" => null, 
-                "meta_description" => '<div class="detailmodule_html"><div class="detail-desc-decorate-richtext"><p>
-                        <kse:widget data-widget-type="customText" id="1005000011207205" type="relation"></kse:widget></p>
-                    <p><span style="font-size:16px" id="tl_1">لمزيد من المعلومات والصور ، يرجى الاتصال بخدمة العملاء.</span></p>
-                    <p><br /></p>
-                    <p style="font-family:&quot;Open Sans&quot;, Roboto, Arial, Helvetica, sans-serif, SimSun;font-size:14px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(34, 34, 34);margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box" align="start"><span style="font-size:16px" id="tl_2">لمزيد من المعلومات والصور ، يرجى الاتصال بخدمة العملاء.</span></p>
-                    <p><br /></p>
-                    <p style="font-family:&quot;Open Sans&quot;, Roboto, Arial, Helvetica, sans-serif, SimSun;font-size:14px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(34, 34, 34);margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box" align="start"><span style="font-size:16px" id="tl_3">لمزيد من المعلومات والصور ، يرجى الاتصال بخدمة العملاء.</span></p>
-                    <p><br /></p>
-                    <div>
-                        <span style="font-size:24px" id="tl_4">نصائح:</span>
-                    </div>
-                    <div>
-                        <span style="font-size:18px" id="tl_5">يرجى استخدام شريط قياس ناعم لتأكيد محيط اليد الفعلي قبل الشراء ، وإضافة سنتيمتر واحد لتحديد الحجم المناسب للارتداء</span>
-                    </div>
-                    <div>
-                        &nbsp;
-                    </div>
-                    <p style="font-family:&quot;Open Sans&quot;, Roboto, Arial, Helvetica, sans-serif, SimSun;font-size:14px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(34, 34, 34);margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box" align="start"><img src="https://ae01.alicdn.com/kf/Sdc7eb0d7addd4f3faf38db4e0b0eef45x.jpg" slate-data-type="image" /></p></div></div>
-                    ', 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-04-16 18:25:00", 
-                "updated_at" => "2024-10-15 17:35:42", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 102485, 
-                "product_id" => 53464, 
-                "parent_id" => null, 
-                "sku" => "MSKUAE1005006682900581", 
-                "name" => "نظارات شمسية مستطيلة سوداء للنساء ، نظارات شمسية نسائية غريبة ، أزياء الحفلات ، مصمم العلامة التجارية ، UV400 ، بيع", 
-                "description" => '<div class="detailmodule_html"><div class="detail-desc-decorate-richtext"><p><img src="https://ae01.alicdn.com/kf/S9e1b89e74cc740028300c1333a81390b5.png" slate-data-type="image" /></p> 
-                    <p id="tl_1">انقر على المجموعة اتبع متجرنا ، وذلك للعثور على أسرع وإذا كان المتجر قد حدّث المنتج الجديد ، يمكنك الحصول عليه في المرة الأولى.</p> 
-                    <p id="tl_2">إذا لم تتمكن من العثور على الموديل الذي تريده ، يرجى الاتصال بنا للحصول على المزيد من الطراز.</p> 
-                    <p id="tl_3">لأن هناك العديد من النماذج ، ما زلنا نقوم بالتحميل ، ولم يتم تحميلها كلها.</p> 
-                    <p id="tl_4">لذلك إذا كنت بحاجة إلى رؤية المزيد من النماذج ، يرجى الاتصال بنا.</p> 
-                    <p><img src="https://ae01.alicdn.com/kf/Saa929797a7ee4aeaaf9d63d9d4c403c7O.png" slate-data-type="image" /></p> 
-                    <p><img src="https://ae01.alicdn.com/kf/Sc89d251c03b84aa8b7bbc7c4e237ee57P.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S9a70b16f6969449f8f27df7047a0c5cfS.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S65a6ec4e10f24b28839d041c98b8360cY.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S212f00319bfd46c2b78bfc1f9ed2b975G.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Sb939841c93524c9d83f7f79ccc696d80a.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Sf6b5fd5a090b4703a9e22b9314a39ddd3.jpg" slate-data-type="image" /></p> 
-                    <p><img src="https://ae01.alicdn.com/kf/S32e12f6e8df344c0a000e1657965ae1al.png" slate-data-type="image" /></p> 
-                    <p id="tl_5">موضع ترحيب انخفاض الشحن.</p> 
-                    <p><br /></p> 
-                    <p id="tl_6">للشحن المباشر ، يمكننا إرسال البضائع إلى عملائك مباشرة ولن نترك معلومات عنا إذا كنت ترغب في ذلك.</p> 
-                    <p><br /></p> 
-                    <p id="tl_7">كيف يمكنني تتبع الطرد الخاص بي ؟</p> 
-                    <p><br /><br /></p> 
-                    <p id="tl_8">يمكنك تتبع الطرد الخاص بك على الموقع الإلكتروني التالي باستخدام رقم التتبع الخاص بك: www.17track.net.en</p> 
-                    <p><br /></p> 
-                    <p id="tl_9">ماذا يمكنني أن أفعل عندما ينفد وقت حماية الشراء ؟</p> 
-                    <p><br /></p> 
-                    <p id="tl_10">إذا كان وقت حماية الشراء ينفد ، يرجى الاتصال بنا ويمكننا مساعدتك على تمديده. لذلك لن تذهب أموالك إلى حسابي.</p> 
-                    <p><br /></p> 
-                    <p id="tl_11">ملاحظات</p> 
-                    <p><br /></p> 
-                    <p id="tl_12">1. إذا كنت راضيًا عن منتجاتنا وخدماتنا ، يرجى ترك تعليقك الإيجابي و 5 نجوم. و 5 نجوم للحصول على تصنيف مفصل لطلبك.</p> 
-                    <p><br /></p> 
-                    <p id="tl_13">2. إذا لم تكن راضيًا عن منتجاتنا ، الرجاء الاتصال بنا قبل ترك تعليقات سلبية أو إجراء التقييم التفصيلي ، ونحن نضمن أننا سنحل أي مشاكل لك.</p></div></div>
-                    ', 
-                "url_key" => "mskuae1005006682900581", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => null, 
-                "cost" => null, 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "431.44", 
-                "max_price" => "431.44", 
-                "is_vat" => 1, 
-                "short_description" => '<div class="detailmodule_html"><div class="detail-desc-decorate-richtext"><p><img src="https://ae01.alicdn.com/kf/S9e1b89e74cc740028300c1333a81390b5.png" slate-data-type="image" /></p> 
-                    <p id="tl_1">انقر على المجموعة اتبع متجرنا ، وذلك للعثور على أسرع وإذا كان المتجر قد حدّث المنتج الجديد ، يمكنك الحصول عليه في المرة الأولى.</p> 
-                    <p id="tl_2">إذا لم تتمكن من العثور على الموديل الذي تريده ، يرجى الاتصال بنا للحصول على المزيد من الطراز.</p> 
-                    <p id="tl_3">لأن هناك العديد من النماذج ، ما زلنا نقوم بالتحميل ، ولم يتم تحميلها كلها.</p> 
-                    <p id="tl_4">لذلك إذا كنت بحاجة إلى رؤية المزيد من النماذج ، يرجى الاتصال بنا.</p> 
-                    <p><img src="https://ae01.alicdn.com/kf/Saa929797a7ee4aeaaf9d63d9d4c403c7O.png" slate-data-type="image" /></p> 
-                    <p><img src="https://ae01.alicdn.com/kf/Sc89d251c03b84aa8b7bbc7c4e237ee57P.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S9a70b16f6969449f8f27df7047a0c5cfS.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S65a6ec4e10f24b28839d041c98b8360cY.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S212f00319bfd46c2b78bfc1f9ed2b975G.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Sb939841c93524c9d83f7f79ccc696d80a.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Sf6b5fd5a090b4703a9e22b9314a39ddd3.jpg" slate-data-type="image" /></p> 
-                    <p><img src="https://ae01.alicdn.com/kf/S32e12f6e8df344c0a000e1657965ae1al.png" slate-data-type="image" /></p> 
-                    <p id="tl_5">موضع ترحيب انخفاض الشحن.</p> 
-                    <p><br /></p> 
-                    <p id="tl_6">للشحن المباشر ، يمكننا إرسال البضائع إلى عملائك مباشرة ولن نترك معلومات عنا إذا كنت ترغب في ذلك.</p> 
-                    <p><br /></p> 
-                    <p id="tl_7">كيف يمكنني تتبع الطرد الخاص بي ؟</p> 
-                    <p><br /><br /></p> 
-                    <p id="tl_8">يمكنك تتبع الطرد الخاص بك على الموقع الإلكتروني التالي باستخدام رقم التتبع الخاص بك: www.17track.net.en</p> 
-                    <p><br /></p> 
-                    <p id="tl_9">ماذا يمكنني أن أفعل عندما ينفد وقت حماية الشراء ؟</p> 
-                    <p><br /></p> 
-                    <p id="tl_10">إذا كان وقت حماية الشراء ينفد ، يرجى الاتصال بنا ويمكننا مساعدتك على تمديده. لذلك لن تذهب أموالك إلى حسابي.</p> 
-                    <p><br /></p> 
-                    <p id="tl_11">ملاحظات</p> 
-                    <p><br /></p> 
-                    <p id="tl_12">1. إذا كنت راضيًا عن منتجاتنا وخدماتنا ، يرجى ترك تعليقك الإيجابي و 5 نجوم. و 5 نجوم للحصول على تصنيف مفصل لطلبك.</p> 
-                    <p><br /></p> 
-                    <p id="tl_13">2. إذا لم تكن راضيًا عن منتجاتنا ، الرجاء الاتصال بنا قبل ترك تعليقات سلبية أو إجراء التقييم التفصيلي ، ونحن نضمن أننا سنحل أي مشاكل لك.</p></div></div>
-                    ', 
-                "meta_title" => "نظارات شمسية مستطيلة سوداء للنساء ، نظارات شمسية نسائية غريبة ، أزياء الحفلات ، مصمم العلامة التجارية ، UV400 ، بيع", 
-                "meta_keywords" => null, 
-                "meta_description" => '<div class="detailmodule_html"><div class="detail-desc-decorate-richtext"><p><img src="https://ae01.alicdn.com/kf/S9e1b89e74cc740028300c1333a81390b5.png" slate-data-type="image" /></p> 
-                        <p id="tl_1">انقر على المجموعة اتبع متجرنا ، وذلك للعثور على أسرع وإذا كان المتجر قد حدّث المنتج الجديد ، يمكنك الحصول عليه في المرة الأولى.</p> 
-                        <p id="tl_2">إذا لم تتمكن من العثور على الموديل الذي تريده ، يرجى الاتصال بنا للحصول على المزيد من الطراز.</p> 
-                        <p id="tl_3">لأن هناك العديد من النماذج ، ما زلنا نقوم بالتحميل ، ولم يتم تحميلها كلها.</p> 
-                        <p id="tl_4">لذلك إذا كنت بحاجة إلى رؤية المزيد من النماذج ، يرجى الاتصال بنا.</p> 
-                        <p><img src="https://ae01.alicdn.com/kf/Saa929797a7ee4aeaaf9d63d9d4c403c7O.png" slate-data-type="image" /></p> 
-                        <p><img src="https://ae01.alicdn.com/kf/Sc89d251c03b84aa8b7bbc7c4e237ee57P.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S9a70b16f6969449f8f27df7047a0c5cfS.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S65a6ec4e10f24b28839d041c98b8360cY.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S212f00319bfd46c2b78bfc1f9ed2b975G.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Sb939841c93524c9d83f7f79ccc696d80a.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Sf6b5fd5a090b4703a9e22b9314a39ddd3.jpg" slate-data-type="image" /></p> 
-                        <p><img src="https://ae01.alicdn.com/kf/S32e12f6e8df344c0a000e1657965ae1al.png" slate-data-type="image" /></p> 
-                        <p id="tl_5">موضع ترحيب انخفاض الشحن.</p> 
-                        <p><br /></p> 
-                        <p id="tl_6">للشحن المباشر ، يمكننا إرسال البضائع إلى عملائك مباشرة ولن نترك معلومات عنا إذا كنت ترغب في ذلك.</p> 
-                        <p><br /></p> 
-                        <p id="tl_7">كيف يمكنني تتبع الطرد الخاص بي ؟</p> 
-                        <p><br /><br /></p> 
-                        <p id="tl_8">يمكنك تتبع الطرد الخاص بك على الموقع الإلكتروني التالي باستخدام رقم التتبع الخاص بك: www.17track.net.en</p> 
-                        <p><br /></p> 
-                        <p id="tl_9">ماذا يمكنني أن أفعل عندما ينفد وقت حماية الشراء ؟</p> 
-                        <p><br /></p> 
-                        <p id="tl_10">إذا كان وقت حماية الشراء ينفد ، يرجى الاتصال بنا ويمكننا مساعدتك على تمديده. لذلك لن تذهب أموالك إلى حسابي.</p> 
-                        <p><br /></p> 
-                        <p id="tl_11">ملاحظات</p> 
-                        <p><br /></p> 
-                        <p id="tl_12">1. إذا كنت راضيًا عن منتجاتنا وخدماتنا ، يرجى ترك تعليقك الإيجابي و 5 نجوم. و 5 نجوم للحصول على تصنيف مفصل لطلبك.</p> 
-                        <p><br /></p> 
-                        <p id="tl_13">2. إذا لم تكن راضيًا عن منتجاتنا ، الرجاء الاتصال بنا قبل ترك تعليقات سلبية أو إجراء التقييم التفصيلي ، ونحن نضمن أننا سنحل أي مشاكل لك.</p></div></div>
-                        ', 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-04-16 18:23:28", 
-                "updated_at" => "2024-10-15 17:36:56", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 99206, 
-                "product_id" => 51762, 
-                "parent_id" => null, 
-                "sku" => "RUIQBH6", 
-                "name" => "منتج", 
-                "description" => "", 
-                "url_key" => "ruiqbh6", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "5.00", 
-                "cost" => null, 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "5.00", 
-                "max_price" => "5.00", 
-                "is_vat" => 1, 
-                "short_description" => null, 
-                "meta_title" => "", 
-                "meta_keywords" => null, 
-                "meta_description" => "", 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-03-31 13:04:01", 
-                "updated_at" => "2024-10-15 17:37:18", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 74870, 
-                "product_id" => 37810, 
-                "parent_id" => null, 
-                "sku" => "ven-con-1", 
-                "name" => "ven-configurable", 
-                "description" => "<p>ven-configurableven-configurable</p>", 
-                "url_key" => "ven-con-1", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => null, 
-                "cost" => null, 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "7.14", 
-                "max_price" => "7.14", 
-                "is_vat" => 1, 
-                "short_description" => "<p>ven-configurableven-configurable</p>", 
-                "meta_title" => "ven-configurable", 
-                "meta_keywords" => null, 
-                "meta_description" => "<p>ven-configurableven-configurable</p>", 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-03-21 12:20:24", 
-                "updated_at" => "2024-10-15 17:37:24", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 74868, 
-                "product_id" => 37809, 
-                "parent_id" => null, 
-                "sku" => "TBS50100", 
-                "name" => "ورلد كير مناشف للاستعمال مرة واحدة 50×100، 50 قطعة", 
-                "description" => "<p>النوع: مناشف للاستعمال مرة واحدة ناعمة على البشرة قدرة عالية على الامتصاص 50 قطعة</p>", 
-                "url_key" => "tbs50100", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "73.86", 
-                "cost" => "43.45", 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "73.86", 
-                "max_price" => "73.86", 
-                "is_vat" => 1, 
-                "short_description" => "<p>النوع: مناشف للاستعمال مرة واحدة ناعمة على البشرة قدرة عالية على الامتصاص 50 قطعة</p>", 
-                "meta_title" => "ورلد كير مناشف للاستعمال مرة واحدة 50×100، 50 قطعة", 
-                "meta_keywords" => null, 
-                "meta_description" => "<p>النوع: مناشف للاستعمال مرة واحدة ناعمة على البشرة قدرة عالية على الامتصاص 50 قطعة</p>", 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0.1, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-03-21 12:19:51", 
-                "updated_at" => "2024-10-15 17:37:32", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 74866, 
-                "product_id" => 37808, 
-                "parent_id" => null, 
-                "sku" => "QV-0766", 
-                "name" => "كريم مرطب للبشرة الحساسة من كيو في 100 جم", 
-                "description" => "<p>كريم ترطيب البشرة من كيو في، لتجديد البشرة الجافة بترطيب عالي التركيز. يحتوي على السكوالين ودهون طبيعية التي تمنحك بشره ناعمة ومرنة. الحل الامثل لمناطق الجسم شديدة الجفاف.</p>", 
-                "url_key" => "qv-0766", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "68.46", 
-                "cost" => "40.27", 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "68.46", 
-                "max_price" => "68.46", 
-                "is_vat" => 1, 
-                "short_description" => "<p>كريم ترطيب البشرة من كيو في، لتجديد البشرة الجافة بترطيب عالي التركيز. يحتوي على السكوالين ودهون طبيعية التي تمنحك بشره ناعمة ومرنة. الحل الامثل لمناطق الجسم شديدة الجفاف.</p>", 
-                "meta_title" => "كريم مرطب للبشرة الحساسة من كيو في 100 جم", 
-                "meta_keywords" => null, 
-                "meta_description" => "<p>كريم ترطيب البشرة من كيو في، لتجديد البشرة الجافة بترطيب عالي التركيز. يحتوي على السكوالين ودهون طبيعية التي تمنحك بشره ناعمة ومرنة. الحل الامثل لمناطق الجسم شديدة الجفاف.</p>", 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0.1, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-03-21 12:19:47", 
-                "updated_at" => "2024-10-15 17:37:39", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 48795, 
-                "product_id" => 24644, 
-                "parent_id" => null, 
-                "sku" => "C3-5-2-3", 
-                "name" => "ميلي - شامبو أكليل الجبل والنعناع لتقوية الشعر 355 مل", 
-                "description" => "<p>- شامبو تقوية الشعر بأكليل الجبل والنعناع من ميلي أورجانيكس، مملوء بالبيوتين، ينظف ويساعد على تقوية الشعر الضعيف والهش .</p>
-
-                <p>- يغذي وينظف الشعر الجاف أو الضعيف أو الهش باستخدام هذا الشامبو المقوي للشعر الذي يعمل على تنشيط بصيلات الشعر .</p>
-                
-                <p>- يوفر رطوبة مكثفة لجميع أنواع الشعر بتركيبة لطيفة تغذي وتنظف وتساعد على تقوية الشعر الضعيف والهش .</p>
-                
-                <p>- مناسبة لمستويات الشعر ذات المسامية المنخفضة والعالية .</p>
-                
-                <p>- تم تطوير شامبو تقوية الشعر بالروزماري والنعناع من ميلي أورجانيكس لتنظيف شعرك بلطف مع توفير العناصر الغذائية الأساسية .</p>
-                
-                <p>- مناسب لجميع أنواع الشعر .</p>
-                
-                <p>المكونات : ماء (أكوا، أو)، الصوديوم C14-16 أوليفين سلفونات، كوكاميدوبروبيل البيتين، بولي كواترنيوم-7، كوكاميد MIPA، جليكول ستيرات، بوليكواترنيوم-10، بانثينول، بروبيلين جليكول، زيت النعناع بيبيريتا (النعناع)، زيت أوراق إكليل الجبل (إكليل الجبل). ، ثنائي الصوديومEDTA، فيتانتريول، * زيت بذور الأوربينيا أوليفيرا (الباباسو)، * زيت جذر الزنجبيل (الزنجبيل)، * زيت جوز الهند نوسيفيرا (جوز الهند)، مستخلص عشبة ذيل الحصان (Equisetum Arvense)، مستخلص لوسونيا إنيرميس (الحناء)، روزمارينوس أوفيسيناليس ( مستخلصأوراق إكليل الجبل، مستخلص زهرة أنثيميس نوبيليس (البابونج)، مستخلص أوراق سيمفيتوم أوفيسينال (السنفيتون)، مستخلص هومولوس لوبولوس (الجنجل)، مستخلص أورتيك ديويكا (نبات القراص)، العسل، البيوتين، زيت بذور ريسينوس كومونيس (الخروع)، فينوكسيإيثانول، البنزويك. حمض، إيثيل هكسيل جليسرين، جليسيريث-2 كاكاو، عطر (عطر) *مكونات عضوية معتمدة</p>
-                
-                <p>طريقة الاستخدام : وزعي كمية بسيطة على اليدين ودلكيها على فروة الراس المبللة بالماء للحصول على رغوة غنية</p>
-                
-                <p>ثم يشطف الشعر جيداً بالماء &nbsp;</p>", 
-                "url_key" => "c3-5-2-3", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "67.83", 
-                "cost" => "39.90", 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "67.83", 
-                "max_price" => "67.83", 
-                "is_vat" => 1, 
-                "short_description" => "<p>- شامبو تقوية الشعر بأكليل الجبل والنعناع من ميلي أورجانيكس، مملوء بالبيوتين، ينظف ويساعد على تقوية الشعر الضعيف والهش .</p>
-
-                    <p>- يغذي وينظف الشعر الجاف أو الضعيف أو الهش باستخدام هذا الشامبو المقوي للشعر الذي يعمل على تنشيط بصيلات الشعر .</p>
-                    
-                    <p>- يوفر رطوبة مكثفة لجميع أنواع الشعر بتركيبة لطيفة تغذي وتنظف وتساعد على تقوية الشعر الضعيف والهش .</p>
-                    
-                    <p>- مناسبة لمستويات الشعر ذات المسامية المنخفضة والعالية .</p>
-                    
-                    <p>- تم تطوير شامبو تقوية الشعر بالروزماري والنعناع من ميلي أورجانيكس لتنظيف شعرك بلطف مع توفير العناصر الغذائية الأساسية .</p>
-                    
-                    <p>- مناسب لجميع أنواع الشعر .</p>
-                    
-                    <p>المكونات : ماء (أكوا، أو)، الصوديوم C14-16 أوليفين سلفونات، كوكاميدوبروبيل البيتين، بولي كواترنيوم-7، كوكاميد MIPA، جليكول ستيرات، بوليكواترنيوم-10، بانثينول، بروبيلين جليكول، زيت النعناع بيبيريتا (النعناع)، زيت أوراق إكليل الجبل (إكليل الجبل). ، ثنائي الصوديومEDTA، فيتانتريول، * زيت بذور الأوربينيا أوليفيرا (الباباسو)، * زيت جذر الزنجبيل (الزنجبيل)، * زيت جوز الهند نوسيفيرا (جوز الهند)، مستخلص عشبة ذيل الحصان (Equisetum Arvense)، مستخلص لوسونيا إنيرميس (الحناء)، روزمارينوس أوفيسيناليس ( مستخلصأوراق إكليل الجبل، مستخلص زهرة أنثيميس نوبيليس (البابونج)، مستخلص أوراق سيمفيتوم أوفيسينال (السنفيتون)، مستخلص هومولوس لوبولوس (الجنجل)، مستخلص أورتيك ديويكا (نبات القراص)، العسل، البيوتين، زيت بذور ريسينوس كومونيس (الخروع)، فينوكسيإيثانول، البنزويك. حمض، إيثيل هكسيل جليسرين، جليسيريث-2 كاكاو، عطر (عطر) *مكونات عضوية معتمدة</p>
-                    
-                    <p>طريقة الاستخدام : وزعي كمية بسيطة على اليدين ودلكيها على فروة الراس المبللة بالماء للحصول على رغوة غنية</p>
-                    
-                    <p>ثم يشطف الشعر جيداً بالماء &nbsp;</p>", 
-                "meta_title" => "ميلي - شامبو أكليل الجبل والنعناع لتقوية الشعر 355 مل", 
-                "meta_keywords" => null, 
-                "meta_description" => "<p>- شامبو تقوية الشعر بأكليل الجبل والنعناع من ميلي أورجانيكس، مملوء بالبيوتين، ينظف ويساعد على تقوية الشعر الضعيف والهش .</p>
-
-                <p>- يغذي وينظف الشعر الجاف أو الضعيف أو الهش باستخدام هذا الشامبو المقوي للشعر الذي يعمل على تنشيط بصيلات الشعر .</p>
-                
-                <p>- يوفر رطوبة مكثفة لجميع أنواع الشعر بتركيبة لطيفة تغذي وتنظف وتساعد على تقوية الشعر الضعيف والهش .</p>
-                
-                <p>- مناسبة لمستويات الشعر ذات المسامية المنخفضة والعالية .</p>
-                
-                <p>- تم تطوير شامبو تقوية الشعر بالروزماري والنعناع من ميلي أورجانيكس لتنظيف شعرك بلطف مع توفير العناصر الغذائية الأساسية .</p>
-                
-                <p>- مناسب لجميع أنواع الشعر .</p>
-                
-                <p>المكونات : ماء (أكوا، أو)، الصوديوم C14-16 أوليفين سلفونات، كوكاميدوبروبيل البيتين، بولي كواترنيوم-7، كوكاميد MIPA، جليكول ستيرات، بوليكواترنيوم-10، بانثينول، بروبيلين جليكول، زيت النعناع بيبيريتا (النعناع)، زيت أوراق إكليل الجبل (إكليل الجبل). ، ثنائي الصوديومEDTA، فيتانتريول، * زيت بذور الأوربينيا أوليفيرا (الباباسو)، * زيت جذر الزنجبيل (الزنجبيل)، * زيت جوز الهند نوسيفيرا (جوز الهند)، مستخلص عشبة ذيل الحصان (Equisetum Arvense)، مستخلص لوسونيا إنيرميس (الحناء)، روزمارينوس أوفيسيناليس ( مستخلصأوراق إكليل الجبل، مستخلص زهرة أنثيميس نوبيليس (البابونج)، مستخلص أوراق سيمفيتوم أوفيسينال (السنفيتون)، مستخلص هومولوس لوبولوس (الجنجل)، مستخلص أورتيك ديويكا (نبات القراص)، العسل، البيوتين، زيت بذور ريسينوس كومونيس (الخروع)، فينوكسيإيثانول، البنزويك. حمض، إيثيل هكسيل جليسرين، جليسيريث-2 كاكاو، عطر (عطر) *مكونات عضوية معتمدة</p>
-                
-                <p>طريقة الاستخدام : وزعي كمية بسيطة على اليدين ودلكيها على فروة الراس المبللة بالماء للحصول على رغوة غنية</p>
-                
-                <p>ثم يشطف الشعر جيداً بالماء &nbsp;</p>", 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0.3, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-02-08 15:39:54", 
-                "updated_at" => "2024-10-15 17:37:44", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 48793, 
-                "product_id" => 24643, 
-                "parent_id" => null, 
-                "sku" => "C3-5-2-4", 
-                "name" => "ميلي - قناع تقوية الشعر بأكليل الجبل والنعناع 340 جم", 
-                "description" => "<p>تغذية عميقة للشعر التالف: يدمج قناعنا الغني بالمغذيات بالبيوتين بالصبار والعسل ومزيج من الزيوت العطرية المغذية لخلق مظهر مكثف</p>
-
-                    <p>قومي بتغذية وترطيب وتقوية شعرك في وقت واحد مع هذه التركيبة الغنية بالمغذيات مع مكونات عضوية طبيعية مثل إكليل الجبل وزيت المنثا.</p>
-                    
-                    <p>قناع مجدد ومرطب عميق للشعر الجاف المتعطش.</p>
-                    
-                    <p>تغذي وترطب وتقوي كل ذلك في وقت واحد مع هذه التركيبة الغنية بالمغذيات.</p>
-                    
-                    <p>تم تطويره لتلبية احتياجات شعرك</p>
-                    
-                    <p>مصنوع من مكونات عضوية معتمدة ومحمل بالبيوتين</p>
-                    
-                    <p>تم تطوير قناع تقوية الشعر بالروزماري والنعناع مع وضع أكبر احتياجات شعرك في الاعتبار.</p>
-                    
-                    <p>طريقة الاستخدام:</p>
-                    
-                    <p>بعد غسل الشعر بالشامبو بشامبو مقوي بالروزماري والنعناع ، قم بتنعيمه بالتساوي من خلال الشعر الرطب من الجذور إلى الأطراف. اتركيه خلال 15-20 دقيقة. شطف جيدا.</p>
-                    
-                    <p>المكونات:</p>
-                    
-                    <p>ماء (أكوا ، ماء) ، بهينتريمونيوم ميثوسلفات ، كحول سيتريل ، عصير أوراق الصبار بربادنسيس (مزوَّد اللون) ، زيت اللوز الحلو (اللوز الحلو) ، زيت بذور هيليانثوس أنوس (دوار الشمس) ، زيت فاكهة أوليا يوروبا (زيتون) ، كوبرنيكوبا سيريفيرا ) الشمع ، بولي سوربات -20 ، زيت بذور المكاديميا إنتجريفوليا ، جليسريل ستيرات ، زبدة بوتيروسبيرموم باركي (الشيا) ، توكوفيريل أسيتات ، * زيت بذور Orbignya Oleifera (باباسو) ، * Zingiber Officinale (الزنجبيل) زيت الجذر ، * جوز الهند Nucifera ، بانثينول ، فيتانتريول ، زيت النعناع ، زيت أوراق إكليل الجبل (إكليل الجبل) ، زيت بذور سيموندسيا تشينينسيس (الجوجوبا) ، زيت بذور ريسينوس كومونيس (خروع) ، مستخلص عشب ذيل الحصان ، مستخلص لاوسونيا إنرميس (حناء) (إكليل الجبل) مستخلص أوراق الشجر ، مستخلص زهرة Anthemis Nobilis (البابونج) ، مستخلص السيمفيتم الرسمي (أوراق الكومفري) ، مستخلص Humulus Lupulus (القفزات) ، خلاصة Urtica Dioica (نبات القراص) ، العسل ، البيوتين ، كلوريد السيتريمونيوم ، Sesamum Indicum ( السمسم) زيت بذور ، فينوكسي إيثانول ، حمض البنزويك ، إيثيل هكسيل جليسرين ، جلسريث -2 كوكوات &nbsp;</p>", 
-                "url_key" => "c3-5-2-4", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "71.50", 
-                "cost" => "42.06", 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "71.50", 
-                "max_price" => "71.50", 
-                "is_vat" => 1, 
-                "short_description" => "<p>تغذية عميقة للشعر التالف: يدمج قناعنا الغني بالمغذيات بالبيوتين بالصبار والعسل ومزيج من الزيوت العطرية المغذية لخلق مظهر مكثف</p>
-
-                    <p>قومي بتغذية وترطيب وتقوية شعرك في وقت واحد مع هذه التركيبة الغنية بالمغذيات مع مكونات عضوية طبيعية مثل إكليل الجبل وزيت المنثا.</p>
-                    
-                    <p>قناع مجدد ومرطب عميق للشعر الجاف المتعطش.</p>
-                    
-                    <p>تغذي وترطب وتقوي كل ذلك في وقت واحد مع هذه التركيبة الغنية بالمغذيات.</p>
-                    
-                    <p>تم تطويره لتلبية احتياجات شعرك</p>
-                    
-                    <p>مصنوع من مكونات عضوية معتمدة ومحمل بالبيوتين</p>
-                    
-                    <p>تم تطوير قناع تقوية الشعر بالروزماري والنعناع مع وضع أكبر احتياجات شعرك في الاعتبار.</p>
-                    
-                    <p>طريقة الاستخدام:</p>
-                    
-                    <p>بعد غسل الشعر بالشامبو بشامبو مقوي بالروزماري والنعناع ، قم بتنعيمه بالتساوي من خلال الشعر الرطب من الجذور إلى الأطراف. اتركيه خلال 15-20 دقيقة. شطف جيدا.</p>
-                    
-                    <p>المكونات:</p>
-                    
-                    <p>ماء (أكوا ، ماء) ، بهينتريمونيوم ميثوسلفات ، كحول سيتريل ، عصير أوراق الصبار بربادنسيس (مزوَّد اللون) ، زيت اللوز الحلو (اللوز الحلو) ، زيت بذور هيليانثوس أنوس (دوار الشمس) ، زيت فاكهة أوليا يوروبا (زيتون) ، كوبرنيكوبا سيريفيرا ) الشمع ، بولي سوربات -20 ، زيت بذور المكاديميا إنتجريفوليا ، جليسريل ستيرات ، زبدة بوتيروسبيرموم باركي (الشيا) ، توكوفيريل أسيتات ، * زيت بذور Orbignya Oleifera (باباسو) ، * Zingiber Officinale (الزنجبيل) زيت الجذر ، * جوز الهند Nucifera ، بانثينول ، فيتانتريول ، زيت النعناع ، زيت أوراق إكليل الجبل (إكليل الجبل) ، زيت بذور سيموندسيا تشينينسيس (الجوجوبا) ، زيت بذور ريسينوس كومونيس (خروع) ، مستخلص عشب ذيل الحصان ، مستخلص لاوسونيا إنرميس (حناء) (إكليل الجبل) مستخلص أوراق الشجر ، مستخلص زهرة Anthemis Nobilis (البابونج) ، مستخلص السيمفيتم الرسمي (أوراق الكومفري) ، مستخلص Humulus Lupulus (القفزات) ، خلاصة Urtica Dioica (نبات القراص) ، العسل ، البيوتين ، كلوريد السيتريمونيوم ، Sesamum Indicum ( السمسم) زيت بذور ، فينوكسي إيثانول ، حمض البنزويك ، إيثيل هكسيل جليسرين ، جلسريث -2 كوكوات &nbsp;</p>", 
-                "meta_title" => "ميلي - قناع تقوية الشعر بأكليل الجبل والنعناع 340 جم", 
-                "meta_keywords" => null, 
-                "meta_description" => "<p>تغذية عميقة للشعر التالف: يدمج قناعنا الغني بالمغذيات بالبيوتين بالصبار والعسل ومزيج من الزيوت العطرية المغذية لخلق مظهر مكثف</p>
-
-                    <p>قومي بتغذية وترطيب وتقوية شعرك في وقت واحد مع هذه التركيبة الغنية بالمغذيات مع مكونات عضوية طبيعية مثل إكليل الجبل وزيت المنثا.</p>
-                    
-                    <p>قناع مجدد ومرطب عميق للشعر الجاف المتعطش.</p>
-                    
-                    <p>تغذي وترطب وتقوي كل ذلك في وقت واحد مع هذه التركيبة الغنية بالمغذيات.</p>
-                    
-                    <p>تم تطويره لتلبية احتياجات شعرك</p>
-                    
-                    <p>مصنوع من مكونات عضوية معتمدة ومحمل بالبيوتين</p>
-                    
-                    <p>تم تطوير قناع تقوية الشعر بالروزماري والنعناع مع وضع أكبر احتياجات شعرك في الاعتبار.</p>
-                    
-                    <p>طريقة الاستخدام:</p>
-                    
-                    <p>بعد غسل الشعر بالشامبو بشامبو مقوي بالروزماري والنعناع ، قم بتنعيمه بالتساوي من خلال الشعر الرطب من الجذور إلى الأطراف. اتركيه خلال 15-20 دقيقة. شطف جيدا.</p>
-                    
-                    <p>المكونات:</p>
-                    
-                    <p>ماء (أكوا ، ماء) ، بهينتريمونيوم ميثوسلفات ، كحول سيتريل ، عصير أوراق الصبار بربادنسيس (مزوَّد اللون) ، زيت اللوز الحلو (اللوز الحلو) ، زيت بذور هيليانثوس أنوس (دوار الشمس) ، زيت فاكهة أوليا يوروبا (زيتون) ، كوبرنيكوبا سيريفيرا ) الشمع ، بولي سوربات -20 ، زيت بذور المكاديميا إنتجريفوليا ، جليسريل ستيرات ، زبدة بوتيروسبيرموم باركي (الشيا) ، توكوفيريل أسيتات ، * زيت بذور Orbignya Oleifera (باباسو) ، * Zingiber Officinale (الزنجبيل) زيت الجذر ، * جوز الهند Nucifera ، بانثينول ، فيتانتريول ، زيت النعناع ، زيت أوراق إكليل الجبل (إكليل الجبل) ، زيت بذور سيموندسيا تشينينسيس (الجوجوبا) ، زيت بذور ريسينوس كومونيس (خروع) ، مستخلص عشب ذيل الحصان ، مستخلص لاوسونيا إنرميس (حناء) (إكليل الجبل) مستخلص أوراق الشجر ، مستخلص زهرة Anthemis Nobilis (البابونج) ، مستخلص السيمفيتم الرسمي (أوراق الكومفري) ، مستخلص Humulus Lupulus (القفزات) ، خلاصة Urtica Dioica (نبات القراص) ، العسل ، البيوتين ، كلوريد السيتريمونيوم ، Sesamum Indicum ( السمسم) زيت بذور ، فينوكسي إيثانول ، حمض البنزويك ، إيثيل هكسيل جليسرين ، جلسريث -2 كوكوات &nbsp;</p>", 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0.3, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-02-08 15:39:42", 
-                "updated_at" => "2024-10-15 17:37:50", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 48791, 
-                "product_id" => 24642, 
-                "parent_id" => null, 
-                "sku" => "C3-5-2-5", 
-                "name" => "ميلي - بلسم أكليل الجبل والنعناع لتقوية الشعر 355 مل", 
-                "description" => "<p>تم تطوير بلسم تقوية الشعر الذي لا يحتاج إلى شطفه بإكليل الجبل والنعناع لتلبية احتياجات شعرك.</p>
-
-                    <p>&bull; محمل بالبيوتين &bull; تألق مذهل &bull; يحبس الرطوبة</p>
-                    
-                    <p>غني بالبيوتين وإكليل الجبل، هذا الترطيب الذي لا يترك أثراً مع الحماية والترطيب.</p>
-                    
-                    <p>المكونات: ماء، جليسرين، بيهنتريمونيوم ميثوسولفات، كحول سيتريل، كحول ستياريلي، زيت برونوس أميغدالوس دولسيس (اللوز الحلو)، كحول سيتيل، سيترات ثلاثي إيثيل، زيت فاكهة أوليا يوروبيا (الزيتون)، عطر، بيوتين، زيت بيرسي جراتيسيما (الأفوكادو)، سمسم. زيت بذور إنديكوم (السمسم)، سيتيريث-20، زيت أوراق إكليل الجبل (إكليل الجبل)، زيت جذر الزنجبيل (الزنجبيل)، زيت النعناع بيبيريتا (النعناع)، البروبيلين جليكول، مستخلص زهرة البابونج ريكوتيتا (ماتريكاريا)، فاكهة/أوراق نبات فاكسينيوم ميرتيلوس. مستخلص، مستخلص Saccharum Officinarum (قصب السكر)، مستخلص فاكهة Citrus Aurantium Dulcis (البرتقال)، مستخلص فاكهة الليمون الحمضي (الليمون)، مستخلص Acer Saccharum (سكر القيقب)، فينوكسي إيثانول، كابريليل جلايكول، بوليسوربات 20.</p>", 
-                "url_key" => "c3-5-2-5", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "67.83", 
-                "cost" => "39.90", 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "67.83", 
-                "max_price" => "67.83", 
-                "is_vat" => 1, 
-                "short_description" => "<p>تم تطوير بلسم تقوية الشعر الذي لا يحتاج إلى شطفه بإكليل الجبل والنعناع لتلبية احتياجات شعرك.</p>
-
-                    <p>&bull; محمل بالبيوتين &bull; تألق مذهل &bull; يحبس الرطوبة</p>
-                    
-                    <p>غني بالبيوتين وإكليل الجبل، هذا الترطيب الذي لا يترك أثراً مع الحماية والترطيب.</p>
-                    
-                    <p>المكونات: ماء، جليسرين، بيهنتريمونيوم ميثوسولفات، كحول سيتريل، كحول ستياريلي، زيت برونوس أميغدالوس دولسيس (اللوز الحلو)، كحول سيتيل، سيترات ثلاثي إيثيل، زيت فاكهة أوليا يوروبيا (الزيتون)، عطر، بيوتين، زيت بيرسي جراتيسيما (الأفوكادو)، سمسم. زيت بذور إنديكوم (السمسم)، سيتيريث-20، زيت أوراق إكليل الجبل (إكليل الجبل)، زيت جذر الزنجبيل (الزنجبيل)، زيت النعناع بيبيريتا (النعناع)، البروبيلين جليكول، مستخلص زهرة البابونج ريكوتيتا (ماتريكاريا)، فاكهة/أوراق نبات فاكسينيوم ميرتيلوس. مستخلص، مستخلص Saccharum Officinarum (قصب السكر)، مستخلص فاكهة Citrus Aurantium Dulcis (البرتقال)، مستخلص فاكهة الليمون الحمضي (الليمون)، مستخلص Acer Saccharum (سكر القيقب)، فينوكسي إيثانول، كابريليل جلايكول، بوليسوربات 20.</p>", 
-                "meta_title" => "ميلي - بلسم أكليل الجبل والنعناع لتقوية الشعر 355 مل", 
-                "meta_keywords" => null, 
-                "meta_description" => "<p>تم تطوير بلسم تقوية الشعر الذي لا يحتاج إلى شطفه بإكليل الجبل والنعناع لتلبية احتياجات شعرك.</p>
-
-                    <p>&bull; محمل بالبيوتين &bull; تألق مذهل &bull; يحبس الرطوبة</p>
-                    
-                    <p>غني بالبيوتين وإكليل الجبل، هذا الترطيب الذي لا يترك أثراً مع الحماية والترطيب.</p>
-                    
-                    <p>المكونات: ماء، جليسرين، بيهنتريمونيوم ميثوسولفات، كحول سيتريل، كحول ستياريلي، زيت برونوس أميغدالوس دولسيس (اللوز الحلو)، كحول سيتيل، سيترات ثلاثي إيثيل، زيت فاكهة أوليا يوروبيا (الزيتون)، عطر، بيوتين، زيت بيرسي جراتيسيما (الأفوكادو)، سمسم. زيت بذور إنديكوم (السمسم)، سيتيريث-20، زيت أوراق إكليل الجبل (إكليل الجبل)، زيت جذر الزنجبيل (الزنجبيل)، زيت النعناع بيبيريتا (النعناع)، البروبيلين جليكول، مستخلص زهرة البابونج ريكوتيتا (ماتريكاريا)، فاكهة/أوراق نبات فاكسينيوم ميرتيلوس. مستخلص، مستخلص Saccharum Officinarum (قصب السكر)، مستخلص فاكهة Citrus Aurantium Dulcis (البرتقال)، مستخلص فاكهة الليمون الحمضي (الليمون)، مستخلص Acer Saccharum (سكر القيقب)، فينوكسي إيثانول، كابريليل جلايكول، بوليسوربات 20.</p>", 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0.3, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-02-08 15:39:37", 
-                "updated_at" => "2024-10-15 17:37:55", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 48789, 
-                "product_id" => 24641, 
-                "parent_id" => null, 
-                "sku" => "C3-5-5-7", 
-                "name" => "ميلي - بلسم مقوي للشعر باكليل الجبل والنعناع 355 مل", 
-                "description" => "<p>يوفر بلسم تقوية الروزماري والنعناع التوازن المثالي بين القوة والرطوبة لتحسين الحالة العامة للشعر وفروة الرأس. ينعم ويفك التشابك على الفور لزيادة سهولة التحكم. يدعم شعر أطول وأكثر صحة.</p>
-
-                <ul>
-                    <li>يوفر التوازن المثالي بين القوة والرطوبة.</li>
-                    <li>غني بالبيوتين ويمنحك لمعاناً مذهلاً.</li>
-                    <li>ينعم ويفك التشابك على الفور.</li>
-                    <li>يدعم شعر أطول وأكثر صحة.</li>
-                    <li>خالي من البارابين، الكبريتات، البارافينات، الزيوت المعدنية، DEA.</li>
-                    <li>تركيبه لجميع أنواع الشعر.</li>
-                </ul>", 
-                "url_key" => "c3-5-5-7", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "73.25", 
-                "cost" => "43.09", 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "73.25", 
-                "max_price" => "73.25", 
-                "is_vat" => 1, 
-                "short_description" => "<p>يوفر بلسم تقوية الروزماري والنعناع التوازن المثالي بين القوة والرطوبة لتحسين الحالة العامة للشعر وفروة الرأس. ينعم ويفك التشابك على الفور لزيادة سهولة التحكم. يدعم شعر أطول وأكثر صحة.</p>
-
-                <ul>
-                    <li>يوفر التوازن المثالي بين القوة والرطوبة.</li>
-                    <li>غني بالبيوتين ويمنحك لمعاناً مذهلاً.</li>
-                    <li>ينعم ويفك التشابك على الفور.</li>
-                    <li>يدعم شعر أطول وأكثر صحة.</li>
-                    <li>خالي من البارابين، الكبريتات، البارافينات، الزيوت المعدنية، DEA.</li>
-                    <li>تركيبه لجميع أنواع الشعر.</li>
-                </ul>", 
-                "meta_title" => "ميلي - بلسم مقوي للشعر باكليل الجبل والنعناع 355 مل", 
-                "meta_keywords" => null, 
-                "meta_description" => "<p>يوفر بلسم تقوية الروزماري والنعناع التوازن المثالي بين القوة والرطوبة لتحسين الحالة العامة للشعر وفروة الرأس. ينعم ويفك التشابك على الفور لزيادة سهولة التحكم. يدعم شعر أطول وأكثر صحة.</p>
-
-                <ul>
-                    <li>يوفر التوازن المثالي بين القوة والرطوبة.</li>
-                    <li>غني بالبيوتين ويمنحك لمعاناً مذهلاً.</li>
-                    <li>ينعم ويفك التشابك على الفور.</li>
-                    <li>يدعم شعر أطول وأكثر صحة.</li>
-                    <li>خالي من البارابين، الكبريتات، البارافينات، الزيوت المعدنية، DEA.</li>
-                    <li>تركيبه لجميع أنواع الشعر.</li>
-                </ul>", 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0.4, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-02-08 15:39:33", 
-                "updated_at" => "2024-10-15 17:38:00", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ]
-    ]; 
-    return $context;
-}
 
 function products() {
     $context['authUser'] = auth();
@@ -4767,9 +3534,9 @@ function products() {
                 "product_id" => 56118, 
                 "parent_id" => null, 
                 "sku" => "OUU1RO7", 
-                "name" => "ebook", 
-                "description" => null, 
-                "url_key" => "ouu1ro7", 
+                "name" => "طابعة ديسك جيت 2710، لاسلكية لمهام الطباعة، والنسخ، والمسح الضوئي طراز [5Ar83B] أبيض ", 
+                "description" => "ضمان لمدة سنة", 
+                "url_key" => "2g663yz",  
                 "new" => null, 
                 "featured" => null, 
                 "status" => 1, 
@@ -4821,9 +3588,9 @@ function products() {
                 "notify_quantity" => null, 
                 "require_shipping" => 0,
                 "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
+                "html_price" => '<span class="price">3000 .رس</span>',
                 "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
+                    "base_image_url" => "https://media.zid.store/thumbs/07d02681-b3c7-4603-b219-599dc6c7a256/e68f643a-163d-46db-90cb-1bb8cc325736-thumbnail-1000x1000-70.webp"
                 ],
             ]
         ],
@@ -4833,9 +3600,9 @@ function products() {
                 "product_id" => 56116, 
                 "parent_id" => null, 
                 "sku" => "N2-4-5-3", 
-                "name" => "ثلاجة الجمال سباركلنق لافندر 4 لتر", 
-                "description" => " ", 
-                "url_key" => "n2-4-5-3", 
+                "name" => " سماعة Q30 فوق الأذن ساوند كور من انكر لايف Q30 هايبرد اكتيف بخاصية الغاء الضوضاء واوضاع متعددة وصوت عالي الدقة ووقت تشغيل يدوم لمدة 40 ساعة وخاصية الشحن السريع، اذن بلوتوث ملائمة للسفر، اسود", 
+                "description" => " ضمان لمدة سنة", 
+                "url_key" => "2g663yz", 
                 "new" => null, 
                 "featured" => 1, 
                 "status" => 1, 
@@ -4850,34 +3617,10 @@ function products() {
                 "min_price" => "367.35", 
                 "max_price" => "367.35", 
                 "is_vat" => 0, 
-                "short_description" => " ", 
-                "meta_title" => "ثلاجة الجمال سباركلنق لافندر 4 لتر", 
+                "short_description" => "  ", 
+                "meta_title" => "     ", 
                 "meta_keywords" => null, 
-                "meta_description" => "<p>حافظي على منتجاتك المفضلة للعناية بجمال بشرتك مع ثلاجة الجمال الحجم الكلاسيكي الأنيق لوضعه أينما رغبت في غرفتك&nbsp;</p>
-    
-                <p>- أبعاد الثلاجة: العرض: 24 سم، الطول: 31.8سم، القطر: 32.2 سم
-                - رف واحد يفصل بين حجرتين تخزين رئيسية
-                - متوفرة بخاصية التبريد حتى 5 درجات مئوية&nbsp;
-                - متوفرة بخاصية التدفئة &nbsp;حتى 50 درجة مئوية&nbsp;
-                - درج خاص في باب الثلاجة
-                - محول DC5V 2A &nbsp;
-                - محول 100-240 فولت&nbsp;
-                - اللون: سباركلينج لافندر</p>
-                
-                <p>- ضعي قابس الكهرباء في في تيار 110 فولت أو 220 فولت ودعيها تعمل بشكل مستمر.
-                - بإمكانك تشغيل الثلاجة عبر أي محول USB بقوة 2 مل أمبير مما يجعلها تعمل داخل السيارة أو على بطاريات الطاقة (ننصح ببطارية طاقة تفوق 1000مل أمبير)</p>
-                
-                <p>التحذيرات والاحتياطات:
-                - قومي بتنظيف الثلاجة وتهويتها بمنشفة بشكل مستمر لمنع تشكل قطرات الماء داخلها.
-                - دعي مسافة فراغ 20سم بين الثلاجة والحائط.</p>
-                
-                <p>&nbsp;</p>
-                
-                <p>- محول كهربائي 220-110 فولت&nbsp;
-                - محول DC5V 2A &nbsp;
-                - قوة 5 فولت *2 مل أمبير
-                - سلك كهربائي USB
-                -ستيكرات زينة</p>", 
+                "meta_description" => " ", 
                 "width" => 0, 
                 "height" => 0, 
                 "depth" => 0, 
@@ -4911,9 +3654,9 @@ function products() {
                 "notify_quantity" => null, 
                 "require_shipping" => 0,
                 "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
+                "html_price" => '<span class="price">200 .رس</span>',
                 "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
+                    "base_image_url" => "https://media.zid.store/thumbs/07d02681-b3c7-4603-b219-599dc6c7a256/79511c70-afde-4b2e-b2cb-172658f4ee68-thumbnail-1000x1000-70.webp"
                 ],
             ]
         ],
@@ -4923,8 +3666,8 @@ function products() {
                 "product_id" => 56115, 
                 "parent_id" => null, 
                 "sku" => "sku-ABC", 
-                "name" => null, 
-                "description" => null, 
+                "name" => "null", 
+                "description" => "كاميرا مراقبة ذكية مزودة بميزة الواي فاي وبدقة 1080P وقطر عدسة 4 مم تُستخدم للمراقبة الخارجية للمنزل طراز C8C", 
                 "url_key" => "sku-abc", 
                 "new" => null, 
                 "featured" => null, 
@@ -4977,21 +3720,20 @@ function products() {
                 "notify_quantity" => null, 
                 "require_shipping" => 0,
                 "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
+                "html_price" => '<span class="price">1300 .رس</span>',
                 "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
+                    "base_image_url" => "https://media.zid.store/thumbs/07d02681-b3c7-4603-b219-599dc6c7a256/f9aa7095-7807-46cd-a521-40910561e484-thumbnail-1000x1000-70.webp"
                 ],
             ]
         ],
-        [
-            'product' => [
+        [  'product' => [
                 "id" => 106921, 
                 "product_id" => 55683, 
                 "parent_id" => null, 
                 "sku" => "GFAF0U2", 
-                "name" => "vir", 
-                "description" => null, 
-                "url_key" => "gfaf0u2", 
+                "name" => " S95C OLED 4K Smart TV - ", 
+                "description" => "معفي من الضريبه", 
+                "url_key" => "2g663yz",  
                 "new" => null, 
                 "featured" => 1, 
                 "status" => 1, 
@@ -5043,9 +3785,9 @@ function products() {
                 "notify_quantity" => null, 
                 "require_shipping" => 0,
                 "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
+                "html_price" => '<span class="price"> 500 ر.س</span>',
                 "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
+                    "base_image_url" => "https://media.zid.store/thumbs/07d02681-b3c7-4603-b219-599dc6c7a256/c463b844-366f-43d0-bbf6-3852baa50124-thumbnail-1000x1000-70.webp"
                 ],
             ]
         ],
@@ -5055,8 +3797,8 @@ function products() {
                 "product_id" => 55682, 
                 "parent_id" => null, 
                 "sku" => "customizable", 
-                "name" => "customizable product", 
-                "description" => "This is testing Mobile", 
+                "name" => " أبل ماك بوك لاب توب برو 13.3 بشريحة أبل إم 1 بذاكرة 8 جيجابايت أبل ماك بوك لاب توب برو 13.3 بشريحة أبل إم 1 بذاكرة 8 جيجابايت أبل ماك بوك لاب توب برو 13.3 بشريحة أبل إم 1 بذاكرة 8 جيجابايت أبل ماك بوك لاب توب برو 13.3 بشريحة أبل إم 1 بذاكرة 8 جي ", 
+                "description" => "   ", 
                 "url_key" => "customizable", 
                 "new" => null, 
                 "featured" => null, 
@@ -5109,9 +3851,9 @@ function products() {
                 "notify_quantity" => null, 
                 "require_shipping" => 0,
                 "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
+                "html_price" => '<span class="price"> 2000 ر.س </span>',
                 "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
+                    "base_image_url" => "https://media.zid.store/thumbs/07d02681-b3c7-4603-b219-599dc6c7a256/f7bcdb35-b13b-4191-b46d-66392ac2f2fa-thumbnail-1000x1000-70.webp"
                 ],
             ]
         ],
@@ -5121,8 +3863,8 @@ function products() {
                 "product_id" => 55668, 
                 "parent_id" => null, 
                 "sku" => "2G663YZ", 
-                "name" => "asdf asdf2", 
-                "description" => "<p>محافظ نسائية على الموضة ، محفظة طويلة ثلاثية الطي ذات جودة عالية من جلد البولي يوريثان ، حامل بطاقات كلاتش للنساء ، حامل بطاقات</p><p><br></p>", 
+                "name" => "ساعة ذكية T900 Ultra بشاشة لا نهائية 2.09", 
+                "description" => " معفي من الضريبة ", 
                 "url_key" => "2g663yz", 
                 "new" => null, 
                 "featured" => null, 
@@ -5175,9 +3917,9 @@ function products() {
                 "notify_quantity" => null, 
                 "require_shipping" => 0,
                 "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
+                "html_price" => '<span class="price"> 1600 ر.س</span>',
                 "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
+                    "base_image_url" => "https://media.zid.store/thumbs/07d02681-b3c7-4603-b219-599dc6c7a256/c5cfba18-32fc-44ac-8b11-b4c6d23a677f-thumbnail-1000x1000-70.webp"
                 ],
             ]
         ],
@@ -5187,9 +3929,9 @@ function products() {
                 "product_id" => 54040, 
                 "parent_id" => null, 
                 "sku" => "W1MDRT4", 
-                "name" => "tryme", 
+                "name" => "سامسونج جوال جالكسي اس 24 الترا، هاتف ذكي بنظام اندرويد بالذكاء الاصطناعي، ذاكرة تخزين 256GB، ذاكرة RAM 12GB، كاميرا 200MP، قلم S، عمر بطارية طويل - اسود تيتانيوم", 
                 "description" => "", 
-                "url_key" => "w1mdrt4", 
+                "url_key" => "2g663yz", 
                 "new" => null, 
                 "featured" => null, 
                 "status" => 1, 
@@ -5241,9 +3983,9 @@ function products() {
                 "notify_quantity" => null, 
                 "require_shipping" => 0,
                 "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
+                "html_price" => '<span class="price"> 1085 ر.س </span>',
                 "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
+                    "base_image_url" => "https://media.zid.store/thumbs/07d02681-b3c7-4603-b219-599dc6c7a256/ccc2a8aa-6bea-424a-8053-68fcda8ad067-thumbnail-1000x1000-70.webp"
                 ],
             ]
         ],
@@ -5253,17 +3995,9 @@ function products() {
                 "product_id" => 54038, 
                 "parent_id" => null, 
                 "sku" => "059347", 
-                "name" => "موزع روائح الزيوت العطرية", 
-                "description" => "<p>موزع روائح الزيوت العطرية</p>
-
-                <p>اضاءة داخلية مع اللهب - 4 الوان</p>
-                
-                <p>مرطب بالموجات فوق الصوتية</p>
-                
-                <p>&nbsp;</p>
-                
-                <p>ضمان سنتين&nbsp;</p>", 
-                "url_key" => "059347", 
+                "name" => " سماعات اير بوودز 3 سيمي اوريجينال . سماعة داخل الأذن بلوتوث لاسلكية ذكية  ", 
+                "description" => " جديدنا ", 
+                "url_key" => "2g663yz", 
                 "new" => null, 
                 "featured" => null, 
                 "status" => 1, 
@@ -5278,26 +4012,10 @@ function products() {
                 "min_price" => "142.80", 
                 "max_price" => "142.80", 
                 "is_vat" => 1, 
-                "short_description" => "<p>موزع روائح الزيوت العطرية</p>
-
-                <p>اضاءة داخلية مع اللهب - 4 الوان</p>
-                
-                <p>مرطب بالموجات فوق الصوتية</p>
-                
-                <p>&nbsp;</p>
-                
-                <p>ضمان سنتين&nbsp;</p>", 
-                "meta_title" => "موزع روائح الزيوت العطرية", 
+                "short_description" => "  ", 
+                "meta_title" => "   ", 
                 "meta_keywords" => null, 
-                "meta_description" => "<p>موزع روائح الزيوت العطرية</p>
-
-                <p>اضاءة داخلية مع اللهب - 4 الوان</p>
-                
-                <p>مرطب بالموجات فوق الصوتية</p>
-                
-                <p>&nbsp;</p>
-                
-                <p>ضمان سنتين&nbsp;</p>", 
+                "meta_description" => "   ", 
                 "width" => 0, 
                 "height" => 0, 
                 "depth" => 0, 
@@ -5331,1125 +4049,9 @@ function products() {
                 "notify_quantity" => null, 
                 "require_shipping" => 0,
                 "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
+                "html_price" => '<span class="price">500 ر.س </span>',
                 "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 103665, 
-                "product_id" => 54037, 
-                "parent_id" => null, 
-                "sku" => "300130", 
-                "name" => "ساعه انمر مان الرجالية 300130", 
-                "description" => '<p dir="RTL">ساعه رجاليه فخمه من ماركة انمر مان&nbsp;</p>
-
-                <p dir="RTL">صنقل ستيل كامل</p>
-                
-                <p dir="RTL">قفل ستيل</p>
-                
-                <p dir="RTL">تصميم رائع وجذاب</p>
-                
-                <p dir="RTL">مكينه ياباني</p>
-                
-                <p dir="RTL">لمعه ثابته</p>
-                
-                <p dir="RTL">علبه بنفس اسم الماركه</p>
-                
-                <p dir="RTL">ضمان ثلاث سنوات</p>", 
-                "url_key" => "300130", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "160.65", 
-                "cost" => "94.50", 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "160.65", 
-                "max_price" => "160.65", 
-                "is_vat" => 1, 
-                "short_description" => "<p dir="RTL">ساعه رجاليه فخمه من ماركة انمر مان&nbsp;</p>
-
-                <p dir="RTL">صنقل ستيل كامل</p>
-                
-                <p dir="RTL">قفل ستيل</p>
-                
-                <p dir="RTL">تصميم رائع وجذاب</p>
-                
-                <p dir="RTL">مكينه ياباني</p>
-                
-                <p dir="RTL">لمعه ثابته</p>
-                
-                <p dir="RTL">علبه بنفس اسم الماركه</p>
-                
-                <p dir="RTL">ضمان ثلاث سنوات</p>", 
-                "meta_title" => "ساعه انمر مان الرجالية 300130", 
-                "meta_keywords" => null, 
-                "meta_description" => "<p dir="RTL">ساعه رجاليه فخمه من ماركة انمر مان&nbsp;</p>
-
-                <p dir="RTL">صنقل ستيل كامل</p>
-                
-                <p dir="RTL">قفل ستيل</p>
-                
-                <p dir="RTL">تصميم رائع وجذاب</p>
-                
-                <p dir="RTL">مكينه ياباني</p>
-                
-                <p dir="RTL">لمعه ثابته</p>
-                
-                <p dir="RTL">علبه بنفس اسم الماركه</p>
-                                        
-                <p dir="RTL">ضمان ثلاث سنوات</p>', 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0.6, 
-                "unlimited_quantity" => "0", 
-                "barcode" => "7788997788", 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-04-22 14:53:27", 
-                "updated_at" => "2024-10-15 17:35:07", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 1,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 102523, 
-                "product_id" => 53483, 
-                "parent_id" => null, 
-                "sku" => "MSKUAE1005006629609421", 
-                "name" => "مجموعة مسحوق مجفف مجمد مضاد للتجاعيد ، خميرة للإصلاح ، مصل مغذي ، كرياتين لتعزيز إنتاج الكولاجين", 
-                "description" => '<div class="detailmodule_html"><div class="detail-desc-decorate-richtext"><p><img src="https://ae01.alicdn.com/kf/Sbca62263df6e44d9916a0a3ad441d085h.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S635c7aebc8fe4393a93593d41362b68e7.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S0210767bca5e48189f751176a99ffb1dS.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S6d44ece12bcf407bba64bf3f31b3b7daP.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S1ac24a381f3740eb88b3a18e36a6f4a4g.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S537206bb81f14efbbc423901aad8923de.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Se52ebe59427648bf8e84305c39564c83v.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S88ca6f916b1840bda759fdd7556f26cdw.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Saf2e2587072841bc92da588588dff5feK.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Sb9407490af5647a6b1daf61c361576e50.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S7556e22c080145459d4de2a31e379fbaN.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S3d106311a0e4431f938d6a6bdc87ce12l.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S54005c6d105649b582a00fd961fdce65K.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S20ecd5f1d6454e16af3caee0efc72b71I.jpg" slate-data-type="image" /></p></div></div>', 
-                "url_key" => "mskuae1005006629609421", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => null, 
-                "cost" => null, 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "424.51", 
-                "max_price" => "1061.28", 
-                "is_vat" => 1, 
-                "short_description" => '<div class="detailmodule_html"><div class="detail-desc-decorate-richtext"><p><img src="https://ae01.alicdn.com/kf/Sbca62263df6e44d9916a0a3ad441d085h.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S635c7aebc8fe4393a93593d41362b68e7.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S0210767bca5e48189f751176a99ffb1dS.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S6d44ece12bcf407bba64bf3f31b3b7daP.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S1ac24a381f3740eb88b3a18e36a6f4a4g.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S537206bb81f14efbbc423901aad8923de.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Se52ebe59427648bf8e84305c39564c83v.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S88ca6f916b1840bda759fdd7556f26cdw.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Saf2e2587072841bc92da588588dff5feK.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Sb9407490af5647a6b1daf61c361576e50.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S7556e22c080145459d4de2a31e379fbaN.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S3d106311a0e4431f938d6a6bdc87ce12l.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S54005c6d105649b582a00fd961fdce65K.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S20ecd5f1d6454e16af3caee0efc72b71I.jpg" slate-data-type="image" /></p></div></div>', 
-                "meta_title" => "مجموعة مسحوق مجفف مجمد مضاد للتجاعيد ، خميرة للإصلاح ، مصل مغذي ، كرياتين لتعزيز إنتاج الكولاجين", 
-                "meta_keywords" => null, 
-                "meta_description" => '<div class="detailmodule_html"><div class="detail-desc-decorate-richtext"><p><img src="https://ae01.alicdn.com/kf/Sbca62263df6e44d9916a0a3ad441d085h.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S635c7aebc8fe4393a93593d41362b68e7.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S0210767bca5e48189f751176a99ffb1dS.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S6d44ece12bcf407bba64bf3f31b3b7daP.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S1ac24a381f3740eb88b3a18e36a6f4a4g.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S537206bb81f14efbbc423901aad8923de.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Se52ebe59427648bf8e84305c39564c83v.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S88ca6f916b1840bda759fdd7556f26cdw.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Saf2e2587072841bc92da588588dff5feK.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Sb9407490af5647a6b1daf61c361576e50.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S7556e22c080145459d4de2a31e379fbaN.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S3d106311a0e4431f938d6a6bdc87ce12l.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S54005c6d105649b582a00fd961fdce65K.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S20ecd5f1d6454e16af3caee0efc72b71I.jpg" slate-data-type="image" /></p></div></div>', 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-04-16 18:25:06", 
-                "updated_at" => "2024-10-15 17:35:16", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 102497, 
-                "product_id" => 53470, 
-                "parent_id" => null, 
-                "sku" => "MSKUAE1005006608665729", 
-                "name" => "سوار زوجين من الصلب الكلاسيكي الفاخر من التيتانيوم ، سوار عالي الجودة للرجال والنساء ، هدايا الحفلات", 
-                "description" => '<div class="detailmodule_html"><div class="detail-desc-decorate-richtext"><p>
-                        <kse:widget data-widget-type="customText" id="1005000011207205" type="relation"></kse:widget></p>
-                    <p><span style="font-size:16px" id="tl_1">لمزيد من المعلومات والصور ، يرجى الاتصال بخدمة العملاء.</span></p>
-                    <p><br /></p>
-                    <p style="font-family:&quot;Open Sans&quot;, Roboto, Arial, Helvetica, sans-serif, SimSun;font-size:14px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(34, 34, 34);margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box" align="start"><span style="font-size:16px" id="tl_2">لمزيد من المعلومات والصور ، يرجى الاتصال بخدمة العملاء.</span></p>
-                    <p><br /></p>
-                    <p style="font-family:&quot;Open Sans&quot;, Roboto, Arial, Helvetica, sans-serif, SimSun;font-size:14px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(34, 34, 34);margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box" align="start"><span style="font-size:16px" id="tl_3">لمزيد من المعلومات والصور ، يرجى الاتصال بخدمة العملاء.</span></p>
-                    <p><br /></p>
-                    <div>
-                        <span style="font-size:24px" id="tl_4">نصائح:</span>
-                    </div>
-                    <div>
-                        <span style="font-size:18px" id="tl_5">يرجى استخدام شريط قياس ناعم لتأكيد محيط اليد الفعلي قبل الشراء ، وإضافة سنتيمتر واحد لتحديد الحجم المناسب للارتداء</span>
-                    </div>
-                    <div>
-                        &nbsp;
-                    </div>
-                    <p style="font-family:&quot;Open Sans&quot;, Roboto, Arial, Helvetica, sans-serif, SimSun;font-size:14px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(34, 34, 34);margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box" align="start"><img src="https://ae01.alicdn.com/kf/Sdc7eb0d7addd4f3faf38db4e0b0eef45x.jpg" slate-data-type="image" /></p></div></div>
-                    ', 
-                "url_key" => "mskuae1005006608665729", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => null, 
-                "cost" => null, 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "330.58", 
-                "max_price" => "330.58", 
-                "is_vat" => 1, 
-                "short_description" => '<div class="detailmodule_html"><div class="detail-desc-decorate-richtext"><p>
-                    <kse:widget data-widget-type="customText" id="1005000011207205" type="relation"></kse:widget></p>
-                <p><span style="font-size:16px" id="tl_1">لمزيد من المعلومات والصور ، يرجى الاتصال بخدمة العملاء.</span></p>
-                <p><br /></p>
-                <p style="font-family:&quot;Open Sans&quot;, Roboto, Arial, Helvetica, sans-serif, SimSun;font-size:14px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(34, 34, 34);margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box" align="start"><span style="font-size:16px" id="tl_2">لمزيد من المعلومات والصور ، يرجى الاتصال بخدمة العملاء.</span></p>
-                <p><br /></p>
-                <p style="font-family:&quot;Open Sans&quot;, Roboto, Arial, Helvetica, sans-serif, SimSun;font-size:14px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(34, 34, 34);margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box" align="start"><span style="font-size:16px" id="tl_3">لمزيد من المعلومات والصور ، يرجى الاتصال بخدمة العملاء.</span></p>
-                <p><br /></p>
-                <div>
-                    <span style="font-size:24px" id="tl_4">نصائح:</span>
-                </div>
-                <div>
-                    <span style="font-size:18px" id="tl_5">يرجى استخدام شريط قياس ناعم لتأكيد محيط اليد الفعلي قبل الشراء ، وإضافة سنتيمتر واحد لتحديد الحجم المناسب للارتداء</span>
-                </div>
-                <div>
-                    &nbsp;
-                </div>
-                <p style="font-family:&quot;Open Sans&quot;, Roboto, Arial, Helvetica, sans-serif, SimSun;font-size:14px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(34, 34, 34);margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box" align="start"><img src="https://ae01.alicdn.com/kf/Sdc7eb0d7addd4f3faf38db4e0b0eef45x.jpg" slate-data-type="image" /></p></div></div>
-                ', 
-                "meta_title" => "سوار زوجين من الصلب الكلاسيكي الفاخر من التيتانيوم ، سوار عالي الجودة للرجال والنساء ، هدايا الحفلات", 
-                "meta_keywords" => null, 
-                "meta_description" => '<div class="detailmodule_html"><div class="detail-desc-decorate-richtext"><p>
-                        <kse:widget data-widget-type="customText" id="1005000011207205" type="relation"></kse:widget></p>
-                    <p><span style="font-size:16px" id="tl_1">لمزيد من المعلومات والصور ، يرجى الاتصال بخدمة العملاء.</span></p>
-                    <p><br /></p>
-                    <p style="font-family:&quot;Open Sans&quot;, Roboto, Arial, Helvetica, sans-serif, SimSun;font-size:14px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(34, 34, 34);margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box" align="start"><span style="font-size:16px" id="tl_2">لمزيد من المعلومات والصور ، يرجى الاتصال بخدمة العملاء.</span></p>
-                    <p><br /></p>
-                    <p style="font-family:&quot;Open Sans&quot;, Roboto, Arial, Helvetica, sans-serif, SimSun;font-size:14px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(34, 34, 34);margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box" align="start"><span style="font-size:16px" id="tl_3">لمزيد من المعلومات والصور ، يرجى الاتصال بخدمة العملاء.</span></p>
-                    <p><br /></p>
-                    <div>
-                        <span style="font-size:24px" id="tl_4">نصائح:</span>
-                    </div>
-                    <div>
-                        <span style="font-size:18px" id="tl_5">يرجى استخدام شريط قياس ناعم لتأكيد محيط اليد الفعلي قبل الشراء ، وإضافة سنتيمتر واحد لتحديد الحجم المناسب للارتداء</span>
-                    </div>
-                    <div>
-                        &nbsp;
-                    </div>
-                    <p style="font-family:&quot;Open Sans&quot;, Roboto, Arial, Helvetica, sans-serif, SimSun;font-size:14px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(34, 34, 34);margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box" align="start"><img src="https://ae01.alicdn.com/kf/Sdc7eb0d7addd4f3faf38db4e0b0eef45x.jpg" slate-data-type="image" /></p></div></div>
-                    ', 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-04-16 18:25:00", 
-                "updated_at" => "2024-10-15 17:35:42", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 102485, 
-                "product_id" => 53464, 
-                "parent_id" => null, 
-                "sku" => "MSKUAE1005006682900581", 
-                "name" => "نظارات شمسية مستطيلة سوداء للنساء ، نظارات شمسية نسائية غريبة ، أزياء الحفلات ، مصمم العلامة التجارية ، UV400 ، بيع", 
-                "description" => '<div class="detailmodule_html"><div class="detail-desc-decorate-richtext"><p><img src="https://ae01.alicdn.com/kf/S9e1b89e74cc740028300c1333a81390b5.png" slate-data-type="image" /></p> 
-                    <p id="tl_1">انقر على المجموعة اتبع متجرنا ، وذلك للعثور على أسرع وإذا كان المتجر قد حدّث المنتج الجديد ، يمكنك الحصول عليه في المرة الأولى.</p> 
-                    <p id="tl_2">إذا لم تتمكن من العثور على الموديل الذي تريده ، يرجى الاتصال بنا للحصول على المزيد من الطراز.</p> 
-                    <p id="tl_3">لأن هناك العديد من النماذج ، ما زلنا نقوم بالتحميل ، ولم يتم تحميلها كلها.</p> 
-                    <p id="tl_4">لذلك إذا كنت بحاجة إلى رؤية المزيد من النماذج ، يرجى الاتصال بنا.</p> 
-                    <p><img src="https://ae01.alicdn.com/kf/Saa929797a7ee4aeaaf9d63d9d4c403c7O.png" slate-data-type="image" /></p> 
-                    <p><img src="https://ae01.alicdn.com/kf/Sc89d251c03b84aa8b7bbc7c4e237ee57P.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S9a70b16f6969449f8f27df7047a0c5cfS.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S65a6ec4e10f24b28839d041c98b8360cY.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S212f00319bfd46c2b78bfc1f9ed2b975G.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Sb939841c93524c9d83f7f79ccc696d80a.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Sf6b5fd5a090b4703a9e22b9314a39ddd3.jpg" slate-data-type="image" /></p> 
-                    <p><img src="https://ae01.alicdn.com/kf/S32e12f6e8df344c0a000e1657965ae1al.png" slate-data-type="image" /></p> 
-                    <p id="tl_5">موضع ترحيب انخفاض الشحن.</p> 
-                    <p><br /></p> 
-                    <p id="tl_6">للشحن المباشر ، يمكننا إرسال البضائع إلى عملائك مباشرة ولن نترك معلومات عنا إذا كنت ترغب في ذلك.</p> 
-                    <p><br /></p> 
-                    <p id="tl_7">كيف يمكنني تتبع الطرد الخاص بي ؟</p> 
-                    <p><br /><br /></p> 
-                    <p id="tl_8">يمكنك تتبع الطرد الخاص بك على الموقع الإلكتروني التالي باستخدام رقم التتبع الخاص بك: www.17track.net.en</p> 
-                    <p><br /></p> 
-                    <p id="tl_9">ماذا يمكنني أن أفعل عندما ينفد وقت حماية الشراء ؟</p> 
-                    <p><br /></p> 
-                    <p id="tl_10">إذا كان وقت حماية الشراء ينفد ، يرجى الاتصال بنا ويمكننا مساعدتك على تمديده. لذلك لن تذهب أموالك إلى حسابي.</p> 
-                    <p><br /></p> 
-                    <p id="tl_11">ملاحظات</p> 
-                    <p><br /></p> 
-                    <p id="tl_12">1. إذا كنت راضيًا عن منتجاتنا وخدماتنا ، يرجى ترك تعليقك الإيجابي و 5 نجوم. و 5 نجوم للحصول على تصنيف مفصل لطلبك.</p> 
-                    <p><br /></p> 
-                    <p id="tl_13">2. إذا لم تكن راضيًا عن منتجاتنا ، الرجاء الاتصال بنا قبل ترك تعليقات سلبية أو إجراء التقييم التفصيلي ، ونحن نضمن أننا سنحل أي مشاكل لك.</p></div></div>
-                    ', 
-                "url_key" => "mskuae1005006682900581", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => null, 
-                "cost" => null, 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "431.44", 
-                "max_price" => "431.44", 
-                "is_vat" => 1, 
-                "short_description" => '<div class="detailmodule_html"><div class="detail-desc-decorate-richtext"><p><img src="https://ae01.alicdn.com/kf/S9e1b89e74cc740028300c1333a81390b5.png" slate-data-type="image" /></p> 
-                    <p id="tl_1">انقر على المجموعة اتبع متجرنا ، وذلك للعثور على أسرع وإذا كان المتجر قد حدّث المنتج الجديد ، يمكنك الحصول عليه في المرة الأولى.</p> 
-                    <p id="tl_2">إذا لم تتمكن من العثور على الموديل الذي تريده ، يرجى الاتصال بنا للحصول على المزيد من الطراز.</p> 
-                    <p id="tl_3">لأن هناك العديد من النماذج ، ما زلنا نقوم بالتحميل ، ولم يتم تحميلها كلها.</p> 
-                    <p id="tl_4">لذلك إذا كنت بحاجة إلى رؤية المزيد من النماذج ، يرجى الاتصال بنا.</p> 
-                    <p><img src="https://ae01.alicdn.com/kf/Saa929797a7ee4aeaaf9d63d9d4c403c7O.png" slate-data-type="image" /></p> 
-                    <p><img src="https://ae01.alicdn.com/kf/Sc89d251c03b84aa8b7bbc7c4e237ee57P.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S9a70b16f6969449f8f27df7047a0c5cfS.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S65a6ec4e10f24b28839d041c98b8360cY.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S212f00319bfd46c2b78bfc1f9ed2b975G.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Sb939841c93524c9d83f7f79ccc696d80a.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Sf6b5fd5a090b4703a9e22b9314a39ddd3.jpg" slate-data-type="image" /></p> 
-                    <p><img src="https://ae01.alicdn.com/kf/S32e12f6e8df344c0a000e1657965ae1al.png" slate-data-type="image" /></p> 
-                    <p id="tl_5">موضع ترحيب انخفاض الشحن.</p> 
-                    <p><br /></p> 
-                    <p id="tl_6">للشحن المباشر ، يمكننا إرسال البضائع إلى عملائك مباشرة ولن نترك معلومات عنا إذا كنت ترغب في ذلك.</p> 
-                    <p><br /></p> 
-                    <p id="tl_7">كيف يمكنني تتبع الطرد الخاص بي ؟</p> 
-                    <p><br /><br /></p> 
-                    <p id="tl_8">يمكنك تتبع الطرد الخاص بك على الموقع الإلكتروني التالي باستخدام رقم التتبع الخاص بك: www.17track.net.en</p> 
-                    <p><br /></p> 
-                    <p id="tl_9">ماذا يمكنني أن أفعل عندما ينفد وقت حماية الشراء ؟</p> 
-                    <p><br /></p> 
-                    <p id="tl_10">إذا كان وقت حماية الشراء ينفد ، يرجى الاتصال بنا ويمكننا مساعدتك على تمديده. لذلك لن تذهب أموالك إلى حسابي.</p> 
-                    <p><br /></p> 
-                    <p id="tl_11">ملاحظات</p> 
-                    <p><br /></p> 
-                    <p id="tl_12">1. إذا كنت راضيًا عن منتجاتنا وخدماتنا ، يرجى ترك تعليقك الإيجابي و 5 نجوم. و 5 نجوم للحصول على تصنيف مفصل لطلبك.</p> 
-                    <p><br /></p> 
-                    <p id="tl_13">2. إذا لم تكن راضيًا عن منتجاتنا ، الرجاء الاتصال بنا قبل ترك تعليقات سلبية أو إجراء التقييم التفصيلي ، ونحن نضمن أننا سنحل أي مشاكل لك.</p></div></div>
-                    ', 
-                "meta_title" => "نظارات شمسية مستطيلة سوداء للنساء ، نظارات شمسية نسائية غريبة ، أزياء الحفلات ، مصمم العلامة التجارية ، UV400 ، بيع", 
-                "meta_keywords" => null, 
-                "meta_description" => '<div class="detailmodule_html"><div class="detail-desc-decorate-richtext"><p><img src="https://ae01.alicdn.com/kf/S9e1b89e74cc740028300c1333a81390b5.png" slate-data-type="image" /></p> 
-                        <p id="tl_1">انقر على المجموعة اتبع متجرنا ، وذلك للعثور على أسرع وإذا كان المتجر قد حدّث المنتج الجديد ، يمكنك الحصول عليه في المرة الأولى.</p> 
-                        <p id="tl_2">إذا لم تتمكن من العثور على الموديل الذي تريده ، يرجى الاتصال بنا للحصول على المزيد من الطراز.</p> 
-                        <p id="tl_3">لأن هناك العديد من النماذج ، ما زلنا نقوم بالتحميل ، ولم يتم تحميلها كلها.</p> 
-                        <p id="tl_4">لذلك إذا كنت بحاجة إلى رؤية المزيد من النماذج ، يرجى الاتصال بنا.</p> 
-                        <p><img src="https://ae01.alicdn.com/kf/Saa929797a7ee4aeaaf9d63d9d4c403c7O.png" slate-data-type="image" /></p> 
-                        <p><img src="https://ae01.alicdn.com/kf/Sc89d251c03b84aa8b7bbc7c4e237ee57P.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S9a70b16f6969449f8f27df7047a0c5cfS.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S65a6ec4e10f24b28839d041c98b8360cY.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S212f00319bfd46c2b78bfc1f9ed2b975G.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Sb939841c93524c9d83f7f79ccc696d80a.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Sf6b5fd5a090b4703a9e22b9314a39ddd3.jpg" slate-data-type="image" /></p> 
-                        <p><img src="https://ae01.alicdn.com/kf/S32e12f6e8df344c0a000e1657965ae1al.png" slate-data-type="image" /></p> 
-                        <p id="tl_5">موضع ترحيب انخفاض الشحن.</p> 
-                        <p><br /></p> 
-                        <p id="tl_6">للشحن المباشر ، يمكننا إرسال البضائع إلى عملائك مباشرة ولن نترك معلومات عنا إذا كنت ترغب في ذلك.</p> 
-                        <p><br /></p> 
-                        <p id="tl_7">كيف يمكنني تتبع الطرد الخاص بي ؟</p> 
-                        <p><br /><br /></p> 
-                        <p id="tl_8">يمكنك تتبع الطرد الخاص بك على الموقع الإلكتروني التالي باستخدام رقم التتبع الخاص بك: www.17track.net.en</p> 
-                        <p><br /></p> 
-                        <p id="tl_9">ماذا يمكنني أن أفعل عندما ينفد وقت حماية الشراء ؟</p> 
-                        <p><br /></p> 
-                        <p id="tl_10">إذا كان وقت حماية الشراء ينفد ، يرجى الاتصال بنا ويمكننا مساعدتك على تمديده. لذلك لن تذهب أموالك إلى حسابي.</p> 
-                        <p><br /></p> 
-                        <p id="tl_11">ملاحظات</p> 
-                        <p><br /></p> 
-                        <p id="tl_12">1. إذا كنت راضيًا عن منتجاتنا وخدماتنا ، يرجى ترك تعليقك الإيجابي و 5 نجوم. و 5 نجوم للحصول على تصنيف مفصل لطلبك.</p> 
-                        <p><br /></p> 
-                        <p id="tl_13">2. إذا لم تكن راضيًا عن منتجاتنا ، الرجاء الاتصال بنا قبل ترك تعليقات سلبية أو إجراء التقييم التفصيلي ، ونحن نضمن أننا سنحل أي مشاكل لك.</p></div></div>
-                        ', 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-04-16 18:23:28", 
-                "updated_at" => "2024-10-15 17:36:56", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 99206, 
-                "product_id" => 51762, 
-                "parent_id" => null, 
-                "sku" => "RUIQBH6", 
-                "name" => "منتج", 
-                "description" => "", 
-                "url_key" => "ruiqbh6", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "5.00", 
-                "cost" => null, 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "5.00", 
-                "max_price" => "5.00", 
-                "is_vat" => 1, 
-                "short_description" => null, 
-                "meta_title" => "", 
-                "meta_keywords" => null, 
-                "meta_description" => "", 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-03-31 13:04:01", 
-                "updated_at" => "2024-10-15 17:37:18", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 74870, 
-                "product_id" => 37810, 
-                "parent_id" => null, 
-                "sku" => "ven-con-1", 
-                "name" => "ven-configurable", 
-                "description" => "<p>ven-configurableven-configurable</p>", 
-                "url_key" => "ven-con-1", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => null, 
-                "cost" => null, 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "7.14", 
-                "max_price" => "7.14", 
-                "is_vat" => 1, 
-                "short_description" => "<p>ven-configurableven-configurable</p>", 
-                "meta_title" => "ven-configurable", 
-                "meta_keywords" => null, 
-                "meta_description" => "<p>ven-configurableven-configurable</p>", 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-03-21 12:20:24", 
-                "updated_at" => "2024-10-15 17:37:24", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 74868, 
-                "product_id" => 37809, 
-                "parent_id" => null, 
-                "sku" => "TBS50100", 
-                "name" => "ورلد كير مناشف للاستعمال مرة واحدة 50×100، 50 قطعة", 
-                "description" => "<p>النوع: مناشف للاستعمال مرة واحدة ناعمة على البشرة قدرة عالية على الامتصاص 50 قطعة</p>", 
-                "url_key" => "tbs50100", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "73.86", 
-                "cost" => "43.45", 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "73.86", 
-                "max_price" => "73.86", 
-                "is_vat" => 1, 
-                "short_description" => "<p>النوع: مناشف للاستعمال مرة واحدة ناعمة على البشرة قدرة عالية على الامتصاص 50 قطعة</p>", 
-                "meta_title" => "ورلد كير مناشف للاستعمال مرة واحدة 50×100، 50 قطعة", 
-                "meta_keywords" => null, 
-                "meta_description" => "<p>النوع: مناشف للاستعمال مرة واحدة ناعمة على البشرة قدرة عالية على الامتصاص 50 قطعة</p>", 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0.1, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-03-21 12:19:51", 
-                "updated_at" => "2024-10-15 17:37:32", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 74866, 
-                "product_id" => 37808, 
-                "parent_id" => null, 
-                "sku" => "QV-0766", 
-                "name" => "كريم مرطب للبشرة الحساسة من كيو في 100 جم", 
-                "description" => "<p>كريم ترطيب البشرة من كيو في، لتجديد البشرة الجافة بترطيب عالي التركيز. يحتوي على السكوالين ودهون طبيعية التي تمنحك بشره ناعمة ومرنة. الحل الامثل لمناطق الجسم شديدة الجفاف.</p>", 
-                "url_key" => "qv-0766", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "68.46", 
-                "cost" => "40.27", 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "68.46", 
-                "max_price" => "68.46", 
-                "is_vat" => 1, 
-                "short_description" => "<p>كريم ترطيب البشرة من كيو في، لتجديد البشرة الجافة بترطيب عالي التركيز. يحتوي على السكوالين ودهون طبيعية التي تمنحك بشره ناعمة ومرنة. الحل الامثل لمناطق الجسم شديدة الجفاف.</p>", 
-                "meta_title" => "كريم مرطب للبشرة الحساسة من كيو في 100 جم", 
-                "meta_keywords" => null, 
-                "meta_description" => "<p>كريم ترطيب البشرة من كيو في، لتجديد البشرة الجافة بترطيب عالي التركيز. يحتوي على السكوالين ودهون طبيعية التي تمنحك بشره ناعمة ومرنة. الحل الامثل لمناطق الجسم شديدة الجفاف.</p>", 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0.1, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-03-21 12:19:47", 
-                "updated_at" => "2024-10-15 17:37:39", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 48795, 
-                "product_id" => 24644, 
-                "parent_id" => null, 
-                "sku" => "C3-5-2-3", 
-                "name" => "ميلي - شامبو أكليل الجبل والنعناع لتقوية الشعر 355 مل", 
-                "description" => "<p>- شامبو تقوية الشعر بأكليل الجبل والنعناع من ميلي أورجانيكس، مملوء بالبيوتين، ينظف ويساعد على تقوية الشعر الضعيف والهش .</p>
-
-                <p>- يغذي وينظف الشعر الجاف أو الضعيف أو الهش باستخدام هذا الشامبو المقوي للشعر الذي يعمل على تنشيط بصيلات الشعر .</p>
-                
-                <p>- يوفر رطوبة مكثفة لجميع أنواع الشعر بتركيبة لطيفة تغذي وتنظف وتساعد على تقوية الشعر الضعيف والهش .</p>
-                
-                <p>- مناسبة لمستويات الشعر ذات المسامية المنخفضة والعالية .</p>
-                
-                <p>- تم تطوير شامبو تقوية الشعر بالروزماري والنعناع من ميلي أورجانيكس لتنظيف شعرك بلطف مع توفير العناصر الغذائية الأساسية .</p>
-                
-                <p>- مناسب لجميع أنواع الشعر .</p>
-                
-                <p>المكونات : ماء (أكوا، أو)، الصوديوم C14-16 أوليفين سلفونات، كوكاميدوبروبيل البيتين، بولي كواترنيوم-7، كوكاميد MIPA، جليكول ستيرات، بوليكواترنيوم-10، بانثينول، بروبيلين جليكول، زيت النعناع بيبيريتا (النعناع)، زيت أوراق إكليل الجبل (إكليل الجبل). ، ثنائي الصوديومEDTA، فيتانتريول، * زيت بذور الأوربينيا أوليفيرا (الباباسو)، * زيت جذر الزنجبيل (الزنجبيل)، * زيت جوز الهند نوسيفيرا (جوز الهند)، مستخلص عشبة ذيل الحصان (Equisetum Arvense)، مستخلص لوسونيا إنيرميس (الحناء)، روزمارينوس أوفيسيناليس ( مستخلصأوراق إكليل الجبل، مستخلص زهرة أنثيميس نوبيليس (البابونج)، مستخلص أوراق سيمفيتوم أوفيسينال (السنفيتون)، مستخلص هومولوس لوبولوس (الجنجل)، مستخلص أورتيك ديويكا (نبات القراص)، العسل، البيوتين، زيت بذور ريسينوس كومونيس (الخروع)، فينوكسيإيثانول، البنزويك. حمض، إيثيل هكسيل جليسرين، جليسيريث-2 كاكاو، عطر (عطر) *مكونات عضوية معتمدة</p>
-                
-                <p>طريقة الاستخدام : وزعي كمية بسيطة على اليدين ودلكيها على فروة الراس المبللة بالماء للحصول على رغوة غنية</p>
-                
-                <p>ثم يشطف الشعر جيداً بالماء &nbsp;</p>", 
-                "url_key" => "c3-5-2-3", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "67.83", 
-                "cost" => "39.90", 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "67.83", 
-                "max_price" => "67.83", 
-                "is_vat" => 1, 
-                "short_description" => "<p>- شامبو تقوية الشعر بأكليل الجبل والنعناع من ميلي أورجانيكس، مملوء بالبيوتين، ينظف ويساعد على تقوية الشعر الضعيف والهش .</p>
-
-                    <p>- يغذي وينظف الشعر الجاف أو الضعيف أو الهش باستخدام هذا الشامبو المقوي للشعر الذي يعمل على تنشيط بصيلات الشعر .</p>
-                    
-                    <p>- يوفر رطوبة مكثفة لجميع أنواع الشعر بتركيبة لطيفة تغذي وتنظف وتساعد على تقوية الشعر الضعيف والهش .</p>
-                    
-                    <p>- مناسبة لمستويات الشعر ذات المسامية المنخفضة والعالية .</p>
-                    
-                    <p>- تم تطوير شامبو تقوية الشعر بالروزماري والنعناع من ميلي أورجانيكس لتنظيف شعرك بلطف مع توفير العناصر الغذائية الأساسية .</p>
-                    
-                    <p>- مناسب لجميع أنواع الشعر .</p>
-                    
-                    <p>المكونات : ماء (أكوا، أو)، الصوديوم C14-16 أوليفين سلفونات، كوكاميدوبروبيل البيتين، بولي كواترنيوم-7، كوكاميد MIPA، جليكول ستيرات، بوليكواترنيوم-10، بانثينول، بروبيلين جليكول، زيت النعناع بيبيريتا (النعناع)، زيت أوراق إكليل الجبل (إكليل الجبل). ، ثنائي الصوديومEDTA، فيتانتريول، * زيت بذور الأوربينيا أوليفيرا (الباباسو)، * زيت جذر الزنجبيل (الزنجبيل)، * زيت جوز الهند نوسيفيرا (جوز الهند)، مستخلص عشبة ذيل الحصان (Equisetum Arvense)، مستخلص لوسونيا إنيرميس (الحناء)، روزمارينوس أوفيسيناليس ( مستخلصأوراق إكليل الجبل، مستخلص زهرة أنثيميس نوبيليس (البابونج)، مستخلص أوراق سيمفيتوم أوفيسينال (السنفيتون)، مستخلص هومولوس لوبولوس (الجنجل)، مستخلص أورتيك ديويكا (نبات القراص)، العسل، البيوتين، زيت بذور ريسينوس كومونيس (الخروع)، فينوكسيإيثانول، البنزويك. حمض، إيثيل هكسيل جليسرين، جليسيريث-2 كاكاو، عطر (عطر) *مكونات عضوية معتمدة</p>
-                    
-                    <p>طريقة الاستخدام : وزعي كمية بسيطة على اليدين ودلكيها على فروة الراس المبللة بالماء للحصول على رغوة غنية</p>
-                    
-                    <p>ثم يشطف الشعر جيداً بالماء &nbsp;</p>", 
-                "meta_title" => "ميلي - شامبو أكليل الجبل والنعناع لتقوية الشعر 355 مل", 
-                "meta_keywords" => null, 
-                "meta_description" => "<p>- شامبو تقوية الشعر بأكليل الجبل والنعناع من ميلي أورجانيكس، مملوء بالبيوتين، ينظف ويساعد على تقوية الشعر الضعيف والهش .</p>
-
-                <p>- يغذي وينظف الشعر الجاف أو الضعيف أو الهش باستخدام هذا الشامبو المقوي للشعر الذي يعمل على تنشيط بصيلات الشعر .</p>
-                
-                <p>- يوفر رطوبة مكثفة لجميع أنواع الشعر بتركيبة لطيفة تغذي وتنظف وتساعد على تقوية الشعر الضعيف والهش .</p>
-                
-                <p>- مناسبة لمستويات الشعر ذات المسامية المنخفضة والعالية .</p>
-                
-                <p>- تم تطوير شامبو تقوية الشعر بالروزماري والنعناع من ميلي أورجانيكس لتنظيف شعرك بلطف مع توفير العناصر الغذائية الأساسية .</p>
-                
-                <p>- مناسب لجميع أنواع الشعر .</p>
-                
-                <p>المكونات : ماء (أكوا، أو)، الصوديوم C14-16 أوليفين سلفونات، كوكاميدوبروبيل البيتين، بولي كواترنيوم-7، كوكاميد MIPA، جليكول ستيرات، بوليكواترنيوم-10، بانثينول، بروبيلين جليكول، زيت النعناع بيبيريتا (النعناع)، زيت أوراق إكليل الجبل (إكليل الجبل). ، ثنائي الصوديومEDTA، فيتانتريول، * زيت بذور الأوربينيا أوليفيرا (الباباسو)، * زيت جذر الزنجبيل (الزنجبيل)، * زيت جوز الهند نوسيفيرا (جوز الهند)، مستخلص عشبة ذيل الحصان (Equisetum Arvense)، مستخلص لوسونيا إنيرميس (الحناء)، روزمارينوس أوفيسيناليس ( مستخلصأوراق إكليل الجبل، مستخلص زهرة أنثيميس نوبيليس (البابونج)، مستخلص أوراق سيمفيتوم أوفيسينال (السنفيتون)، مستخلص هومولوس لوبولوس (الجنجل)، مستخلص أورتيك ديويكا (نبات القراص)، العسل، البيوتين، زيت بذور ريسينوس كومونيس (الخروع)، فينوكسيإيثانول، البنزويك. حمض، إيثيل هكسيل جليسرين، جليسيريث-2 كاكاو، عطر (عطر) *مكونات عضوية معتمدة</p>
-                
-                <p>طريقة الاستخدام : وزعي كمية بسيطة على اليدين ودلكيها على فروة الراس المبللة بالماء للحصول على رغوة غنية</p>
-                
-                <p>ثم يشطف الشعر جيداً بالماء &nbsp;</p>", 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0.3, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-02-08 15:39:54", 
-                "updated_at" => "2024-10-15 17:37:44", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 48793, 
-                "product_id" => 24643, 
-                "parent_id" => null, 
-                "sku" => "C3-5-2-4", 
-                "name" => "ميلي - قناع تقوية الشعر بأكليل الجبل والنعناع 340 جم", 
-                "description" => "<p>تغذية عميقة للشعر التالف: يدمج قناعنا الغني بالمغذيات بالبيوتين بالصبار والعسل ومزيج من الزيوت العطرية المغذية لخلق مظهر مكثف</p>
-
-                    <p>قومي بتغذية وترطيب وتقوية شعرك في وقت واحد مع هذه التركيبة الغنية بالمغذيات مع مكونات عضوية طبيعية مثل إكليل الجبل وزيت المنثا.</p>
-                    
-                    <p>قناع مجدد ومرطب عميق للشعر الجاف المتعطش.</p>
-                    
-                    <p>تغذي وترطب وتقوي كل ذلك في وقت واحد مع هذه التركيبة الغنية بالمغذيات.</p>
-                    
-                    <p>تم تطويره لتلبية احتياجات شعرك</p>
-                    
-                    <p>مصنوع من مكونات عضوية معتمدة ومحمل بالبيوتين</p>
-                    
-                    <p>تم تطوير قناع تقوية الشعر بالروزماري والنعناع مع وضع أكبر احتياجات شعرك في الاعتبار.</p>
-                    
-                    <p>طريقة الاستخدام:</p>
-                    
-                    <p>بعد غسل الشعر بالشامبو بشامبو مقوي بالروزماري والنعناع ، قم بتنعيمه بالتساوي من خلال الشعر الرطب من الجذور إلى الأطراف. اتركيه خلال 15-20 دقيقة. شطف جيدا.</p>
-                    
-                    <p>المكونات:</p>
-                    
-                    <p>ماء (أكوا ، ماء) ، بهينتريمونيوم ميثوسلفات ، كحول سيتريل ، عصير أوراق الصبار بربادنسيس (مزوَّد اللون) ، زيت اللوز الحلو (اللوز الحلو) ، زيت بذور هيليانثوس أنوس (دوار الشمس) ، زيت فاكهة أوليا يوروبا (زيتون) ، كوبرنيكوبا سيريفيرا ) الشمع ، بولي سوربات -20 ، زيت بذور المكاديميا إنتجريفوليا ، جليسريل ستيرات ، زبدة بوتيروسبيرموم باركي (الشيا) ، توكوفيريل أسيتات ، * زيت بذور Orbignya Oleifera (باباسو) ، * Zingiber Officinale (الزنجبيل) زيت الجذر ، * جوز الهند Nucifera ، بانثينول ، فيتانتريول ، زيت النعناع ، زيت أوراق إكليل الجبل (إكليل الجبل) ، زيت بذور سيموندسيا تشينينسيس (الجوجوبا) ، زيت بذور ريسينوس كومونيس (خروع) ، مستخلص عشب ذيل الحصان ، مستخلص لاوسونيا إنرميس (حناء) (إكليل الجبل) مستخلص أوراق الشجر ، مستخلص زهرة Anthemis Nobilis (البابونج) ، مستخلص السيمفيتم الرسمي (أوراق الكومفري) ، مستخلص Humulus Lupulus (القفزات) ، خلاصة Urtica Dioica (نبات القراص) ، العسل ، البيوتين ، كلوريد السيتريمونيوم ، Sesamum Indicum ( السمسم) زيت بذور ، فينوكسي إيثانول ، حمض البنزويك ، إيثيل هكسيل جليسرين ، جلسريث -2 كوكوات &nbsp;</p>", 
-                "url_key" => "c3-5-2-4", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "71.50", 
-                "cost" => "42.06", 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "71.50", 
-                "max_price" => "71.50", 
-                "is_vat" => 1, 
-                "short_description" => "<p>تغذية عميقة للشعر التالف: يدمج قناعنا الغني بالمغذيات بالبيوتين بالصبار والعسل ومزيج من الزيوت العطرية المغذية لخلق مظهر مكثف</p>
-
-                    <p>قومي بتغذية وترطيب وتقوية شعرك في وقت واحد مع هذه التركيبة الغنية بالمغذيات مع مكونات عضوية طبيعية مثل إكليل الجبل وزيت المنثا.</p>
-                    
-                    <p>قناع مجدد ومرطب عميق للشعر الجاف المتعطش.</p>
-                    
-                    <p>تغذي وترطب وتقوي كل ذلك في وقت واحد مع هذه التركيبة الغنية بالمغذيات.</p>
-                    
-                    <p>تم تطويره لتلبية احتياجات شعرك</p>
-                    
-                    <p>مصنوع من مكونات عضوية معتمدة ومحمل بالبيوتين</p>
-                    
-                    <p>تم تطوير قناع تقوية الشعر بالروزماري والنعناع مع وضع أكبر احتياجات شعرك في الاعتبار.</p>
-                    
-                    <p>طريقة الاستخدام:</p>
-                    
-                    <p>بعد غسل الشعر بالشامبو بشامبو مقوي بالروزماري والنعناع ، قم بتنعيمه بالتساوي من خلال الشعر الرطب من الجذور إلى الأطراف. اتركيه خلال 15-20 دقيقة. شطف جيدا.</p>
-                    
-                    <p>المكونات:</p>
-                    
-                    <p>ماء (أكوا ، ماء) ، بهينتريمونيوم ميثوسلفات ، كحول سيتريل ، عصير أوراق الصبار بربادنسيس (مزوَّد اللون) ، زيت اللوز الحلو (اللوز الحلو) ، زيت بذور هيليانثوس أنوس (دوار الشمس) ، زيت فاكهة أوليا يوروبا (زيتون) ، كوبرنيكوبا سيريفيرا ) الشمع ، بولي سوربات -20 ، زيت بذور المكاديميا إنتجريفوليا ، جليسريل ستيرات ، زبدة بوتيروسبيرموم باركي (الشيا) ، توكوفيريل أسيتات ، * زيت بذور Orbignya Oleifera (باباسو) ، * Zingiber Officinale (الزنجبيل) زيت الجذر ، * جوز الهند Nucifera ، بانثينول ، فيتانتريول ، زيت النعناع ، زيت أوراق إكليل الجبل (إكليل الجبل) ، زيت بذور سيموندسيا تشينينسيس (الجوجوبا) ، زيت بذور ريسينوس كومونيس (خروع) ، مستخلص عشب ذيل الحصان ، مستخلص لاوسونيا إنرميس (حناء) (إكليل الجبل) مستخلص أوراق الشجر ، مستخلص زهرة Anthemis Nobilis (البابونج) ، مستخلص السيمفيتم الرسمي (أوراق الكومفري) ، مستخلص Humulus Lupulus (القفزات) ، خلاصة Urtica Dioica (نبات القراص) ، العسل ، البيوتين ، كلوريد السيتريمونيوم ، Sesamum Indicum ( السمسم) زيت بذور ، فينوكسي إيثانول ، حمض البنزويك ، إيثيل هكسيل جليسرين ، جلسريث -2 كوكوات &nbsp;</p>", 
-                "meta_title" => "ميلي - قناع تقوية الشعر بأكليل الجبل والنعناع 340 جم", 
-                "meta_keywords" => null, 
-                "meta_description" => "<p>تغذية عميقة للشعر التالف: يدمج قناعنا الغني بالمغذيات بالبيوتين بالصبار والعسل ومزيج من الزيوت العطرية المغذية لخلق مظهر مكثف</p>
-
-                    <p>قومي بتغذية وترطيب وتقوية شعرك في وقت واحد مع هذه التركيبة الغنية بالمغذيات مع مكونات عضوية طبيعية مثل إكليل الجبل وزيت المنثا.</p>
-                    
-                    <p>قناع مجدد ومرطب عميق للشعر الجاف المتعطش.</p>
-                    
-                    <p>تغذي وترطب وتقوي كل ذلك في وقت واحد مع هذه التركيبة الغنية بالمغذيات.</p>
-                    
-                    <p>تم تطويره لتلبية احتياجات شعرك</p>
-                    
-                    <p>مصنوع من مكونات عضوية معتمدة ومحمل بالبيوتين</p>
-                    
-                    <p>تم تطوير قناع تقوية الشعر بالروزماري والنعناع مع وضع أكبر احتياجات شعرك في الاعتبار.</p>
-                    
-                    <p>طريقة الاستخدام:</p>
-                    
-                    <p>بعد غسل الشعر بالشامبو بشامبو مقوي بالروزماري والنعناع ، قم بتنعيمه بالتساوي من خلال الشعر الرطب من الجذور إلى الأطراف. اتركيه خلال 15-20 دقيقة. شطف جيدا.</p>
-                    
-                    <p>المكونات:</p>
-                    
-                    <p>ماء (أكوا ، ماء) ، بهينتريمونيوم ميثوسلفات ، كحول سيتريل ، عصير أوراق الصبار بربادنسيس (مزوَّد اللون) ، زيت اللوز الحلو (اللوز الحلو) ، زيت بذور هيليانثوس أنوس (دوار الشمس) ، زيت فاكهة أوليا يوروبا (زيتون) ، كوبرنيكوبا سيريفيرا ) الشمع ، بولي سوربات -20 ، زيت بذور المكاديميا إنتجريفوليا ، جليسريل ستيرات ، زبدة بوتيروسبيرموم باركي (الشيا) ، توكوفيريل أسيتات ، * زيت بذور Orbignya Oleifera (باباسو) ، * Zingiber Officinale (الزنجبيل) زيت الجذر ، * جوز الهند Nucifera ، بانثينول ، فيتانتريول ، زيت النعناع ، زيت أوراق إكليل الجبل (إكليل الجبل) ، زيت بذور سيموندسيا تشينينسيس (الجوجوبا) ، زيت بذور ريسينوس كومونيس (خروع) ، مستخلص عشب ذيل الحصان ، مستخلص لاوسونيا إنرميس (حناء) (إكليل الجبل) مستخلص أوراق الشجر ، مستخلص زهرة Anthemis Nobilis (البابونج) ، مستخلص السيمفيتم الرسمي (أوراق الكومفري) ، مستخلص Humulus Lupulus (القفزات) ، خلاصة Urtica Dioica (نبات القراص) ، العسل ، البيوتين ، كلوريد السيتريمونيوم ، Sesamum Indicum ( السمسم) زيت بذور ، فينوكسي إيثانول ، حمض البنزويك ، إيثيل هكسيل جليسرين ، جلسريث -2 كوكوات &nbsp;</p>", 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0.3, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-02-08 15:39:42", 
-                "updated_at" => "2024-10-15 17:37:50", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 48791, 
-                "product_id" => 24642, 
-                "parent_id" => null, 
-                "sku" => "C3-5-2-5", 
-                "name" => "ميلي - بلسم أكليل الجبل والنعناع لتقوية الشعر 355 مل", 
-                "description" => "<p>تم تطوير بلسم تقوية الشعر الذي لا يحتاج إلى شطفه بإكليل الجبل والنعناع لتلبية احتياجات شعرك.</p>
-
-                    <p>&bull; محمل بالبيوتين &bull; تألق مذهل &bull; يحبس الرطوبة</p>
-                    
-                    <p>غني بالبيوتين وإكليل الجبل، هذا الترطيب الذي لا يترك أثراً مع الحماية والترطيب.</p>
-                    
-                    <p>المكونات: ماء، جليسرين، بيهنتريمونيوم ميثوسولفات، كحول سيتريل، كحول ستياريلي، زيت برونوس أميغدالوس دولسيس (اللوز الحلو)، كحول سيتيل، سيترات ثلاثي إيثيل، زيت فاكهة أوليا يوروبيا (الزيتون)، عطر، بيوتين، زيت بيرسي جراتيسيما (الأفوكادو)، سمسم. زيت بذور إنديكوم (السمسم)، سيتيريث-20، زيت أوراق إكليل الجبل (إكليل الجبل)، زيت جذر الزنجبيل (الزنجبيل)، زيت النعناع بيبيريتا (النعناع)، البروبيلين جليكول، مستخلص زهرة البابونج ريكوتيتا (ماتريكاريا)، فاكهة/أوراق نبات فاكسينيوم ميرتيلوس. مستخلص، مستخلص Saccharum Officinarum (قصب السكر)، مستخلص فاكهة Citrus Aurantium Dulcis (البرتقال)، مستخلص فاكهة الليمون الحمضي (الليمون)، مستخلص Acer Saccharum (سكر القيقب)، فينوكسي إيثانول، كابريليل جلايكول، بوليسوربات 20.</p>", 
-                "url_key" => "c3-5-2-5", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "67.83", 
-                "cost" => "39.90", 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "67.83", 
-                "max_price" => "67.83", 
-                "is_vat" => 1, 
-                "short_description" => "<p>تم تطوير بلسم تقوية الشعر الذي لا يحتاج إلى شطفه بإكليل الجبل والنعناع لتلبية احتياجات شعرك.</p>
-
-                    <p>&bull; محمل بالبيوتين &bull; تألق مذهل &bull; يحبس الرطوبة</p>
-                    
-                    <p>غني بالبيوتين وإكليل الجبل، هذا الترطيب الذي لا يترك أثراً مع الحماية والترطيب.</p>
-                    
-                    <p>المكونات: ماء، جليسرين، بيهنتريمونيوم ميثوسولفات، كحول سيتريل، كحول ستياريلي، زيت برونوس أميغدالوس دولسيس (اللوز الحلو)، كحول سيتيل، سيترات ثلاثي إيثيل، زيت فاكهة أوليا يوروبيا (الزيتون)، عطر، بيوتين، زيت بيرسي جراتيسيما (الأفوكادو)، سمسم. زيت بذور إنديكوم (السمسم)، سيتيريث-20، زيت أوراق إكليل الجبل (إكليل الجبل)، زيت جذر الزنجبيل (الزنجبيل)، زيت النعناع بيبيريتا (النعناع)، البروبيلين جليكول، مستخلص زهرة البابونج ريكوتيتا (ماتريكاريا)، فاكهة/أوراق نبات فاكسينيوم ميرتيلوس. مستخلص، مستخلص Saccharum Officinarum (قصب السكر)، مستخلص فاكهة Citrus Aurantium Dulcis (البرتقال)، مستخلص فاكهة الليمون الحمضي (الليمون)، مستخلص Acer Saccharum (سكر القيقب)، فينوكسي إيثانول، كابريليل جلايكول، بوليسوربات 20.</p>", 
-                "meta_title" => "ميلي - بلسم أكليل الجبل والنعناع لتقوية الشعر 355 مل", 
-                "meta_keywords" => null, 
-                "meta_description" => "<p>تم تطوير بلسم تقوية الشعر الذي لا يحتاج إلى شطفه بإكليل الجبل والنعناع لتلبية احتياجات شعرك.</p>
-
-                    <p>&bull; محمل بالبيوتين &bull; تألق مذهل &bull; يحبس الرطوبة</p>
-                    
-                    <p>غني بالبيوتين وإكليل الجبل، هذا الترطيب الذي لا يترك أثراً مع الحماية والترطيب.</p>
-                    
-                    <p>المكونات: ماء، جليسرين، بيهنتريمونيوم ميثوسولفات، كحول سيتريل، كحول ستياريلي، زيت برونوس أميغدالوس دولسيس (اللوز الحلو)، كحول سيتيل، سيترات ثلاثي إيثيل، زيت فاكهة أوليا يوروبيا (الزيتون)، عطر، بيوتين، زيت بيرسي جراتيسيما (الأفوكادو)، سمسم. زيت بذور إنديكوم (السمسم)، سيتيريث-20، زيت أوراق إكليل الجبل (إكليل الجبل)، زيت جذر الزنجبيل (الزنجبيل)، زيت النعناع بيبيريتا (النعناع)، البروبيلين جليكول، مستخلص زهرة البابونج ريكوتيتا (ماتريكاريا)، فاكهة/أوراق نبات فاكسينيوم ميرتيلوس. مستخلص، مستخلص Saccharum Officinarum (قصب السكر)، مستخلص فاكهة Citrus Aurantium Dulcis (البرتقال)، مستخلص فاكهة الليمون الحمضي (الليمون)، مستخلص Acer Saccharum (سكر القيقب)، فينوكسي إيثانول، كابريليل جلايكول، بوليسوربات 20.</p>", 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0.3, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-02-08 15:39:37", 
-                "updated_at" => "2024-10-15 17:37:55", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 48789, 
-                "product_id" => 24641, 
-                "parent_id" => null, 
-                "sku" => "C3-5-5-7", 
-                "name" => "ميلي - بلسم مقوي للشعر باكليل الجبل والنعناع 355 مل", 
-                "description" => "<p>يوفر بلسم تقوية الروزماري والنعناع التوازن المثالي بين القوة والرطوبة لتحسين الحالة العامة للشعر وفروة الرأس. ينعم ويفك التشابك على الفور لزيادة سهولة التحكم. يدعم شعر أطول وأكثر صحة.</p>
-
-                <ul>
-                    <li>يوفر التوازن المثالي بين القوة والرطوبة.</li>
-                    <li>غني بالبيوتين ويمنحك لمعاناً مذهلاً.</li>
-                    <li>ينعم ويفك التشابك على الفور.</li>
-                    <li>يدعم شعر أطول وأكثر صحة.</li>
-                    <li>خالي من البارابين، الكبريتات، البارافينات، الزيوت المعدنية، DEA.</li>
-                    <li>تركيبه لجميع أنواع الشعر.</li>
-                </ul>", 
-                "url_key" => "c3-5-5-7", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "73.25", 
-                "cost" => "43.09", 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "73.25", 
-                "max_price" => "73.25", 
-                "is_vat" => 1, 
-                "short_description" => "<p>يوفر بلسم تقوية الروزماري والنعناع التوازن المثالي بين القوة والرطوبة لتحسين الحالة العامة للشعر وفروة الرأس. ينعم ويفك التشابك على الفور لزيادة سهولة التحكم. يدعم شعر أطول وأكثر صحة.</p>
-
-                <ul>
-                    <li>يوفر التوازن المثالي بين القوة والرطوبة.</li>
-                    <li>غني بالبيوتين ويمنحك لمعاناً مذهلاً.</li>
-                    <li>ينعم ويفك التشابك على الفور.</li>
-                    <li>يدعم شعر أطول وأكثر صحة.</li>
-                    <li>خالي من البارابين، الكبريتات، البارافينات، الزيوت المعدنية، DEA.</li>
-                    <li>تركيبه لجميع أنواع الشعر.</li>
-                </ul>", 
-                "meta_title" => "ميلي - بلسم مقوي للشعر باكليل الجبل والنعناع 355 مل", 
-                "meta_keywords" => null, 
-                "meta_description" => "<p>يوفر بلسم تقوية الروزماري والنعناع التوازن المثالي بين القوة والرطوبة لتحسين الحالة العامة للشعر وفروة الرأس. ينعم ويفك التشابك على الفور لزيادة سهولة التحكم. يدعم شعر أطول وأكثر صحة.</p>
-
-                <ul>
-                    <li>يوفر التوازن المثالي بين القوة والرطوبة.</li>
-                    <li>غني بالبيوتين ويمنحك لمعاناً مذهلاً.</li>
-                    <li>ينعم ويفك التشابك على الفور.</li>
-                    <li>يدعم شعر أطول وأكثر صحة.</li>
-                    <li>خالي من البارابين، الكبريتات، البارافينات، الزيوت المعدنية، DEA.</li>
-                    <li>تركيبه لجميع أنواع الشعر.</li>
-                </ul>", 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0.4, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-02-08 15:39:33", 
-                "updated_at" => "2024-10-15 17:38:00", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
+                    "base_image_url" => "https://media.zid.store/thumbs/07d02681-b3c7-4603-b219-599dc6c7a256/67857440-5e72-4ee7-bb77-6192602e71ab-thumbnail-1000x1000-70.webp"
                 ],
             ]
         ]
@@ -6802,18 +4404,18 @@ function category() {
             "display_mode" => "products_and_description", 
             "category_icon_path" => null, 
             "additional" => null, 
-            "name" => "العطور ", 
+            "name" => "الجولات ", 
             "description" => null, 
-            "slug" => "العطور", 
-            "url_path" => "العطور", 
+            "slug" => "الجولات", 
+            "url_path" => "الجولات", 
             "meta_title" => null, 
             "meta_description" => null, 
             "meta_keywords" => null, 
             "translations" => [
                 [
                     "id" => 366, 
-                    "name" => "العطور ", 
-                    "slug" => "العطور", 
+                    "name" => "الجولات ", 
+                    "slug" => "الجولات", 
                     "description" => null, 
                     "meta_title" => null, 
                     "meta_description" => null, 
@@ -6821,12 +4423,12 @@ function category() {
                     "category_id" => 182, 
                     "locale" => "ar", 
                     "locale_id" => 54, 
-                    "url_path" => "العطور" 
+                    "url_path" => "الجولات" 
                 ], 
                 [
                     "id" => 367, 
-                    "name" => "عطور نسائية", 
-                    "slug" => "عطور-نسائية", 
+                    "name" => " اللابتوبات", 
+                    "slug" => "اللابتوبات", 
                     "description" => null, 
                     "meta_title" => null, 
                     "meta_description" => null, 
@@ -6834,7 +4436,7 @@ function category() {
                     "category_id" => 182, 
                     "locale" => "en", 
                     "locale_id" => 55, 
-                    "url_path" => "عطور-نسائية" 
+                    "url_path" => "اللابتوبات" 
                 ] 
             ], 
             "children" => [
@@ -6854,7 +4456,7 @@ function category() {
                     "display_mode" => "products_and_description", 
                     "category_icon_path" => null, 
                     "additional" => null, 
-                    "name" => "عطور نسائية", 
+                    "name" => " ", 
                     "description" => null, 
                     "slug" => "عطور-نسائية", 
                     "url_path" => "عطور-نسائية", 
@@ -6862,143 +4464,11 @@ function category() {
                     "meta_description" => null, 
                     "meta_keywords" => null, 
                     "translations" => [
-                        [
-                            "id" => 393, 
-                            "name" => "عطور للشعر", 
-                            "slug" => "عطور-للشعر", 
-                            "description" => null, 
-                            "meta_title" => null, 
-                            "meta_description" => null, 
-                            "meta_keywords" => null, 
-                            "category_id" => 195, 
-                            "locale" => "en", 
-                            "locale_id" => 55, 
-                            "url_path" => "عطور-للشعر" 
-                        ], 
-                        [
-                            "id" => 392, 
-                            "name" => "عطور نسائية", 
-                            "slug" => "عطور-نسائية", 
-                            "description" => null, 
-                            "meta_title" => null, 
-                            "meta_description" => null, 
-                            "meta_keywords" => null, 
-                            "category_id" => 195, 
-                            "locale" => "ar", 
-                            "locale_id" => 54, 
-                            "url_path" => "عطور-نسائية" 
-                        ] 
                     ], 
                     "children" => [] 
                 ], 
-                [
-                    "id" => 196, 
-                    "position" => 1, 
-                    "image" => null, 
-                    "icon" => null, 
-                    "status" => 1, 
-                    "product_status" => 0, 
-                    "show_in_app" => 0, 
-                    "_lft" => 4, 
-                    "_rgt" => 5, 
-                    "parent_id" => 182, 
-                    "created_at" => "2023-08-27T08:28:24.000000Z", 
-                    "updated_at" => "2023-08-28T09:46:02.000000Z", 
-                    "display_mode" => "products_and_description", 
-                    "category_icon_path" => null, 
-                    "additional" => null, 
-                    "name" => "عطور رجالية ", 
-                    "description" => null, 
-                    "slug" => "عطور-رجالية", 
-                    "url_path" => "عطور-رجالية", 
-                    "meta_title" => null, 
-                    "meta_description" => null, 
-                    "meta_keywords" => null, 
-                    "translations" => [
-                        [
-                        "id" => 394, 
-                        "name" => "عطور رجالية ", 
-                        "slug" => "عطور-رجالية", 
-                        "description" => null, 
-                        "meta_title" => null, 
-                        "meta_description" => null, 
-                        "meta_keywords" => null, 
-                        "category_id" => 196, 
-                        "locale" => "ar", 
-                        "locale_id" => 54, 
-                        "url_path" => "عطور-رجالية" 
-                        ], 
-                        [
-                            "id" => 395, 
-                            "name" => "عطور للجسم", 
-                            "slug" => "عطور-للجسم", 
-                            "description" => null, 
-                            "meta_title" => null, 
-                            "meta_description" => null, 
-                            "meta_keywords" => null, 
-                            "category_id" => 196, 
-                            "locale" => "en", 
-                            "locale_id" => 55, 
-                            "url_path" => "عطور-للجسم" 
-                        ] 
-                    ], 
-                    "children" => [
-                            ] 
-                ], 
-                [
-                    "id" => 2123, 
-                    "position" => 2, 
-                    "image" => null, 
-                    "icon" => null, 
-                    "status" => 1, 
-                    "product_status" => 0, 
-                    "show_in_app" => 0, 
-                    "_lft" => 6, 
-                    "_rgt" => 7, 
-                    "parent_id" => 182, 
-                    "created_at" => "2024-02-05T07:46:36.000000Z", 
-                    "updated_at" => "2024-02-05T07:48:02.000000Z", 
-                    "display_mode" => "products_and_description", 
-                    "category_icon_path" => null, 
-                    "additional" => null, 
-                    "name" => "عطور للشعر ", 
-                    "description" => null, 
-                    "slug" => "عطور-للشعر", 
-                    "url_path" => "عطور-للشعر", 
-                    "meta_title" => null, 
-                    "meta_description" => null, 
-                    "meta_keywords" => null, 
-                    "translations" => [
-                    [
-                        "id" => 4248, 
-                        "name" => "عطور للشعر ", 
-                        "slug" => "عطور-للشعر", 
-                        "description" => null, 
-                        "meta_title" => null, 
-                        "meta_description" => null, 
-                        "meta_keywords" => null, 
-                        "category_id" => 2123, 
-                        "locale" => "ar", 
-                        "locale_id" => 54, 
-                        "url_path" => "عطور-للشعر" 
-                    ], 
-                    [
-                            "id" => 4249, 
-                            "name" => "عطور للشعر ", 
-                            "slug" => "عطور-للشعر", 
-                            "description" => null, 
-                            "meta_title" => null, 
-                            "meta_description" => null, 
-                            "meta_keywords" => null, 
-                            "category_id" => 2123, 
-                            "locale" => "en", 
-                            "locale_id" => 55, 
-                            "url_path" => "عطور-للشعر" 
-                        ] 
-                    ], 
-                    "children" => [
-                            ] 
-                ], 
+               
+                
                 [
                     "id" => 2124, 
                     "position" => 3, 
@@ -7754,13 +5224,13 @@ function category() {
         ],
         [
             "id" => '', 
-            "name" => "brands ", 
+            "name" => " البرندات", 
             "slug" => "brands", 
             "url_path" => "brands",             
         ],
         [
             "id" => '', 
-            "name" => "products ", 
+            "name" => "المنتجات  ", 
             "slug" => "products", 
             "url_path" => "products",             
         ]
@@ -8273,573 +5743,69 @@ function blogs() {
 
 function page() {
     $context['authUser'] = auth();
-    $context['page']['html_content'] ='<div class="mb-5">Return policy page content</div>';
+    $context['page']['html_content'] ='<div class="text-page">
+    إنّ سياسة الخصوصية هذه تعلمك سياستنا فيما يتعلق بجمع واستعمال وإفشاء المعلومات الشخصية أثناء استعمالك للموقع بالإضافة للخيارات المتاحة لديك والمتعلقة بهذه المعلومات بموجب سياسة الخصوصية هذه حيث أن أولى اهتماماتنا هو حفاظ وضمان خصوصية استعمالك للموقع وخصوصية المعلومات المقدمة من قبلك على الموقع.
+
+نحن نقوم باستعمال معلوماتك الشخصية لتقديم الخدمات المتاحة في الموقع وتحسينها و/أو تحسين استعمالك للموقع، وبمجرد استعمالك الموقع، أنت توافق على جمعنا للمعلومات واستعمالها وفقًا لهذه السياسة.
+
+تعريفات
+
+لغايات هذه السياسة، يكون للمصطلحات التالية المعاني المحددة لها كما يأتي ما لم تنص سياسة الخصوصية على خلاف ذلك:
+
+معلوماتك الشخصية: إنّ معلومات مستخدم الموقع سواء كانت هذه المعلومات بحوزتنا أو من المحتمل أن تصبح بحوزتنا.
+بيانات الاستعمال: وتعني أنّ البيانات المجمعة بشكل تلقائيّ سواء كانت ناتجة عن استعمال الموقع و/أو ناتجة عن بنية الموقع ذاتها (على سبيل المثال مدة زيارة الصفحة).
+مراقبة المعلومات: يعني نحن أو أي شخص طبيعي أو معنوي الذي يقرر (لوحده أو مع الغير) الغاية من معالجة المعلومات الشخصية أو الطريقة التي تعالج بها أو التي سيتم معالجتها بها.
+معالجي المعلومات (أو مقدمي الخدمات): وتعني أي شخص طبيعي أو معنوي يعالج المعلومات بالنيابة عن مراقب المعلومات.
+المستخدم: وهو أي شخص طبيعي يقوم باستخدام الخدمات و/أو الموقع وذات صلة بالمعلومات الشخصية.
+سياسة الخصوصية
+
+1- تجميع المعلومات واستعمالها:
+
+نحن نقوم بتجميع عدد كبير من المعلومات المتنوعة لغايات مختلفة وذلك لتقديم الخدمات المتاحة على الموقع لك وتحسينها وتشمل على سبيل المثال لا الحصر:
+
+البريد الإلكتروني.
+الاسم الأول والاسم الأخير.
+رقم الهاتف.
+العنوان، والمنطقة، والمحافظة، والرمز البريدي، والمدينة.
+الكوكيز وبيانات الاستعمال.
+البيانات من الشبكات الاجتماعية إذا كنت تستخدم حسابات الشبكة الاجتماعية الخاصة بك للتسجيل وإنشاء حساب في الموقع، ومن المعلومات المستخدمة من مواقع الشبكات الاجتماعية مثل Facebook و Google+ و Twitter ما يلي:
+اسمك.
+اسم المستخدم للشبكة الاجتماعية.
+الموقع.
+الجنس.
+تاريخ الميلاد.
+عنوان البريد الإلكتروني.
+صورة الملف الشخصي.
+البيانات العامة لجهات الاتصال وذلك إذا قمت بتوصيل حسابك أو تسجيل الدخول للحصول على حساب في الخدمة باستخدام حساباتك في هذه الشبكات الاجتماعية.
+قد نستخدم معلوماتك الشخصية لإيصالك بالخدمات والمواد الإعلانية والترويجية ومعلومات أخرى أيًّا كان نوعها، والتي قد تكون من ضمن اهتماماتك سواء تم تطويرها من قبلنا لوحدنا أو من قبل أطراف ثالثة أو بالتعاون فينا بيننا وبين أي طرف ثالث.
+
+2- بيانات الاستعمال:
+
+قد نعمل على تجميع المعلومات التي يقوم المتصفح الخاص بك ب‘رسالها عندما تقوم بزيارة الموقع أو دخولك له من خلال أو بواسطة جهاز هاتف نقال.
+
+بيانات الاستعمال هذه قد تتضمن معلومات مثل: معلومات عنوان الإنترنت، والبروتوكول لجهاز حاسوبك، ونوع المتصفح، وإصدار المتصفح، وصفحات الموقع التي تقوم بزيارتها، ووقت وتاريخ زيارتك لها، والوقت الذي استغرقته على هذه الصفحات، ومعرفات الجهاز النادرة وغيرها من البيانات التشخيصية.
+
+
+وعندما تقوم بالدخول للموقع من خلال جهاز هاتف محمول، قد تتضمن بيانات الاستعمال هذه معلومات مثل نوع جهاز الهاتف المحمول الذي تستعمله، ومعرف الهاتف الفريد الخاص بهاتفك المحمول، وعنوان الإنترنت والبروتوكول الخاص بهاتفك المحمول، ونوع متصفح الإنترنت عبر الهاتف المحمول المستعمل من قبلك ومعرفات الجهاز النادرة وغيرها من البيانات التشخيصية.
+
+3- بيانات الموقع الجغرافي:
+
+قد نستعمل ونخزن معلومات عن موقعك إذا قمت بالسماح لنا بالقيام بذلك، ونستعمل هذه البيانات لتقديم مميزات متعلقة بخدمتنا ولتحسين الخدمة وتكييفها تبعًا لذلك، ويمكنكِ تفعيل أو عدم تفعيل خدمات الموقع الجغرافي عند استعمالك للخدمة بأي وقت من خلال إعدادات جهازك.
+
+4- بيانات الكوكيز والتتبع:
+    
+    
+    
+    
+    
+    
+    
+    </div>';
 
     return $context;
 }
 
-function customizable() {
-    $context['authUser'] = auth();
-    $context['sales_count'] = 5;
-    $context['product'] = [
-        "id" => 106919, 
-        "type" => "customizable", 
-        "product_id" => 55682, 
-        "parent_id" => null, 
-        "sku" => "customizable", 
-        "name" => "customizable product", 
-        "description" => "This is testing Mobile", 
-        "url_key" => "customizable", 
-        "new" => null, 
-        "featured" => null, 
-        "status" => 1, 
-        "thumbnail" => null, 
-        "price" => "222.00", 
-        "cost" => null, 
-        "special_price" => null, 
-        "special_price_from" => null, 
-        "special_price_to" => null, 
-        "delivery_time" => null, 
-        "visible_individually" => 1, 
-        "min_price" => "222.00", 
-        "max_price" => "222.00", 
-        "is_vat" => 1, 
-        "short_description" => null, 
-        "meta_title" => null, 
-        "meta_keywords" => null, 
-        "meta_description" => null, 
-        "width" => 0, 
-        "height" => 0, 
-        "depth" => 0, 
-        "weight" => 0, 
-        "unlimited_quantity" => "0", 
-        "barcode" => null, 
-        "brand_name" => "12", 
-        "promotion_title" => null, 
-        "subtitle" => null, 
-        "image" => "", 
-        "image_name" => "", 
-        "image_label" => "", 
-        "image_value" => "", 
-        "image_url" => null, 
-        "text" => "", 
-        "text_name" => "", 
-        "text_label" => "", 
-        "text_value" => "", 
-        "color" => "", 
-        "color_name" => "", 
-        "color_label" => "", 
-        "color_value" => "", 
-        "size" => null, 
-        "size_label" => null, 
-        "created_at" => "2024-06-03 15:33:15", 
-        "updated_at" => "2024-10-15 17:34:22", 
-        "deleted_at" => null, 
-        "enable_note" => null, 
-        "enable_upload_image" => null, 
-        "maximum_quantity_per_order" => null, 
-        "notify_quantity" => null, 
-        "require_shipping" => 0, 
-        "images" => [
-        [
-            "id" => 37959, 
-            "type" => "image", 
-            "path" => "product/55682/aa97d069-649f-41d3-bf95-a66addfc903c.jpg", 
-            "product_id" => 55682, 
-            "main" => 1, 
-            "url" => "https://cdn.twsaa.com/product/55682/aa97d069-649f-41d3-bf95-a66addfc903c.jpg" 
-            ] 
-        ],
-        "product" => [
-            "id" => 55682, 
-            "parent_id" => null, 
-            "attribute_family_id" => 21, 
-            "sku" => "customizable", 
-            "type" => "customizable", 
-            "from" => null, 
-            "pin" => 0, 
-            "created_at" => "2024-06-03T12:33:15.000000Z", 
-            "updated_at" => "2024-06-03T12:33:15.000000Z", 
-            "short_description" => null, 
-            "description" => "This is testing Mobile", 
-            "name" => "customizable product", 
-            "url_key" => "customizable", 
-            "tax_category_id" => null, 
-            "new" => 0, 
-            "featured" => 0, 
-            "visible_individually" => 1, 
-            "status" => 1, 
-            "color" => null, 
-            "text" => null, 
-            "image" => null, 
-            "size" => null, 
-            "brand" => null, 
-            "guest_checkout" => 0, 
-            "brand_name" => "12", 
-            "barcode" => null, 
-            "unlimited_quantity" => 0, 
-            "require_shipping" => 0, 
-            "is_vat" => 1, 
-            "notify_quantity" => null, 
-            "delivery_time" => null, 
-            "subtitle" => null, 
-            "promotion_title" => null, 
-            "meta_title" => null, 
-            "meta_keywords" => null, 
-            "meta_description" => null, 
-            "price" => "222.0000", 
-            "cost" => null, 
-            "special_price" => null, 
-            "special_price_from" => null, 
-            "special_price_to" => null, 
-            "width" => null, 
-            "height" => null, 
-            "depth" => null, 
-            "weight" => null, 
-            "variants" => [
-            ], 
-            "attribute_family" => [
-                "id" => 21, 
-                "code" => "default", 
-                "name" => "Default", 
-                "status" => 0, 
-                "is_user_defined" => 1 
-            ],
-            "customizable" => [
-                [
-                    "id" => 157, 
-                    "type" => "text", 
-                    "sort" => "0", 
-                    "required" => "off", 
-                    "option_name" => "a", 
-                    "description" => "aa", 
-                    "associated_with_order_time" => null, 
-                    "availability_duration" => null, 
-                    "option_details_name" => null, 
-                    "show_condition" => "on_condition", 
-                    "condition_field_name" => null, 
-                    "field_condition" => "=", 
-                    "condition_field_value" => "0", 
-                    "options" => null, 
-                    "product_id" => 55682, 
-                    "created_at" => "2024-06-03T13:04:12.000000Z", 
-                    "updated_at" => "2024-07-02T11:46:57.000000Z" 
-                ], 
-                [
-                    "id" => 158, 
-                    "type" => "textarea", 
-                    "sort" => "0", 
-                    "required" => "off", 
-                    "option_name" => "b", 
-                    "description" => "bb", 
-                    "associated_with_order_time" => null, 
-                    "availability_duration" => null, 
-                    "option_details_name" => null, 
-                    "show_condition" => "on_condition", 
-                    "condition_field_name" => null, 
-                    "field_condition" => "=", 
-                    "condition_field_value" => "0", 
-                    "options" => null, 
-                    "product_id" => 55682, 
-                    "created_at" => "2024-06-03T13:04:12.000000Z", 
-                    "updated_at" => "2024-07-02T11:46:57.000000Z" 
-                ], 
-                [
-                    "id" => 159, 
-                    "type" => "number", 
-                    "sort" => "0", 
-                    "required" => "off", 
-                    "option_name" => "c", 
-                    "description" => "cc", 
-                    "associated_with_order_time" => null, 
-                    "availability_duration" => null, 
-                    "option_details_name" => null, 
-                    "show_condition" => "on_condition", 
-                    "condition_field_name" => null, 
-                    "field_condition" => "=", 
-                    "condition_field_value" => "0", 
-                    "options" => null, 
-                    "product_id" => 55682, 
-                    "created_at" => "2024-06-03T13:04:12.000000Z", 
-                    "updated_at" => "2024-07-02T11:46:19.000000Z" 
-                    ], 
-                [
-                    "id" => 160, 
-                    "type" => "radio", 
-                    "sort" => "0", 
-                    "required" => "off", 
-                    "option_name" => "d", 
-                    "description" => "dd", 
-                    "associated_with_order_time" => null, 
-                    "availability_duration" => null, 
-                    "option_details_name" => null, 
-                    "show_condition" => "on_condition", 
-                    "condition_field_name" => null, 
-                    "field_condition" => "=", 
-                    "condition_field_value" => "0", 
-                    "options" => null, 
-                    "product_id" => 55682, 
-                    "created_at" => "2024-06-03T13:04:12.000000Z", 
-                    "updated_at" => "2024-07-02T11:46:19.000000Z" 
-                ], 
-                [
-                    "id" => 161, 
-                    "type" => "checkbox", 
-                    "sort" => "0", 
-                    "required" => "off", 
-                    "option_name" => "e", 
-                    "description" => "ee", 
-                    "associated_with_order_time" => null, 
-                    "availability_duration" => null, 
-                    "option_details_name" => null, 
-                    "show_condition" => "on_condition", 
-                    "condition_field_name" => null, 
-                    "field_condition" => "=", 
-                    "condition_field_value" => "0", 
-                    "options" => null, 
-                    "product_id" => 55682, 
-                    "created_at" => "2024-06-03T13:04:12.000000Z", 
-                    "updated_at" => "2024-07-02T11:46:19.000000Z" 
-                ], 
-                [
-                    "id" => 162, 
-                    "type" => "image", 
-                    "sort" => "0", 
-                    "required" => "off", 
-                    "option_name" => "f", 
-                    "description" => "", 
-                    "associated_with_order_time" => null, 
-                    "availability_duration" => null, 
-                    "option_details_name" => null, 
-                    "show_condition" => "on_condition", 
-                    "condition_field_name" => null, 
-                    "field_condition" => "=", 
-                    "condition_field_value" => "0", 
-                    "options" => null, 
-                    "product_id" => 55682, 
-                    "created_at" => "2024-06-03T13:04:13.000000Z", 
-                    "updated_at" => "2024-07-02T11:46:19.000000Z" 
-                ], 
-                [
-                    "id" => 163, 
-                    "type" => "file", 
-                    "sort" => "0", 
-                    "required" => "off", 
-                    "option_name" => "g", 
-                    "description" => "gg", 
-                    "associated_with_order_time" => null, 
-                    "availability_duration" => null, 
-                    "option_details_name" => null, 
-                    "show_condition" => "on_condition", 
-                    "condition_field_name" => null, 
-                    "field_condition" => "=", 
-                    "condition_field_value" => "0", 
-                    "options" => null, 
-                    "product_id" => 55682, 
-                    "created_at" => "2024-06-03T13:04:13.000000Z", 
-                    "updated_at" => "2024-07-02T11:46:19.000000Z" 
-                    ], 
-                [
-                    "id" => 164, 
-                    "type" => "color_picker", 
-                    "sort" => "0", 
-                    "required" => "off", 
-                    "option_name" => "h", 
-                    "description" => "hh", 
-                    "associated_with_order_time" => null, 
-                    "availability_duration" => null, 
-                    "option_details_name" => null, 
-                    "show_condition" => "on_condition", 
-                    "condition_field_name" => null, 
-                    "field_condition" => "=", 
-                    "condition_field_value" => "0", 
-                    "options" => null, 
-                    "product_id" => 55682, 
-                    "created_at" => "2024-06-03T13:04:13.000000Z", 
-                    "updated_at" => "2024-07-02T11:46:19.000000Z" 
-                ] 
-            ]
-        ],
-        "up_sells" => [
-            [
-                "id" => 107859, 
-                "product_id" => 56219, 
-                "parent_id" => null, 
-                "sku" => "K6P8ATO", 
-                "name" => "digital", 
-                "description" => null, 
-                "url_key" => "k6p8ato", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "5.00", 
-                "cost" => null, 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "5.00", 
-                "max_price" => "5.00", 
-                "is_vat" => 1, 
-                "short_description" => null, 
-                "meta_title" => null, 
-                "meta_keywords" => null, 
-                "meta_description" => null, 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => null, 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-11-10 09:30:59", 
-                "updated_at" => "2024-11-10 09:31:39", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0 ,
-                "html_price" => '<span class="product-price"><span class="price">٥٫٧٥&nbsp;ر.س.</span></span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ]
-            ], 
-            [
-                "id" => 107833, 
-                "product_id" => 56206, 
-                "parent_id" => null, 
-                "sku" => "sku-test-101", 
-                "name" => "ملابس سباحة", 
-                "description" => "", 
-                "url_key" => "sku-test-101", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "45.00", 
-                "cost" => "40.90", 
-                "special_price" => "35.00", 
-                "special_price_from" => "2026-07-31", 
-                "special_price_to" => "2025-07-31", 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "55.00", 
-                "max_price" => "100.00", 
-                "is_vat" => 1, 
-                "short_description" => null, 
-                "meta_title" => null, 
-                "meta_keywords" => null, 
-                "meta_description" => null, 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 10, 
-                "unlimited_quantity" => "0", 
-                "barcode" => "2", 
-                "brand_name" => null, 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-10-21 11:44:47", 
-                "updated_at" => "2024-10-21 11:45:07", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0 ,
-                "html_price" => '<span class="product-price"><span class="special-price"> ‏٥١٫٧٥ ر.س.‏</span></span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ]
-            ], 
-            [
-                "id" => 107667, 
-                "product_id" => 56118, 
-                "parent_id" => null, 
-                "sku" => "OUU1RO7", 
-                "name" => "ebook", 
-                "description" => null, 
-                "url_key" => "ouu1ro7", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "1.00", 
-                "cost" => null, 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "1.00", 
-                "max_price" => "1.00", 
-                "is_vat" => 1, 
-                "short_description" => null, 
-                "meta_title" => null, 
-                "meta_keywords" => null, 
-                "meta_description" => null, 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-09-12 14:10:05", 
-                "updated_at" => "2024-10-15 17:33:53", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "html_price" => '<span class="product-price"><span class="price">‏١٫١٥ ر.س.‏</span></span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ]
-            ], 
-            [
-                "id" => 107663, 
-                "product_id" => 56116, 
-                "parent_id" => null, 
-                "sku" => "N2-4-5-3", 
-                "name" => "ثلاجة الجمال سباركلنق لافندر 4 لتر", 
-                "description" => " ", 
-                "url_key" => "n2-4-5-3", 
-                "new" => null, 
-                "featured" => 1, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "367.35", 
-                "cost" => "216.09", 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "367.35", 
-                "max_price" => "367.35", 
-                "is_vat" => 0, 
-                "short_description" => " ", 
-                "meta_title" => "ثلاجة الجمال سباركلنق لافندر 4 لتر", 
-                "meta_keywords" => null, 
-                
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-08-21 16:41:44", 
-                "updated_at" => "2024-10-15 17:33:59", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "html_price" => '<span class="product-price"><span class="price">‏٣٦٧٫٣٥ ر.س.‏</span></span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ]
-            ]
-        ],
-        "images" =>  [
-            [
-                  "id" => 37959, 
-                  "type" => "image", 
-                  "path" => "product/55682/aa97d069-649f-41d3-bf95-a66addfc903c.jpg", 
-                  "product_id" => 55682, 
-                  "main" => 1, 
-                  "url" => "https://cdn.twsaa.com/product/55682/aa97d069-649f-41d3-bf95-a66addfc903c.jpg" 
-               ] 
-            ],
-        "html_price" => '<span class="product-price"><span class="price">‏١٫١٥&nbsp;ر.س.‏</span></span>', 
-        "show_sku" => true, 
-        "show_purchase_count" => true, 
-        "show_weight" => true, 
-        "show_quantity_box" => true, 
-        "show_purchase_count" => true, 
-        "sufficient_quantity" => true, 
-        "enable_product_reviews" => true, 
-        "guest_review" => true, 
-        "quantity_manually" => 2, 
-        "remaning_quantity" => 2, 
-        "total_quantity" => 2,
-    ]; 
 
-    return $context;
-}
 
 function configurable() {
     $context['authUser'] = auth();
@@ -8874,7 +5840,7 @@ function configurable() {
                           ] 
                  ] 
               ], 
-              [
+                [
                                    "id" => 584, 
                                    "code" => "text", 
                                    "label" => "sizes", 
@@ -8901,8 +5867,8 @@ function configurable() {
                                                ] 
                                             ] 
                                    ] 
-                                ], 
-              [
+                ], 
+                [
                                                      "id" => 585, 
                                                      "code" => "image", 
                                                      "label" => "images", 
@@ -8916,7 +5882,7 @@ function configurable() {
                                                               55674, 
                                                               55676 
                                                            ], 
-                                                           "swatch_url" => "https://cdn.twsaa.com/product/55668/1d3c32b0-8c59-40e5-ad5a-26ae3d58572c.jpg" 
+                                                           "swatch_url" => "https://cdn.salla.sa/KjyBep/m4XVLOOo3y2vXORYFdPArbWoYfVKCf37LTg8JxSH.png" 
                                                         ], 
                                                         [
                                                                  "id" => 6, 
@@ -8928,10 +5894,10 @@ function configurable() {
                                                                     55679, 
                                                                     55680 
                                                                  ], 
-                                                                 "swatch_url" => "https://cdn.twsaa.com/product/55668/a16626c7-40a0-42f9-954f-5e1b25159fc1.png" 
+                                                                 "swatch_url" => "https://cdn.salla.sa/KjyBep/fKQnnrozhrp2rdD9lTfi0K7vhwSQLu0nBzWRdwuY.png" 
                                                               ] 
                                                      ] 
-                                                  ] 
+                ] 
            ], 
         "index" => [
                                                                     ], 
@@ -9070,42 +6036,79 @@ function configurable() {
         "type" => "configurable", 
         "product_id" => 55668, 
         "parent_id" => null, 
-        "sku" => "2G663YZ", 
-        "name" => "configurable", 
-        "description" => "<p>محافظ نسائية على الموضة ، محفظة طويلة ثلاثية الطي ذات جودة عالية من جلد البولي يوريثان ، حامل بطاقات كلاتش للنساء ، حامل بطاقات</p><p><br></p>", 
-        "url_key" => "2g663yz", 
+        "sku" => "", 
+        "name" => "موبايل ابل ايفون 14 برو ماكس (256 جيجابايت) - ارجواني داكن - شريحتين اتصال", 
+        "description" =>" الموبايل: ابل ايفون 14 برو ماكس
+
+اللون: ارجواني داكن
+
+سعة التخزين: 256 جيجابايت
+
+عدد شرائح الاتصال: شريحتين
+
+وصف الموبايل:
+
+يعتبر ابل ايفون 14 برو ماكس هاتفًا ذكيًا فائق الجودة والأداء من شركة ابل. يتميز بتصميم أنيق وجذاب بلون ارجواني داكن يعكس الفخامة والأناقة.
+
+شاشة العرض:
+
+يأتي الهاتف بشاشة OLED سوبر ريتينا XDR مقاس 6.7 بوصة، وهي شاشة متطورة تعرض الألوان بشكل حاد وحقيقي وتوفر دقة عالية بدقة 2778 × 1284 بكسل. توفر الشاشة تجربة مشاهدة مذهلة للصور والفيديوهات والتطبيقات.
+
+الكاميرا:
+
+يمتاز ايفون 14 برو ماكس بنظام كاميرا متقدم يتضمن ثلاث كاميرات خلفية بدقة 12 ميجابكسل لكل منها. تتضمن العدسات التليفوتوغرافية والواسعة والفائقة الوضوح لتمكينك من التقاط صور استثنائية بتفاصيل رائعة وتأثيرات ضوء مذهلة. يدعم الهاتف أيضًا تقنية تثبيت الصورة البصرية وتصوير الفيديو بجودة 4K.
+
+الأداء والتخزين:
+
+يعمل ايفون 14 برو ماكس بمعالج A15 Bionic القوي والمتطور، مما يوفر أداءً سلسًا وسريعًا للغاية في تشغيل التطبيقات والألعاب الثقيلة. يحتوي الهاتف على ذاكرة وصول عشوائي سعة 6 جيجابايت، مما يساعد على تشغيل عدة تطبيقات في وقت واحد والتنقل بينها بسلاسة. وبفضل سعة التخزين الداخلية الكبيرة بحجم 256 جيجابايت، يمكنك تخزين كمية كبيرة من الصور والفيديوهات والتطبيقات دون الحاجة إلى القلق بشأن الفضاء المتبقي.
+
+نظام التشغيل:
+
+يعمل ايفون 14 برو ماكس بنظام التشغيل iOS، وهو نظام موثوق ومستقر يوفر واجهة سهلة الاستخدام ومجموعة واسعة من التطبيقات والميزات المتقدمة. يوفر iOS أيضًا مستوى عالٍ من الأمان والخصوصية للمستخدم.
+
+البطارية والشحن:
+
+يحتوي ايفون 14 برو ماكس على بطارة بسعة 3,687 مللي أمبير في الساعة، مما يوفر عمر بطارية طويل ويدعم الشحن السريع والشحن اللاسلكي.
+
+ميزات إضافية:
+
+تقنية Face ID لفتح الهاتف بوجهك وتأمينه بطريقة آمنة.
+تقنية 5G للاتصال السريع بالإنترنت وتنزيل الملفات بسرعة عالية.
+مقاومة للماء والغبار بمعايير IP68، مما يجعله محميًا في حالة وجوده في الماء لفترة زمنية معينة.
+دعم تقنية NFC للدفع اللاسلكي واستخدام خدمات Apple Pay. ", 
+        "url_key" => "2g663yz",
         "new" => null, 
         "featured" => null, 
         "status" => 1, 
         "thumbnail" => null, 
         "price" => "0.00", 
-        "cost" => null, 
-        "special_price" => null, 
-        "special_price_from" => null, 
-        "special_price_to" => null, 
-        "delivery_time" => null, 
+        "cost" => "10", 
+        "special_price" => "null", 
+        "special_price_from" => "10", 
+        "special_price_to" => "100", 
+        "delivery_time" => "100", 
         "visible_individually" => 1, 
         "min_price" => "1.00", 
         "max_price" => "8.00", 
         "is_vat" => 1, 
-        "short_description" => null, 
+        "short_description" => "null", 
         "meta_title" => null, 
         "meta_keywords" => null, 
         "meta_description" => null, 
         "width" => 0, 
         "height" => 0, 
         "depth" => 0, 
-        "weight" => 0, 
-        "unlimited_quantity" => "0", 
+        "weight" => "10", 
+        "unlimited_quantity" => "10", 
         "barcode" => null, 
         "brand_name" => "12", 
-        "promotion_title" => null, 
-        "subtitle" => null, 
-        "image" => "", 
-        "image_name" => "", 
-        "image_label" => "", 
-        "image_value" => "", 
-        "image_url" => null, 
+        "promotion_title" => " جديد ", 
+        "subtitle" => "الجولات", 
+        "image" => "https://cdn.salla.sa/KjyBep/BOXXTSUPHvswp1gMFhGogOU6jWbJqEBzOQYb9kti.png", 
+        "image_name" =>"https://cdn.salla.sa/KjyBep/BOXXTSUPHvswp1gMFhGogOU6jWbJqEBzOQYb9kti.png", 
+        "image_label" => "https://cdn.salla.sa/KjyBep/BOXXTSUPHvswp1gMFhGogOU6jWbJqEBzOQYb9kti.png", 
+        "image_value" => "https://cdn.salla.sa/KjyBep/BOXXTSUPHvswp1gMFhGogOU6jWbJqEBzOQYb9kti.png", 
+        "image_url" => "https://cdn.salla.sa/KjyBep/BOXXTSUPHvswp1gMFhGogOU6jWbJqEBzOQYb9kti.png", 
         "text" => "", 
         "text_name" => "", 
         "text_label" => "", 
@@ -9169,7 +6172,7 @@ function configurable() {
             "width" => null, 
             "height" => null, 
             "depth" => null, 
-            "weight" => null, 
+            "weight" => "10", 
             "super_attributes" => [], 
             "attribute_family" => [
                 "id" => 21, 
@@ -11354,7 +8357,7 @@ function configurable() {
                 "maximum_quantity_per_order" => null, 
                 "notify_quantity" => null, 
                 "require_shipping" => 0 ,
-                "html_price" => '<span class="product-price"><span class="price">٥٫٧٥&nbsp;ر.س.</span></span>',
+                "html_price" => '<span class="product-price"><span class="price"> 300 ر.س</span></span>',
                 "product" => [
                     "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
                 ]
@@ -11514,12 +8517,12 @@ function configurable() {
                 "width" => 0, 
                 "height" => 0, 
                 "depth" => 0, 
-                "weight" => 0, 
+                "weight" => 10, 
                 "unlimited_quantity" => "0", 
                 "barcode" => null, 
                 "brand_name" => "12", 
                 "promotion_title" => null, 
-                "subtitle" => null, 
+                "subtitle" => "ndjfdf", 
                 "image" => "", 
                 "image_name" => "", 
                 "image_label" => "", 
@@ -11556,7 +8559,7 @@ function configurable() {
                 "path" => "product/55668/a16626c7-40a0-42f9-954f-5e1b25159fc1.png", 
                 "product_id" => 55668, 
                 "main" => 0, 
-                "url" => "https://cdn.twsaa.com/product/55668/a16626c7-40a0-42f9-954f-5e1b25159fc1.png" 
+                "url" => "https://cdn.salla.sa/KjyBep/2tQ8JdUAQnPRODw4Fq1Qd6E8dkSyPEGoBedOC1sI.png" 
             ], 
             [
                 "id" => 37958, 
@@ -11564,10 +8567,10 @@ function configurable() {
                 "path" => "product/55668/1d3c32b0-8c59-40e5-ad5a-26ae3d58572c.jpg", 
                 "product_id" => 55668, 
                 "main" => 0, 
-                "url" => "https://cdn.twsaa.com/product/55668/1d3c32b0-8c59-40e5-ad5a-26ae3d58572c.jpg" 
+                "url" => "https://cdn.salla.sa/KjyBep/m4XVLOOo3y2vXORYFdPArbWoYfVKCf37LTg8JxSH.png" 
             ] 
         ],
-        "html_price" => '<span class="product-price"><span class="price">‏١٫١٥&nbsp;ر.س.‏</span></span>', 
+        "html_price" => '<span class="product-price"><span class="price"> 120 ر.س</span></span>', 
         "show_sku" => true, 
         "show_purchase_count" => true, 
         "show_weight" => true, 
@@ -11584,1208 +8587,6 @@ function configurable() {
     return $context;
 }
 
-function simple() {
-    $context['authUser'] = auth();
-    $context['sales_count'] = 5;
-    $context['product'] = [
-        "id" => 107663, 
-        "product_id" => 56116, 
-        "parent_id" => null, 
-        "sku" => "N2-4-5-3", 
-        "name" => "simple", 
-        "description" => " ", 
-        "url_key" => "n2-4-5-3", 
-        "new" => null, 
-        "featured" => 1, 
-        "status" => 1, 
-        "thumbnail" => null, 
-        "price" => "367.35", 
-        "cost" => "216.09", 
-        "special_price" => null, 
-        "special_price_from" => null, 
-        "special_price_to" => null, 
-        "delivery_time" => null, 
-        "visible_individually" => 1, 
-        "min_price" => "367.35", 
-        "max_price" => "367.35", 
-        "is_vat" => 0, 
-        "short_description" => " ", 
-        "meta_title" => "ثلاجة الجمال سباركلنق لافندر 4 لتر", 
-        "meta_keywords" => null, 
-        "meta_description" => "", 
-        "width" => 0, 
-        "height" => 0, 
-        "depth" => 0, 
-        "weight" => 0, 
-        "unlimited_quantity" => "0", 
-        "barcode" => null, 
-        "brand_name" => "12", 
-        "promotion_title" => null, 
-        "subtitle" => null, 
-        "image" => "", 
-        "image_name" => "", 
-        "image_label" => "", 
-        "image_value" => "", 
-        "image_url" => null, 
-        "text" => "", 
-        "text_name" => "", 
-        "text_label" => "", 
-        "text_value" => "", 
-        "color" => "", 
-        "color_name" => "", 
-        "color_label" => "", 
-        "color_value" => "", 
-        "size" => null, 
-        "size_label" => null, 
-        "created_at" => "2024-08-21 16:41:44", 
-        "updated_at" => "2024-10-15 17:33:59", 
-        "deleted_at" => null, 
-        "enable_note" => null, 
-        "enable_upload_image" => null, 
-        "maximum_quantity_per_order" => null, 
-        "notify_quantity" => null, 
-        "require_shipping" => 0, 
-        "saleable" => 1,
-        "product" => [
-              "id" => 56116, 
-              "parent_id" => null, 
-              "attribute_family_id" => 21, 
-              "sku" => "N2-4-5-3", 
-              "type" => "simple", 
-              "from" => "m5azn-123678", 
-              "pin" => 1, 
-              "created_at" => "2024-08-21T13:41:44.000000Z", 
-              "updated_at" => "2024-10-14T11:29:50.000000Z", 
-              "short_description" => " ", 
-              "description" => " ", 
-              "name" => "ثلاجة الجمال سباركلنق لافندر 4 لتر", 
-              "url_key" => "n2-4-5-3", 
-              "tax_category_id" => null, 
-              "new" => 0, 
-              "featured" => 0, 
-              "visible_individually" => 1, 
-              "status" => 1, 
-              "color" => null, 
-              "text" => null, 
-              "image" => null, 
-              "size" => null, 
-              "brand" => null, 
-              "guest_checkout" => 0, 
-              "brand_name" => "12", 
-              "barcode" => null, 
-              "unlimited_quantity" => 0, 
-              "require_shipping" => 0, 
-              "is_vat" => 0, 
-              "notify_quantity" => null, 
-              "delivery_time" => null, 
-              "subtitle" => null, 
-              "promotion_title" => null, 
-              "meta_title" => "ثلاجة الجمال سباركلنق لافندر 4 لتر", 
-              "meta_keywords" => null, 
-              "price" => "367.3500", 
-              "cost" => "216.0900", 
-              "special_price" => null, 
-              "special_price_from" => null, 
-              "special_price_to" => null, 
-              "width" => null, 
-              "height" => null, 
-              "depth" => null, 
-              "weight" => null, 
-              "variants" => [
-              ], 
-              "attribute_family" => [
-                    "id" => 21, 
-                    "code" => "default", 
-                    "name" => "Default", 
-                    "status" => 0, 
-                    "is_user_defined" => 1 
-                 ] 
-        ],
-        "up_sells" => [
-            [
-                "id" => 107859, 
-                "product_id" => 56219, 
-                "parent_id" => null, 
-                "sku" => "K6P8ATO", 
-                "name" => "digital", 
-                "description" => null, 
-                "url_key" => "k6p8ato", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "5.00", 
-                "cost" => null, 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "5.00", 
-                "max_price" => "5.00", 
-                "is_vat" => 1, 
-                "short_description" => null, 
-                "meta_title" => null, 
-                "meta_keywords" => null, 
-                "meta_description" => null, 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => null, 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-11-10 09:30:59", 
-                "updated_at" => "2024-11-10 09:31:39", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0 ,
-                "html_price" => '<span class="product-price"><span class="price">٥٫٧٥&nbsp;ر.س.</span></span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ]
-            ], 
-            [
-                "id" => 107833, 
-                "product_id" => 56206, 
-                "parent_id" => null, 
-                "sku" => "sku-test-101", 
-                "name" => "ملابس سباحة", 
-                "description" => "", 
-                "url_key" => "sku-test-101", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "45.00", 
-                "cost" => "40.90", 
-                "special_price" => "35.00", 
-                "special_price_from" => "2026-07-31", 
-                "special_price_to" => "2025-07-31", 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "55.00", 
-                "max_price" => "100.00", 
-                "is_vat" => 1, 
-                "short_description" => null, 
-                "meta_title" => null, 
-                "meta_keywords" => null, 
-                "meta_description" => null, 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 10, 
-                "unlimited_quantity" => "0", 
-                "barcode" => "2", 
-                "brand_name" => null, 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-10-21 11:44:47", 
-                "updated_at" => "2024-10-21 11:45:07", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0 ,
-                "html_price" => '<span class="product-price"><span class="special-price"> ‏٥١٫٧٥ ر.س.‏</span></span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ]
-            ], 
-            [
-                "id" => 107667, 
-                "product_id" => 56118, 
-                "parent_id" => null, 
-                "sku" => "OUU1RO7", 
-                "name" => "ebook", 
-                "description" => null, 
-                "url_key" => "ouu1ro7", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "1.00", 
-                "cost" => null, 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "1.00", 
-                "max_price" => "1.00", 
-                "is_vat" => 1, 
-                "short_description" => null, 
-                "meta_title" => null, 
-                "meta_keywords" => null, 
-                "meta_description" => null, 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-09-12 14:10:05", 
-                "updated_at" => "2024-10-15 17:33:53", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "html_price" => '<span class="product-price"><span class="price">‏١٫١٥ ر.س.‏</span></span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ]
-            ], 
-            [
-                "id" => 107663, 
-                "product_id" => 56116, 
-                "parent_id" => null, 
-                "sku" => "N2-4-5-3", 
-                "name" => "ثلاجة الجمال سباركلنق لافندر 4 لتر", 
-                "description" => " ", 
-                "url_key" => "n2-4-5-3", 
-                "new" => null, 
-                "featured" => 1, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "367.35", 
-                "cost" => "216.09", 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "367.35", 
-                "max_price" => "367.35", 
-                "is_vat" => 0, 
-                "short_description" => " ", 
-                "meta_title" => "ثلاجة الجمال سباركلنق لافندر 4 لتر", 
-                "meta_keywords" => null, 
-                
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-08-21 16:41:44", 
-                "updated_at" => "2024-10-15 17:33:59", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "html_price" => '<span class="product-price"><span class="price">‏٣٦٧٫٣٥ ر.س.‏</span></span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ]
-            ]
-        ],
-        "images" => [
-            [
-                  "id" => 38105, 
-                  "type" => "image", 
-                  "path" => "product/56116/0592b342-84cb-44f6-8d29-1328e332c9fd.png", 
-                  "product_id" => 56116, 
-                  "main" => 1, 
-                  "url" => "https://cdn.twsaa.com/product/56116/0592b342-84cb-44f6-8d29-1328e332c9fd.png" 
-               ], 
-            [
-                     "id" => 38106, 
-                     "type" => "image", 
-                     "path" => "product/56116/dc4ae137-feba-4d5a-82e1-be617eb59274.png", 
-                     "product_id" => 56116, 
-                     "main" => 0, 
-                     "url" => "https://cdn.twsaa.com/product/56116/dc4ae137-feba-4d5a-82e1-be617eb59274.png" 
-                  ] 
-         ],
-        "html_price" => '<span class="product-price"><span class="price">‏١٫١٥&nbsp;ر.س.‏</span></span>', 
-        "show_sku" => true, 
-        "show_purchase_count" => true, 
-        "show_weight" => true, 
-        "show_quantity_box" => true, 
-        "show_purchase_count" => true, 
-        "sufficient_quantity" => true, 
-        "enable_product_reviews" => true, 
-        "guest_review" => true, 
-        "quantity_manually" => 2, 
-        "remaning_quantity" => 2, 
-        "total_quantity" => 2,
-
-    ];
-    
-    return $context;
-}
-
-function digital() {
-    $context['authUser'] = auth();
-    $context['sales_count'] = 5;
-    $context['product'] = [
-        "id" => 107663, 
-        "product_id" => 56116, 
-        "parent_id" => null, 
-        "sku" => "N2-4-5-3", 
-        "name" => "digital", 
-        "description" => " ", 
-        "url_key" => "n2-4-5-3", 
-        "new" => null, 
-        "featured" => 1, 
-        "status" => 1, 
-        "thumbnail" => null, 
-        "price" => "367.35", 
-        "cost" => "216.09", 
-        "special_price" => null, 
-        "special_price_from" => null, 
-        "special_price_to" => null, 
-        "delivery_time" => null, 
-        "visible_individually" => 1, 
-        "min_price" => "367.35", 
-        "max_price" => "367.35", 
-        "is_vat" => 0, 
-        "short_description" => " ", 
-        "meta_title" => "digital", 
-        "meta_keywords" => null, 
-        "meta_description" => "", 
-        "width" => 0, 
-        "height" => 0, 
-        "depth" => 0, 
-        "weight" => 0, 
-        "unlimited_quantity" => "0", 
-        "barcode" => null, 
-        "brand_name" => "12", 
-        "promotion_title" => null, 
-        "subtitle" => null, 
-        "image" => "", 
-        "image_name" => "", 
-        "image_label" => "", 
-        "image_value" => "", 
-        "image_url" => null, 
-        "text" => "", 
-        "text_name" => "", 
-        "text_label" => "", 
-        "text_value" => "", 
-        "color" => "", 
-        "color_name" => "", 
-        "color_label" => "", 
-        "color_value" => "", 
-        "size" => null, 
-        "size_label" => null, 
-        "created_at" => "2024-08-21 16:41:44", 
-        "updated_at" => "2024-10-15 17:33:59", 
-        "deleted_at" => null, 
-        "enable_note" => null, 
-        "enable_upload_image" => null, 
-        "maximum_quantity_per_order" => null, 
-        "notify_quantity" => null, 
-        "require_shipping" => 0, 
-        "product" => [
-              "id" => 56116, 
-              "parent_id" => null, 
-              "attribute_family_id" => 21, 
-              "sku" => "N2-4-5-3", 
-              "type" => "simple", 
-              "from" => "m5azn-123678", 
-              "pin" => 1, 
-              "created_at" => "2024-08-21T13:41:44.000000Z", 
-              "updated_at" => "2024-10-14T11:29:50.000000Z", 
-              "short_description" => " ", 
-              "description" => " ", 
-              "name" => "ثلاجة الجمال سباركلنق لافندر 4 لتر", 
-              "url_key" => "n2-4-5-3", 
-              "tax_category_id" => null, 
-              "new" => 0, 
-              "featured" => 0, 
-              "visible_individually" => 1, 
-              "status" => 1, 
-              "color" => null, 
-              "text" => null, 
-              "image" => null, 
-              "size" => null, 
-              "brand" => null, 
-              "guest_checkout" => 0, 
-              "brand_name" => "12", 
-              "barcode" => null, 
-              "unlimited_quantity" => 0, 
-              "require_shipping" => 0, 
-              "is_vat" => 0, 
-              "notify_quantity" => null, 
-              "delivery_time" => null, 
-              "subtitle" => null, 
-              "promotion_title" => null, 
-              "meta_title" => "ثلاجة الجمال سباركلنق لافندر 4 لتر", 
-              "meta_keywords" => null, 
-              "price" => "367.3500", 
-              "cost" => "216.0900", 
-              "special_price" => null, 
-              "special_price_from" => null, 
-              "special_price_to" => null, 
-              "width" => null, 
-              "height" => null, 
-              "depth" => null, 
-              "weight" => null, 
-              "variants" => [
-              ], 
-              "attribute_family" => [
-                    "id" => 21, 
-                    "code" => "default", 
-                    "name" => "Default", 
-                    "status" => 0, 
-                    "is_user_defined" => 1 
-                 ] 
-        ],
-        "up_sells" => [
-            [
-                "id" => 107859, 
-                "product_id" => 56219, 
-                "parent_id" => null, 
-                "sku" => "K6P8ATO", 
-                "name" => "digital", 
-                "description" => null, 
-                "url_key" => "k6p8ato", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "5.00", 
-                "cost" => null, 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "5.00", 
-                "max_price" => "5.00", 
-                "is_vat" => 1, 
-                "short_description" => null, 
-                "meta_title" => null, 
-                "meta_keywords" => null, 
-                "meta_description" => null, 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => null, 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-11-10 09:30:59", 
-                "updated_at" => "2024-11-10 09:31:39", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0 ,
-                "html_price" => '<span class="product-price"><span class="price">٥٫٧٥&nbsp;ر.س.</span></span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ]
-            ], 
-            [
-                "id" => 107833, 
-                "product_id" => 56206, 
-                "parent_id" => null, 
-                "sku" => "sku-test-101", 
-                "name" => "ملابس سباحة", 
-                "description" => "", 
-                "url_key" => "sku-test-101", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "45.00", 
-                "cost" => "40.90", 
-                "special_price" => "35.00", 
-                "special_price_from" => "2026-07-31", 
-                "special_price_to" => "2025-07-31", 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "55.00", 
-                "max_price" => "100.00", 
-                "is_vat" => 1, 
-                "short_description" => null, 
-                "meta_title" => null, 
-                "meta_keywords" => null, 
-                "meta_description" => null, 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 10, 
-                "unlimited_quantity" => "0", 
-                "barcode" => "2", 
-                "brand_name" => null, 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-10-21 11:44:47", 
-                "updated_at" => "2024-10-21 11:45:07", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0 ,
-                "html_price" => '<span class="product-price"><span class="special-price"> ‏٥١٫٧٥ ر.س.‏</span></span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ]
-            ], 
-            [
-                "id" => 107667, 
-                "product_id" => 56118, 
-                "parent_id" => null, 
-                "sku" => "OUU1RO7", 
-                "name" => "ebook", 
-                "description" => null, 
-                "url_key" => "ouu1ro7", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "1.00", 
-                "cost" => null, 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "1.00", 
-                "max_price" => "1.00", 
-                "is_vat" => 1, 
-                "short_description" => null, 
-                "meta_title" => null, 
-                "meta_keywords" => null, 
-                "meta_description" => null, 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-09-12 14:10:05", 
-                "updated_at" => "2024-10-15 17:33:53", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "html_price" => '<span class="product-price"><span class="price">‏١٫١٥ ر.س.‏</span></span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ]
-            ], 
-            [
-                "id" => 107663, 
-                "product_id" => 56116, 
-                "parent_id" => null, 
-                "sku" => "N2-4-5-3", 
-                "name" => "ثلاجة الجمال سباركلنق لافندر 4 لتر", 
-                "description" => " ", 
-                "url_key" => "n2-4-5-3", 
-                "new" => null, 
-                "featured" => 1, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "367.35", 
-                "cost" => "216.09", 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "367.35", 
-                "max_price" => "367.35", 
-                "is_vat" => 0, 
-                "short_description" => " ", 
-                "meta_title" => "ثلاجة الجمال سباركلنق لافندر 4 لتر", 
-                "meta_keywords" => null, 
-                
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-08-21 16:41:44", 
-                "updated_at" => "2024-10-15 17:33:59", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "html_price" => '<span class="product-price"><span class="price">‏٣٦٧٫٣٥ ر.س.‏</span></span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ]
-            ]
-        ],
-        "images" => [
-            [
-                  "id" => 38134, 
-                  "type" => "image", 
-                  "path" => "product/56219/b5a93051-3cc1-4d62-8b7f-2cd7897b9581.jpg", 
-                  "product_id" => 56219, 
-                  "main" => 1, 
-                  "url" => "https://cdn.twsaa.com/product/56219/b5a93051-3cc1-4d62-8b7f-2cd7897b9581.jpg" 
-               ] 
-        ],
-        "html_price" => '<span class="product-price"><span class="price">‏١٫١٥&nbsp;ر.س.‏</span></span>', 
-        "show_sku" => true, 
-        "show_purchase_count" => true, 
-        "show_weight" => true, 
-        "show_quantity_box" => true, 
-        "show_purchase_count" => true, 
-        "sufficient_quantity" => true, 
-        "enable_product_reviews" => true, 
-        "guest_review" => true, 
-        "quantity_manually" => 2, 
-        "remaning_quantity" => 2, 
-        "total_quantity" => 2,
-
-    ];
-    
-    return $context;
-}
-
-function downloadable() {
-    $context['authUser'] = auth();
-    $context['sales_count'] = 5;
-    $context['product'] = [
-        "id" => 107667, 
-        "product_id" => 56118, 
-        "parent_id" => null, 
-        "sku" => "OUU1RO7", 
-        "name" => "downloadable", 
-        "description" => null, 
-        "url_key" => "ouu1ro7", 
-        "new" => null, 
-        "featured" => null, 
-        "status" => 1, 
-        "thumbnail" => null, 
-        "price" => "1.00", 
-        "cost" => null, 
-        "special_price" => null, 
-        "special_price_from" => null, 
-        "special_price_to" => null, 
-        "delivery_time" => null, 
-        "visible_individually" => 1, 
-        "min_price" => "1.00", 
-        "max_price" => "1.00", 
-        "is_vat" => 1, 
-        "short_description" => null, 
-        "meta_title" => null, 
-        "meta_keywords" => null, 
-        "meta_description" => null, 
-        "width" => 0, 
-        "height" => 0, 
-        "depth" => 0, 
-        "weight" => 1, 
-        "unlimited_quantity" => "0", 
-        "barcode" => null, 
-        "brand_name" => "12", 
-        "promotion_title" => null, 
-        "subtitle" => null, 
-        "image" => "", 
-        "image_name" => "", 
-        "image_label" => "", 
-        "image_value" => "", 
-        "image_url" => null, 
-        "text" => "", 
-        "text_name" => "", 
-        "text_label" => "", 
-        "text_value" => "", 
-        "color" => "", 
-        "color_name" => "", 
-        "color_label" => "", 
-        "color_value" => "", 
-        "size" => null, 
-        "size_label" => null, 
-        "created_at" => "2024-09-12 14:10:05", 
-        "updated_at" => "2024-10-15 17:33:53", 
-        "deleted_at" => null, 
-        "enable_note" => null, 
-        "enable_upload_image" => null, 
-        "maximum_quantity_per_order" => null, 
-        "notify_quantity" => null, 
-        "require_shipping" => 0, 
-        "saleable" => 1,
-        "product" => [
-            "id" => 56118, 
-            "parent_id" => null, 
-            "attribute_family_id" => 21, 
-            "sku" => "OUU1RO7", 
-            "type" => "downloadable", 
-            "from" => null, 
-            "pin" => 0, 
-            "created_at" => "2024-09-12T11:10:05.000000Z", 
-            "updated_at" => "2024-09-12T11:10:05.000000Z", 
-            "short_description" => null, 
-            "description" => null, 
-            "name" => "ebook", 
-            "url_key" => "ouu1ro7", 
-            "tax_category_id" => null, 
-            "new" => 0, 
-            "featured" => 0, 
-            "visible_individually" => 1, 
-            "status" => 1, 
-            "color" => null, 
-            "text" => null, 
-            "image" => null, 
-            "size" => null, 
-            "brand" => null, 
-            "guest_checkout" => 0, 
-            "brand_name" => "12", 
-            "barcode" => null, 
-            "unlimited_quantity" => 0, 
-            "require_shipping" => 0, 
-            "is_vat" => 1, 
-            "notify_quantity" => null, 
-            "delivery_time" => null, 
-            "subtitle" => null, 
-            "promotion_title" => null, 
-            "meta_title" => null, 
-            "meta_keywords" => null, 
-            "meta_description" => null, 
-            "price" => "1.0000", 
-            "cost" => null, 
-            "special_price" => null, 
-            "special_price_from" => null, 
-            "special_price_to" => null, 
-            "width" => null, 
-            "height" => null, 
-            "depth" => null, 
-            "weight" => null, 
-            "variants" => [], 
-            "attribute_family" => [
-                "id" => 21, 
-                "code" => "default", 
-                "name" => "Default", 
-                "status" => 0, 
-                "is_user_defined" => 1 
-            ] 
-        ],
-        "up_sells" => [
-            [
-                "id" => 107859, 
-                "product_id" => 56219, 
-                "parent_id" => null, 
-                "sku" => "K6P8ATO", 
-                "name" => "digital", 
-                "description" => null, 
-                "url_key" => "k6p8ato", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "5.00", 
-                "cost" => null, 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "5.00", 
-                "max_price" => "5.00", 
-                "is_vat" => 1, 
-                "short_description" => null, 
-                "meta_title" => null, 
-                "meta_keywords" => null, 
-                "meta_description" => null, 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => null, 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-11-10 09:30:59", 
-                "updated_at" => "2024-11-10 09:31:39", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0 ,
-                "html_price" => '<span class="product-price"><span class="price">٥٫٧٥&nbsp;ر.س.</span></span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ]
-            ], 
-            [
-                "id" => 107833, 
-                "product_id" => 56206, 
-                "parent_id" => null, 
-                "sku" => "sku-test-101", 
-                "name" => "ملابس سباحة", 
-                "description" => "", 
-                "url_key" => "sku-test-101", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "45.00", 
-                "cost" => "40.90", 
-                "special_price" => "35.00", 
-                "special_price_from" => "2026-07-31", 
-                "special_price_to" => "2025-07-31", 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "55.00", 
-                "max_price" => "100.00", 
-                "is_vat" => 1, 
-                "short_description" => null, 
-                "meta_title" => null, 
-                "meta_keywords" => null, 
-                "meta_description" => null, 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 10, 
-                "unlimited_quantity" => "0", 
-                "barcode" => "2", 
-                "brand_name" => null, 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-10-21 11:44:47", 
-                "updated_at" => "2024-10-21 11:45:07", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0 ,
-                "html_price" => '<span class="product-price"><span class="special-price"> ‏٥١٫٧٥ ر.س.‏</span></span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ]
-            ], 
-            [
-                "id" => 107667, 
-                "product_id" => 56118, 
-                "parent_id" => null, 
-                "sku" => "OUU1RO7", 
-                "name" => "ebook", 
-                "description" => null, 
-                "url_key" => "ouu1ro7", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "1.00", 
-                "cost" => null, 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "1.00", 
-                "max_price" => "1.00", 
-                "is_vat" => 1, 
-                "short_description" => null, 
-                "meta_title" => null, 
-                "meta_keywords" => null, 
-                "meta_description" => null, 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-09-12 14:10:05", 
-                "updated_at" => "2024-10-15 17:33:53", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "html_price" => '<span class="product-price"><span class="price">‏١٫١٥ ر.س.‏</span></span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ]
-            ], 
-            [
-                "id" => 107663, 
-                "product_id" => 56116, 
-                "parent_id" => null, 
-                "sku" => "N2-4-5-3", 
-                "name" => "ثلاجة الجمال سباركلنق لافندر 4 لتر", 
-                "description" => " ", 
-                "url_key" => "n2-4-5-3", 
-                "new" => null, 
-                "featured" => 1, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "367.35", 
-                "cost" => "216.09", 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "367.35", 
-                "max_price" => "367.35", 
-                "is_vat" => 0, 
-                "short_description" => " ", 
-                "meta_title" => "ثلاجة الجمال سباركلنق لافندر 4 لتر", 
-                "meta_keywords" => null, 
-                
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-08-21 16:41:44", 
-                "updated_at" => "2024-10-15 17:33:59", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "html_price" => '<span class="product-price"><span class="price">‏٣٦٧٫٣٥ ر.س.‏</span></span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ]
-            ]
-        ],
-        "images" => [
-            [
-                "id" => 37934, 
-                "type" => "image", 
-                "path" => "product/56118/68fc0441-483a-4167-a993-22d76d82b494.jpg", 
-                "product_id" => 55668, 
-                "main" => 1, 
-                "url" => "https://cdn.twsaa.com/product/56118/large-68fc0441-483a-4167-a993-22d76d82b494.jpg" 
-            ], 
-         ],
-        "html_price" => '<span class="product-price"><span class="price">‏١٫١٥&nbsp;ر.س.‏</span></span>', 
-        "show_sku" => true, 
-        "show_purchase_count" => true, 
-        "show_weight" => true, 
-        "show_quantity_box" => true, 
-        "show_purchase_count" => true, 
-        "sufficient_quantity" => true, 
-        "enable_product_reviews" => true, 
-        "guest_review" => true, 
-        "quantity_manually" => 2, 
-        "remaning_quantity" => 2, 
-        "total_quantity" => 2,
-    ]; 
-    
-    return $context;
-}
 
 function booking() {
     $context['authUser'] = auth();
@@ -13227,9 +9028,9 @@ function allProducts() {
                 "product_id" => 56118, 
                 "parent_id" => null, 
                 "sku" => "OUU1RO7", 
-                "name" => "ebook", 
-                "description" => null, 
-                "url_key" => "ouu1ro7", 
+                "name" => "طابعة ديسك جيت 2710، لاسلكية لمهام الطباعة، والنسخ، والمسح الضوئي طراز [5Ar83B] أبيض ", 
+                "description" => "ضمان لمدة سنة", 
+                "url_key" => "2g663yz", 
                 "new" => null, 
                 "featured" => null, 
                 "status" => 1, 
@@ -13281,9 +9082,9 @@ function allProducts() {
                 "notify_quantity" => null, 
                 "require_shipping" => 0,
                 "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
+                "html_price" => '<span class="price">3000 .رس</span>',
                 "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
+                    "base_image_url" => "https://media.zid.store/thumbs/07d02681-b3c7-4603-b219-599dc6c7a256/e68f643a-163d-46db-90cb-1bb8cc325736-thumbnail-1000x1000-70.webp"
                 ],
             ]
         ],
@@ -13293,9 +9094,9 @@ function allProducts() {
                 "product_id" => 56116, 
                 "parent_id" => null, 
                 "sku" => "N2-4-5-3", 
-                "name" => "ثلاجة الجمال سباركلنق لافندر 4 لتر", 
-                "description" => " ", 
-                "url_key" => "n2-4-5-3", 
+                "name" => " سماعة Q30 فوق الأذن ساوند كور من انكر لايف Q30 هايبرد اكتيف بخاصية الغاء الضوضاء واوضاع متعددة وصوت عالي الدقة ووقت تشغيل يدوم لمدة 40 ساعة وخاصية الشحن السريع، اذن بلوتوث ملائمة للسفر، اسود", 
+                "description" => " ضمان لمدة سنة", 
+                "url_key" => "2g663yz",
                 "new" => null, 
                 "featured" => 1, 
                 "status" => 1, 
@@ -13310,34 +9111,10 @@ function allProducts() {
                 "min_price" => "367.35", 
                 "max_price" => "367.35", 
                 "is_vat" => 0, 
-                "short_description" => " ", 
-                "meta_title" => "ثلاجة الجمال سباركلنق لافندر 4 لتر", 
+                "short_description" => "  ", 
+                "meta_title" => "     ", 
                 "meta_keywords" => null, 
-                "meta_description" => "<p>حافظي على منتجاتك المفضلة للعناية بجمال بشرتك مع ثلاجة الجمال الحجم الكلاسيكي الأنيق لوضعه أينما رغبت في غرفتك&nbsp;</p>
-    
-                <p>- أبعاد الثلاجة: العرض: 24 سم، الطول: 31.8سم، القطر: 32.2 سم
-                - رف واحد يفصل بين حجرتين تخزين رئيسية
-                - متوفرة بخاصية التبريد حتى 5 درجات مئوية&nbsp;
-                - متوفرة بخاصية التدفئة &nbsp;حتى 50 درجة مئوية&nbsp;
-                - درج خاص في باب الثلاجة
-                - محول DC5V 2A &nbsp;
-                - محول 100-240 فولت&nbsp;
-                - اللون: سباركلينج لافندر</p>
-                
-                <p>- ضعي قابس الكهرباء في في تيار 110 فولت أو 220 فولت ودعيها تعمل بشكل مستمر.
-                - بإمكانك تشغيل الثلاجة عبر أي محول USB بقوة 2 مل أمبير مما يجعلها تعمل داخل السيارة أو على بطاريات الطاقة (ننصح ببطارية طاقة تفوق 1000مل أمبير)</p>
-                
-                <p>التحذيرات والاحتياطات:
-                - قومي بتنظيف الثلاجة وتهويتها بمنشفة بشكل مستمر لمنع تشكل قطرات الماء داخلها.
-                - دعي مسافة فراغ 20سم بين الثلاجة والحائط.</p>
-                
-                <p>&nbsp;</p>
-                
-                <p>- محول كهربائي 220-110 فولت&nbsp;
-                - محول DC5V 2A &nbsp;
-                - قوة 5 فولت *2 مل أمبير
-                - سلك كهربائي USB
-                -ستيكرات زينة</p>", 
+                "meta_description" => " ", 
                 "width" => 0, 
                 "height" => 0, 
                 "depth" => 0, 
@@ -13371,9 +9148,9 @@ function allProducts() {
                 "notify_quantity" => null, 
                 "require_shipping" => 0,
                 "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
+                "html_price" => '<span class="price">200 .رس</span>',
                 "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
+                    "base_image_url" => "https://media.zid.store/thumbs/07d02681-b3c7-4603-b219-599dc6c7a256/79511c70-afde-4b2e-b2cb-172658f4ee68-thumbnail-1000x1000-70.webp"
                 ],
             ]
         ],
@@ -13383,8 +9160,8 @@ function allProducts() {
                 "product_id" => 56115, 
                 "parent_id" => null, 
                 "sku" => "sku-ABC", 
-                "name" => null, 
-                "description" => null, 
+                "name" => "null", 
+                "description" => "كاميرا مراقبة ذكية مزودة بميزة الواي فاي وبدقة 1080P وقطر عدسة 4 مم تُستخدم للمراقبة الخارجية للمنزل طراز C8C", 
                 "url_key" => "sku-abc", 
                 "new" => null, 
                 "featured" => null, 
@@ -13437,21 +9214,20 @@ function allProducts() {
                 "notify_quantity" => null, 
                 "require_shipping" => 0,
                 "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
+                "html_price" => '<span class="price">1300 .رس</span>',
                 "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
+                    "base_image_url" => "https://media.zid.store/thumbs/07d02681-b3c7-4603-b219-599dc6c7a256/f9aa7095-7807-46cd-a521-40910561e484-thumbnail-1000x1000-70.webp"
                 ],
             ]
         ],
-        [
-            'product' => [
+        [  'product' => [
                 "id" => 106921, 
                 "product_id" => 55683, 
                 "parent_id" => null, 
                 "sku" => "GFAF0U2", 
-                "name" => "vir", 
-                "description" => null, 
-                "url_key" => "gfaf0u2", 
+                "name" => " S95C OLED 4K Smart TV - ", 
+                "description" => "معفي من الضريبه", 
+                "url_key" => "2g663yz",  
                 "new" => null, 
                 "featured" => 1, 
                 "status" => 1, 
@@ -13503,9 +9279,9 @@ function allProducts() {
                 "notify_quantity" => null, 
                 "require_shipping" => 0,
                 "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
+                "html_price" => '<span class="price"> 500 ر.س</span>',
                 "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
+                    "base_image_url" => "https://media.zid.store/thumbs/07d02681-b3c7-4603-b219-599dc6c7a256/c463b844-366f-43d0-bbf6-3852baa50124-thumbnail-1000x1000-70.webp"
                 ],
             ]
         ],
@@ -13515,9 +9291,9 @@ function allProducts() {
                 "product_id" => 55682, 
                 "parent_id" => null, 
                 "sku" => "customizable", 
-                "name" => "customizable product", 
-                "description" => "This is testing Mobile", 
-                "url_key" => "customizable", 
+                "name" => " أبل ماك بوك لاب توب برو 13.3 بشريحة أبل إم 1 بذاكرة 8 جيجابايت أبل ماك بوك لاب توب برو 13.3 بشريحة أبل إم 1 بذاكرة 8 جيجابايت أبل ماك بوك لاب توب برو 13.3 بشريحة أبل إم 1 بذاكرة 8 جيجابايت أبل ماك بوك لاب توب برو 13.3 بشريحة أبل إم 1 بذاكرة 8 جي ", 
+                "description" => "   ", 
+                "url_key" => "2g663yz", 
                 "new" => null, 
                 "featured" => null, 
                 "status" => 1, 
@@ -13569,9 +9345,9 @@ function allProducts() {
                 "notify_quantity" => null, 
                 "require_shipping" => 0,
                 "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
+                "html_price" => '<span class="price"> 2000 ر.س </span>',
                 "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
+                    "base_image_url" => "https://media.zid.store/thumbs/07d02681-b3c7-4603-b219-599dc6c7a256/f7bcdb35-b13b-4191-b46d-66392ac2f2fa-thumbnail-1000x1000-70.webp"
                 ],
             ]
         ],
@@ -13581,8 +9357,8 @@ function allProducts() {
                 "product_id" => 55668, 
                 "parent_id" => null, 
                 "sku" => "2G663YZ", 
-                "name" => "asdf asdf2", 
-                "description" => "<p>محافظ نسائية على الموضة ، محفظة طويلة ثلاثية الطي ذات جودة عالية من جلد البولي يوريثان ، حامل بطاقات كلاتش للنساء ، حامل بطاقات</p><p><br></p>", 
+                "name" => "ساعة ذكية T900 Ultra بشاشة لا نهائية 2.09", 
+                "description" => " معفي من الضريبة ", 
                 "url_key" => "2g663yz", 
                 "new" => null, 
                 "featured" => null, 
@@ -13635,9 +9411,9 @@ function allProducts() {
                 "notify_quantity" => null, 
                 "require_shipping" => 0,
                 "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
+                "html_price" => '<span class="price"> 1600 ر.س</span>',
                 "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
+                    "base_image_url" => "https://media.zid.store/thumbs/07d02681-b3c7-4603-b219-599dc6c7a256/c5cfba18-32fc-44ac-8b11-b4c6d23a677f-thumbnail-1000x1000-70.webp"
                 ],
             ]
         ],
@@ -13647,9 +9423,9 @@ function allProducts() {
                 "product_id" => 54040, 
                 "parent_id" => null, 
                 "sku" => "W1MDRT4", 
-                "name" => "tryme", 
+                "name" => "سامسونج جوال جالكسي اس 24 الترا، هاتف ذكي بنظام اندرويد بالذكاء الاصطناعي، ذاكرة تخزين 256GB، ذاكرة RAM 12GB، كاميرا 200MP، قلم S، عمر بطارية طويل - اسود تيتانيوم", 
                 "description" => "", 
-                "url_key" => "w1mdrt4", 
+                "url_key" => "2g663yz", 
                 "new" => null, 
                 "featured" => null, 
                 "status" => 1, 
@@ -13701,9 +9477,9 @@ function allProducts() {
                 "notify_quantity" => null, 
                 "require_shipping" => 0,
                 "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
+                "html_price" => '<span class="price"> 1085 ر.س </span>',
                 "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
+                    "base_image_url" => "https://media.zid.store/thumbs/07d02681-b3c7-4603-b219-599dc6c7a256/ccc2a8aa-6bea-424a-8053-68fcda8ad067-thumbnail-1000x1000-70.webp"
                 ],
             ]
         ],
@@ -13713,17 +9489,9 @@ function allProducts() {
                 "product_id" => 54038, 
                 "parent_id" => null, 
                 "sku" => "059347", 
-                "name" => "موزع روائح الزيوت العطرية", 
-                "description" => "<p>موزع روائح الزيوت العطرية</p>
-
-                <p>اضاءة داخلية مع اللهب - 4 الوان</p>
-                
-                <p>مرطب بالموجات فوق الصوتية</p>
-                
-                <p>&nbsp;</p>
-                
-                <p>ضمان سنتين&nbsp;</p>", 
-                "url_key" => "059347", 
+                "name" => " سماعات اير بوودز 3 سيمي اوريجينال . سماعة داخل الأذن بلوتوث لاسلكية ذكية  ", 
+                "description" => " جديدنا ", 
+                "url_key" => "2g663yz", 
                 "new" => null, 
                 "featured" => null, 
                 "status" => 1, 
@@ -13738,26 +9506,10 @@ function allProducts() {
                 "min_price" => "142.80", 
                 "max_price" => "142.80", 
                 "is_vat" => 1, 
-                "short_description" => "<p>موزع روائح الزيوت العطرية</p>
-
-                <p>اضاءة داخلية مع اللهب - 4 الوان</p>
-                
-                <p>مرطب بالموجات فوق الصوتية</p>
-                
-                <p>&nbsp;</p>
-                
-                <p>ضمان سنتين&nbsp;</p>", 
-                "meta_title" => "موزع روائح الزيوت العطرية", 
+                "short_description" => "  ", 
+                "meta_title" => "   ", 
                 "meta_keywords" => null, 
-                "meta_description" => "<p>موزع روائح الزيوت العطرية</p>
-
-                <p>اضاءة داخلية مع اللهب - 4 الوان</p>
-                
-                <p>مرطب بالموجات فوق الصوتية</p>
-                
-                <p>&nbsp;</p>
-                
-                <p>ضمان سنتين&nbsp;</p>", 
+                "meta_description" => "   ", 
                 "width" => 0, 
                 "height" => 0, 
                 "depth" => 0, 
@@ -13791,1125 +9543,9 @@ function allProducts() {
                 "notify_quantity" => null, 
                 "require_shipping" => 0,
                 "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
+                "html_price" => '<span class="price">500 ر.س </span>',
                 "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 103665, 
-                "product_id" => 54037, 
-                "parent_id" => null, 
-                "sku" => "300130", 
-                "name" => "ساعه انمر مان الرجالية 300130", 
-                "description" => '<p dir="RTL">ساعه رجاليه فخمه من ماركة انمر مان&nbsp;</p>
-
-                <p dir="RTL">صنقل ستيل كامل</p>
-                
-                <p dir="RTL">قفل ستيل</p>
-                
-                <p dir="RTL">تصميم رائع وجذاب</p>
-                
-                <p dir="RTL">مكينه ياباني</p>
-                
-                <p dir="RTL">لمعه ثابته</p>
-                
-                <p dir="RTL">علبه بنفس اسم الماركه</p>
-                
-                <p dir="RTL">ضمان ثلاث سنوات</p>", 
-                "url_key" => "300130", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "160.65", 
-                "cost" => "94.50", 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "160.65", 
-                "max_price" => "160.65", 
-                "is_vat" => 1, 
-                "short_description" => "<p dir="RTL">ساعه رجاليه فخمه من ماركة انمر مان&nbsp;</p>
-
-                <p dir="RTL">صنقل ستيل كامل</p>
-                
-                <p dir="RTL">قفل ستيل</p>
-                
-                <p dir="RTL">تصميم رائع وجذاب</p>
-                
-                <p dir="RTL">مكينه ياباني</p>
-                
-                <p dir="RTL">لمعه ثابته</p>
-                
-                <p dir="RTL">علبه بنفس اسم الماركه</p>
-                
-                <p dir="RTL">ضمان ثلاث سنوات</p>", 
-                "meta_title" => "ساعه انمر مان الرجالية 300130", 
-                "meta_keywords" => null, 
-                "meta_description" => "<p dir="RTL">ساعه رجاليه فخمه من ماركة انمر مان&nbsp;</p>
-
-                <p dir="RTL">صنقل ستيل كامل</p>
-                
-                <p dir="RTL">قفل ستيل</p>
-                
-                <p dir="RTL">تصميم رائع وجذاب</p>
-                
-                <p dir="RTL">مكينه ياباني</p>
-                
-                <p dir="RTL">لمعه ثابته</p>
-                
-                <p dir="RTL">علبه بنفس اسم الماركه</p>
-                                        
-                <p dir="RTL">ضمان ثلاث سنوات</p>', 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0.6, 
-                "unlimited_quantity" => "0", 
-                "barcode" => "7788997788", 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-04-22 14:53:27", 
-                "updated_at" => "2024-10-15 17:35:07", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 1,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 102523, 
-                "product_id" => 53483, 
-                "parent_id" => null, 
-                "sku" => "MSKUAE1005006629609421", 
-                "name" => "مجموعة مسحوق مجفف مجمد مضاد للتجاعيد ، خميرة للإصلاح ، مصل مغذي ، كرياتين لتعزيز إنتاج الكولاجين", 
-                "description" => '<div class="detailmodule_html"><div class="detail-desc-decorate-richtext"><p><img src="https://ae01.alicdn.com/kf/Sbca62263df6e44d9916a0a3ad441d085h.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S635c7aebc8fe4393a93593d41362b68e7.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S0210767bca5e48189f751176a99ffb1dS.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S6d44ece12bcf407bba64bf3f31b3b7daP.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S1ac24a381f3740eb88b3a18e36a6f4a4g.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S537206bb81f14efbbc423901aad8923de.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Se52ebe59427648bf8e84305c39564c83v.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S88ca6f916b1840bda759fdd7556f26cdw.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Saf2e2587072841bc92da588588dff5feK.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Sb9407490af5647a6b1daf61c361576e50.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S7556e22c080145459d4de2a31e379fbaN.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S3d106311a0e4431f938d6a6bdc87ce12l.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S54005c6d105649b582a00fd961fdce65K.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S20ecd5f1d6454e16af3caee0efc72b71I.jpg" slate-data-type="image" /></p></div></div>', 
-                "url_key" => "mskuae1005006629609421", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => null, 
-                "cost" => null, 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "424.51", 
-                "max_price" => "1061.28", 
-                "is_vat" => 1, 
-                "short_description" => '<div class="detailmodule_html"><div class="detail-desc-decorate-richtext"><p><img src="https://ae01.alicdn.com/kf/Sbca62263df6e44d9916a0a3ad441d085h.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S635c7aebc8fe4393a93593d41362b68e7.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S0210767bca5e48189f751176a99ffb1dS.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S6d44ece12bcf407bba64bf3f31b3b7daP.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S1ac24a381f3740eb88b3a18e36a6f4a4g.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S537206bb81f14efbbc423901aad8923de.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Se52ebe59427648bf8e84305c39564c83v.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S88ca6f916b1840bda759fdd7556f26cdw.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Saf2e2587072841bc92da588588dff5feK.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Sb9407490af5647a6b1daf61c361576e50.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S7556e22c080145459d4de2a31e379fbaN.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S3d106311a0e4431f938d6a6bdc87ce12l.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S54005c6d105649b582a00fd961fdce65K.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S20ecd5f1d6454e16af3caee0efc72b71I.jpg" slate-data-type="image" /></p></div></div>', 
-                "meta_title" => "مجموعة مسحوق مجفف مجمد مضاد للتجاعيد ، خميرة للإصلاح ، مصل مغذي ، كرياتين لتعزيز إنتاج الكولاجين", 
-                "meta_keywords" => null, 
-                "meta_description" => '<div class="detailmodule_html"><div class="detail-desc-decorate-richtext"><p><img src="https://ae01.alicdn.com/kf/Sbca62263df6e44d9916a0a3ad441d085h.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S635c7aebc8fe4393a93593d41362b68e7.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S0210767bca5e48189f751176a99ffb1dS.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S6d44ece12bcf407bba64bf3f31b3b7daP.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S1ac24a381f3740eb88b3a18e36a6f4a4g.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S537206bb81f14efbbc423901aad8923de.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Se52ebe59427648bf8e84305c39564c83v.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S88ca6f916b1840bda759fdd7556f26cdw.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Saf2e2587072841bc92da588588dff5feK.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Sb9407490af5647a6b1daf61c361576e50.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S7556e22c080145459d4de2a31e379fbaN.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S3d106311a0e4431f938d6a6bdc87ce12l.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S54005c6d105649b582a00fd961fdce65K.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S20ecd5f1d6454e16af3caee0efc72b71I.jpg" slate-data-type="image" /></p></div></div>', 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-04-16 18:25:06", 
-                "updated_at" => "2024-10-15 17:35:16", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 102497, 
-                "product_id" => 53470, 
-                "parent_id" => null, 
-                "sku" => "MSKUAE1005006608665729", 
-                "name" => "سوار زوجين من الصلب الكلاسيكي الفاخر من التيتانيوم ، سوار عالي الجودة للرجال والنساء ، هدايا الحفلات", 
-                "description" => '<div class="detailmodule_html"><div class="detail-desc-decorate-richtext"><p>
-                        <kse:widget data-widget-type="customText" id="1005000011207205" type="relation"></kse:widget></p>
-                    <p><span style="font-size:16px" id="tl_1">لمزيد من المعلومات والصور ، يرجى الاتصال بخدمة العملاء.</span></p>
-                    <p><br /></p>
-                    <p style="font-family:&quot;Open Sans&quot;, Roboto, Arial, Helvetica, sans-serif, SimSun;font-size:14px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(34, 34, 34);margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box" align="start"><span style="font-size:16px" id="tl_2">لمزيد من المعلومات والصور ، يرجى الاتصال بخدمة العملاء.</span></p>
-                    <p><br /></p>
-                    <p style="font-family:&quot;Open Sans&quot;, Roboto, Arial, Helvetica, sans-serif, SimSun;font-size:14px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(34, 34, 34);margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box" align="start"><span style="font-size:16px" id="tl_3">لمزيد من المعلومات والصور ، يرجى الاتصال بخدمة العملاء.</span></p>
-                    <p><br /></p>
-                    <div>
-                        <span style="font-size:24px" id="tl_4">نصائح:</span>
-                    </div>
-                    <div>
-                        <span style="font-size:18px" id="tl_5">يرجى استخدام شريط قياس ناعم لتأكيد محيط اليد الفعلي قبل الشراء ، وإضافة سنتيمتر واحد لتحديد الحجم المناسب للارتداء</span>
-                    </div>
-                    <div>
-                        &nbsp;
-                    </div>
-                    <p style="font-family:&quot;Open Sans&quot;, Roboto, Arial, Helvetica, sans-serif, SimSun;font-size:14px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(34, 34, 34);margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box" align="start"><img src="https://ae01.alicdn.com/kf/Sdc7eb0d7addd4f3faf38db4e0b0eef45x.jpg" slate-data-type="image" /></p></div></div>
-                    ', 
-                "url_key" => "mskuae1005006608665729", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => null, 
-                "cost" => null, 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "330.58", 
-                "max_price" => "330.58", 
-                "is_vat" => 1, 
-                "short_description" => '<div class="detailmodule_html"><div class="detail-desc-decorate-richtext"><p>
-                    <kse:widget data-widget-type="customText" id="1005000011207205" type="relation"></kse:widget></p>
-                <p><span style="font-size:16px" id="tl_1">لمزيد من المعلومات والصور ، يرجى الاتصال بخدمة العملاء.</span></p>
-                <p><br /></p>
-                <p style="font-family:&quot;Open Sans&quot;, Roboto, Arial, Helvetica, sans-serif, SimSun;font-size:14px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(34, 34, 34);margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box" align="start"><span style="font-size:16px" id="tl_2">لمزيد من المعلومات والصور ، يرجى الاتصال بخدمة العملاء.</span></p>
-                <p><br /></p>
-                <p style="font-family:&quot;Open Sans&quot;, Roboto, Arial, Helvetica, sans-serif, SimSun;font-size:14px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(34, 34, 34);margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box" align="start"><span style="font-size:16px" id="tl_3">لمزيد من المعلومات والصور ، يرجى الاتصال بخدمة العملاء.</span></p>
-                <p><br /></p>
-                <div>
-                    <span style="font-size:24px" id="tl_4">نصائح:</span>
-                </div>
-                <div>
-                    <span style="font-size:18px" id="tl_5">يرجى استخدام شريط قياس ناعم لتأكيد محيط اليد الفعلي قبل الشراء ، وإضافة سنتيمتر واحد لتحديد الحجم المناسب للارتداء</span>
-                </div>
-                <div>
-                    &nbsp;
-                </div>
-                <p style="font-family:&quot;Open Sans&quot;, Roboto, Arial, Helvetica, sans-serif, SimSun;font-size:14px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(34, 34, 34);margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box" align="start"><img src="https://ae01.alicdn.com/kf/Sdc7eb0d7addd4f3faf38db4e0b0eef45x.jpg" slate-data-type="image" /></p></div></div>
-                ', 
-                "meta_title" => "سوار زوجين من الصلب الكلاسيكي الفاخر من التيتانيوم ، سوار عالي الجودة للرجال والنساء ، هدايا الحفلات", 
-                "meta_keywords" => null, 
-                "meta_description" => '<div class="detailmodule_html"><div class="detail-desc-decorate-richtext"><p>
-                        <kse:widget data-widget-type="customText" id="1005000011207205" type="relation"></kse:widget></p>
-                    <p><span style="font-size:16px" id="tl_1">لمزيد من المعلومات والصور ، يرجى الاتصال بخدمة العملاء.</span></p>
-                    <p><br /></p>
-                    <p style="font-family:&quot;Open Sans&quot;, Roboto, Arial, Helvetica, sans-serif, SimSun;font-size:14px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(34, 34, 34);margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box" align="start"><span style="font-size:16px" id="tl_2">لمزيد من المعلومات والصور ، يرجى الاتصال بخدمة العملاء.</span></p>
-                    <p><br /></p>
-                    <p style="font-family:&quot;Open Sans&quot;, Roboto, Arial, Helvetica, sans-serif, SimSun;font-size:14px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(34, 34, 34);margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box" align="start"><span style="font-size:16px" id="tl_3">لمزيد من المعلومات والصور ، يرجى الاتصال بخدمة العملاء.</span></p>
-                    <p><br /></p>
-                    <div>
-                        <span style="font-size:24px" id="tl_4">نصائح:</span>
-                    </div>
-                    <div>
-                        <span style="font-size:18px" id="tl_5">يرجى استخدام شريط قياس ناعم لتأكيد محيط اليد الفعلي قبل الشراء ، وإضافة سنتيمتر واحد لتحديد الحجم المناسب للارتداء</span>
-                    </div>
-                    <div>
-                        &nbsp;
-                    </div>
-                    <p style="font-family:&quot;Open Sans&quot;, Roboto, Arial, Helvetica, sans-serif, SimSun;font-size:14px;font-weight:400;letter-spacing:normal;line-height:inherit;text-align:start;white-space:normal;color:rgb(34, 34, 34);margin:0px;margin-bottom:0px;margin-top:0px;margin-left:0px;margin-right:0px;padding:0px;padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;box-sizing:border-box" align="start"><img src="https://ae01.alicdn.com/kf/Sdc7eb0d7addd4f3faf38db4e0b0eef45x.jpg" slate-data-type="image" /></p></div></div>
-                    ', 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-04-16 18:25:00", 
-                "updated_at" => "2024-10-15 17:35:42", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 102485, 
-                "product_id" => 53464, 
-                "parent_id" => null, 
-                "sku" => "MSKUAE1005006682900581", 
-                "name" => "نظارات شمسية مستطيلة سوداء للنساء ، نظارات شمسية نسائية غريبة ، أزياء الحفلات ، مصمم العلامة التجارية ، UV400 ، بيع", 
-                "description" => '<div class="detailmodule_html"><div class="detail-desc-decorate-richtext"><p><img src="https://ae01.alicdn.com/kf/S9e1b89e74cc740028300c1333a81390b5.png" slate-data-type="image" /></p> 
-                    <p id="tl_1">انقر على المجموعة اتبع متجرنا ، وذلك للعثور على أسرع وإذا كان المتجر قد حدّث المنتج الجديد ، يمكنك الحصول عليه في المرة الأولى.</p> 
-                    <p id="tl_2">إذا لم تتمكن من العثور على الموديل الذي تريده ، يرجى الاتصال بنا للحصول على المزيد من الطراز.</p> 
-                    <p id="tl_3">لأن هناك العديد من النماذج ، ما زلنا نقوم بالتحميل ، ولم يتم تحميلها كلها.</p> 
-                    <p id="tl_4">لذلك إذا كنت بحاجة إلى رؤية المزيد من النماذج ، يرجى الاتصال بنا.</p> 
-                    <p><img src="https://ae01.alicdn.com/kf/Saa929797a7ee4aeaaf9d63d9d4c403c7O.png" slate-data-type="image" /></p> 
-                    <p><img src="https://ae01.alicdn.com/kf/Sc89d251c03b84aa8b7bbc7c4e237ee57P.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S9a70b16f6969449f8f27df7047a0c5cfS.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S65a6ec4e10f24b28839d041c98b8360cY.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S212f00319bfd46c2b78bfc1f9ed2b975G.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Sb939841c93524c9d83f7f79ccc696d80a.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Sf6b5fd5a090b4703a9e22b9314a39ddd3.jpg" slate-data-type="image" /></p> 
-                    <p><img src="https://ae01.alicdn.com/kf/S32e12f6e8df344c0a000e1657965ae1al.png" slate-data-type="image" /></p> 
-                    <p id="tl_5">موضع ترحيب انخفاض الشحن.</p> 
-                    <p><br /></p> 
-                    <p id="tl_6">للشحن المباشر ، يمكننا إرسال البضائع إلى عملائك مباشرة ولن نترك معلومات عنا إذا كنت ترغب في ذلك.</p> 
-                    <p><br /></p> 
-                    <p id="tl_7">كيف يمكنني تتبع الطرد الخاص بي ؟</p> 
-                    <p><br /><br /></p> 
-                    <p id="tl_8">يمكنك تتبع الطرد الخاص بك على الموقع الإلكتروني التالي باستخدام رقم التتبع الخاص بك: www.17track.net.en</p> 
-                    <p><br /></p> 
-                    <p id="tl_9">ماذا يمكنني أن أفعل عندما ينفد وقت حماية الشراء ؟</p> 
-                    <p><br /></p> 
-                    <p id="tl_10">إذا كان وقت حماية الشراء ينفد ، يرجى الاتصال بنا ويمكننا مساعدتك على تمديده. لذلك لن تذهب أموالك إلى حسابي.</p> 
-                    <p><br /></p> 
-                    <p id="tl_11">ملاحظات</p> 
-                    <p><br /></p> 
-                    <p id="tl_12">1. إذا كنت راضيًا عن منتجاتنا وخدماتنا ، يرجى ترك تعليقك الإيجابي و 5 نجوم. و 5 نجوم للحصول على تصنيف مفصل لطلبك.</p> 
-                    <p><br /></p> 
-                    <p id="tl_13">2. إذا لم تكن راضيًا عن منتجاتنا ، الرجاء الاتصال بنا قبل ترك تعليقات سلبية أو إجراء التقييم التفصيلي ، ونحن نضمن أننا سنحل أي مشاكل لك.</p></div></div>
-                    ', 
-                "url_key" => "mskuae1005006682900581", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => null, 
-                "cost" => null, 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "431.44", 
-                "max_price" => "431.44", 
-                "is_vat" => 1, 
-                "short_description" => '<div class="detailmodule_html"><div class="detail-desc-decorate-richtext"><p><img src="https://ae01.alicdn.com/kf/S9e1b89e74cc740028300c1333a81390b5.png" slate-data-type="image" /></p> 
-                    <p id="tl_1">انقر على المجموعة اتبع متجرنا ، وذلك للعثور على أسرع وإذا كان المتجر قد حدّث المنتج الجديد ، يمكنك الحصول عليه في المرة الأولى.</p> 
-                    <p id="tl_2">إذا لم تتمكن من العثور على الموديل الذي تريده ، يرجى الاتصال بنا للحصول على المزيد من الطراز.</p> 
-                    <p id="tl_3">لأن هناك العديد من النماذج ، ما زلنا نقوم بالتحميل ، ولم يتم تحميلها كلها.</p> 
-                    <p id="tl_4">لذلك إذا كنت بحاجة إلى رؤية المزيد من النماذج ، يرجى الاتصال بنا.</p> 
-                    <p><img src="https://ae01.alicdn.com/kf/Saa929797a7ee4aeaaf9d63d9d4c403c7O.png" slate-data-type="image" /></p> 
-                    <p><img src="https://ae01.alicdn.com/kf/Sc89d251c03b84aa8b7bbc7c4e237ee57P.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S9a70b16f6969449f8f27df7047a0c5cfS.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S65a6ec4e10f24b28839d041c98b8360cY.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S212f00319bfd46c2b78bfc1f9ed2b975G.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Sb939841c93524c9d83f7f79ccc696d80a.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Sf6b5fd5a090b4703a9e22b9314a39ddd3.jpg" slate-data-type="image" /></p> 
-                    <p><img src="https://ae01.alicdn.com/kf/S32e12f6e8df344c0a000e1657965ae1al.png" slate-data-type="image" /></p> 
-                    <p id="tl_5">موضع ترحيب انخفاض الشحن.</p> 
-                    <p><br /></p> 
-                    <p id="tl_6">للشحن المباشر ، يمكننا إرسال البضائع إلى عملائك مباشرة ولن نترك معلومات عنا إذا كنت ترغب في ذلك.</p> 
-                    <p><br /></p> 
-                    <p id="tl_7">كيف يمكنني تتبع الطرد الخاص بي ؟</p> 
-                    <p><br /><br /></p> 
-                    <p id="tl_8">يمكنك تتبع الطرد الخاص بك على الموقع الإلكتروني التالي باستخدام رقم التتبع الخاص بك: www.17track.net.en</p> 
-                    <p><br /></p> 
-                    <p id="tl_9">ماذا يمكنني أن أفعل عندما ينفد وقت حماية الشراء ؟</p> 
-                    <p><br /></p> 
-                    <p id="tl_10">إذا كان وقت حماية الشراء ينفد ، يرجى الاتصال بنا ويمكننا مساعدتك على تمديده. لذلك لن تذهب أموالك إلى حسابي.</p> 
-                    <p><br /></p> 
-                    <p id="tl_11">ملاحظات</p> 
-                    <p><br /></p> 
-                    <p id="tl_12">1. إذا كنت راضيًا عن منتجاتنا وخدماتنا ، يرجى ترك تعليقك الإيجابي و 5 نجوم. و 5 نجوم للحصول على تصنيف مفصل لطلبك.</p> 
-                    <p><br /></p> 
-                    <p id="tl_13">2. إذا لم تكن راضيًا عن منتجاتنا ، الرجاء الاتصال بنا قبل ترك تعليقات سلبية أو إجراء التقييم التفصيلي ، ونحن نضمن أننا سنحل أي مشاكل لك.</p></div></div>
-                    ', 
-                "meta_title" => "نظارات شمسية مستطيلة سوداء للنساء ، نظارات شمسية نسائية غريبة ، أزياء الحفلات ، مصمم العلامة التجارية ، UV400 ، بيع", 
-                "meta_keywords" => null, 
-                "meta_description" => '<div class="detailmodule_html"><div class="detail-desc-decorate-richtext"><p><img src="https://ae01.alicdn.com/kf/S9e1b89e74cc740028300c1333a81390b5.png" slate-data-type="image" /></p> 
-                        <p id="tl_1">انقر على المجموعة اتبع متجرنا ، وذلك للعثور على أسرع وإذا كان المتجر قد حدّث المنتج الجديد ، يمكنك الحصول عليه في المرة الأولى.</p> 
-                        <p id="tl_2">إذا لم تتمكن من العثور على الموديل الذي تريده ، يرجى الاتصال بنا للحصول على المزيد من الطراز.</p> 
-                        <p id="tl_3">لأن هناك العديد من النماذج ، ما زلنا نقوم بالتحميل ، ولم يتم تحميلها كلها.</p> 
-                        <p id="tl_4">لذلك إذا كنت بحاجة إلى رؤية المزيد من النماذج ، يرجى الاتصال بنا.</p> 
-                        <p><img src="https://ae01.alicdn.com/kf/Saa929797a7ee4aeaaf9d63d9d4c403c7O.png" slate-data-type="image" /></p> 
-                        <p><img src="https://ae01.alicdn.com/kf/Sc89d251c03b84aa8b7bbc7c4e237ee57P.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S9a70b16f6969449f8f27df7047a0c5cfS.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S65a6ec4e10f24b28839d041c98b8360cY.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/S212f00319bfd46c2b78bfc1f9ed2b975G.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Sb939841c93524c9d83f7f79ccc696d80a.jpg" slate-data-type="image" /><img src="https://ae01.alicdn.com/kf/Sf6b5fd5a090b4703a9e22b9314a39ddd3.jpg" slate-data-type="image" /></p> 
-                        <p><img src="https://ae01.alicdn.com/kf/S32e12f6e8df344c0a000e1657965ae1al.png" slate-data-type="image" /></p> 
-                        <p id="tl_5">موضع ترحيب انخفاض الشحن.</p> 
-                        <p><br /></p> 
-                        <p id="tl_6">للشحن المباشر ، يمكننا إرسال البضائع إلى عملائك مباشرة ولن نترك معلومات عنا إذا كنت ترغب في ذلك.</p> 
-                        <p><br /></p> 
-                        <p id="tl_7">كيف يمكنني تتبع الطرد الخاص بي ؟</p> 
-                        <p><br /><br /></p> 
-                        <p id="tl_8">يمكنك تتبع الطرد الخاص بك على الموقع الإلكتروني التالي باستخدام رقم التتبع الخاص بك: www.17track.net.en</p> 
-                        <p><br /></p> 
-                        <p id="tl_9">ماذا يمكنني أن أفعل عندما ينفد وقت حماية الشراء ؟</p> 
-                        <p><br /></p> 
-                        <p id="tl_10">إذا كان وقت حماية الشراء ينفد ، يرجى الاتصال بنا ويمكننا مساعدتك على تمديده. لذلك لن تذهب أموالك إلى حسابي.</p> 
-                        <p><br /></p> 
-                        <p id="tl_11">ملاحظات</p> 
-                        <p><br /></p> 
-                        <p id="tl_12">1. إذا كنت راضيًا عن منتجاتنا وخدماتنا ، يرجى ترك تعليقك الإيجابي و 5 نجوم. و 5 نجوم للحصول على تصنيف مفصل لطلبك.</p> 
-                        <p><br /></p> 
-                        <p id="tl_13">2. إذا لم تكن راضيًا عن منتجاتنا ، الرجاء الاتصال بنا قبل ترك تعليقات سلبية أو إجراء التقييم التفصيلي ، ونحن نضمن أننا سنحل أي مشاكل لك.</p></div></div>
-                        ', 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-04-16 18:23:28", 
-                "updated_at" => "2024-10-15 17:36:56", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 99206, 
-                "product_id" => 51762, 
-                "parent_id" => null, 
-                "sku" => "RUIQBH6", 
-                "name" => "منتج", 
-                "description" => "", 
-                "url_key" => "ruiqbh6", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "5.00", 
-                "cost" => null, 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "5.00", 
-                "max_price" => "5.00", 
-                "is_vat" => 1, 
-                "short_description" => null, 
-                "meta_title" => "", 
-                "meta_keywords" => null, 
-                "meta_description" => "", 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-03-31 13:04:01", 
-                "updated_at" => "2024-10-15 17:37:18", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 74870, 
-                "product_id" => 37810, 
-                "parent_id" => null, 
-                "sku" => "ven-con-1", 
-                "name" => "ven-configurable", 
-                "description" => "<p>ven-configurableven-configurable</p>", 
-                "url_key" => "ven-con-1", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => null, 
-                "cost" => null, 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "7.14", 
-                "max_price" => "7.14", 
-                "is_vat" => 1, 
-                "short_description" => "<p>ven-configurableven-configurable</p>", 
-                "meta_title" => "ven-configurable", 
-                "meta_keywords" => null, 
-                "meta_description" => "<p>ven-configurableven-configurable</p>", 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-03-21 12:20:24", 
-                "updated_at" => "2024-10-15 17:37:24", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 74868, 
-                "product_id" => 37809, 
-                "parent_id" => null, 
-                "sku" => "TBS50100", 
-                "name" => "ورلد كير مناشف للاستعمال مرة واحدة 50×100، 50 قطعة", 
-                "description" => "<p>النوع: مناشف للاستعمال مرة واحدة ناعمة على البشرة قدرة عالية على الامتصاص 50 قطعة</p>", 
-                "url_key" => "tbs50100", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "73.86", 
-                "cost" => "43.45", 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "73.86", 
-                "max_price" => "73.86", 
-                "is_vat" => 1, 
-                "short_description" => "<p>النوع: مناشف للاستعمال مرة واحدة ناعمة على البشرة قدرة عالية على الامتصاص 50 قطعة</p>", 
-                "meta_title" => "ورلد كير مناشف للاستعمال مرة واحدة 50×100، 50 قطعة", 
-                "meta_keywords" => null, 
-                "meta_description" => "<p>النوع: مناشف للاستعمال مرة واحدة ناعمة على البشرة قدرة عالية على الامتصاص 50 قطعة</p>", 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0.1, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-03-21 12:19:51", 
-                "updated_at" => "2024-10-15 17:37:32", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 74866, 
-                "product_id" => 37808, 
-                "parent_id" => null, 
-                "sku" => "QV-0766", 
-                "name" => "كريم مرطب للبشرة الحساسة من كيو في 100 جم", 
-                "description" => "<p>كريم ترطيب البشرة من كيو في، لتجديد البشرة الجافة بترطيب عالي التركيز. يحتوي على السكوالين ودهون طبيعية التي تمنحك بشره ناعمة ومرنة. الحل الامثل لمناطق الجسم شديدة الجفاف.</p>", 
-                "url_key" => "qv-0766", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "68.46", 
-                "cost" => "40.27", 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "68.46", 
-                "max_price" => "68.46", 
-                "is_vat" => 1, 
-                "short_description" => "<p>كريم ترطيب البشرة من كيو في، لتجديد البشرة الجافة بترطيب عالي التركيز. يحتوي على السكوالين ودهون طبيعية التي تمنحك بشره ناعمة ومرنة. الحل الامثل لمناطق الجسم شديدة الجفاف.</p>", 
-                "meta_title" => "كريم مرطب للبشرة الحساسة من كيو في 100 جم", 
-                "meta_keywords" => null, 
-                "meta_description" => "<p>كريم ترطيب البشرة من كيو في، لتجديد البشرة الجافة بترطيب عالي التركيز. يحتوي على السكوالين ودهون طبيعية التي تمنحك بشره ناعمة ومرنة. الحل الامثل لمناطق الجسم شديدة الجفاف.</p>", 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0.1, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-03-21 12:19:47", 
-                "updated_at" => "2024-10-15 17:37:39", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 48795, 
-                "product_id" => 24644, 
-                "parent_id" => null, 
-                "sku" => "C3-5-2-3", 
-                "name" => "ميلي - شامبو أكليل الجبل والنعناع لتقوية الشعر 355 مل", 
-                "description" => "<p>- شامبو تقوية الشعر بأكليل الجبل والنعناع من ميلي أورجانيكس، مملوء بالبيوتين، ينظف ويساعد على تقوية الشعر الضعيف والهش .</p>
-
-                <p>- يغذي وينظف الشعر الجاف أو الضعيف أو الهش باستخدام هذا الشامبو المقوي للشعر الذي يعمل على تنشيط بصيلات الشعر .</p>
-                
-                <p>- يوفر رطوبة مكثفة لجميع أنواع الشعر بتركيبة لطيفة تغذي وتنظف وتساعد على تقوية الشعر الضعيف والهش .</p>
-                
-                <p>- مناسبة لمستويات الشعر ذات المسامية المنخفضة والعالية .</p>
-                
-                <p>- تم تطوير شامبو تقوية الشعر بالروزماري والنعناع من ميلي أورجانيكس لتنظيف شعرك بلطف مع توفير العناصر الغذائية الأساسية .</p>
-                
-                <p>- مناسب لجميع أنواع الشعر .</p>
-                
-                <p>المكونات : ماء (أكوا، أو)، الصوديوم C14-16 أوليفين سلفونات، كوكاميدوبروبيل البيتين، بولي كواترنيوم-7، كوكاميد MIPA، جليكول ستيرات، بوليكواترنيوم-10، بانثينول، بروبيلين جليكول، زيت النعناع بيبيريتا (النعناع)، زيت أوراق إكليل الجبل (إكليل الجبل). ، ثنائي الصوديومEDTA، فيتانتريول، * زيت بذور الأوربينيا أوليفيرا (الباباسو)، * زيت جذر الزنجبيل (الزنجبيل)، * زيت جوز الهند نوسيفيرا (جوز الهند)، مستخلص عشبة ذيل الحصان (Equisetum Arvense)، مستخلص لوسونيا إنيرميس (الحناء)، روزمارينوس أوفيسيناليس ( مستخلصأوراق إكليل الجبل، مستخلص زهرة أنثيميس نوبيليس (البابونج)، مستخلص أوراق سيمفيتوم أوفيسينال (السنفيتون)، مستخلص هومولوس لوبولوس (الجنجل)، مستخلص أورتيك ديويكا (نبات القراص)، العسل، البيوتين، زيت بذور ريسينوس كومونيس (الخروع)، فينوكسيإيثانول، البنزويك. حمض، إيثيل هكسيل جليسرين، جليسيريث-2 كاكاو، عطر (عطر) *مكونات عضوية معتمدة</p>
-                
-                <p>طريقة الاستخدام : وزعي كمية بسيطة على اليدين ودلكيها على فروة الراس المبللة بالماء للحصول على رغوة غنية</p>
-                
-                <p>ثم يشطف الشعر جيداً بالماء &nbsp;</p>", 
-                "url_key" => "c3-5-2-3", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "67.83", 
-                "cost" => "39.90", 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "67.83", 
-                "max_price" => "67.83", 
-                "is_vat" => 1, 
-                "short_description" => "<p>- شامبو تقوية الشعر بأكليل الجبل والنعناع من ميلي أورجانيكس، مملوء بالبيوتين، ينظف ويساعد على تقوية الشعر الضعيف والهش .</p>
-
-                    <p>- يغذي وينظف الشعر الجاف أو الضعيف أو الهش باستخدام هذا الشامبو المقوي للشعر الذي يعمل على تنشيط بصيلات الشعر .</p>
-                    
-                    <p>- يوفر رطوبة مكثفة لجميع أنواع الشعر بتركيبة لطيفة تغذي وتنظف وتساعد على تقوية الشعر الضعيف والهش .</p>
-                    
-                    <p>- مناسبة لمستويات الشعر ذات المسامية المنخفضة والعالية .</p>
-                    
-                    <p>- تم تطوير شامبو تقوية الشعر بالروزماري والنعناع من ميلي أورجانيكس لتنظيف شعرك بلطف مع توفير العناصر الغذائية الأساسية .</p>
-                    
-                    <p>- مناسب لجميع أنواع الشعر .</p>
-                    
-                    <p>المكونات : ماء (أكوا، أو)، الصوديوم C14-16 أوليفين سلفونات، كوكاميدوبروبيل البيتين، بولي كواترنيوم-7، كوكاميد MIPA، جليكول ستيرات، بوليكواترنيوم-10، بانثينول، بروبيلين جليكول، زيت النعناع بيبيريتا (النعناع)، زيت أوراق إكليل الجبل (إكليل الجبل). ، ثنائي الصوديومEDTA، فيتانتريول، * زيت بذور الأوربينيا أوليفيرا (الباباسو)، * زيت جذر الزنجبيل (الزنجبيل)، * زيت جوز الهند نوسيفيرا (جوز الهند)، مستخلص عشبة ذيل الحصان (Equisetum Arvense)، مستخلص لوسونيا إنيرميس (الحناء)، روزمارينوس أوفيسيناليس ( مستخلصأوراق إكليل الجبل، مستخلص زهرة أنثيميس نوبيليس (البابونج)، مستخلص أوراق سيمفيتوم أوفيسينال (السنفيتون)، مستخلص هومولوس لوبولوس (الجنجل)، مستخلص أورتيك ديويكا (نبات القراص)، العسل، البيوتين، زيت بذور ريسينوس كومونيس (الخروع)، فينوكسيإيثانول، البنزويك. حمض، إيثيل هكسيل جليسرين، جليسيريث-2 كاكاو، عطر (عطر) *مكونات عضوية معتمدة</p>
-                    
-                    <p>طريقة الاستخدام : وزعي كمية بسيطة على اليدين ودلكيها على فروة الراس المبللة بالماء للحصول على رغوة غنية</p>
-                    
-                    <p>ثم يشطف الشعر جيداً بالماء &nbsp;</p>", 
-                "meta_title" => "ميلي - شامبو أكليل الجبل والنعناع لتقوية الشعر 355 مل", 
-                "meta_keywords" => null, 
-                "meta_description" => "<p>- شامبو تقوية الشعر بأكليل الجبل والنعناع من ميلي أورجانيكس، مملوء بالبيوتين، ينظف ويساعد على تقوية الشعر الضعيف والهش .</p>
-
-                <p>- يغذي وينظف الشعر الجاف أو الضعيف أو الهش باستخدام هذا الشامبو المقوي للشعر الذي يعمل على تنشيط بصيلات الشعر .</p>
-                
-                <p>- يوفر رطوبة مكثفة لجميع أنواع الشعر بتركيبة لطيفة تغذي وتنظف وتساعد على تقوية الشعر الضعيف والهش .</p>
-                
-                <p>- مناسبة لمستويات الشعر ذات المسامية المنخفضة والعالية .</p>
-                
-                <p>- تم تطوير شامبو تقوية الشعر بالروزماري والنعناع من ميلي أورجانيكس لتنظيف شعرك بلطف مع توفير العناصر الغذائية الأساسية .</p>
-                
-                <p>- مناسب لجميع أنواع الشعر .</p>
-                
-                <p>المكونات : ماء (أكوا، أو)، الصوديوم C14-16 أوليفين سلفونات، كوكاميدوبروبيل البيتين، بولي كواترنيوم-7، كوكاميد MIPA، جليكول ستيرات، بوليكواترنيوم-10، بانثينول، بروبيلين جليكول، زيت النعناع بيبيريتا (النعناع)، زيت أوراق إكليل الجبل (إكليل الجبل). ، ثنائي الصوديومEDTA، فيتانتريول، * زيت بذور الأوربينيا أوليفيرا (الباباسو)، * زيت جذر الزنجبيل (الزنجبيل)، * زيت جوز الهند نوسيفيرا (جوز الهند)، مستخلص عشبة ذيل الحصان (Equisetum Arvense)، مستخلص لوسونيا إنيرميس (الحناء)، روزمارينوس أوفيسيناليس ( مستخلصأوراق إكليل الجبل، مستخلص زهرة أنثيميس نوبيليس (البابونج)، مستخلص أوراق سيمفيتوم أوفيسينال (السنفيتون)، مستخلص هومولوس لوبولوس (الجنجل)، مستخلص أورتيك ديويكا (نبات القراص)، العسل، البيوتين، زيت بذور ريسينوس كومونيس (الخروع)، فينوكسيإيثانول، البنزويك. حمض، إيثيل هكسيل جليسرين، جليسيريث-2 كاكاو، عطر (عطر) *مكونات عضوية معتمدة</p>
-                
-                <p>طريقة الاستخدام : وزعي كمية بسيطة على اليدين ودلكيها على فروة الراس المبللة بالماء للحصول على رغوة غنية</p>
-                
-                <p>ثم يشطف الشعر جيداً بالماء &nbsp;</p>", 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0.3, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-02-08 15:39:54", 
-                "updated_at" => "2024-10-15 17:37:44", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 48793, 
-                "product_id" => 24643, 
-                "parent_id" => null, 
-                "sku" => "C3-5-2-4", 
-                "name" => "ميلي - قناع تقوية الشعر بأكليل الجبل والنعناع 340 جم", 
-                "description" => "<p>تغذية عميقة للشعر التالف: يدمج قناعنا الغني بالمغذيات بالبيوتين بالصبار والعسل ومزيج من الزيوت العطرية المغذية لخلق مظهر مكثف</p>
-
-                    <p>قومي بتغذية وترطيب وتقوية شعرك في وقت واحد مع هذه التركيبة الغنية بالمغذيات مع مكونات عضوية طبيعية مثل إكليل الجبل وزيت المنثا.</p>
-                    
-                    <p>قناع مجدد ومرطب عميق للشعر الجاف المتعطش.</p>
-                    
-                    <p>تغذي وترطب وتقوي كل ذلك في وقت واحد مع هذه التركيبة الغنية بالمغذيات.</p>
-                    
-                    <p>تم تطويره لتلبية احتياجات شعرك</p>
-                    
-                    <p>مصنوع من مكونات عضوية معتمدة ومحمل بالبيوتين</p>
-                    
-                    <p>تم تطوير قناع تقوية الشعر بالروزماري والنعناع مع وضع أكبر احتياجات شعرك في الاعتبار.</p>
-                    
-                    <p>طريقة الاستخدام:</p>
-                    
-                    <p>بعد غسل الشعر بالشامبو بشامبو مقوي بالروزماري والنعناع ، قم بتنعيمه بالتساوي من خلال الشعر الرطب من الجذور إلى الأطراف. اتركيه خلال 15-20 دقيقة. شطف جيدا.</p>
-                    
-                    <p>المكونات:</p>
-                    
-                    <p>ماء (أكوا ، ماء) ، بهينتريمونيوم ميثوسلفات ، كحول سيتريل ، عصير أوراق الصبار بربادنسيس (مزوَّد اللون) ، زيت اللوز الحلو (اللوز الحلو) ، زيت بذور هيليانثوس أنوس (دوار الشمس) ، زيت فاكهة أوليا يوروبا (زيتون) ، كوبرنيكوبا سيريفيرا ) الشمع ، بولي سوربات -20 ، زيت بذور المكاديميا إنتجريفوليا ، جليسريل ستيرات ، زبدة بوتيروسبيرموم باركي (الشيا) ، توكوفيريل أسيتات ، * زيت بذور Orbignya Oleifera (باباسو) ، * Zingiber Officinale (الزنجبيل) زيت الجذر ، * جوز الهند Nucifera ، بانثينول ، فيتانتريول ، زيت النعناع ، زيت أوراق إكليل الجبل (إكليل الجبل) ، زيت بذور سيموندسيا تشينينسيس (الجوجوبا) ، زيت بذور ريسينوس كومونيس (خروع) ، مستخلص عشب ذيل الحصان ، مستخلص لاوسونيا إنرميس (حناء) (إكليل الجبل) مستخلص أوراق الشجر ، مستخلص زهرة Anthemis Nobilis (البابونج) ، مستخلص السيمفيتم الرسمي (أوراق الكومفري) ، مستخلص Humulus Lupulus (القفزات) ، خلاصة Urtica Dioica (نبات القراص) ، العسل ، البيوتين ، كلوريد السيتريمونيوم ، Sesamum Indicum ( السمسم) زيت بذور ، فينوكسي إيثانول ، حمض البنزويك ، إيثيل هكسيل جليسرين ، جلسريث -2 كوكوات &nbsp;</p>", 
-                "url_key" => "c3-5-2-4", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "71.50", 
-                "cost" => "42.06", 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "71.50", 
-                "max_price" => "71.50", 
-                "is_vat" => 1, 
-                "short_description" => "<p>تغذية عميقة للشعر التالف: يدمج قناعنا الغني بالمغذيات بالبيوتين بالصبار والعسل ومزيج من الزيوت العطرية المغذية لخلق مظهر مكثف</p>
-
-                    <p>قومي بتغذية وترطيب وتقوية شعرك في وقت واحد مع هذه التركيبة الغنية بالمغذيات مع مكونات عضوية طبيعية مثل إكليل الجبل وزيت المنثا.</p>
-                    
-                    <p>قناع مجدد ومرطب عميق للشعر الجاف المتعطش.</p>
-                    
-                    <p>تغذي وترطب وتقوي كل ذلك في وقت واحد مع هذه التركيبة الغنية بالمغذيات.</p>
-                    
-                    <p>تم تطويره لتلبية احتياجات شعرك</p>
-                    
-                    <p>مصنوع من مكونات عضوية معتمدة ومحمل بالبيوتين</p>
-                    
-                    <p>تم تطوير قناع تقوية الشعر بالروزماري والنعناع مع وضع أكبر احتياجات شعرك في الاعتبار.</p>
-                    
-                    <p>طريقة الاستخدام:</p>
-                    
-                    <p>بعد غسل الشعر بالشامبو بشامبو مقوي بالروزماري والنعناع ، قم بتنعيمه بالتساوي من خلال الشعر الرطب من الجذور إلى الأطراف. اتركيه خلال 15-20 دقيقة. شطف جيدا.</p>
-                    
-                    <p>المكونات:</p>
-                    
-                    <p>ماء (أكوا ، ماء) ، بهينتريمونيوم ميثوسلفات ، كحول سيتريل ، عصير أوراق الصبار بربادنسيس (مزوَّد اللون) ، زيت اللوز الحلو (اللوز الحلو) ، زيت بذور هيليانثوس أنوس (دوار الشمس) ، زيت فاكهة أوليا يوروبا (زيتون) ، كوبرنيكوبا سيريفيرا ) الشمع ، بولي سوربات -20 ، زيت بذور المكاديميا إنتجريفوليا ، جليسريل ستيرات ، زبدة بوتيروسبيرموم باركي (الشيا) ، توكوفيريل أسيتات ، * زيت بذور Orbignya Oleifera (باباسو) ، * Zingiber Officinale (الزنجبيل) زيت الجذر ، * جوز الهند Nucifera ، بانثينول ، فيتانتريول ، زيت النعناع ، زيت أوراق إكليل الجبل (إكليل الجبل) ، زيت بذور سيموندسيا تشينينسيس (الجوجوبا) ، زيت بذور ريسينوس كومونيس (خروع) ، مستخلص عشب ذيل الحصان ، مستخلص لاوسونيا إنرميس (حناء) (إكليل الجبل) مستخلص أوراق الشجر ، مستخلص زهرة Anthemis Nobilis (البابونج) ، مستخلص السيمفيتم الرسمي (أوراق الكومفري) ، مستخلص Humulus Lupulus (القفزات) ، خلاصة Urtica Dioica (نبات القراص) ، العسل ، البيوتين ، كلوريد السيتريمونيوم ، Sesamum Indicum ( السمسم) زيت بذور ، فينوكسي إيثانول ، حمض البنزويك ، إيثيل هكسيل جليسرين ، جلسريث -2 كوكوات &nbsp;</p>", 
-                "meta_title" => "ميلي - قناع تقوية الشعر بأكليل الجبل والنعناع 340 جم", 
-                "meta_keywords" => null, 
-                "meta_description" => "<p>تغذية عميقة للشعر التالف: يدمج قناعنا الغني بالمغذيات بالبيوتين بالصبار والعسل ومزيج من الزيوت العطرية المغذية لخلق مظهر مكثف</p>
-
-                    <p>قومي بتغذية وترطيب وتقوية شعرك في وقت واحد مع هذه التركيبة الغنية بالمغذيات مع مكونات عضوية طبيعية مثل إكليل الجبل وزيت المنثا.</p>
-                    
-                    <p>قناع مجدد ومرطب عميق للشعر الجاف المتعطش.</p>
-                    
-                    <p>تغذي وترطب وتقوي كل ذلك في وقت واحد مع هذه التركيبة الغنية بالمغذيات.</p>
-                    
-                    <p>تم تطويره لتلبية احتياجات شعرك</p>
-                    
-                    <p>مصنوع من مكونات عضوية معتمدة ومحمل بالبيوتين</p>
-                    
-                    <p>تم تطوير قناع تقوية الشعر بالروزماري والنعناع مع وضع أكبر احتياجات شعرك في الاعتبار.</p>
-                    
-                    <p>طريقة الاستخدام:</p>
-                    
-                    <p>بعد غسل الشعر بالشامبو بشامبو مقوي بالروزماري والنعناع ، قم بتنعيمه بالتساوي من خلال الشعر الرطب من الجذور إلى الأطراف. اتركيه خلال 15-20 دقيقة. شطف جيدا.</p>
-                    
-                    <p>المكونات:</p>
-                    
-                    <p>ماء (أكوا ، ماء) ، بهينتريمونيوم ميثوسلفات ، كحول سيتريل ، عصير أوراق الصبار بربادنسيس (مزوَّد اللون) ، زيت اللوز الحلو (اللوز الحلو) ، زيت بذور هيليانثوس أنوس (دوار الشمس) ، زيت فاكهة أوليا يوروبا (زيتون) ، كوبرنيكوبا سيريفيرا ) الشمع ، بولي سوربات -20 ، زيت بذور المكاديميا إنتجريفوليا ، جليسريل ستيرات ، زبدة بوتيروسبيرموم باركي (الشيا) ، توكوفيريل أسيتات ، * زيت بذور Orbignya Oleifera (باباسو) ، * Zingiber Officinale (الزنجبيل) زيت الجذر ، * جوز الهند Nucifera ، بانثينول ، فيتانتريول ، زيت النعناع ، زيت أوراق إكليل الجبل (إكليل الجبل) ، زيت بذور سيموندسيا تشينينسيس (الجوجوبا) ، زيت بذور ريسينوس كومونيس (خروع) ، مستخلص عشب ذيل الحصان ، مستخلص لاوسونيا إنرميس (حناء) (إكليل الجبل) مستخلص أوراق الشجر ، مستخلص زهرة Anthemis Nobilis (البابونج) ، مستخلص السيمفيتم الرسمي (أوراق الكومفري) ، مستخلص Humulus Lupulus (القفزات) ، خلاصة Urtica Dioica (نبات القراص) ، العسل ، البيوتين ، كلوريد السيتريمونيوم ، Sesamum Indicum ( السمسم) زيت بذور ، فينوكسي إيثانول ، حمض البنزويك ، إيثيل هكسيل جليسرين ، جلسريث -2 كوكوات &nbsp;</p>", 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0.3, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-02-08 15:39:42", 
-                "updated_at" => "2024-10-15 17:37:50", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 48791, 
-                "product_id" => 24642, 
-                "parent_id" => null, 
-                "sku" => "C3-5-2-5", 
-                "name" => "ميلي - بلسم أكليل الجبل والنعناع لتقوية الشعر 355 مل", 
-                "description" => "<p>تم تطوير بلسم تقوية الشعر الذي لا يحتاج إلى شطفه بإكليل الجبل والنعناع لتلبية احتياجات شعرك.</p>
-
-                    <p>&bull; محمل بالبيوتين &bull; تألق مذهل &bull; يحبس الرطوبة</p>
-                    
-                    <p>غني بالبيوتين وإكليل الجبل، هذا الترطيب الذي لا يترك أثراً مع الحماية والترطيب.</p>
-                    
-                    <p>المكونات: ماء، جليسرين، بيهنتريمونيوم ميثوسولفات، كحول سيتريل، كحول ستياريلي، زيت برونوس أميغدالوس دولسيس (اللوز الحلو)، كحول سيتيل، سيترات ثلاثي إيثيل، زيت فاكهة أوليا يوروبيا (الزيتون)، عطر، بيوتين، زيت بيرسي جراتيسيما (الأفوكادو)، سمسم. زيت بذور إنديكوم (السمسم)، سيتيريث-20، زيت أوراق إكليل الجبل (إكليل الجبل)، زيت جذر الزنجبيل (الزنجبيل)، زيت النعناع بيبيريتا (النعناع)، البروبيلين جليكول، مستخلص زهرة البابونج ريكوتيتا (ماتريكاريا)، فاكهة/أوراق نبات فاكسينيوم ميرتيلوس. مستخلص، مستخلص Saccharum Officinarum (قصب السكر)، مستخلص فاكهة Citrus Aurantium Dulcis (البرتقال)، مستخلص فاكهة الليمون الحمضي (الليمون)، مستخلص Acer Saccharum (سكر القيقب)، فينوكسي إيثانول، كابريليل جلايكول، بوليسوربات 20.</p>", 
-                "url_key" => "c3-5-2-5", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "67.83", 
-                "cost" => "39.90", 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "67.83", 
-                "max_price" => "67.83", 
-                "is_vat" => 1, 
-                "short_description" => "<p>تم تطوير بلسم تقوية الشعر الذي لا يحتاج إلى شطفه بإكليل الجبل والنعناع لتلبية احتياجات شعرك.</p>
-
-                    <p>&bull; محمل بالبيوتين &bull; تألق مذهل &bull; يحبس الرطوبة</p>
-                    
-                    <p>غني بالبيوتين وإكليل الجبل، هذا الترطيب الذي لا يترك أثراً مع الحماية والترطيب.</p>
-                    
-                    <p>المكونات: ماء، جليسرين، بيهنتريمونيوم ميثوسولفات، كحول سيتريل، كحول ستياريلي، زيت برونوس أميغدالوس دولسيس (اللوز الحلو)، كحول سيتيل، سيترات ثلاثي إيثيل، زيت فاكهة أوليا يوروبيا (الزيتون)، عطر، بيوتين، زيت بيرسي جراتيسيما (الأفوكادو)، سمسم. زيت بذور إنديكوم (السمسم)، سيتيريث-20، زيت أوراق إكليل الجبل (إكليل الجبل)، زيت جذر الزنجبيل (الزنجبيل)، زيت النعناع بيبيريتا (النعناع)، البروبيلين جليكول، مستخلص زهرة البابونج ريكوتيتا (ماتريكاريا)، فاكهة/أوراق نبات فاكسينيوم ميرتيلوس. مستخلص، مستخلص Saccharum Officinarum (قصب السكر)، مستخلص فاكهة Citrus Aurantium Dulcis (البرتقال)، مستخلص فاكهة الليمون الحمضي (الليمون)، مستخلص Acer Saccharum (سكر القيقب)، فينوكسي إيثانول، كابريليل جلايكول، بوليسوربات 20.</p>", 
-                "meta_title" => "ميلي - بلسم أكليل الجبل والنعناع لتقوية الشعر 355 مل", 
-                "meta_keywords" => null, 
-                "meta_description" => "<p>تم تطوير بلسم تقوية الشعر الذي لا يحتاج إلى شطفه بإكليل الجبل والنعناع لتلبية احتياجات شعرك.</p>
-
-                    <p>&bull; محمل بالبيوتين &bull; تألق مذهل &bull; يحبس الرطوبة</p>
-                    
-                    <p>غني بالبيوتين وإكليل الجبل، هذا الترطيب الذي لا يترك أثراً مع الحماية والترطيب.</p>
-                    
-                    <p>المكونات: ماء، جليسرين، بيهنتريمونيوم ميثوسولفات، كحول سيتريل، كحول ستياريلي، زيت برونوس أميغدالوس دولسيس (اللوز الحلو)، كحول سيتيل، سيترات ثلاثي إيثيل، زيت فاكهة أوليا يوروبيا (الزيتون)، عطر، بيوتين، زيت بيرسي جراتيسيما (الأفوكادو)، سمسم. زيت بذور إنديكوم (السمسم)، سيتيريث-20، زيت أوراق إكليل الجبل (إكليل الجبل)، زيت جذر الزنجبيل (الزنجبيل)، زيت النعناع بيبيريتا (النعناع)، البروبيلين جليكول، مستخلص زهرة البابونج ريكوتيتا (ماتريكاريا)، فاكهة/أوراق نبات فاكسينيوم ميرتيلوس. مستخلص، مستخلص Saccharum Officinarum (قصب السكر)، مستخلص فاكهة Citrus Aurantium Dulcis (البرتقال)، مستخلص فاكهة الليمون الحمضي (الليمون)، مستخلص Acer Saccharum (سكر القيقب)، فينوكسي إيثانول، كابريليل جلايكول، بوليسوربات 20.</p>", 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0.3, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-02-08 15:39:37", 
-                "updated_at" => "2024-10-15 17:37:55", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
-                ],
-            ]
-        ],
-        [
-            'product' => [
-                "id" => 48789, 
-                "product_id" => 24641, 
-                "parent_id" => null, 
-                "sku" => "C3-5-5-7", 
-                "name" => "ميلي - بلسم مقوي للشعر باكليل الجبل والنعناع 355 مل", 
-                "description" => "<p>يوفر بلسم تقوية الروزماري والنعناع التوازن المثالي بين القوة والرطوبة لتحسين الحالة العامة للشعر وفروة الرأس. ينعم ويفك التشابك على الفور لزيادة سهولة التحكم. يدعم شعر أطول وأكثر صحة.</p>
-
-                <ul>
-                    <li>يوفر التوازن المثالي بين القوة والرطوبة.</li>
-                    <li>غني بالبيوتين ويمنحك لمعاناً مذهلاً.</li>
-                    <li>ينعم ويفك التشابك على الفور.</li>
-                    <li>يدعم شعر أطول وأكثر صحة.</li>
-                    <li>خالي من البارابين، الكبريتات، البارافينات، الزيوت المعدنية، DEA.</li>
-                    <li>تركيبه لجميع أنواع الشعر.</li>
-                </ul>", 
-                "url_key" => "c3-5-5-7", 
-                "new" => null, 
-                "featured" => null, 
-                "status" => 1, 
-                "thumbnail" => null, 
-                "price" => "73.25", 
-                "cost" => "43.09", 
-                "special_price" => null, 
-                "special_price_from" => null, 
-                "special_price_to" => null, 
-                "delivery_time" => null, 
-                "visible_individually" => 1, 
-                "min_price" => "73.25", 
-                "max_price" => "73.25", 
-                "is_vat" => 1, 
-                "short_description" => "<p>يوفر بلسم تقوية الروزماري والنعناع التوازن المثالي بين القوة والرطوبة لتحسين الحالة العامة للشعر وفروة الرأس. ينعم ويفك التشابك على الفور لزيادة سهولة التحكم. يدعم شعر أطول وأكثر صحة.</p>
-
-                <ul>
-                    <li>يوفر التوازن المثالي بين القوة والرطوبة.</li>
-                    <li>غني بالبيوتين ويمنحك لمعاناً مذهلاً.</li>
-                    <li>ينعم ويفك التشابك على الفور.</li>
-                    <li>يدعم شعر أطول وأكثر صحة.</li>
-                    <li>خالي من البارابين، الكبريتات، البارافينات، الزيوت المعدنية، DEA.</li>
-                    <li>تركيبه لجميع أنواع الشعر.</li>
-                </ul>", 
-                "meta_title" => "ميلي - بلسم مقوي للشعر باكليل الجبل والنعناع 355 مل", 
-                "meta_keywords" => null, 
-                "meta_description" => "<p>يوفر بلسم تقوية الروزماري والنعناع التوازن المثالي بين القوة والرطوبة لتحسين الحالة العامة للشعر وفروة الرأس. ينعم ويفك التشابك على الفور لزيادة سهولة التحكم. يدعم شعر أطول وأكثر صحة.</p>
-
-                <ul>
-                    <li>يوفر التوازن المثالي بين القوة والرطوبة.</li>
-                    <li>غني بالبيوتين ويمنحك لمعاناً مذهلاً.</li>
-                    <li>ينعم ويفك التشابك على الفور.</li>
-                    <li>يدعم شعر أطول وأكثر صحة.</li>
-                    <li>خالي من البارابين، الكبريتات، البارافينات، الزيوت المعدنية، DEA.</li>
-                    <li>تركيبه لجميع أنواع الشعر.</li>
-                </ul>", 
-                "width" => 0, 
-                "height" => 0, 
-                "depth" => 0, 
-                "weight" => 0.4, 
-                "unlimited_quantity" => "0", 
-                "barcode" => null, 
-                "brand_name" => "12", 
-                "promotion_title" => null, 
-                "subtitle" => null, 
-                "image" => "", 
-                "image_name" => "", 
-                "image_label" => "", 
-                "image_value" => "", 
-                "image_url" => null, 
-                "text" => "", 
-                "text_name" => "", 
-                "text_label" => "", 
-                "text_value" => "", 
-                "color" => "", 
-                "color_name" => "", 
-                "color_label" => "", 
-                "color_value" => "", 
-                "size" => null, 
-                "size_label" => null, 
-                "created_at" => "2024-02-08 15:39:33", 
-                "updated_at" => "2024-10-15 17:38:00", 
-                "deleted_at" => null, 
-                "enable_note" => null, 
-                "enable_upload_image" => null, 
-                "maximum_quantity_per_order" => null, 
-                "notify_quantity" => null, 
-                "require_shipping" => 0,
-                "saleable" => 1,
-                "html_price" => '<span class="price">‏٣٦٧٫٣٥ ر.س.‏</span>',
-                "product" => [
-                    "base_image_url" => "https://cdn.twsaa.com/home/23/cd2eeaba-784a-4272-a3f7-3e78262846d0.png"
+                    "base_image_url" => "https://media.zid.store/thumbs/07d02681-b3c7-4603-b219-599dc6c7a256/67857440-5e72-4ee7-bb77-6192602e71ab-thumbnail-1000x1000-70.webp"
                 ],
             ]
         ]

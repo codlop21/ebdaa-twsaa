@@ -3,6 +3,7 @@
 {% block title %} main {% endblock %}
 {% block main_content %}
 
+<div class="container-fluid">
 
     <div class="account-content">
         {% include 'customers/account/partials/sidemenu.twig' %}
@@ -26,7 +27,7 @@
                             <div class="datagrid-filters">
                                 <div class="filter-left"></div>
                             </div>
-                            <table class="table">
+                            <table class="table ">
                                 <!---->
                                 <thead>
                                     <tr style="height: 65px;">
@@ -47,7 +48,7 @@
                                         </th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <tbody class="tabels">
                                     {% set orders = getFunction('dataTableOrder') %}
                                     {% for order in orders %}
                                     <tr>
@@ -88,6 +89,7 @@
 
         </div>
 
+    </div>
     </div>
 
 {% endblock %}

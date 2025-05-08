@@ -1,0 +1,16 @@
+<section class="m-t container-fluid">
+	<h2 class="section-title">{{content['block_title']}}</h2>
+	<div class="grid-banners">
+		{% for item in content['settings']['items'] %}
+			<a>
+				<div class="glary-image" style="background-image:url({{item['glary']}})">
+					<div class="content-banner">
+						<h2 class="title-glary">{{item['title']}}</h2>
+						<p class="expalin-glary">{{item['explain']}}</p>
+					</div>
+					<span></span>
+				</div>
+			</a>
+		{% endfor %}
+	</div>
+</section>

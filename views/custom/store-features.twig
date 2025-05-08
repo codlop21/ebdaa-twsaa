@@ -1,18 +1,29 @@
-<section class="s-block s-block--features container">
-    <span class="s-design-before s-design-invisible-dom" id="edit-1366530013"></span>
-    <div class="row">
-        {% for item in content['settings']['items'] %}
-            <div class="col-md-4">
-                <div class="s-block--features__item">
-                    <div class="feature-icon">
-                        <i class="{{ item['icon'] }}"></i>
-                    </div>
-                    <h2>{{ item['main_title'] }}</h2>
-                    <p class="text-base da-tm leading-6 line-clamp-3 w-full da-tm text-center my-2">
-                        {{ item['sub_title'] }}
-                    </p>
-                </div>
-            </div>            
-        {% endfor %}
-    </div>
+<section class=" m-t">
+	<div class="s-block s-block--features" style="background-image:url({{content['settings']['image'] }})">
+		{% set channel = getFunction('getCurrentChannel') %}
+		<div class="features_main">
+			<div class="store-logo top-links-2">
+				<a href="/">
+					{% if channel %}
+						<img src="{{ storage_url ~ channel.logo }}" class="logo">
+					{% else %}
+						<h1>{{ channel.name }}</h1>
+					{% endif %}
+				</a>
+				<h1 class="topic-title">
+					مميزات متجر أسمارت
+				</h1>
+			</div>
+			<div class="row_features">
+				{% for item in content['settings']['items'] %}
+					<div class="features__item">
+						<div class="feature-icon">
+							<img src="{{ item['icon'] }}" >
+						</div>
+						<h2 class="title-feat">{{ item['main_title'] }}</h2>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
 </section>

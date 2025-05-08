@@ -1,31 +1,32 @@
+
 {% set channel = getFunction('getCurrentChannel') %}
 {% set companyTax = getFunction('getCompanyTax') %}
 {% set company = channel['getCompanyAddress'] %}
 
 <footer class="footer">
     <div class="footer-main">
-        <div class="container">
+        <div class="container-fluid">
             <div class="">
                 <div class="col-md-4 footer-item">
                     <h2 class="footer-title"><span> {{ ('admin::app.front.support_team'|trans) }}</span></h2>
                     <div class="store-contact">
                         {% if company.whatsapp %}
-                        <a href="https://wa.me/{{ company.whatsapp|replace({'~[^+0-9]~': ''}) }}" rel="nofollow" style="direction:ltr" target="_blank">
+                        <a href="https://wa.me/{{ company.whatsapp|replace({'~[^+0-9]~': ''}) }}" rel="nofollow" target="_blank">
                             <i class="icon-whatsapp2"></i>
-                            {{ ('admin::app.customers.customers.whatsapp'|trans) }}
-                        </a>&nbsp;
+                            {{ company.whatsapp|replace({'~[^+0-9]~': ''}) }}
+                        </a>
                         {% endif %}
                         {% if company.phone_visibility == 0 %}
                         <a href="tel:{{ company.phone ?? '' }}">
                             <i class="icon-phone"></i>
-                            {{ ('admin::app.customers.customers.phone'|trans) }}
-                        </a>&nbsp;
+                            {{ company.phone ?? '' }}
+                        </a>
                         {% endif %}
                         {% if company.email %}
                         <a href="mailto:{{ company.email ?? '' }}">
                             <i class="icon-mail"></i>
-                            {{ ('admin::app.customers.customers.email'|trans) }}
-                        </a>&nbsp;
+                            {{ company.email ?? '' }}
+                        </a>
                         {% endif %}
                     </div>
                 </div>
@@ -33,14 +34,14 @@
                     {% if channel.getCmsPages|length > 0 or channel.getBlogs|length > 0 %}
                     <h2 class="footer-title"><span> {{ ('admin::app.admin.store_data.other_links'|trans) }}</span></h2>
                     <ul class="footer-links">
-                        {% if channel.getBlogs|length > 0 %}
+                        {# {% if channel.getBlogs|length > 0 %}
                         <li><a href="/blogs/{{company.company_id }}">{{ ('admin::app.admin.blog.blogs'|trans) }}</a></li>
-                        {% endif %}
+                        {% endif %} #}
                         {% for page in channel.getCmsPages %}
-                        {% if page.status == 1 %}
-                        <li><a href="/page/{{ (page.url_key ?? page.translate('ar').url_key) }}">
+                            {% if page.status == 1 %}
+                            <li><a href="/page/{{ (page.url_key ?? page.translate('ar').url_key) }}">
                                 {{ page.page_title ?? page.translate('ar').page_title }} </a>
-                        </li>
+                            </li>
                         {% endif %}
                         {% endfor %}
                     </ul>
@@ -49,46 +50,41 @@
                 <div class="col-md-4 footer-item">
                     <h2 class="footer-title"><span>{{ ('admin::app.front.contact_us'|trans) }}</span></h2>
                     <ul class="social">
-                        {% if company.instagram %}
                         <li class="social__item">
                             <a href="https://www.instagram.com/{{ company.instagram }}" target="_blank">
                                 <i class="icon-instagram"></i>
                             </a>
                         </li>
-                        {% endif %}
-                        {% if company.twitter %}
+                       
                         <li class="social__item">
                             <a href="https://twitter.com/{{ company.twitter }}" target="_blank">
                                 <i class="icon-twitter"></i>
                             </a>
                         </li>
-                        {% endif %}
-                        {% if company.snapchat %}
+                     
                         <li class="social__item">
                             <a href="https://www.snapchat.com/add/{{ company.snapchat }}" target="_blank">
                                 <i class="icon-snapchat"></i>
                             </a>
                         </li>
-                        {% endif %}
-                        {% if company.tiktok %}
+                       
                         <li class="social__item">
                             <a href="https://www.tiktok.com/{{ company.tiktok }}/" target="_blank">
                                 <i class="fa-brands fa-tiktok"></i>
                             </a>
                         </li>
-                        {% endif %}
-                        {% if company.youtube %}
+                      
                         <li class="social__item">
                             <a href="{{ company.youtube }}" target="_blank">
                                 <i class="icon-youtube"></i>
                             </a>
                         </li>
-                        {% endif %}
+                        
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="container mt-25">
+        <div class="container-fluid mt-25">
             <div class="col-md-6">
                 {% if getConfig('config.general.show-platform-message') == 0 %}
                 <p class="copyright">{{ ('admin::app.footer.right-reserved'|trans) }} {{ "now"|date("Y") }} | {{ channel.name }}</p>
